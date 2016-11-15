@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<h1>Hello</h1>   
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!--<script src="https://d3js.org/topojson.v1.min.js"></script>-->
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/d3-horizon-chart/build/d3-horizon-chart.min.js"></script>
+    <style>
+        path {
+            stroke: red;
+            stroke-width: 0.25px;
+            fill: grey;
+        }
+    </style>
+    <script>
+       /* var translatew = 100;
+        var translateh = 100;
+        var svg = d3.select("body").append("g").attr("id", 'svggroup').attr("transform", "translate(" + translatew + "," + translateh + ")").append("svg")
+        .attr("height", 350)
+        .attr("width", 450)
+
+        //d3.json('OUATS_AirSage_TAZ.json', function (error, data) {
+        d3.json('OrlandoTopoJ.json', function (error, data) {
+
+            //console.log(data.objects);
+            var projection = d3.geoMercator()
+	                         .scale(900)
+                             .rotate([-180, 0])
+                             .translate([translatew / 2, translateh / 2])
+                             .clipAngle(90);
+
+            var path = d3.geoPath()
+              .projection(projection);
+
+            console.log(data);
+            var g=svg.append('g');
+
+            /*var topology = topojson.feature(data, data.arcs);
+             g.selectAll("path")
+                .data(topojson.feature(data, data.arcs).features)
+                //.data(topology)
+                .enter().append("path")
+                .attr("d", path)*/
+
+
+            /*svg.append("path")
+           .datum(topojson.mesh(data))
+           .attr("d", path);*/
+
+            
+            /*g.selectAll("path")
+            .data(topojson.object(data, data.objects.OrlandoGeoJ)
+            .geometries)
+            .enter()
+            .append("path")
+            .attr("d", path)*/
+            
+            /* g.selectAll("path")
+            .data(topojson.feature(data, data.objects.OrlandoGeoJ))
+            .enter()
+            .append("path")
+            .attr("d", path) 
+
+        })*/
+
+
+        var width = 900;
+        var height = 600;
+
+        var projection = d3.geoMercator()
+        .scale(20000)
+        
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        var path = d3.geoPath()
+            .projection(projection);
+        var g = svg.append("g");
+
+        d3.json("OrlandoTopoJ.json", function (error, topology) {
+            g.selectAll("path")
+              .data(topojson.object(topology, topology.objects.OrlandoGeoJ)
+                  .geometries)
+            .enter()
+              .append("path")
+              .attr("d", path)
+        });
+    </script>
+
+</body>
+
+</html>

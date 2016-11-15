@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Hello</h1>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/d3-horizon-chart/build/d3-horizon-chart.min.js"></script>
+    <style>
+        path {
+            stroke: red;
+            stroke-width: 0.25px;
+            fill: grey;
+        }
+        .path {
+            stroke: red;
+            stroke-width: 0.25px;
+            fill: grey;
+        }
+    </style>
+    <script>
+        /*var translatew = 100;
+        var translateh = 100;
+        var center = [-82.31160167682661, 27.557217385788853];
+        var svg = d3.select("body").append("g").attr("id", 'svggroup').attr("transform", "translate(" + translatew + "," + translateh + ")").append("svg")
+        .attr("height", 350)
+        .attr("width", 450)*/
+
+        //d3.json('OUATS_AirSage_TAZ.json', function (error, data) {
+        /*d3.json('OrlandoGeoJ.json', function (error, data) {
+
+            //console.log(data.objects);
+            var projection = d3.geoAlbers()
+	                         .scale(900)
+                             .rotate([-180, 0])
+                             .translate([350 / 2, 450 / 2])
+                             .clipAngle(90);
+
+            var path = d3.geoPath()
+              .projection(projection);*/
+
+            //console.log(data);
+
+            /*$.each(data.features, function (i, feature) {
+                console.log(feature.geometry);
+                svg.append("path")
+                  .datum(feature.geometry)
+                  .attr("class", "path");
+            });*/
+
+            /*$.each(data.features, function (i, feature) {
+                svg.selectAll("path")
+                .data(feature.geometry.coordinates)
+                .enter()
+                .append("path")
+                .attr("d", path)
+            });*/
+            //var g = svg.append('g');
+
+            //Bind data and create one path per GeoJSON feature
+            /*svg.selectAll("path")
+               .data(data.features)
+               .enter()
+               .append("path")
+               .attr("d", path)
+               .style("fill", "steelblue");
+
+
+        })*/
+
+          /*var w = 500;
+          var h = 300;*/
+          //var center = [-82.31160167682661, 27.557217385788853];
+          
+
+          //var projection = d3.geoMercator()
+                                 //.translate([w / 2, h / 2])
+                                 //.scale(500);
+                                 //.scale(10)
+
+          /*var projection = d3.geoStereographic()
+           .center(center)
+           .translate(width/4, height/2)*/
+           //.scale(24500)
+
+
+          //Define path generator
+       
+
+          d3.json('OrlandoGeoJ.json', function (error, data) {
+
+              //var center = d3.geoCentroid(data)
+
+           
+
+              var w = 1200;
+              var h = 800;
+              var x= -14100;
+              var y = 7300;
+              var scale = 66700;
+              //console.log(center);
+
+              //var projection = d3.geoStereographic()
+              //.translate([x,y])
+              //.center(center)
+              //.translate(w/4, w/2)
+              //.translate(0,-5000)
+              //.scale(5000)
+
+
+
+
+              var projection = d3.geoMercator();
+
+              var path = d3.geoPath()
+                           .projection(projection);
+
+              var svg = d3.select("body")
+                 .append("svg")
+                 .attr("width", w)
+                 .attr("height", h);
+
+              var abc = svg.append('g').attr('transform','translate(100,100)').selectAll('circle')
+                        .data(data.features)
+                        .enter()
+                        .append('circle')
+                        .attr('x', function (d, i) {
+                            var center = d3.geoCentroid(d.geometry);
+                            console.log(center[0])
+                            return center[0];
+                            
+                        })
+                        .attr('y', function (d, i) {
+                            var center = d3.geoCentroid(d.geometry);
+                            console.log(center[1])
+                            return center[1];
+                            
+                        })
+                       .attr('r', '5px')
+
+                     
+              /*$.each(data.features, function (i, feature) {
+
+                  center = d3.geoCentroid(feature.geometry);
+                  
+
+              });
+              */
+              
+
+              svg.selectAll("path")
+                   .data(data.features)
+                   .enter()
+                   .append("path")
+                   .attr("d", path)
+                   .style("fill", "steelblue");
+
+          });
+          
+
+
+    </script>
+</body>
+</html>
