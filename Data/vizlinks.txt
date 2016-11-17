@@ -7,3 +7,7 @@ https://www.6sqft.com/chatty-maps-tell-you-what-youll-hear-on-given-streets-and-
 https://eng.uber.com/data-viz-intel/
 https://www.pinterest.com/pin/29203097555945751/
 
+
+http://zipatlas.com/us/fl/orlando/zip-code-comparison/population-density.htm
+http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/
+
