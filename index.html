@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MyMap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <style type="text/css">
+    
+            #map {
+                
+                height: 900px;
+            }
+
+            .ticks {
+                font: 10px sans-serif;
+            }
+
+            .track,
+            .track-inset,
+            .track-overlay {
+                stroke-linecap: round;
+            }
+
+            .track {
+                stroke: #000;
+                stroke-opacity: 0.3;
+                stroke-width: 10px;
+            }
+
+            .track-inset {
+                stroke: #ddd;
+                stroke-width: 8px;
+            }
+
+            .track-overlay {
+                pointer-events: stroke;
+                stroke-width: 50px;
+                cursor: crosshair;
+            }
+
+            .handle {
+                fill: black;
+                stroke: #000;
+                stroke-opacity: 0.5;
+                stroke-width: 1.25px;
+            }
+    </style>
+</head>
+<body>
+   <script>
+       $(document).ready(function () {
+         
+           $('#myList').change(hello);
+       });
+
+       function hello()
+       {
+           console.log('Hello');
+         var abc = $("#myList option:selected").val();
+           console.log(abc);
+       }
+   </script>
+     
+    <h1>My Map</h1>
+    <select id="myList">
+        <option value="Day1">Day 1</option>
+        <option value="Day2">Day 2</option>
+        <option value="Day3">Day 3</option>
+        <option value="Day4">Day 4</option>
+    </select>
+
+    <div id="map"></div>
+    <svg id="svg1" width="900" height="60"></svg>
+    <style>
+        path {
+            border: solid;
+            border-width: 20px;
+            border-color: darkred;
+            fill: black;
+            stroke: red;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        var handle;
+        function createSlider() {
+          
+        }
+
+
+    var map = L.map('map').setView([28.54136, -81.36053], 11)
+   .addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
+
+    var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+                g = svg.append("g").attr("class", "leaflet-zoom-hide")
+
+    var orlandoData;
+    var zonesData = {};
+    var zonesDataArray = [];
+    var dayData;
+    var hour = 12;
+    var circle1;
+    var circle2;
+    function loadCsvData(callback)
+    {
+        //console.log(abc);
+        dayData = {};
+        d3.csv('Day2.csv', function (data) {
+            data.forEach(function (d)
+            {
+                var tazId = d.origin_zone;
+                dayData[tazId] = d;
+            }
+            );
+        });
+        callback(null,dayData)
+    }
+
+ 
+
+    var q = d3.queue();
+    q.defer(loadCsvData)
+    //q.await(helloa(null,dayData))
+        q.await(function (error, dayData) {
+    //function helloa(error, dayData) {
+        if (error) throw error;
+
+        //console.log(dayData);
+        d3.json('OrlandoGeoJ.json', function (error, data) {
+            orlandoData = data;
+            var centroids = [];
+
+            orlandoData.features.forEach(function (d, i) {
+                var centroid = d3.geoCentroid(d.geometry);
+                centroids.push(centroid);
+
+                var zone = { tazId: d.properties.TAZ_ID, centroid: centroid }
+                zonesDataArray.push(zone);
+            });
+            drawMap(orlandoData, centroids);
+        });
+        function drawMap(orlandoData, centroids) {
+
+            var transform = d3.geoTransform({ point: projectPoint }),
+               path = d3.geoPath().projection(transform);
+
+            var feature = g.selectAll("path")
+             .data(orlandoData.features)
+             .enter().append("path");
+
+            var cords = [];
+            centroids.forEach(function (d) {
+                var cord = new L.LatLng(d[1], d[0]);
+                cords.push(cord);
+            })
+            zonesDataArray.forEach(function (d) {
+                d.centroid = new L.LatLng(d.centroid[1], d.centroid[0]);
+
+            })
+
+
+
+            circle1 = g.selectAll("#circle1")
+            .data(zonesDataArray)
+            .enter().append("circle")
+            .style("stroke", "black")
+            .style("fill", "red")
+            .attr('id', 'circle1')
+
+            circle2 = g.selectAll("#circle2")
+             .data(zonesDataArray)
+             .enter().append("circle")
+             .style("stroke", "black")
+             .style("fill", "green")
+             .attr('id', 'circle2')
+
+            map.on("viewreset", reset);
+
+            reset();
+
+
+
+            function reset() {
+
+                var bounds = path.bounds(orlandoData),
+                             topLeft = bounds[0],
+                             bottomRight = bounds[1];
+
+
+                console.log('reset called');
+
+                circle1.attr("transform", function (d, i) {
+                    return "translate(" +
+                    map.latLngToLayerPoint(d.centroid).x + "," +
+                    map.latLngToLayerPoint(d.centroid).y + ")";
+                })
+               .attr("r", function (d) {
+                   var tazId = d.tazId;
+                   if (dayData[tazId] == undefined || dayData[tazId] == null) {
+                       return 5;
+                   }
+                   else {
+
+                       if (hour == 0) {
+                           return dayData[tazId].shour0;
+                       }
+                       else if (hour == 1) {
+                           return dayData[tazId].shour1;
+                       }
+                       else if (hour == 2) {
+                           return dayData[tazId].shour2;
+                       }
+                       else if (hour == 3) {
+                           return dayData[tazId].shour3;
+                       }
+                       else if (hour == 4) {
+                           return dayData[tazId].shour4;
+                       }
+                       else if (hour == 5) {
+                           return dayData[tazId].shour5;
+                       }
+                       else if (hour == 6) {
+                           return dayData[tazId].shour6;
+                       }
+                       else if (hour == 7) {
+                           return dayData[tazId].shour7;
+                       }
+                       else if (hour == 8) {
+                           return dayData[tazId].shour8;
+                       }
+                       else if (hour == 9) {
+                           return dayData[tazId].shour9;
+                       }
+                       else if (hour == 10) {
+                           return dayData[tazId].shour10;
+                       }
+                       else if (hour == 11) {
+                           return dayData[tazId].shour11;
+                       }
+                       else if (hour == 12) {
+                           return dayData[tazId].shour12;
+                       }
+                       else if (hour == 13) {
+                           return dayData[tazId].shour13;
+                       }
+                       else if (hour == 14) {
+                           return dayData[tazId].shour14;
+                       }
+                       else if (hour == 15) {
+                           return dayData[tazId].shour15;
+
+                       }
+                       else if (hour == 16) {
+                           return dayData[tazId].shour16;
+                       }
+                       else if (hour == 17) {
+                           return dayData[tazId].shour17;
+                       }
+                       else if (hour == 18) {
+                           return dayData[tazId].shour18;
+                       }
+                       else if (hour == 19) {
+                           return dayData[tazId].shour19;
+                       }
+                       else if (hour == 20) {
+                           return dayData[tazId].shour20;
+                       }
+                       else if (hour == 21) {
+                           return dayData[tazId].shour21;
+                       }
+                       else if (hour == 22) {
+                           return dayData[tazId].shour22;
+                       }
+                       else if (hour == 23) {
+                           return dayData[tazId].shour23;
+                       }
+                       else {
+                           return dayData[tazId].shour1;
+                       }
+
+                   }
+               }
+
+                )
+                .style('opacity', 0.4);
+
+                circle2.attr("transform", function (d, i) {
+                    return "translate(" +
+                    map.latLngToLayerPoint(d.centroid).x + "," +
+                    map.latLngToLayerPoint(d.centroid).y + ")";
+                })
+               .attr("r", function (d) {
+                   var tazId = d.tazId;
+                   if (dayData[tazId] == undefined || dayData[tazId] == null) {
+
+                       return 5;
+                   }
+                   else {
+
+                       if (hour == 0) {
+                           return dayData[tazId].dhour0;
+                       }
+                       else if (hour == 1) {
+                           return dayData[tazId].dhour1;
+                       }
+                       else if (hour == 2) {
+                           return dayData[tazId].dhour2;
+                       }
+                       else if (hour == 3) {
+                           return dayData[tazId].dhour3;
+                       }
+                       else if (hour == 4) {
+                           return dayData[tazId].dhour4;
+                       }
+                       else if (hour == 5) {
+                           return dayData[tazId].dhour5;
+                       }
+                       else if (hour == 6) {
+                           return dayData[tazId].dhour6;
+                       }
+                       else if (hour == 7) {
+                           return dayData[tazId].dhour7;
+                       }
+                       else if (hour == 8) {
+                           return dayData[tazId].dhour8;
+                       }
+                       else if (hour == 9) {
+                           return dayData[tazId].dhour9;
+                       }
+                       else if (hour == 10) {
+                           return dayData[tazId].dhour10;
+                       }
+                       else if (hour == 11) {
+                           return dayData[tazId].dhour11;
+                       }
+                       else if (hour == 12) {
+                           return dayData[tazId].dhour12;
+                       }
+                       else if (hour == 13) {
+                           return dayData[tazId].dhour13;
+                       }
+                       else if (hour == 14) {
+                           return dayData[tazId].dhour14;
+                       }
+                       else if (hour == 15) {
+                           return dayData[tazId].dhour15;
+
+                       }
+                       else if (hour == 16) {
+                           return dayData[tazId].dhour16;
+                       }
+                       else if (hour == 17) {
+                           return dayData[tazId].dhour17;
+                       }
+                       else if (hour == 18) {
+                           return dayData[tazId].dhour18;
+                       }
+                       else if (hour == 19) {
+                           return dayData[tazId].dhour19;
+                       }
+                       else if (hour == 20) {
+                           return dayData[tazId].dhour20;
+                       }
+                       else if (hour == 21) {
+                           return dayData[tazId].dhour21;
+                       }
+                       else if (hour == 22) {
+                           return dayData[tazId].dhour22;
+                       }
+                       else if (hour == 23) {
+                           return dayData[tazId].dhour23;
+                       }
+                       else {
+                           return dayData[tazId].dhour1;
+                       }
+                   }
+               })
+                .style('opacity', 0.4);
+
+
+
+                svg.attr("width", bottomRight[0] - topLeft[0])
+                .attr("height", bottomRight[1] - topLeft[1])
+                .style("left", topLeft[0] + "px")
+                .style("top", topLeft[1] + "px");
+                g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
+
+                feature.attr("d", path)
+                .style("fill-opacity", 0.7)
+
+            }
+
+            function projectPoint(x, y) {
+                var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+                this.stream.point(point.x, point.y);
+            }
+            var svg1 = d3.select("#svg1");
+            margin = { right: 10, left: 10 };
+            width = +svg1.attr("width");
+            //- margin.left - margin.right,
+            height = +svg1.attr("height");
+
+            d3.select("#svg1")
+           .append("text")
+           .text("Time (Hours)").attr("text-anchor", "middle")
+                                  .attr("x", 300)
+                                  .attr("y", 45)
+                                  .style('font-weight', 'bold')
+                                  .attr("font-family", "sans-serif")
+                                  .attr("font-size", "15px")
+                                  .attr("fill", "black");
+            var x = d3.scaleLinear()
+            .domain([0, 24])
+            .range([0, width])
+            .clamp(true);
+
+            var slider = svg1.append("g")
+                .attr("class", "slider")
+                .attr("transform", "translate(" + margin.left + "," + height / 10 + ")");
+
+            slider.append("line")
+                .attr("class", "track")
+                .attr("x1", x.range()[0])
+                .attr("x2", x.range()[1])
+              .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
+                .attr("class", "track-inset")
+              .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
+                .attr("class", "track-overlay")
+                .call(d3.drag()
+                    .on("start.interrupt", function () { slider.interrupt(); })
+                    .on("start drag", function () { hue(x.invert(d3.event.x)); })
+                    );
+
+            slider.insert("g", ".track-overlay")
+                .attr("class", "ticks")
+                .attr("transform", "translate(0," + 24 + ")")
+              .selectAll("text")
+              .data(x.ticks(24))
+              .enter().append("text")
+                .attr("x", x)
+                .attr("text-anchor", "middle")
+                .style("font-size", "15px")
+                .text(function (d) { return d; });
+
+
+            handle = slider.insert("circle", ".track-overlay")
+                .attr("class", "handle")
+                .attr("r", 9);
+
+            slider.transition() // Gratuitous intro!
+                .duration(750)
+                .tween("hue", function () {
+
+                    var i = d3.interpolate(0, 0);
+                    return function (t) { hue(i(t)); };
+
+                })
+
+            function hue(h) {
+                handle.attr("cx", x(h));
+                svg1.style("background-color", d3.hsl(h, 0.8, 0.8));
+                var abs_hr = Math.floor(h);
+                hour = abs_hr;
+
+                d3.selectAll('#circle1').remove();
+                d3.selectAll('#circle2').remove();
+
+
+                circle1 = g.selectAll("#circle1")
+                .data(zonesDataArray)
+                .enter().append("circle")
+                .style("stroke", "black")
+                .style("fill", "red")
+                .attr('id', 'circle1')
+
+                circle2 = g.selectAll("#circle2")
+               .data(zonesDataArray)
+               .enter().append("circle")
+               .style("stroke", "black")
+               .style("fill", "green")
+               .attr('id', 'circle2')
+
+                reset();
+                console.log('circles added')
+
+            }
+
+        }
+
+
+
+    //}
+        });
+
+    </script>
+</body>
+</html>
