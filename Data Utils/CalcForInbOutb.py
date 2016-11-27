@@ -46,6 +46,10 @@ for item in file_names2:
                 temp2["out"]=float(row[6])
                 final_data[int(row[0])]=temp2;
                 final_data[int(row[1])]=temp1;
+for key in final_data:
+    final_data[key]["in"]=round(final_data[key]["in"])
+    final_data[key]["out"]=round(final_data[key]["out"])
+
 for key in sorted(final_data.keys()):
     print(key,":",final_data[key])
 
