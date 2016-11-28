@@ -35,17 +35,42 @@ for item in file_names2:
         headers=next(data)
         for row in data:
             try:
-                final_data[int(row[0])]["out"]=final_data[int(row[0])]["out"]+float(row[6])
-                final_data[int(row[1])]["in"]=final_data[int(row[1])]["in"]+float(row[6])
+                final_data[row[0]]["out"]=final_data[row[0]]["out"]+float(row[6])
+                
             except:
-                temp1={}
                 temp2={}
-                temp1["in"]=float(row[6])
-                temp1["out"]=0
-                temp2["in"]=0
+                try:
+                    temp2["in"]=final_data[row[1]]["in"]+float(row[6])
+                except:
+                    temp2["in"]=0
                 temp2["out"]=float(row[6])
-                final_data[int(row[0])]=temp2;
-                final_data[int(row[1])]=temp1;
+                final_data[row[0]]=temp2;
+                
+            try:
+                final_data[row[1]]["in"]=final_data[row[1]]["in"]+float(row[6])
+            except Exception:
+                temp1={}
+                temp1["in"]=float(row[6])
+                try:
+                    temp1["out"]=final_data[row[0]]["out"]+float(row[6])
+                except:
+                    print("second")
+                    temp["out"]=0
+                final_data[row[1]]=temp1;
+
+    filedata.close()
+
+    with open("..\\Data\\clean_data"+"\\"+item) as filedata:
+        data=csv.reader(filedata)
+        headers=next(data)
+        for row in data:
+            curr_dict=final_data[row[0]]
+            try:
+                curr_dict[row[4]]=curr_dict[row[4]]+1
+            except:
+                curr_dict[row[4]]=0
+            final_data[row[0]]=curr_dict
+
 for key in final_data:
     final_data[key]["in"]=round(final_data[key]["in"])
     final_data[key]["out"]=round(final_data[key]["out"])

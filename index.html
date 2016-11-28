@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>MyMap</title>
@@ -15,34 +15,28 @@
                 
                 height: 900px;
             }
-
             .ticks {
                 font: 10px sans-serif;
             }
-
             .track,
             .track-inset,
             .track-overlay {
                 stroke-linecap: round;
             }
-
             .track {
                 stroke: #000;
                 stroke-opacity: 0.3;
                 stroke-width: 10px;
             }
-
             .track-inset {
                 stroke: #ddd;
                 stroke-width: 8px;
             }
-
             .track-overlay {
                 pointer-events: stroke;
                 stroke-width: 50px;
                 cursor: crosshair;
             }
-
             .handle {
                 fill: black;
                 stroke: #000;
@@ -57,7 +51,6 @@
          
            $('#myList').change(hello);
        });
-
        function hello()
        {
            console.log('Hello');
@@ -91,14 +84,10 @@
         function createSlider() {
           
         }
-
-
     var map = L.map('map').setView([28.54136, -81.36053], 11)
    .addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
-
     var svg = d3.select(map.getPanes().overlayPane).append("svg"),
                 g = svg.append("g").attr("class", "leaflet-zoom-hide")
-
     var orlandoData;
     var zonesData = {};
     var zonesDataArray = [];
@@ -120,39 +109,31 @@
         });
         callback(null,dayData)
     }
-
  
-
     var q = d3.queue();
     q.defer(loadCsvData)
     //q.await(helloa(null,dayData))
         q.await(function (error, dayData) {
     //function helloa(error, dayData) {
         if (error) throw error;
-
         //console.log(dayData);
         d3.json('OrlandoGeoJ.json', function (error, data) {
             orlandoData = data;
             var centroids = [];
-
             orlandoData.features.forEach(function (d, i) {
                 var centroid = d3.geoCentroid(d.geometry);
                 centroids.push(centroid);
-
                 var zone = { tazId: d.properties.TAZ_ID, centroid: centroid }
                 zonesDataArray.push(zone);
             });
             drawMap(orlandoData, centroids);
         });
         function drawMap(orlandoData, centroids) {
-
             var transform = d3.geoTransform({ point: projectPoint }),
                path = d3.geoPath().projection(transform);
-
             var feature = g.selectAll("path")
              .data(orlandoData.features)
              .enter().append("path");
-
             var cords = [];
             centroids.forEach(function (d) {
                 var cord = new L.LatLng(d[1], d[0]);
@@ -160,40 +141,26 @@
             })
             zonesDataArray.forEach(function (d) {
                 d.centroid = new L.LatLng(d.centroid[1], d.centroid[0]);
-
             })
-
-
-
             circle1 = g.selectAll("#circle1")
             .data(zonesDataArray)
             .enter().append("circle")
             .style("stroke", "black")
             .style("fill", "red")
             .attr('id', 'circle1')
-
             circle2 = g.selectAll("#circle2")
              .data(zonesDataArray)
              .enter().append("circle")
              .style("stroke", "black")
              .style("fill", "green")
              .attr('id', 'circle2')
-
             map.on("viewreset", reset);
-
             reset();
-
-
-
             function reset() {
-
                 var bounds = path.bounds(orlandoData),
                              topLeft = bounds[0],
                              bottomRight = bounds[1];
-
-
                 console.log('reset called');
-
                 circle1.attr("transform", function (d, i) {
                     return "translate(" +
                     map.latLngToLayerPoint(d.centroid).x + "," +
@@ -205,7 +172,6 @@
                        return 5;
                    }
                    else {
-
                        if (hour == 0) {
                            return dayData[tazId].shour0;
                        }
@@ -253,7 +219,6 @@
                        }
                        else if (hour == 15) {
                            return dayData[tazId].shour15;
-
                        }
                        else if (hour == 16) {
                            return dayData[tazId].shour16;
@@ -282,13 +247,10 @@
                        else {
                            return dayData[tazId].shour1;
                        }
-
                    }
                }
-
                 )
                 .style('opacity', 0.4);
-
                 circle2.attr("transform", function (d, i) {
                     return "translate(" +
                     map.latLngToLayerPoint(d.centroid).x + "," +
@@ -297,11 +259,9 @@
                .attr("r", function (d) {
                    var tazId = d.tazId;
                    if (dayData[tazId] == undefined || dayData[tazId] == null) {
-
                        return 5;
                    }
                    else {
-
                        if (hour == 0) {
                            return dayData[tazId].dhour0;
                        }
@@ -349,7 +309,6 @@
                        }
                        else if (hour == 15) {
                            return dayData[tazId].dhour15;
-
                        }
                        else if (hour == 16) {
                            return dayData[tazId].dhour16;
@@ -381,20 +340,14 @@
                    }
                })
                 .style('opacity', 0.4);
-
-
-
                 svg.attr("width", bottomRight[0] - topLeft[0])
                 .attr("height", bottomRight[1] - topLeft[1])
                 .style("left", topLeft[0] + "px")
                 .style("top", topLeft[1] + "px");
                 g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
-
                 feature.attr("d", path)
                 .style("fill-opacity", 0.7)
-
             }
-
             function projectPoint(x, y) {
                 var point = map.latLngToLayerPoint(new L.LatLng(y, x));
                 this.stream.point(point.x, point.y);
@@ -404,7 +357,6 @@
             width = +svg1.attr("width");
             //- margin.left - margin.right,
             height = +svg1.attr("height");
-
             d3.select("#svg1")
            .append("text")
            .text("Time (Hours)").attr("text-anchor", "middle")
@@ -418,11 +370,9 @@
             .domain([0, 24])
             .range([0, width])
             .clamp(true);
-
             var slider = svg1.append("g")
                 .attr("class", "slider")
                 .attr("transform", "translate(" + margin.left + "," + height / 10 + ")");
-
             slider.append("line")
                 .attr("class", "track")
                 .attr("x1", x.range()[0])
@@ -435,7 +385,6 @@
                     .on("start.interrupt", function () { slider.interrupt(); })
                     .on("start drag", function () { hue(x.invert(d3.event.x)); })
                     );
-
             slider.insert("g", ".track-overlay")
                 .attr("class", "ticks")
                 .attr("transform", "translate(0," + 24 + ")")
@@ -446,57 +395,40 @@
                 .attr("text-anchor", "middle")
                 .style("font-size", "15px")
                 .text(function (d) { return d; });
-
-
             handle = slider.insert("circle", ".track-overlay")
                 .attr("class", "handle")
                 .attr("r", 9);
-
             slider.transition() // Gratuitous intro!
                 .duration(750)
                 .tween("hue", function () {
-
                     var i = d3.interpolate(0, 0);
                     return function (t) { hue(i(t)); };
-
                 })
-
             function hue(h) {
                 handle.attr("cx", x(h));
                 svg1.style("background-color", d3.hsl(h, 0.8, 0.8));
                 var abs_hr = Math.floor(h);
                 hour = abs_hr;
-
                 d3.selectAll('#circle1').remove();
                 d3.selectAll('#circle2').remove();
-
-
                 circle1 = g.selectAll("#circle1")
                 .data(zonesDataArray)
                 .enter().append("circle")
                 .style("stroke", "black")
                 .style("fill", "red")
                 .attr('id', 'circle1')
-
                 circle2 = g.selectAll("#circle2")
                .data(zonesDataArray)
                .enter().append("circle")
                .style("stroke", "black")
                .style("fill", "green")
                .attr('id', 'circle2')
-
                 reset();
                 console.log('circles added')
-
             }
-
         }
-
-
-
     //}
         });
-
     </script>
 </body>
 </html>
