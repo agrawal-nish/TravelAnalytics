@@ -53,5 +53,7 @@ for key in final_data:
 for key in sorted(final_data.keys()):
     print(key,":",final_data[key])
 
-with open("..\\Data\\InOutZoneData.json","w") as new_file:
-    json.dump(final_data,new_file)
+with open("..\\Data\\InOutZoneData.csv","w",newline='') as new_file:
+    writer = csv.DictWriter(new_file, fieldnames = ["TAZ_ID", "Inbound", "Outbound"])
+    writer.writeheader()
+    writer.writerows({'TAZ_ID': key, 'Inbound': final_data[key]["in"], 'Outbound': final_data[key]["out"]} for key in final_data)
