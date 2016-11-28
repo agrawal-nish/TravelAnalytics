@@ -28,8 +28,10 @@ file_names2=["matrix_1.csv","matrix_2.csv","matrix_3.csv",
              "matrix_22.csv","matrix_23.csv","matrix_24.csv",
              "matrix_25.csv","matrix_26.csv","matrix_27.csv",
              "matrix_28.csv","matrix_29.csv","matrix_30.csv"]
-final_data={}
-for item in file_names2:
+
+new_final_data={}
+for i,item in enumerate(file_names2):
+    final_data={}
     with open("..\\Data\\clean_data"+"\\"+item) as filedata:
         data=csv.reader(filedata)
         headers=next(data)
@@ -54,15 +56,22 @@ for item in file_names2:
                 try:
                     temp1["out"]=final_data[row[0]]["out"]+float(row[6])
                 except:
-                    print("second")
                     temp["out"]=0
                 final_data[row[1]]=temp1;
 
     filedata.close()
 
+    for key in final_data:
+        final_data[key]["in"]=round(final_data[key]["in"])
+        final_data[key]["out"]=round(final_data[key]["out"])
+
+    print("here")
     with open("..\\Data\\clean_data"+"\\"+item) as filedata:
         data=csv.reader(filedata)
         headers=next(data)
+##        curr_dict={"in":0,"out":0,"Home Worker":0,"Inbound Commuter":0,"Short Term Visitor":0,"Long Term Visitor":0,"Resident Worker":0,"Outbound Commuter":0}
+##        curr_dict["in"]=final_data[key]["in"]
+##        curr_dict["out"]=final_data[key]["out"]
         for row in data:
             curr_dict=final_data[row[0]]
             try:
@@ -71,14 +80,21 @@ for item in file_names2:
                 curr_dict[row[4]]=0
             final_data[row[0]]=curr_dict
 
-for key in final_data:
-    final_data[key]["in"]=round(final_data[key]["in"])
-    final_data[key]["out"]=round(final_data[key]["out"])
+        filedata.close()
+    keylist=["Home Worker","Inbound Commuter","Short Term Visitor","Long Term Visitor","Resident Worker","Outbound Commuter"]
+    for key in final_data:
+        curr_list=final_data[key]
+        for item in keylist:
+            if item not in curr_list:
+                curr_list[item]=0
+        final_data[key]=curr_list    
 
-for key in sorted(final_data.keys()):
-    print(key,":",final_data[key])
+##    if(i==0):
+##        print("*******************************************************")
+##        for key in final_data:
+##            print(key, len(final_data[key]))
 
-with open("..\\Data\\InOutZoneData.csv","w",newline='') as new_file:
-    writer = csv.DictWriter(new_file, fieldnames = ["TAZ_ID", "Inbound", "Outbound"])
-    writer.writeheader()
-    writer.writerows({'TAZ_ID': key, 'Inbound': final_data[key]["in"], 'Outbound': final_data[key]["out"]} for key in final_data)
+    with open("..\\Data\\clean_data\\InOutZoneData_day "+str(i+1)+".csv","w",newline='') as new_file:
+        writer = csv.DictWriter(new_file, fieldnames = ["TAZ_ID", "Inbound", "Outbound","Outbound Commuter","Resident Worker","Long Term Visitor","Short Term Visitor","Inbound Commuter","Home Worker"])
+        writer.writeheader()
+        writer.writerows({'TAZ_ID': key, 'Inbound': final_data[key]["in"], 'Outbound': final_data[key]["out"],'Outbound Commuter': final_data[key]["Outbound Commuter"],'Resident Worker': final_data[key]["Resident Worker"],'Long Term Visitor': final_data[key]["Long Term Visitor"],'Short Term Visitor': final_data[key]["Short Term Visitor"],'Inbound Commuter': final_data[key]["Inbound Commuter"],'Home Worker': final_data[key]["Home Worker"]} for key in final_data)
