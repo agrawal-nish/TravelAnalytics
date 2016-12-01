@@ -92,7 +92,7 @@
             <li class="pure-menu-item"></li>
            
             <li class="pure-menu-item"><a href="Index.html" class="pure-menu-link">Visualization 1</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Visualization 2</a></li>
+            <li class="pure-menu-item"><a href="exp.html" class="pure-menu-link">Visualization 2</a></li>
             <li class="pure-menu-item"><a href="About.html" class="pure-menu-link">About</a></li>
             <li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact Us</a></li>
         </ul>
@@ -131,7 +131,7 @@
             <option value="Day28">Day 28</option>
             <option value="Day29">Day 29</option>
             <option value="Day30">Day 30</option>
-            <option value="Day30">Day 30</option>
+            
         </select>
    
         <select id="lstBounds">
@@ -702,7 +702,7 @@
                .style('font-weight', 'bold')
                .style('padding', '12px')
                .style('color', '#fff')
-               .style('border-radius', '2px')
+               .style('border-radius', '2px');
 
                 var workToWork = d3.select('body').append('div')
                 .attr('id', 'workToWorkDiv')
@@ -712,6 +712,21 @@
                 .style('width', '150px')
                 .style("left", "1402px")
                 .style("top", "590px")
+                .style('line-height', 1)
+                .style('font-weight', 'bold')
+                .style('padding', '12px')
+                .style('color', '#fff')
+                .style('border-radius', '2px')
+                map.on("viewreset", reset);
+
+                var time = d3.select('body').append('div')
+                .attr('id', 'timeDiv')
+                .style('position', 'absolute')
+                .style('opacity', 1)
+                .style('background-color', 'black').text('hour: ' + hour)
+                .style('width', '150px')
+                .style("left", "1402px")
+                .style("top", "690px")
                 .style('line-height', 1)
                 .style('font-weight', 'bold')
                 .style('padding', '12px')
@@ -913,7 +928,7 @@
                    }
 
                     )
-                    .style('opacity', 0.7);
+                    .style('opacity', 0.5);
 
 
                     circle2.attr("transform", function (d, i) {
@@ -1103,6 +1118,8 @@
                     svg1.style("background-color", d3.hsl(h, 0.8, 0.8));
                     var abs_hr = Math.floor(h);
                     hour = abs_hr;
+
+                    time.text('Hour: ' + hour);
                     /*d3.selectAll('path').classed('highlightZone', false);
                     var a = 'shour' + hour;
                     console.log(a);
@@ -1207,6 +1224,8 @@
                     showBoundsPurpose = 'showbounds';
                     showHidePurposeDiv('hide');
                     showHideBoundDiv('show');
+                    d3.select("#svg1").classed('hidden', false);
+                    time.classed('hidden', false);
 
                     removePurposeCircles();
                     removeCircles();
@@ -1220,6 +1239,9 @@
                     purpose = 'HW';
                     showHidePurposeDiv('show');
                     showHideBoundDiv('hide');
+                    d3.select("#svg1").classed('hidden', true);
+                    time.classed('hidden', true);
+                    //d3.select('.timeDiv').classed('hidden', true);
 
                     removeCircles();
                     removePurposeCircles();
@@ -1228,11 +1250,13 @@
 
                 }
                 function startAnimation() {
-                    console.log(showBoundsPurpose);
+                    //console.log(showBoundsPurpose);
                     if (showBoundsPurpose == 'showbounds') {
-                        console.log('start show bounds ani is called');
+                        //console.log('start show bounds ani is called');
                         refreshIntervalId = setInterval(setHour, 5000);
+                        
                         hour = 0;
+                        time.text('Hour: ' + hour);
                     }
                     if (showBoundsPurpose == 'showpurpose') {
                         console.log('start show purpose ani is called');
@@ -1253,6 +1277,7 @@
 
                 function setHour() {
                     hour = hour + 1;
+                    time.text('Hour: ' + hour);
                     //console.log(hour);
                     if (hour > 23) {
                         stopAnimation();
