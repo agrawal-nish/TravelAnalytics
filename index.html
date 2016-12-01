@@ -11,7 +11,8 @@
 
     <style type="text/css">
         #map {
-            height: 900px;
+            height: 640px;
+            width: 1400px;
         }
 
         .ticks {
@@ -57,7 +58,8 @@
 
     div.tooltip {
         color: #222;
-        background-color: darkseagreen;
+        /*background-color: darkseagreen;*/
+        background-color:yellow;
         padding: .5em;
         text-shadow: #f5f5f5 0 1px 0;
         border-radius: 2px;
@@ -66,8 +68,8 @@
         width: 300px;
         /*left: 390px;*/
         /*stop: 10px;*/
-        left:850px; 
-        top:10px;
+        left:950px; 
+        top:35px;
     }
     .highlightZone{
      fill: #f7c9c8;
@@ -95,463 +97,495 @@
             <li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact Us</a></li>
         </ul>
     </div>
-    <br/>
-    <br/>
-    <br/>
+   <br/>
+   
 
-    <select id="myList">
-        <option value="Day1">Day 1</option>
-        <option value="Day2">Day 2</option>
-        <option value="Day3">Day 3</option>
-        <option value="Day4">Day 4</option>
-        <option value="Day5">Day 5</option>
-        <option value="Day6">Day 6</option>
-        <option value="Day7">Day 7</option>
-        <option value="Day8">Day 8</option>
-        <option value="Day9">Day 9</option>
-        <option value="Day10">Day 10</option>
-        <option value="Day11">Day 11</option>
-        <option value="Day12">Day 12</option>
-        <option value="Day13">Day 13</option>
-        <option value="Day14">Day 14</option>
-        <option value="Day15">Day 15</option>
-        <option value="Day16">Day 16</option>
-        <option value="Day17">Day 17</option>
-        <option value="Day18">Day 18</option>
-        <option value="Day19">Day 19</option>
-        <option value="Day20">Day 20</option>
-        <option value="Day21">Day 21</option>
-        <option value="Day22">Day 22</option>
-        <option value="Day23">Day 23</option>
-        <option value="Day24">Day 24</option>
-        <option value="Day25">Day 25</option>
-        <option value="Day26">Day 26</option>
-        <option value="Day27">Day 27</option>
-        <option value="Day28">Day 28</option>
-        <option value="Day29">Day 29</option>
-        <option value="Day30">Day 30</option>
-        <option value="Day30">Day 30</option>
-    </select>
-    <select id="lstBounds">
-        <option value="All">All</option>
-        <option value="showInbound">Inbound Trips</option>
-        <option value="showOutbound">Outbound Trips</option>
-    </select>
+        <select id="myList"  class="pure-input-1-2">
+            <option value="Day1">Day 1</option>
+            <option value="Day2">Day 2</option>
+            <option value="Day3">Day 3</option>
+            <option value="Day4">Day 4</option>
+            <option value="Day5">Day 5</option>
+            <option value="Day6">Day 6</option>
+            <option value="Day7">Day 7</option>
+            <option value="Day8">Day 8</option>
+            <option value="Day9">Day 9</option>
+            <option value="Day10">Day 10</option>
+            <option value="Day11">Day 11</option>
+            <option value="Day12">Day 12</option>
+            <option value="Day13">Day 13</option>
+            <option value="Day14">Day 14</option>
+            <option value="Day15">Day 15</option>
+            <option value="Day16">Day 16</option>
+            <option value="Day17">Day 17</option>
+            <option value="Day18">Day 18</option>
+            <option value="Day19">Day 19</option>
+            <option value="Day20">Day 20</option>
+            <option value="Day21">Day 21</option>
+            <option value="Day22">Day 22</option>
+            <option value="Day23">Day 23</option>
+            <option value="Day24">Day 24</option>
+            <option value="Day25">Day 25</option>
+            <option value="Day26">Day 26</option>
+            <option value="Day27">Day 27</option>
+            <option value="Day28">Day 28</option>
+            <option value="Day29">Day 29</option>
+            <option value="Day30">Day 30</option>
+            <option value="Day30">Day 30</option>
+        </select>
+   
+        <select id="lstBounds">
+            <option value="All">All</option>
+            <option value="showInbound">Inbound Trips</option>
+            <option value="showOutbound">Outbound Trips</option>
+        </select>
+    <!--HW, WH, HO, OH, OW, WO, HH, OO, WW-->
+        <select id="lstPurpose">
+            <option value="HW">Hork To Home</option>
+            <option value="WH">Work To Home</option>
+            <option value="HO">Home To Other</option>
+            <option value="OH">Other To Home</option>
+            <option value="OW">Other To Work</option>
+            <option value="WO">Work To Other</option>
+            <option value="HH">Home To Home</option>
+            <option value="OO">Other To Other</option>
+            <option value="WW">Work To Work</option>
+        </select>
 
-    <select id="lstPurpose">
-        <option value="HW">HW</option>
-        <option value="WH">WH</option>
-        <option value="HO">HO</option>
-        <option value="OH">OH</option>
-        <option value="OW">OW</option>
-        <option value="HH">HH</option>
-        <option value="OO">OO</option>
-        <option value="WW">WW</option>
-        <option value="WO">WO</option>
-    </select>
-
-    <button id="btnStartButton" type="button">Start Animation</button>
-    <button id="btnStopButton" type="button">Stop Animation</button>
-    <button id="btnShowPurpose" type="button">Show Purpose</button>
-    <button id="btnShowBounds" type="button">Show Bounds</button>
-
-    <div id="map"></div>
-    <svg id="svg1" width="1280" height="80" ></svg>
-    <style>
-        path {
-            border: solid;
-           /* border-width: 20px;*/
-            /*border-color: darkred;*/
-            fill: black;
-            stroke: gray;
-            /*opacity: 1;*/
-        }
-    </style>
-    <script>
-   var handle;
-    var map = L.map('map').setView([28.54136, -81.36053], 11)
-   .addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
-
-    var svg = d3.select(map.getPanes().overlayPane).append("svg"),
-                g = svg.append("g").attr("class", "leaflet-zoom-hide")
-
-    var tooltip = d3.select('body').append('div')
-            .attr('class', 'hidden tooltip');
-
-    var orlandoData;
-    var zonesData = {};
-    var zonesDataArray = [];
-    var dayData;
-    var purposeData;
-    var hour = 12;
-    var p=-1;
-    var circle1;
-    var circle2;
-    var circle3;
-    var purpose = '';
-    var sHourMax;
-    /*HW, WH, HO, OH, OW, HH, OO, WW, WO*/
-    var purposesArray = ['HW', 'WH', 'HO', 'OW', 'HH', 'OO', 'WW', 'WO'];
-    var showBoundsPurpose = 'showbounds';
-    function loadCsvData(callback)
-    {
-        
-        dayData = {};
-        d3.csv('Day1.csv', function (data) {
-            data.forEach(function (d)
-            {
-                var tazId = d.origin_zone;
-                dayData[tazId] = d;
+        <button id="btnStartButton" type="button" class="pure-button pure-button-primary">Start Animation</button>
+        <button id="btnStopButton" type="button" class="pure-button pure-button-primary">Stop Animation</button>
+        <button id="btnShowPurpose" type="button" class="pure-button pure-button-primary">Show Purpose</button>
+        <button id="btnShowBounds" type="button" class="pure-button pure-button-primary">Show Bounds</button>
+        <br/>
+        <div id="map"></div>
+        <svg id="svg1" width="1400" height="50"></svg>
+        <style>
+            path {
+                border: solid;
+                /* border-width: 20px;*/
+                /*border-color: darkred;*/
+                /*fill: black;*/
+                /*stroke: #3C80A9;*/
+                stroke: gray;
+                /*opacity: 1;*/
+                stroke-width: 2;
+                
+                
             }
-            );
-        });
-        
-        callback(null,dayData)
-    }
+        </style>
+        <script>
+            var handle;
+            var map = L.map('map').setView([28.54136, -81.36053], 11)
+            //.addLayer(new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"));
+            /* L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}',
+             {
+
+             minZoom: 0,
+             maxZoom: 20,
+             ext: 'png'
+             }).addTo(map);*/
+
+            /*L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+
+                minZoom: 0,
+                maxZoom: 20,
+                ext: 'png'
+            }).addTo(map);*/
+
+            /*L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+                minZoom: 0,
+                maxZoom: 13
+            }).addTo(map);*/
+
+            L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+                minZoom: 0,
+                maxZoom: 19
+            }).addTo(map);
+
+            var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+                        g = svg.append("g").attr("class", "leaflet-zoom-hide")
+
+            var tooltip = d3.select('body').append('div')
+                    .attr('class', 'hidden tooltip');
+
+            var orlandoData;
+            var zonesData = {};
+            var zonesDataArray = [];
+            var dayData;
+            var purposeData;
+            var hour = 12;
+            var p = -1;
+            var circle1;
+            var circle2;
+            var circle3;
+            var purpose = '';
+            var sHourMax;
+            /*HW, WH, HO, OH, OW, HH, OO, WW, WO*/
+            var purposesArray = ['HW', 'WH', 'HO', 'OW', 'HH', 'OO', 'WW', 'WO'];
+            var showBoundsPurpose = 'showbounds';
+            var purposeScale = d3.scaleLinear()
+            .domain([0, 3000])
+            .range([0, 350]);
+            
+
+            function loadCsvData(callback) {
+
+                dayData = {};
+                d3.csv('Data/Day1.csv', function (data) {
+                    data.forEach(function (d) {
+                        var tazId = d.origin_zone;
+                        dayData[tazId] = d;
+                    }
+                    );
+                });
+
+                callback(null, dayData)
+            }
 
 
 
-    var q = d3.queue();
-    q.defer(loadCsvData)
-        q.await(function (error, dayData) {
-            if (error) throw error;
+            var q = d3.queue();
+            q.defer(loadCsvData)
+            q.await(function (error, dayData) {
+                if (error) throw error;
 
-            purposeData = {};
-            d3.csv('Day1Purpose.csv', function (data) {
-                data.forEach(function (d) {
+                purposeData = {};
+                d3.csv('Data/Day1Purpose.csv', function (data) {
+                    data.forEach(function (d) {
+
+                        var tazId = d.origin_zone;
+                        purposeData[tazId] = d;
+                    }
+                    );
+
+                    loadJson();
+                });
+
+                /*sHourMax = [];
+                d3.csv('Day1Shour.csv', function (data) {
+
+                    console.log(data);
+                    data.forEach(function (d) {
+                        sHourMax = d;
+                    });
+                    console.log(sHourMax.shour0);
+
+                });*/
+
+                //loadJson();
+            });
+
+            function loadJson() {
+
+                d3.json('Data/OrlandoGeoJ.json', function (error, data) {
+                    orlandoData = data;
+                    var centroids = [];
+
+                    orlandoData.features.forEach(function (d, i) {
+                        var centroid = d3.geoCentroid(d.geometry);
+                        centroids.push(centroid);
+
+                        var zone = { tazId: d.properties.TAZ_ID, centroid: centroid }
+                        zonesDataArray.push(zone);
+                    });
+                    drawMap(orlandoData, centroids);
+                });
+            }
+            function drawMap(orlandoData, centroids) {
+
+                var transform = d3.geoTransform({ point: projectPoint }),
+                   path = d3.geoPath().projection(transform);
+
+                var feature = g.selectAll("path")
+                 .data(orlandoData.features)
+                 .enter().append("path")
+                 .attr('id', function (d) {
+
+                     return d.properties.TAZ_ID;
+                 })
+                .on('mouseover', function (d) {
+
+                    d3.select(this)
+                    .style("stroke", "#02137f")
+                    .attr("stroke-width", "1")
+                    .style("fill-opacity", 0.9)
+                    .style("fill", '#444b77')
+
+                    var mouse = d3.mouse(svg.node()).map(function (d) {
+                        return parseInt(d);
+                    });
+
+                    tooltip.classed('hidden', false)
+                     //.attr('style', 'left:' + (mouse[0] + 15) +
+                      //              'px; top:' + (mouse[1] - 35) + 'px')
+                       //.attr('style', 'left:350px; top:10px')
+                     .html('County: ' + d.properties.COUNTY + '<br/>Taz ID: ' + d.properties.TAZ_ID)
+
+                    var tazId = d.properties.TAZ_ID;
+
+                    if (showBoundsPurpose == 'showbounds') {
+                        if (hour == 0) {
+
+                            inbound.text('Inbound: ' + dayData[tazId].dhour0)
+                            outbound.text('Outbound: ' + dayData[tazId].shour0)
+
+                        }
+                        else if (hour == 1) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour1)
+                            outbound.text('Outbound: ' + dayData[tazId].shour1)
+
+                        }
+                        else if (hour == 2) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour2)
+                            outbound.text('Outbound: ' + dayData[tazId].shour2)
+
+                        }
+                        else if (hour == 3) {
+
+                            inbound.text('Inbound: ' + dayData[tazId].dhour3)
+                            outbound.text('Outbound: ' + dayData[tazId].shour3)
+
+                        }
+                        else if (hour == 4) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour4)
+                            outbound.text('Outbound: ' + dayData[tazId].shour4)
+                        }
+                        else if (hour == 5) {
+
+                            inbound.text('Inbound: ' + dayData[tazId].dhour5)
+                            outbound.text('Outbound: ' + dayData[tazId].shour5)
+                        }
+                        else if (hour == 6) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour6)
+                            outbound.text('Outbound: ' + dayData[tazId].shour6)
+
+                        }
+                        else if (hour == 7) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour7)
+                            outbound.text('Outbound: ' + dayData[tazId].shour7)
+                        }
+                        else if (hour == 8) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour8)
+                            outbound.text('Outbound: ' + dayData[tazId].shour8)
+                        }
+                        else if (hour == 9) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour9)
+                            outbound.text('Outbound: ' + dayData[tazId].shour9)
+                        }
+                        else if (hour == 10) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour10)
+                            outbound.text('Outbound: ' + dayData[tazId].shour10)
+                        }
+                        else if (hour == 11) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour11)
+                            outbound.text('Outbound: ' + dayData[tazId].shour11)
+                        }
+                        else if (hour == 12) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour12)
+                            outbound.text('Outbound: ' + dayData[tazId].shour12)
+                        }
+                        else if (hour == 13) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour13)
+                            outbound.text('Outbound: ' + dayData[tazId].shour13)
+                        }
+                        else if (hour == 14) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour14)
+                            outbound.text('Outbound: ' + dayData[tazId].shour14)
+                        }
+                        else if (hour == 15) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour15)
+                            outbound.text('Outbound: ' + dayData[tazId].shour15)
+
+                        }
+                        else if (hour == 16) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour16)
+                            outbound.text('Outbound: ' + dayData[tazId].shour16)
+                        }
+                        else if (hour == 17) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour17)
+                            outbound.text('Outbound: ' + dayData[tazId].shour17)
+                        }
+                        else if (hour == 18) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour18)
+                            outbound.text('Outbound: ' + dayData[tazId].shour18)
+                        }
+                        else if (hour == 19) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour19)
+                            outbound.text('Outbound: ' + dayData[tazId].shour19)
+                        }
+                        else if (hour == 20) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour20)
+                            outbound.text('Outbound: ' + dayData[tazId].shour20)
+                        }
+                        else if (hour == 21) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour21)
+                            outbound.text('Outbound: ' + dayData[tazId].shour21)
+                        }
+                        else if (hour == 22) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour22)
+                            outbound.text('Outbound: ' + dayData[tazId].shour22)
+                        }
+                        else if (hour == 23) {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour23)
+                            outbound.text('Outbound: ' + dayData[tazId].shour23)
+                        }
+                        else {
+                            inbound.text('Inbound: ' + dayData[tazId].dhour0)
+                            outbound.text(dayData[tazId].shour0)
+                        }
+                    }
+                 
+                    if (showBoundsPurpose == 'showpurpose') {
+                        if (purpose == 'HW') {
+                            console.log(purposeData[tazId].HW);
+                            homeToWork.text('Home To Work: ' + purposeData[tazId].HW);
+                        }
+                        else if (purpose == 'WH') {
+                            console.log(purposeData[tazId].WH);
+                            workToHome.text('Work To Home: ' + purposeData[tazId].WH);
+                        }
+                        else if (purpose == 'HO') {
+                            console.log(purposeData[tazId].HO);
+                            homeToOther.text('Other To Home: ' +purposeData[tazId].HO);
+                        }
+                        else if (purpose == 'OH') {
+                            console.log(purposeData[tazId].OH);
+                            otherToHome.text('Other To Home: ' + purposeData[tazId].OH);
+                        }
+                        else if (purpose == 'OW') {
+                            console.log(purposeData[tazId].OW);
+                            otherToWork.text('Other To Work: '+ purposeData[tazId].OW);
+                        }
+                        else if (purpose == 'WO') {
+                            console.log(purposeData[tazId].WO);
+                            workToOther.text('Work To Other: ' + purposeData[tazId].WO);
+                        }
+                        else if (purpose == 'HH') {
+                            console.log(purposeData[tazId].HH);
+                            homeToHome.text('Home To Home: ' + purposeData[tazId].HH);
+                        }
+                        else if (purpose == 'OO') {
+                            console.log(purposeData[tazId].OO);
+                            otherToOther.text('Other To Other: ' + purposeData[tazId].OO);
+                        }
+                        else if (purpose == 'WW') {
+                            console.log(purposeData[tazId].WW);
+                            workToWork.text('Work To Work: ' + purposeData[tazId].WW);
+                        }
+
+                    }
+                })
+                .on('mouseout', function (d) {
+                    d3.select(this)
+                    .style("stroke", "gray")
+                    .attr("stroke-width", "1")
+                    .style("fill-opacity", 0.3)
+                    .style("fill", 'black');
+
+                    tooltip.classed('hidden', true);
+                    if (showBoundsPurpose == 'showbounds') {
+                        inbound.text('Inbound');
+                        outbound.text('Outbound');
+                    }
                     
-                    var tazId = d.origin_zone;
-                    purposeData[tazId] = d;
-                }
-                );
-                
-                loadJson();
-            });
+                    if (showBoundsPurpose == 'showpurpose') {
+                        if (purpose == 'HW') {
 
-            sHourMax = [];
-            d3.csv('Day1Shour.csv', function (data) {
-
-                console.log(data);
-                data.forEach(function (d) {
-                    sHourMax = d;
-                });
-                console.log(sHourMax.shour0);
-
-            });
-            
-            //loadJson();
-        });
-
-        function loadJson()
-        {
-            
-            d3.json('OrlandoGeoJ.json', function (error, data) {
-                orlandoData = data;
-                var centroids = [];
-
-                orlandoData.features.forEach(function (d, i) {
-                    var centroid = d3.geoCentroid(d.geometry);
-                    centroids.push(centroid);
-
-                    var zone = { tazId: d.properties.TAZ_ID, centroid: centroid }
-                    zonesDataArray.push(zone);
-                });
-                drawMap(orlandoData, centroids);
-            });
-        }
-        function drawMap(orlandoData, centroids) {
-
-            var transform = d3.geoTransform({ point: projectPoint }),
-               path = d3.geoPath().projection(transform);
-
-            var feature = g.selectAll("path")
-             .data(orlandoData.features)
-             .enter().append("path")
-             .attr('id', function (d) {
-
-                 return d.properties.TAZ_ID;
-             })
-            .on('mouseover', function (d) {
-               
-                d3.select(this)
-                .style("stroke", "blue")
-                .attr("stroke-width", "1")
-                .style("fill-opacity", 0.5)
-                           
-                var mouse = d3.mouse(svg.node()).map(function (d) {
-                    return parseInt(d);
-                });
-
-                tooltip.classed('hidden', false)
-                 //.attr('style', 'left:' + (mouse[0] + 15) +
-                  //              'px; top:' + (mouse[1] - 35) + 'px')
-                   //.attr('style', 'left:350px; top:10px')
-                 .html('County: ' +d.properties.COUNTY + '<br/>Taz ID: ' + d.properties.TAZ_ID)
-                        
-                var tazId = d.properties.TAZ_ID;
-                
-                if (showBoundsPurpose == 'showbounds') {
-                    if (hour == 0) {
-                       
-                        inbound.text(dayData[tazId].dhour0)
-                        outbound.text(dayData[tazId].shour0)
-                        
-                    }
-                    else if (hour == 1)
-                    {
-                        inbound.text(dayData[tazId].dhour1)
-                        outbound.text(dayData[tazId].shour1)
-                        
-                    }
-                    else if (hour == 2)
-                    {
-                        inbound.text(dayData[tazId].dhour2)
-                        outbound.text(dayData[tazId].shour2)
-                       
-                    }
-                    else if (hour == 3) {
-                       
-                        inbound.text(dayData[tazId].dhour3)
-                        outbound.text(dayData[tazId].shour3)
-                      
-                    }
-                    else if (hour == 4) {
-                        inbound.text(dayData[tazId].dhour4)
-                        outbound.text(dayData[tazId].shour4)
-                    }
-                    else if (hour == 5) {
-                       
-                        inbound.text(dayData[tazId].dhour5)
-                        outbound.text(dayData[tazId].shour5)
-                    }
-                    else if (hour == 6) {
-                        inbound.text(dayData[tazId].dhour6)
-                        outbound.text(dayData[tazId].shour6)
-                        
-                    }
-                    else if (hour == 7) {
-                        inbound.text(dayData[tazId].dhour7)
-                        outbound.text(dayData[tazId].shour7)
-                    }
-                    else if (hour == 8) {
-                        inbound.text(dayData[tazId].dhour8)
-                        outbound.text(dayData[tazId].shour8)
-                    }
-                    else if (hour == 9) {
-                        inbound.text(dayData[tazId].dhour9)
-                        outbound.text(dayData[tazId].shour9)
-                    }
-                    else if (hour == 10) {
-                        inbound.text(dayData[tazId].dhour10)
-                        outbound.text(dayData[tazId].shour10)
-                    }
-                    else if (hour == 11) {
-                        inbound.text(dayData[tazId].dhour11)
-                        outbound.text(dayData[tazId].shour11)
-                    }
-                    else if (hour == 12) {
-                        inbound.text(dayData[tazId].dhour12)
-                        outbound.text(dayData[tazId].shour12)
-                    }
-                    else if (hour == 13) {
-                        inbound.text(dayData[tazId].dhour13)
-                        outbound.text(dayData[tazId].shour13)
-                    }
-                    else if (hour == 14) {
-                        inbound.text(dayData[tazId].dhour14)
-                        outbound.text(dayData[tazId].shour14)
-                    }
-                    else if (hour == 15) {
-                        inbound.text(dayData[tazId].dhour15)
-                        outbound.text(dayData[tazId].shour15)
+                            homeToWork.text('Home To Work');
+                        }
+                        else if (purpose == 'WH') {
+                            workToHome.text('Work To Home');
+                        }
+                        else if (purpose == 'HO') {
+                            homeToOther.text('Home To Other');
+                        }
+                        else if (purpose == 'OH') {
+                            otherToHome.text('Other To Home');
+                        }
+                        else if (purpose == 'OW') {
+                            otherToWork.text('Other To Work');
+                        }
+                        else if (purpose == 'WO') {
+                            workToOther.text('Work To Other');
+                        }
+                        else if (purpose == 'HH') {
+                            homeToHome.text('Home To Home');
+                        }
+                        else if (purpose == 'OO') {
+                            otherToOther.text('Other To Other');
+                        }
+                        else if (purpose == 'WW') {
+                            workToWork.text('Work To Work');
+                        }
 
                     }
-                    else if (hour == 16) {
-                        inbound.text(dayData[tazId].dhour16)
-                        outbound.text(dayData[tazId].shour16)
-                    }
-                    else if (hour == 17) {
-                        inbound.text(dayData[tazId].dhour17)
-                        outbound.text(dayData[tazId].shour17)
-                    }
-                    else if (hour == 18) {
-                        inbound.text(dayData[tazId].dhour18)
-                        outbound.text(dayData[tazId].shour18)
-                    }
-                    else if (hour == 19) {
-                        inbound.text(dayData[tazId].dhour19)
-                        outbound.text(dayData[tazId].shour19)
-                    }
-                    else if (hour == 20) {
-                        inbound.text(dayData[tazId].dhour20)
-                        outbound.text(dayData[tazId].shour20)
-                    }
-                    else if (hour == 21) {
-                        inbound.text(dayData[tazId].dhour21)
-                        outbound.text(dayData[tazId].shour21)
-                    }
-                    else if (hour == 22) {
-                        inbound.text(dayData[tazId].dhour22)
-                        outbound.text(dayData[tazId].shour22)
-                    }
-                    else if (hour == 23) {
-                        inbound.text(dayData[tazId].dhour23)
-                        outbound.text(dayData[tazId].shour23)
-                    }
-                    else {
-                        inbound.text(dayData[tazId].dhour0)
-                        outbound.text(dayData[tazId].shour0)
-                    }
-                }
-                if(showBoundsPurpose=='showpurpose')
-                {
-                    if (purpose == 'HW') {
-                        console.log(purposeData[tazId].HW);
-                        homeToWork.text(purposeData[tazId].HW);
-                    }
-                    else if (purpose == 'WH') {
-                        console.log(purposeData[tazId].WH);
-                        workToHome.text(purposeData[tazId].WH);
-                    }
-                    else if (purpose == 'HO') {
-                        console.log(purposeData[tazId].HO);
-                        homeToOther.text(purposeData[tazId].HO);
-                    }
-                    else if (purpose == 'OH') {
-                        console.log(purposeData[tazId].OH);
-                        otherToHome.text(purposeData[tazId].OH);
-                    }
-                    else if (purpose == 'OW') {
-                        console.log(purposeData[tazId].OW);
-                        otherToWork.text(purposeData[tazId].OW);
-                    }
-                    else if (purpose == 'WO') {
-                        console.log(purposeData[tazId].WO);
-                        workToOther.text(purposeData[tazId].WO);
-                    }
-                    else if (purpose == 'HH') {
-                        console.log(purposeData[tazId].HH);
-                        homeToHome.text(purposeData[tazId].HH);
-                    }
-                    else if (purpose == 'OO') {
-                        console.log(purposeData[tazId].OO);
-                        otherToOther.text(purposeData[tazId].OO);
-                    }
-                    else if (purpose == 'WW') {
-                        console.log(purposeData[tazId].WW);
-                        workToWork.text(purposeData[tazId].WW);
-                    }
-                   
-                }
-            })
-            .on('mouseout', function (d) {
-                d3.select(this)
-                .style("stroke", "gray")
-                .attr("stroke-width", "1")
-                .style("fill-opacity", 1)
-                tooltip.classed('hidden', true);
-                if (showBoundsPurpose == 'showbounds')
-                {
-                    inbound.text('Inbound');
-                    outbound.text('Outbound');
-                }
-                if (showBoundsPurpose == 'showpurpose') {
-                    if (purpose == 'HW') {
-                       
-                        homeToWork.text('Home To Work');
-                    }
-                    else if (purpose == 'WH') {
-                        workToHome.text('Work To Home');
-                    }
-                    else if (purpose == 'HO') {
-                        homeToOther.text('Home To Other');
-                    }
-                    else if (purpose == 'OH') {
-                        otherToHome.text('Other To Home');
-                    }
-                    else if (purpose == 'OW') {
-                        otherToWork.text('Other To Work');
-                    }
-                    else if (purpose == 'WO') {
-                        workToOther.text('Work To Other');
-                    }
-                    else if (purpose == 'HH') {
-                        homeToHome.text('Home To Home');
-                    }
-                    else if (purpose == 'OO') {
-                        otherToOther.text('Other To Other');
-                    }
-                    else if (purpose == 'WW') {
-                        workToWork.text('Work To Work');
-                    }
-                   
-                }
 
-            })
+                })
 
-            var cords = [];
-            centroids.forEach(function (d) {
-                var cord = new L.LatLng(d[1], d[0]);
-                cords.push(cord);
-            })
-            zonesDataArray.forEach(function (d) {
-                d.centroid = new L.LatLng(d.centroid[1], d.centroid[0]);
+                var cords = [];
+                centroids.forEach(function (d) {
+                    var cord = new L.LatLng(d[1], d[0]);
+                    cords.push(cord);
+                })
+                zonesDataArray.forEach(function (d) {
+                    d.centroid = new L.LatLng(d.centroid[1], d.centroid[0]);
 
-            })
+                })
 
-            
-            circle1 = g.selectAll("#circle1")
-            .data(zonesDataArray)
-            .enter().append("circle")
-            .style("stroke", "black")
-            .style("fill", "red")
-            .attr('id', 'circle1')
 
-            circle2 = g.selectAll("#circle2")
-             .data(zonesDataArray)
-             .enter().append("circle")
-             .style("stroke", "black")
-             .style("fill", "green")
-             .attr('id', 'circle2')
-             .on("mouseover", function (d, i) {
-                 d3.select(this)
-                .transition()
-                .attr('fill', 'purple')
+                circle1 = g.selectAll("#circle1")
+                .data(zonesDataArray)
+                .enter().append("circle")
+                .style("stroke", "black")
+                .style("fill", "red")
+                .attr('id', 'circle1')
 
-             });
-              
-            purpose = 'HW';
-            //if (showBoundsPurpose == 'showpurpose');
-            //{
+                circle2 = g.selectAll("#circle2")
+                 .data(zonesDataArray)
+                 .enter().append("circle")
+                 .style("stroke", "black")
+                 .style("fill", "green")
+                 .attr('id', 'circle2')
+                 .on("mouseover", function (d, i) {
+                     d3.select(this)
+                    .transition()
+                    .attr('fill', 'purple')
+
+                 });
+
+                purpose = 'HW';
+                //if (showBoundsPurpose == 'showpurpose');
+                //{
                 circle3 = g.selectAll("#circle3")
                     .data(zonesDataArray)
                     .enter().append("circle")
                     .style("stroke", "black")
                     .style("fill", "blue")
                     .attr('id', 'circle3');
-            //}
-                var inbound = d3.select('body').append('div')
+                //}
+             var inbound = d3.select('body').append('div')
             .attr('id', 'inboundDiv')
             .style('position', 'absolute')
             .style('opacity', 1)
             .style('background-color', 'green').text('Inbound')
-            .style('width', '110px')
-            .style("left", "20px")
-            .style("top", "1050px")
+            .style('width', '150px')
+            .style("left", "1402px")
+            .style("top", "90px")
             .style('line-height', 1)
             .style('font-weight', 'bold')
             .style('padding', '12px')
             .style('color', '#fff')
             .style('border-radius', '2px')
+            .style('opacity', '0.4');
 
                 var outbound = d3.select('body').append('div')
                .attr('id', 'outBoundDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
                .style('background-color', 'red').text('Outbound')
-               .style('width', '110px')
-               .style("left", "160px")
-               .style("top", "1050px")
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "140px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -563,23 +597,23 @@
                      .style('position', 'absolute')
                      .style('opacity', 1)
                      .style('background-color', 'orange').text('Home To Work')
-                     .style('width', '110px')
-                     .style("left", "1290px")
-                     .style("top", "950px")
+                     .style('width', '150px')
+                     .style("left", "1402px")
+                     .style("top", "190px")
                      .style('line-height', 1)
                      .style('font-weight', 'bold')
                      .style('padding', '12px')
                      .style('color', '#fff')
-                     .style('border-radius', '2px')
+                     .style('border-radius', '2px');
 
                 var workToHome = d3.select('body').append('div')
                .attr('id', 'workToHomeDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Work To Home')
-               .style('width', '110px')
-               .style("left", "1430px")
-               .style("top", "950px")
+               .style('background-color', '#c13819').text('Work To Home')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "240px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -590,10 +624,10 @@
                 .attr('id', 'homeToOtherDiv')
                 .style('position', 'absolute')
                 .style('opacity', 1)
-                .style('background-color', 'orange').text('Home To Other')
-                .style('width', '110px')
-                .style("left", "1570px")
-                .style("top", "950px")
+                .style('background-color', '#4cd323').text('Home To Other')
+                .style('width', '150px')
+                .style("left", "1402px")
+                .style("top", "290px")
                 .style('line-height', 1)
                 .style('font-weight', 'bold')
                 .style('padding', '12px')
@@ -604,26 +638,24 @@
                .attr('id', 'otherToHomeDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Other To Home')
-               .style('width', '110px')
-               .style("left", "1710px")
-               .style("top", "950px")
+               .style('background-color', '#80f7ef').text('Other To Home')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "340px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
                .style('color', '#fff')
                .style('border-radius', '2px')
 
-
-
                 var otherToWork = d3.select('body').append('div')
                .attr('id', 'otherToWorkDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Home To Work')
-               .style('width', '110px')
-               .style("left", "1850px")
-               .style("top", "950px")
+               .style('background-color', '#f29d98').text('Other To Work')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "390px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -634,10 +666,10 @@
                .attr('id', 'workToOtherDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Work To Other')
-               .style('width', '110px')
-               .style("left", "1990px")
-               .style("top", "950px")
+               .style('background-color', 'blue').text('Work To Other')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "440px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -648,10 +680,10 @@
                .attr('id', 'homeToHomeDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Home To Home')
-               .style('width', '110px')
-               .style("left", "2130px")
-               .style("top", "950px")
+               .style('background-color', '#5c0572').text('Home To Home')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "490px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -662,10 +694,10 @@
                .attr('id', 'otherToOtherDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', 'orange').text('Other To Work')
-               .style('width', '110px')
-               .style("left", "2270px")
-               .style("top", "950px")
+               .style('background-color', '#E9967A').text('Other To Work')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "540px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
@@ -676,26 +708,27 @@
                 .attr('id', 'workToWorkDiv')
                 .style('position', 'absolute')
                 .style('opacity', 1)
-                .style('background-color', 'orange').text('Work To Work')
-                .style('width', '110px')
-                .style("left", "2410px")
-                .style("top", "950px")
+                .style('background-color', '#8FBC8F').text('Work To Work')
+                .style('width', '150px')
+                .style("left", "1402px")
+                .style("top", "590px")
                 .style('line-height', 1)
                 .style('font-weight', 'bold')
                 .style('padding', '12px')
                 .style('color', '#fff')
                 .style('border-radius', '2px')
-            map.on("viewreset", reset);
-            reset();
+                map.on("viewreset", reset);
+                reset();
 
-            function reset() {
+               
+                function reset() {
 
-                var bounds = path.bounds(orlandoData),
-                             topLeft = bounds[0],
-                             bottomRight = bounds[1];
+                    var bounds = path.bounds(orlandoData),
+                                 topLeft = bounds[0],
+                                 bottomRight = bounds[1];
 
-                                
-                //if (showBoundsPurpose == 'showpurpose') {
+
+                    //if (showBoundsPurpose == 'showpurpose') {
                     circle3.attr("transform", function (d, i) {
                         return "translate(" +
                         map.latLngToLayerPoint(d.centroid).x + "," +
@@ -703,28 +736,27 @@
                     })
                     .transition().duration(3000)
                    .style("fill", function (d, i) {
-
-                       
+                                         
                        if (purpose == 'HW') {
                            return 'orange';
                        }
                        else if (purpose == 'WH') {
-                           return '#DAA520';
+                           return '#c13819';
                        }
                        else if (purpose == 'HO') {
-                           return '#FAEBD7'
+                           return '#4cd323'
                        }
                        else if (purpose == 'OH') {
-                           return '#FF7F50';
+                           return '#80f7ef';
                        }
                        else if (purpose == 'OW') {
-                           return '#00FFFF';
+                           return '#f29d98';
                        }
                        else if (purpose == 'WO') {
                            return 'blue';
                        }
                        else if (purpose == 'HH') {
-                           return '	#FF00FF';
+                           return '	#5c0572';
                        }
                        else if (purpose == 'OO') {
                            return '#E9967A';
@@ -732,7 +764,7 @@
                        else if (purpose == 'WW') {
                            return '#8FBC8F';
                        }
-                       
+
                    })
                    .transition().duration(3000)
                    .attr("r", function (d) {
@@ -765,25 +797,25 @@
                                return purposeData[tazId].HH;
                            }
                            else if (purpose == 'OO') {
-                               return purposeData[tazId].OO;
+                               return purposeScale(purposeData[tazId].OO);
                            }
                            else if (purpose == 'WW') {
                                return purposeData[tazId].WW;
                            }
-                         
+
 
                        }
 
                    })
                    .style('opacity', 0.4);
-                //}// end of IF;
+                    //}// end of IF;
 
                     circle1.attr("transform", function (d, i) {
                         return "translate(" +
                         map.latLngToLayerPoint(d.centroid).x + "," +
                         map.latLngToLayerPoint(d.centroid).y + ")";
                     })
-                   
+
                     .transition().duration(3000)
                    .attr("r", function (d) {
                        var tazId = d.tazId;
@@ -873,548 +905,523 @@
                    }
 
                     )
-                    .style('opacity', 0.4);
-                
+                    .style('opacity', 0.7);
 
-                circle2.attr("transform", function (d, i) {
-                    return "translate(" +
-                    map.latLngToLayerPoint(d.centroid).x + "," +
-                    map.latLngToLayerPoint(d.centroid).y + ")";
-                })
-                .transition().duration(3000)
-               .attr("r", function (d) {
-                   var tazId = d.tazId;
 
-                   if (dayData[tazId] == undefined || dayData[tazId] == null) {
+                    circle2.attr("transform", function (d, i) {
+                        return "translate(" +
+                        map.latLngToLayerPoint(d.centroid).x + "," +
+                        map.latLngToLayerPoint(d.centroid).y + ")";
+                    })
+                    .transition().duration(3000)
+                   .attr("r", function (d) {
+                       var tazId = d.tazId;
 
-                       return 0;
-                   }
-                   else {
+                       if (dayData[tazId] == undefined || dayData[tazId] == null) {
 
-                       if (hour == 0) {
-                           return dayData[tazId].dhour0;
-                       }
-                       else if (hour == 1) {
-                           return dayData[tazId].dhour1;
-                       }
-                       else if (hour == 2) {
-                           return dayData[tazId].dhour2;
-                       }
-                       else if (hour == 3) {
-                           return dayData[tazId].dhour3;
-                       }
-                       else if (hour == 4) {
-                           return dayData[tazId].dhour4;
-                       }
-                       else if (hour == 5) {
-                           return dayData[tazId].dhour5;
-                       }
-                       else if (hour == 6) {
-                           return dayData[tazId].dhour6;
-                       }
-                       else if (hour == 7) {
-                           return dayData[tazId].dhour7;
-                       }
-                       else if (hour == 8) {
-                           return dayData[tazId].dhour8;
-                       }
-                       else if (hour == 9) {
-                           return dayData[tazId].dhour9;
-                       }
-                       else if (hour == 10) {
-                           return dayData[tazId].dhour10;
-                       }
-                       else if (hour == 11) {
-                           return dayData[tazId].dhour11;
-                       }
-                       else if (hour == 12) {
-                           return dayData[tazId].dhour12;
-                       }
-                       else if (hour == 13) {
-                           return dayData[tazId].dhour13;
-                       }
-                       else if (hour == 14) {
-                           return dayData[tazId].dhour14;
-                       }
-                       else if (hour == 15) {
-                           return dayData[tazId].dhour15;
-
-                       }
-                       else if (hour == 16) {
-                           return dayData[tazId].dhour16;
-                       }
-                       else if (hour == 17) {
-                           return dayData[tazId].dhour17;
-                       }
-                       else if (hour == 18) {
-                           return dayData[tazId].dhour18;
-                       }
-                       else if (hour == 19) {
-                           return dayData[tazId].dhour19;
-                       }
-                       else if (hour == 20) {
-                           return dayData[tazId].dhour20;
-                       }
-                       else if (hour == 21) {
-                           return dayData[tazId].dhour21;
-                       }
-                       else if (hour == 22) {
-                           return dayData[tazId].dhour22;
-                       }
-                       else if (hour == 23) {
-                           return dayData[tazId].dhour23;
+                           return 0;
                        }
                        else {
-                           return dayData[tazId].dhour1;
+
+                           if (hour == 0) {
+                               return dayData[tazId].dhour0;
+                           }
+                           else if (hour == 1) {
+                               return dayData[tazId].dhour1;
+                           }
+                           else if (hour == 2) {
+                               return dayData[tazId].dhour2;
+                           }
+                           else if (hour == 3) {
+                               return dayData[tazId].dhour3;
+                           }
+                           else if (hour == 4) {
+                               return dayData[tazId].dhour4;
+                           }
+                           else if (hour == 5) {
+                               return dayData[tazId].dhour5;
+                           }
+                           else if (hour == 6) {
+                               return dayData[tazId].dhour6;
+                           }
+                           else if (hour == 7) {
+                               return dayData[tazId].dhour7;
+                           }
+                           else if (hour == 8) {
+                               return dayData[tazId].dhour8;
+                           }
+                           else if (hour == 9) {
+                               return dayData[tazId].dhour9;
+                           }
+                           else if (hour == 10) {
+                               return dayData[tazId].dhour10;
+                           }
+                           else if (hour == 11) {
+                               return dayData[tazId].dhour11;
+                           }
+                           else if (hour == 12) {
+                               return dayData[tazId].dhour12;
+                           }
+                           else if (hour == 13) {
+                               return dayData[tazId].dhour13;
+                           }
+                           else if (hour == 14) {
+                               return dayData[tazId].dhour14;
+                           }
+                           else if (hour == 15) {
+                               return dayData[tazId].dhour15;
+
+                           }
+                           else if (hour == 16) {
+                               return dayData[tazId].dhour16;
+                           }
+                           else if (hour == 17) {
+                               return dayData[tazId].dhour17;
+                           }
+                           else if (hour == 18) {
+                               return dayData[tazId].dhour18;
+                           }
+                           else if (hour == 19) {
+                               return dayData[tazId].dhour19;
+                           }
+                           else if (hour == 20) {
+                               return dayData[tazId].dhour20;
+                           }
+                           else if (hour == 21) {
+                               return dayData[tazId].dhour21;
+                           }
+                           else if (hour == 22) {
+                               return dayData[tazId].dhour22;
+                           }
+                           else if (hour == 23) {
+                               return dayData[tazId].dhour23;
+                           }
+                           else {
+                               return dayData[tazId].dhour1;
+                           }
                        }
-                   }
-               })
-                .style('opacity', 0.4);
-
-             
-                if (showBoundsPurpose == 'showbounds')
-                {
-                    removePurposeCircles();
-                    showHidePurposeDiv('hide');
-                }
-
-                svg.attr("width", bottomRight[0] - topLeft[0])
-                .attr("height", bottomRight[1] - topLeft[1])
-                .style("left", topLeft[0] + "px")
-                .style("top", topLeft[1] + "px");
-                g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
-
-                feature.attr("d", path)
-                .style("fill-opacity", 1)
-
-            }
-
-            function projectPoint(x, y) {
-                var point = map.latLngToLayerPoint(new L.LatLng(y, x));
-                this.stream.point(point.x, point.y);
-            }
-            var svg1 = d3.select("#svg1"),
-            margin = { right: 20, left: 20 },
-            //margin = { right: 10, left: 10 };
-            width = +svg1.attr("width")
-            //-margin.left - margin.right,
-            - margin.left - margin.right,
-            height = +svg1.attr("height");
-
-            d3.select("#svg1")
-           .append("text")
-           .text("Time (Hours)").attr("text-anchor", "middle")
-                                  .attr("x", 500)
-                                  .attr("y", 65)
-                                  .style('font-weight', 'bold')
-                                  .attr("font-family", "sans-serif")
-                                  .attr("font-size", "15px")
-                                  .attr("fill", "black");
-            var x = d3.scaleLinear()
-            .domain([0, 24])
-            .range([10,width-20])
-            .clamp(true);
-
-            
-            
-
-            var slider = svg1.append("g")
-                .attr("class", "slider")
-                .attr("transform", "translate(" + margin.left + "," + height / 10 + ")");
-
-            slider.append("line")
-                .attr("class", "track")
-                .attr("x1", x.range()[0])
-                .attr("x2", x.range()[1])
-              .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
-                .attr("class", "track-inset")
-              .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
-                .attr("class", "track-overlay")
-                .call(d3.drag()
-                    .on("start.interrupt", function () { slider.interrupt(); })
-                    .on("start drag", function () { hue(x.invert(d3.event.x)); })
-                    );
-
-            slider.insert("g", ".track-overlay")
-                .attr("class", "ticks")
-                .attr("transform", "translate(0," + 24 + ")")
-              .selectAll("text")
-              .data(x.ticks(24))
-              .enter().append("text")
-                .attr("x", x)
-                .attr("text-anchor", "middle")
-                .style("font-size", "25px")
-                .text(function (d) { return d; });
+                   })
+                    .style('opacity', 0.4);
 
 
-            handle = slider.insert("circle", ".track-overlay")
-                .attr("class", "handle")
-                .attr("r", 9);
-
-            slider.transition() 
-                .duration(750)
-                .tween("hue", function () {
-
-                    var i = d3.interpolate(0, 0);
-                    return function (t) { hue(i(t)); };
-
-                })
-
-            function hue(h) {
-                handle.attr("cx", x(h));
-                svg1.style("background-color", d3.hsl(h, 0.8, 0.8));
-                var abs_hr = Math.floor(h);
-                hour = abs_hr;
-                d3.selectAll('path').classed('highlightZone', false);
-                var a='shour'+hour;
-                console.log(a);
-                var b=sHourMax[a];
-                //d3.select('[id="1011"]').classed('highlightZone', true);
-                var c = '[id="' + b + '"]';
-                d3.select(c).classed('highlightZone', true);
-
-                console.log(hour)
-                //removeCircles();
-                //drawCircles();
-                /*d3.selectAll('#circle1').remove();
-                d3.selectAll('#circle2').remove();*/
-
-                //circle2.attr('r', 10);
-
-                /*circle1 = g.selectAll("#circle1")
-                .data(zonesDataArray)
-                .enter().append("circle")
-                .style("stroke", "black")
-                .style("fill", "red")
-                .attr('id', 'circle1')
-
-                circle2 = g.selectAll("#circle2")
-               .data(zonesDataArray)
-               .enter().append("circle")
-               .style("stroke", "black")
-               .style("fill", "green")
-               .attr('id', 'circle2')*/
-                reset();
-            }
-
-            function showHidePurposeDiv(bool) {
-
-                if(bool=='show')
-                {
-                    homeToWork.classed('hidden', false);
-                    workToHome.classed('hidden', false);
-                    homeToOther.classed('hidden', false);
-                    otherToHome.classed('hidden', false);
-                    otherToWork.classed('hidden', false);
-                    workToOther.classed('hidden', false);
-                    homeToHome.classed('hidden', false);
-                    otherToOther.classed('hidden', false);
-                    workToWork.classed('hidden', false);
-                }
-                else if(bool=='hide')
-                {
-                    homeToWork.classed('hidden', true);
-                    workToHome.classed('hidden', true);
-                    homeToOther.classed('hidden', true);
-                    otherToHome.classed('hidden', true);
-                    otherToWork.classed('hidden', true);
-                    workToOther.classed('hidden', true);
-                    homeToHome.classed('hidden', true);
-                    otherToOther.classed('hidden', true);
-                    workToWork.classed('hidden', true);
-                }
-
-            }
-
-            function showHideBoundDiv(bool)
-            {
-                if (bool == 'show') {
-                    outbound.classed('hidden', false);
-                    inbound.classed('hidden', false);
-                }
-                else if (bool == 'hide') {
-                    outbound.classed('hidden', true);
-                    inbound.classed('hidden', true);
-                }
-
-            }
-         
-            //.classed('hidden', false)
-
-            $(document).ready(function () {
-                $('#myList').change(ddldayChanged);
-                $('#lstBounds'  ).change(showBounds);
-                $('#lstPurpose').change(lstPurposeChanged);
-                
-                $('#btnStartButton').click(startAnimation);
-                $('#btnStopButton').click(stopAnimation);
-
-                $('#btnShowPurpose').click(showPurpose);
-                $('#btnShowBounds').click(showBoundsData);
-                
-            });
-            var refreshIntervalId;
-            var refreshIntervalId2;
-
-            function lstPurposeChanged()
-            {
-                var value = $("#lstPurpose option:selected").val();
-                purpose = value;
-                callReset();
-
-            }
-            function callReset()
-            {
-                reset();
-            }
-            function showBoundsData()
-            {
-                //console.log('Show Bounds');
-                d3.select('#lstBounds').classed('hidden', false);
-                d3.select('#lstPurpose').classed('hidden', true);
-                showBoundsPurpose = 'showbounds';
-                showHidePurposeDiv('hide');
-                showHideBoundDiv('show');
-                removePurposeCircles();
-                removeCircles();
-                drawCircles();
-                
-            }
-            function showPurpose()
-            { 
-                d3.select('#lstBounds').classed('hidden', true);
-                d3.select('#lstPurpose').classed('hidden', false);
-                showBoundsPurpose = 'showpurpose';
-                purpose = 'HW';
-                showHidePurposeDiv('show');
-                showHideBoundDiv('hide');
-                removeCircles();
-                removePurposeCircles();
-                drawPurposeCircles();
-                reset();
-               
-            }
-            function startAnimation()
-            {
-                console.log(showBoundsPurpose);
-                if (showBoundsPurpose == 'showbounds')
-                {
-                    console.log('start show bounds ani is called');
-                    refreshIntervalId = setInterval(setHour, 5000);
-                    hour = 0;
-                }
-                if(showBoundsPurpose == 'showpurpose')
-                {
-                    console.log('start show purpose ani is called');
-                    refreshIntervalId2 = setInterval(setPurpose, 5000);
-                    p = -1;
-                }
-
-                
-            }
-            function setPurpose()
-            {
-                p = p + 1;
-                if (p > 7)
-                {
-                    stopAnimation();
-                }
-                purpose = purposesArray[p];
-                reset();
-            }
-          
-            function setHour()
-            {
-                hour = hour + 1;
-                //console.log(hour);
-                if (hour > 23)
-                {
-                    stopAnimation();
-                }
-                reset();
-            }
-            function stopAnimation()
-            {
-                //console.log('Stop Animation Called');
-                if (showBoundsPurpose == 'showbounds')
-                {
-                    console.log('stop show bounds ani is called');
-                    clearInterval(refreshIntervalId);
-                }
-                if (showBoundsPurpose == 'showpurpose')
-                {  
-                    console.log('stop show purpose ani is called');
-                    clearInterval(refreshIntervalId2);
-                }
-            }
-            function showBounds()
-            {
-                var value = $("#lstBounds option:selected").val();
-                if (value == 'showInbound')
-                {
-                   
-                    d3.selectAll('#circle2').remove();
-                    d3.selectAll('#circle1').remove();
-
-                    circle2 = g.selectAll("#circle2")
-                   .data(zonesDataArray)
-                   .enter().append("circle")
-                   .style("stroke", "black")
-                   .style("fill", "green")
-                   .attr('id', 'circle2')
-                    reset();
-                }
-                else if(value =='showOutbound')
-                {
-                    
-                    d3.selectAll('#circle2').remove();
-                    d3.selectAll('#circle1').remove()
-                    
-                    circle1 = g.selectAll("#circle1")
-                   .data(zonesDataArray)
-                   .enter().append("circle")
-                   .style("stroke", "black")
-                   .style("fill", "red")
-                   .attr('id', 'circle1')
-
-                    reset();
-                  
-                }
-                else if(value='All')
-                {
-                    
-                    d3.selectAll('#circle2').remove();
-                    d3.selectAll('#circle1').remove();
-
-                    circle1 = g.selectAll("#circle1")
-                   .data(zonesDataArray)
-                   .enter().append("circle")
-                   .style("stroke", "black")
-                   .style("fill", "red")
-                   .attr('id', 'circle1')
-
-                    circle2 = g.selectAll("#circle2")
-                   .data(zonesDataArray)
-                   .enter().append("circle")
-                   .style("stroke", "black")
-                   .style("fill", "green")
-                   .attr('id', 'circle2')
-
-                   // drawCircles();
-
-                    reset();
-
-                    /*d3.selectAll("#circle2")
-                         .style('opacity', 1);*/
-                    //circle2.style('opacity', 1);
-                    //circle1.style('opacity', 1);
-                }
-
-            }
-
-            function ddldayChanged() {
-                
-                var day = $("#myList option:selected").val();
-                loadCsvDay(day);
-            }
-            function loadCsvDay(day) {
-               
-                dayData = {}; 
-                d3.csv(day + '.csv', function (data) {
-                 
-                   data.forEach(function (d) {
-                        var tazId = d.origin_zone;
-                        dayData[tazId] = d;
+                    if (showBoundsPurpose == 'showbounds') {
+                        removePurposeCircles();
+                        showHidePurposeDiv('hide');
                     }
-                    );
-                   
-                   //removeCircles();
-                    //drawCircles();
-                   reset();
 
-                });
+                    svg.attr("width", bottomRight[0] - topLeft[0])
+                    .attr("height", bottomRight[1] - topLeft[1])
+                    .style("left", topLeft[0] + "px")
+                    .style("top", topLeft[1] + "px");
+                    g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
 
-                d3.csv(day + 'Purpose.csv', function (data) {
+                    feature.attr("d", path)
+                    .style("fill-opacity", 0.3)
 
-                    purposeData = {};
-                    data.forEach(function (d) {
-                        var tazId = d.origin_zone;
-                        purposeData[tazId] = d;
-                    }
-                     );
+                }
 
+                function projectPoint(x, y) {
+                    var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+                    this.stream.point(point.x, point.y);
+                }
+                var svg1 = d3.select("#svg1"),
+                margin = { right: 20, left: 20 },
+                //margin = { right: 10, left: 10 };
+                width = +svg1.attr("width")
+                //-margin.left - margin.right,
+                - margin.left - margin.right,
+                height = +svg1.attr("height");
+
+                d3.select("#svg1")
+               .append("text")
+               .text("Time (Hours)").attr("text-anchor", "middle")
+                                      .attr("x", 600)
+                                      .attr("y", 48)
+                                      .style('font-weight', 'bold')
+                                      .attr("font-family", "sans-serif")
+                                      .attr("font-size", "12px")
+                                      .attr("fill", "black");
+
+                var x = d3.scaleLinear()
+                .domain([0, 24])
+                .range([10, width - 20])
+                .clamp(true);
+
+
+                var slider = svg1.append("g")
+                    .attr("class", "slider")
+                    .attr("transform", "translate(" + margin.left + "," + height / 10 + ")");
+
+                slider.append("line")
+                    .attr("class", "track")
+                    .attr("x1", x.range()[0])
+                    .attr("x2", x.range()[1])
+                  .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
+                    .attr("class", "track-inset")
+                  .select(function () { return this.parentNode.appendChild(this.cloneNode(true)); })
+                    .attr("class", "track-overlay")
+                    .call(d3.drag()
+                        .on("start.interrupt", function () { slider.interrupt(); })
+                        .on("start drag", function () { hue(x.invert(d3.event.x)); })
+                        );
+
+                slider.insert("g", ".track-overlay")
+                    .attr("class", "ticks")
+                    .attr("transform", "translate(0," + 24 + ")")
+                  .selectAll("text")
+                  .data(x.ticks(24))
+                  .enter().append("text")
+                    .attr("x", x)
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "15px")
+                    .text(function (d) { return d; });
+
+
+                handle = slider.insert("circle", ".track-overlay")
+                    .attr("class", "handle")
+                    .attr("r", 9);
+
+                slider.transition()
+                    .duration(750)
+                    .tween("hue", function () {
+
+                        var i = d3.interpolate(0, 0);
+                        return function (t) { hue(i(t)); };
+
+                    })
+
+                function hue(h) {
+                    handle.attr("cx", x(h));
+                    svg1.style("background-color", d3.hsl(h, 0.8, 0.8));
+                    var abs_hr = Math.floor(h);
+                    hour = abs_hr;
+                    /*d3.selectAll('path').classed('highlightZone', false);
+                    var a = 'shour' + hour;
+                    console.log(a);
+                    var b = sHourMax[a];
+                    //d3.select('[id="1011"]').classed('highlightZone', true);
+                    var c = '[id="' + b + '"]';
+                    d3.select(c).classed('highlightZone', true);*/
+
+                    
                     //removeCircles();
-                    console.log('load CSv DAy is called');
                     //drawCircles();
+                    /*d3.selectAll('#circle1').remove();
+                    d3.selectAll('#circle2').remove();*/
+
+                    //circle2.attr('r', 10);
+
+                    /*circle1 = g.selectAll("#circle1")
+                    .data(zonesDataArray)
+                    .enter().append("circle")
+                    .style("stroke", "black")
+                    .style("fill", "red")
+                    .attr('id', 'circle1')
+
+                    circle2 = g.selectAll("#circle2")
+                   .data(zonesDataArray)
+                   .enter().append("circle")
+                   .style("stroke", "black")
+                   .style("fill", "green")
+                   .attr('id', 'circle2')*/
+                    reset();
+                }
+
+                function showHidePurposeDiv(bool) {
+
+                    if (bool == 'show') {
+                        homeToWork.classed('hidden', false);
+                        workToHome.classed('hidden', false);
+                        homeToOther.classed('hidden', false);
+                        otherToHome.classed('hidden', false);
+                        otherToWork.classed('hidden', false);
+                        workToOther.classed('hidden', false);
+                        homeToHome.classed('hidden', false);
+                        otherToOther.classed('hidden', false);
+                        workToWork.classed('hidden', false);
+                    }
+                    else if (bool == 'hide') {
+                        homeToWork.classed('hidden', true);
+                        workToHome.classed('hidden', true);
+                        homeToOther.classed('hidden', true);
+                        otherToHome.classed('hidden', true);
+                        otherToWork.classed('hidden', true);
+                        workToOther.classed('hidden', true);
+                        homeToHome.classed('hidden', true);
+                        otherToOther.classed('hidden', true);
+                        workToWork.classed('hidden', true);
+                    }
+
+                }
+
+                function showHideBoundDiv(bool) {
+                    if (bool == 'show') {
+                        outbound.classed('hidden', false);
+                        inbound.classed('hidden', false);
+                    }
+                    else if (bool == 'hide') {
+                        outbound.classed('hidden', true);
+                        inbound.classed('hidden', true);
+                    }
+
+                }
+
+                //.classed('hidden', false)
+
+                $(document).ready(function () {
+                    $('#myList').change(ddldayChanged);
+                    $('#lstBounds').change(showBounds);
+                    $('#lstPurpose').change(lstPurposeChanged);
+
+                    $('#btnStartButton').click(startAnimation);
+                    $('#btnStopButton').click(stopAnimation);
+
+                    $('#btnShowPurpose').click(showPurpose);
+                    $('#btnShowBounds').click(showBoundsData);
+
+                });
+                var refreshIntervalId;
+                var refreshIntervalId2;
+
+                function lstPurposeChanged() {
+                    var value = $("#lstPurpose option:selected").val();
+                    purpose = value;
+                    callReset();
+
+                }
+                function callReset() {
+                    reset();
+                }
+                function showBoundsData() {
+                    //console.log('Show Bounds');
+                    d3.select('#lstBounds').classed('hidden', false);
+                    d3.select('#lstPurpose').classed('hidden', true);
+                    showBoundsPurpose = 'showbounds';
+                    showHidePurposeDiv('hide');
+                    showHideBoundDiv('show');
+
+                    removePurposeCircles();
+                    removeCircles();
+                    drawCircles();
+
+                }
+                function showPurpose() {
+                    d3.select('#lstBounds').classed('hidden', true);
+                    d3.select('#lstPurpose').classed('hidden', false);
+                    showBoundsPurpose = 'showpurpose';
+                    purpose = 'HW';
+                    showHidePurposeDiv('show');
+                    showHideBoundDiv('hide');
+
+                    removeCircles();
+                    removePurposeCircles();
+                    drawPurposeCircles();
                     reset();
 
-                });
+                }
+                function startAnimation() {
+                    console.log(showBoundsPurpose);
+                    if (showBoundsPurpose == 'showbounds') {
+                        console.log('start show bounds ani is called');
+                        refreshIntervalId = setInterval(setHour, 5000);
+                        hour = 0;
+                    }
+                    if (showBoundsPurpose == 'showpurpose') {
+                        console.log('start show purpose ani is called');
+                        refreshIntervalId2 = setInterval(setPurpose, 5000);
+                        p = -1;
+                    }
 
-                sHourMax = [];
-                d3.csv(day + 'Shour.csv', function (data) {
-                    
-                    console.log(data);
-                    data.forEach(function (d) {
-                        sHourMax = d;
+
+                }
+                function setPurpose() {
+                    p = p + 1;
+                    if (p > 7) {
+                        stopAnimation();
+                    }
+                    purpose = purposesArray[p];
+                    reset();
+                }
+
+                function setHour() {
+                    hour = hour + 1;
+                    //console.log(hour);
+                    if (hour > 23) {
+                        stopAnimation();
+                    }
+                    reset();
+                }
+                function stopAnimation() {
+                    //console.log('Stop Animation Called');
+                    if (showBoundsPurpose == 'showbounds') {
+                        console.log('stop show bounds ani is called');
+                        clearInterval(refreshIntervalId);
+                    }
+                    if (showBoundsPurpose == 'showpurpose') {
+                        console.log('stop show purpose ani is called');
+                        clearInterval(refreshIntervalId2);
+                    }
+                }
+                function showBounds() {
+                    var value = $("#lstBounds option:selected").val();
+                    if (value == 'showInbound') {
+
+                        d3.selectAll('#circle2').remove();
+                        d3.selectAll('#circle1').remove();
+
+                        circle2 = g.selectAll("#circle2")
+                       .data(zonesDataArray)
+                       .enter().append("circle")
+                       .style("stroke", "black")
+                       .style("fill", "green")
+                       .attr('id', 'circle2')
+                        reset();
+                    }
+                    else if (value == 'showOutbound') {
+
+                        d3.selectAll('#circle2').remove();
+                        d3.selectAll('#circle1').remove()
+
+                        circle1 = g.selectAll("#circle1")
+                       .data(zonesDataArray)
+                       .enter().append("circle")
+                       .style("stroke", "black")
+                       .style("fill", "red")
+                       .attr('id', 'circle1')
+
+                        reset();
+
+                    }
+                    else if (value = 'All') {
+
+                        d3.selectAll('#circle2').remove();
+                        d3.selectAll('#circle1').remove();
+
+                        circle1 = g.selectAll("#circle1")
+                       .data(zonesDataArray)
+                       .enter().append("circle")
+                       .style("stroke", "black")
+                       .style("fill", "red")
+                       .attr('id', 'circle1')
+
+                        circle2 = g.selectAll("#circle2")
+                       .data(zonesDataArray)
+                       .enter().append("circle")
+                       .style("stroke", "black")
+                       .style("fill", "green")
+                       .attr('id', 'circle2')
+
+                        // drawCircles();
+
+                        reset();
+
+                        /*d3.selectAll("#circle2")
+                             .style('opacity', 1);*/
+                        //circle2.style('opacity', 1);
+                        //circle1.style('opacity', 1);
+                    }
+
+                }
+
+                function ddldayChanged() {
+
+                    var day = $("#myList option:selected").val();
+                    loadCsvDay(day);
+                }
+                function loadCsvDay(day) {
+
+                    dayData = {};
+                    d3.csv('Data/' + day + '.csv', function (data) {
+
+                        data.forEach(function (d) {
+                            var tazId = d.origin_zone;
+                            dayData[tazId] = d;
+                        }
+                         );
+
+                        //removeCircles();
+                        //drawCircles();
+                        reset();
+
                     });
-                    console.log(sHourMax.shour0);
 
-                });
+                    d3.csv('Data/'+ day + 'Purpose.csv', function (data) {
 
+                        purposeData = {};
+                        data.forEach(function (d) {
+                            var tazId = d.origin_zone;
+                            purposeData[tazId] = d;
+                        }
+                         );
+
+                        //removeCircles();
+                        console.log('load CSv DAy is called');
+                        //drawCircles();
+                        reset();
+
+                    });
+
+                    /*sHourMax = [];
+                    d3.csv(day + 'Shour.csv', function (data) {
+
+                        console.log(data);
+                        data.forEach(function (d) {
+                            sHourMax = d;
+                        });
+                        console.log(sHourMax.shour0);
+
+                    });*/
+
+
+                }
+                function removeCircles() {
+                    d3.selectAll('#circle1').remove();
+                    d3.selectAll('#circle2').remove();
+                }
+                function removePurposeCircles() {
+                    d3.selectAll('#circle3').remove();
+                }
+                function drawCircles() {
+
+                    console.log('Drawing Circles');
+                    circle1 = g.selectAll("#circle1")
+                    .data(zonesDataArray)
+                    .enter().append("circle")
+                    .style("stroke", "black")
+                    .style("fill", "red")
+                    .attr('id', 'circle1')
+
+                    circle2 = g.selectAll("#circle2")
+                   .data(zonesDataArray)
+                   .enter().append("circle")
+                   .style("stroke", "black")
+                   .style("fill", "green")
+                   .attr('id', 'circle2')
+
+                    /*circle2.transition().duration(2000) // First fade to green.
+                   //.style("fill", "blue")
+                   .attr('r',10)
+                   .transition().duration(1000)  // Then red.
+                   //.style("fill", "red")
+                   .attr('r', 50)
+                   .transition() // Wait one second. Then brown, and remove.
+                   .duration(1000)
+                   .attr('r',10)
+                   //.remove();*/
+
+                    reset();
+                }
+                function drawPurposeCircles() {
+                    circle3 = g.selectAll("#circle3")
+                  .data(zonesDataArray)
+                  .enter().append("circle")
+                  .style("stroke", "black")
+                  //.style("fill", "blue")
+                  .attr('id', 'circle3')
+                }
 
             }
-            function removeCircles()
-            {
-                d3.selectAll('#circle1').remove();
-                d3.selectAll('#circle2').remove();
-            }
-            function removePurposeCircles()
-            {
-                d3.selectAll('#circle3').remove();
-            }
-            function drawCircles()
-            {
 
-                console.log('Drawing Circles');
-                circle1 = g.selectAll("#circle1")
-                .data(zonesDataArray)
-                .enter().append("circle")
-                .style("stroke", "black")
-                .style("fill", "red")
-                .attr('id', 'circle1')
-
-                circle2 = g.selectAll("#circle2")
-               .data(zonesDataArray)
-               .enter().append("circle")
-               .style("stroke", "black")
-               .style("fill", "green")
-               .attr('id', 'circle2')
-
-                /*circle2.transition().duration(2000) // First fade to green.
-               //.style("fill", "blue")
-               .attr('r',10)
-               .transition().duration(1000)  // Then red.
-               //.style("fill", "red")
-               .attr('r', 50)
-               .transition() // Wait one second. Then brown, and remove.
-               .duration(1000)
-               .attr('r',10)
-               //.remove();*/
-
-                reset();
-            }
-            function drawPurposeCircles()
-            {
-                circle3 = g.selectAll("#circle3")
-              .data(zonesDataArray)
-              .enter().append("circle")
-              .style("stroke", "black")
-              //.style("fill", "blue")
-              .attr('id', 'circle3')
-            }
-                
-        }
-
-    </script>
+        </script>
 </body>
 </html>
