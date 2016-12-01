@@ -277,19 +277,23 @@ function mainmapcall(){
                     
               });
 
-
            
-        var textsvg = d3.select('body').append('svg')
-                  .attr('class','timetext')
-                  .attr('width',200).attr('height',200);
-                        
-        var timetext = textsvg.append('text')
-                        .attr('class','timetext')
-                        .attr('x',100).attr('y',100)
-                        .style("font-size", "26px") 
-                        .text("Time : " + index);
+          
+          var timetext = d3.select('body').append('div')
+               .attr('class', 'timetext')
+               .style('position', 'absolute')
+               .style('opacity', 1)
+               .style('background-color', 'black').text('Time : '  + index)
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "100px")
+               .style('line-height', 1)
+               .style('font-weight', 'bold')
+               .style('padding', '12px')
+               .style('color', '#fff')
+               .style('border-radius', '2px');
 
-        //var t;
+            
 
         function animateMap(){
           if(playing == false){
