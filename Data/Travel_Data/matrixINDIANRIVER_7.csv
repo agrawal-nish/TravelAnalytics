@@ -1,0 +1,467 @@
+Rowno,Origin_Zone,Destination_Zone,Start_Date,Aggregation,Subscriber_Class,Purpose,Count,Start_time,End_time
+75,4002,4002,7,Mon,Short Term Visitor,HH,736.05,0,1
+159,4002,4002,7,Mon,Long Term Visitor,OO,302.0,0,1
+166,4002,4002,7,Mon,Long Term Visitor,HH,78.44,0,1
+219,4002,4002,7,Mon,Short Term Visitor,WH,251.05,0,1
+322,4002,4002,7,Mon,Short Term Visitor,OH,308.1,0,1
+450,4002,4002,7,Mon,Inbound Commuter,HH,48.98,0,1
+476,4002,4002,7,Mon,Short Term Visitor,OO,138.9,0,1
+764,4002,4002,7,Mon,Short Term Visitor,OH,121.21,1,2
+811,4002,4002,7,Mon,Short Term Visitor,WH,15.43,4,5
+884,4002,4002,7,Mon,Short Term Visitor,OH,126.64,3,4
+886,4002,4002,7,Mon,Inbound Commuter,WH,33.12,0,1
+1207,4002,4002,7,Mon,Short Term Visitor,OH,70.49,4,5
+1469,4002,4002,7,Mon,Short Term Visitor,HO,47.02,0,1
+1560,4002,4002,7,Mon,Short Term Visitor,OH,81.04,2,3
+1923,4002,4002,7,Mon,Short Term Visitor,HO,1780.75,18,19
+1924,4002,4002,7,Mon,Short Term Visitor,OH,3898.5,19,20
+1988,4002,4002,7,Mon,Short Term Visitor,HH,5928.16,7,8
+1989,4002,4002,7,Mon,Short Term Visitor,HH,4992.56,14,15
+1990,4002,4002,7,Mon,Short Term Visitor,HH,5153.91,17,18
+2224,4002,4002,7,Mon,Short Term Visitor,HO,2473.28,14,15
+2225,4002,4002,7,Mon,Short Term Visitor,OH,3672.92,14,15
+2252,4002,4002,7,Mon,Long Term Visitor,HO,253.37,6,7
+2253,4002,4002,7,Mon,Long Term Visitor,OH,188.53,19,20
+2271,4002,4002,7,Mon,Short Term Visitor,HO,2488.78,13,14
+2272,4002,4002,7,Mon,Short Term Visitor,OO,6104.6,14,15
+2273,4002,4002,7,Mon,Short Term Visitor,OO,5849.26,15,16
+2274,4002,4002,7,Mon,Short Term Visitor,OH,3757.97,16,17
+2327,4002,4002,7,Mon,Short Term Visitor,WW,1879.35,11,12
+2488,4002,4002,7,Mon,Short Term Visitor,OO,5765.78,12,13
+2520,4002,4002,7,Mon,Short Term Visitor,HH,4334.94,20,21
+2543,4002,4002,7,Mon,Short Term Visitor,HO,4140.65,8,9
+2544,4002,4002,7,Mon,Short Term Visitor,OH,3608.32,15,16
+2545,4002,4002,7,Mon,Short Term Visitor,HO,2522.97,17,18
+2546,4002,4002,7,Mon,Short Term Visitor,OH,3804.8,17,18
+2547,4002,4002,7,Mon,Short Term Visitor,HH,4876.37,18,19
+2587,4002,4002,7,Mon,Short Term Visitor,HO,2690.89,11,12
+2617,4002,4002,7,Mon,Short Term Visitor,HO,3338.43,12,13
+2618,4002,4002,7,Mon,Short Term Visitor,OH,2205.89,12,13
+2642,4002,4002,7,Mon,Short Term Visitor,OO,1668.2,21,22
+2692,4002,4002,7,Mon,Short Term Visitor,OO,2847.33,7,8
+2808,4002,4002,7,Mon,Long Term Visitor,OO,6614.64,11,12
+2856,4002,4002,7,Mon,Short Term Visitor,HO,3664.97,6,7
+2892,4002,4002,7,Mon,Long Term Visitor,OO,6397.89,12,13
+2893,4002,4002,7,Mon,Long Term Visitor,OO,4532.26,18,19
+2945,4002,4002,7,Mon,Short Term Visitor,HH,4941.03,10,11
+2946,4002,4002,7,Mon,Short Term Visitor,HH,4778.53,12,13
+2947,4002,4002,7,Mon,Short Term Visitor,HH,4730.64,16,17
+3165,4002,4002,7,Mon,Short Term Visitor,OO,4863.54,8,9
+3166,4002,4002,7,Mon,Short Term Visitor,OW,1081.21,11,12
+3167,4002,4002,7,Mon,Short Term Visitor,WO,1080.93,11,12
+3168,4002,4002,7,Mon,Short Term Visitor,OW,1121.72,13,14
+3169,4002,4002,7,Mon,Short Term Visitor,WO,1300.56,13,14
+3170,4002,4002,7,Mon,Short Term Visitor,OW,455.09,15,16
+3171,4002,4002,7,Mon,Short Term Visitor,WW,1417.31,16,17
+3197,4002,4002,7,Mon,Short Term Visitor,HW,4622.44,6,7
+3198,4002,4002,7,Mon,Short Term Visitor,WW,1400.78,8,9
+3199,4002,4002,7,Mon,Short Term Visitor,WW,1862.63,12,13
+3200,4002,4002,7,Mon,Short Term Visitor,WH,1468.44,12,13
+3203,4002,4002,7,Mon,Short Term Visitor,HH,5972.19,8,9
+3206,4002,4002,7,Mon,Short Term Visitor,HH,3504.06,19,20
+3207,4002,4002,7,Mon,Short Term Visitor,HH,2997.37,21,22
+3321,4002,4002,7,Mon,Long Term Visitor,OO,7226.63,10,11
+3417,4002,4002,7,Mon,Short Term Visitor,OO,4805.21,13,14
+3630,4002,4002,7,Mon,Long Term Visitor,OO,1791.3,20,21
+3696,4002,4002,7,Mon,Short Term Visitor,OH,1497.98,10,11
+3775,4002,4002,7,Mon,Short Term Visitor,HW,1869.11,9,10
+3776,4002,4002,7,Mon,Short Term Visitor,WH,2670.78,15,16
+3919,4002,4002,7,Mon,Short Term Visitor,HO,2241.78,15,16
+4135,4002,4002,7,Mon,Outbound Commuter,WW,216.13,16,17
+4404,4002,4002,7,Mon,Short Term Visitor,OW,1138.92,9,10
+4405,4002,4002,7,Mon,Short Term Visitor,WH,2576.92,14,15
+4436,4002,4002,7,Mon,Short Term Visitor,HH,3832.83,6,7
+4555,4002,4002,7,Mon,Short Term Visitor,OO,5436.04,11,12
+4558,4002,4002,7,Mon,Short Term Visitor,HW,3488.29,8,9
+4559,4002,4002,7,Mon,Short Term Visitor,WH,1197.35,18,19
+4563,4002,4002,7,Mon,Short Term Visitor,HH,5503.33,15,16
+4579,4002,4002,7,Mon,Short Term Visitor,HO,4850.23,7,8
+4750,4002,4002,7,Mon,Short Term Visitor,OW,1767.2,8,9
+4751,4002,4002,7,Mon,Short Term Visitor,WO,754.22,9,10
+4752,4002,4002,7,Mon,Short Term Visitor,OW,1412.21,10,11
+4753,4002,4002,7,Mon,Short Term Visitor,WO,2368.54,15,16
+4754,4002,4002,7,Mon,Short Term Visitor,OO,3322.84,18,19
+4820,4002,4002,7,Mon,Short Term Visitor,HW,2149.34,5,6
+4821,4002,4002,7,Mon,Short Term Visitor,WH,1325.25,19,20
+5074,4002,4002,7,Mon,Short Term Visitor,HO,3611.73,10,11
+5075,4002,4002,7,Mon,Short Term Visitor,OH,2204.05,13,14
+5322,4002,4002,7,Mon,Short Term Visitor,OO,4274.62,9,10
+5323,4002,4002,7,Mon,Short Term Visitor,OO,4475.73,17,18
+5325,4002,4002,7,Mon,Long Term Visitor,OO,5526.36,8,9
+5412,4002,4002,7,Mon,Short Term Visitor,OH,2600.23,11,12
+5413,4002,4002,7,Mon,Short Term Visitor,OH,3091.26,20,21
+5425,4002,4002,7,Mon,Short Term Visitor,OO,5800.13,10,11
+5660,4002,4002,7,Mon,Long Term Visitor,OO,3177.71,7,8
+5673,4002,4002,7,Mon,Short Term Visitor,WH,1285.73,13,14
+5738,4002,4002,7,Mon,Inbound Commuter,HH,182.78,6,7
+5739,4002,4002,7,Mon,Inbound Commuter,HH,226.77,19,20
+5839,4002,4002,7,Mon,Short Term Visitor,OH,2904.95,18,19
+5876,4002,4002,7,Mon,Long Term Visitor,OO,3992.05,17,18
+6016,4002,4002,7,Mon,Long Term Visitor,HH,216.17,7,8
+6073,4002,4002,7,Mon,Short Term Visitor,HO,3541.3,9,10
+6086,4002,4002,7,Mon,Short Term Visitor,WW,330.32,18,19
+6087,4002,4002,7,Mon,Short Term Visitor,WO,960.72,18,19
+6155,4002,4002,7,Mon,Short Term Visitor,HW,6346.74,7,8
+6156,4002,4002,7,Mon,Short Term Visitor,WW,1398.26,10,11
+6157,4002,4002,7,Mon,Short Term Visitor,WH,3132.99,17,18
+6165,4002,4002,7,Mon,Short Term Visitor,WO,1853.89,16,17
+6182,4002,4002,7,Mon,Short Term Visitor,WO,550.78,19,20
+6260,4002,4002,7,Mon,Long Term Visitor,OO,4822.22,16,17
+6484,4002,4002,7,Mon,Short Term Visitor,OW,604.9,6,7
+6569,4002,4002,7,Mon,Short Term Visitor,HW,1425.39,10,11
+6721,4002,4002,7,Mon,Outbound Commuter,OO,130.66,15,16
+6725,4002,4002,7,Mon,Short Term Visitor,WH,83.62,6,7
+6732,4002,4002,7,Mon,Short Term Visitor,HO,547.88,20,21
+6733,4002,4002,7,Mon,Short Term Visitor,OH,2842.64,21,22
+6794,4002,4002,7,Mon,Short Term Visitor,HW,248.75,14,15
+6933,4002,4002,7,Mon,Long Term Visitor,OO,7203.97,9,10
+6934,4002,4002,7,Mon,Long Term Visitor,OO,6216.38,13,14
+7636,4002,4002,7,Mon,Short Term Visitor,WH,3630.33,16,17
+7784,4002,4002,7,Mon,Long Term Visitor,OO,3059.39,19,20
+7863,4002,4002,7,Mon,Short Term Visitor,OO,490.74,5,6
+7895,4002,4002,7,Mon,Short Term Visitor,HH,6273.5,9,10
+7946,4002,4002,7,Mon,Short Term Visitor,HH,4980.11,13,14
+8024,4002,4002,7,Mon,Short Term Visitor,OW,1056.22,7,8
+8172,4002,4002,7,Mon,Short Term Visitor,OW,633.26,14,15
+8380,4002,4002,7,Mon,Short Term Visitor,HW,1387.24,11,12
+8381,4002,4002,7,Mon,Short Term Visitor,HH,1693.79,22,23
+8622,4002,4002,7,Mon,Short Term Visitor,HH,644.7,23,24
+8984,4002,4002,7,Mon,Inbound Commuter,HH,176.51,8,9
+9072,4002,4002,7,Mon,Long Term Visitor,OO,5468.37,14,15
+9633,4002,4002,7,Mon,Short Term Visitor,HH,5499.73,11,12
+9649,4002,4002,7,Mon,Short Term Visitor,WO,425.61,8,9
+9650,4002,4002,7,Mon,Short Term Visitor,WW,1299.44,15,16
+10002,4002,4002,7,Mon,Short Term Visitor,WW,1393.52,13,14
+10362,4002,4002,7,Mon,Short Term Visitor,WO,2179.64,14,15
+10766,4002,4002,7,Mon,Long Term Visitor,OO,4490.38,15,16
+10878,4002,4002,7,Mon,Short Term Visitor,HW,897.37,13,14
+11072,4002,4002,7,Mon,Short Term Visitor,WW,1420.91,14,15
+11073,4002,4002,7,Mon,Short Term Visitor,WO,236.11,20,21
+11098,4002,4002,7,Mon,Short Term Visitor,WH,648.6,22,23
+11158,4002,4002,7,Mon,Short Term Visitor,OO,4424.6,16,17
+11184,4002,4002,7,Mon,Short Term Visitor,WH,669.77,21,22
+11187,4002,4002,7,Mon,Short Term Visitor,OO,3182.35,19,20
+11415,4002,4002,7,Mon,Long Term Visitor,HH,95.02,6,7
+11488,4002,4002,7,Mon,Short Term Visitor,WO,66.26,7,8
+11489,4002,4002,7,Mon,Short Term Visitor,OW,1097.35,12,13
+11659,4002,4002,7,Mon,Short Term Visitor,WO,2462.12,17,18
+11864,4002,4002,7,Mon,Inbound Commuter,OW,37.12,9,10
+11865,4002,4002,7,Mon,Inbound Commuter,WO,56.79,12,13
+11866,4002,4002,7,Mon,Inbound Commuter,OO,202.84,14,15
+11867,4002,4002,7,Mon,Inbound Commuter,OO,300.52,17,18
+11930,4002,4002,7,Mon,Long Term Visitor,HO,37.0,13,14
+12122,4002,4002,7,Mon,Short Term Visitor,OW,308.66,16,17
+12123,4002,4002,7,Mon,Short Term Visitor,WH,983.07,20,21
+12330,4002,4002,7,Mon,Short Term Visitor,OO,1012.0,22,23
+12499,4002,4002,7,Mon,Short Term Visitor,OO,2427.66,20,21
+13232,4002,4002,7,Mon,Short Term Visitor,OO,1549.5,6,7
+13309,4002,4002,7,Mon,Outbound Commuter,OO,146.44,18,19
+13993,4002,4002,7,Mon,Outbound Commuter,WH,100.35,15,16
+14157,4002,4002,7,Mon,Short Term Visitor,HH,2915.57,5,6
+14248,4002,4002,7,Mon,Short Term Visitor,HW,328.07,16,17
+14467,4002,4002,7,Mon,Inbound Commuter,HH,210.67,15,16
+14496,4002,4002,7,Mon,Home Worker,OO,143.86,13,14
+15136,4002,4002,7,Mon,Home Worker,HH,122.49,12,13
+15172,4002,4002,7,Mon,Short Term Visitor,HO,949.62,19,20
+15173,4002,4002,7,Mon,Short Term Visitor,OH,1325.77,22,23
+15397,4002,4002,7,Mon,Short Term Visitor,HO,1638.35,16,17
+15732,4002,4002,7,Mon,Inbound Commuter,HH,271.29,7,8
+16136,4002,4002,7,Mon,Home Worker,HH,60.82,9,10
+16382,4002,4002,7,Mon,Outbound Commuter,OW,6.58,7,8
+16731,4002,4002,7,Mon,Long Term Visitor,OO,304.86,23,24
+16908,4002,4002,7,Mon,Short Term Visitor,HO,1753.21,5,6
+17375,4002,4002,7,Mon,Outbound Commuter,OO,118.68,13,14
+17376,4002,4002,7,Mon,Outbound Commuter,OW,23.79,14,15
+17398,4002,4002,7,Mon,Long Term Visitor,OH,262.54,20,21
+17514,4002,4002,7,Mon,Short Term Visitor,WH,232.64,9,10
+17949,4002,4002,7,Mon,Long Term Visitor,OO,1471.55,21,22
+18195,4002,4002,7,Mon,Short Term Visitor,WW,832.43,9,10
+18619,4002,4002,7,Mon,Short Term Visitor,HW,471.38,15,16
+18868,4002,4002,7,Mon,Home Worker,OH,59.35,18,19
+18869,4002,4002,7,Mon,Home Worker,HH,57.27,19,20
+19225,4002,4002,7,Mon,Long Term Visitor,OO,763.96,22,23
+19544,4002,4002,7,Mon,Outbound Commuter,OO,242.22,11,12
+19545,4002,4002,7,Mon,Outbound Commuter,OO,81.5,12,13
+19546,4002,4002,7,Mon,Outbound Commuter,OO,112.41,14,15
+19547,4002,4002,7,Mon,Outbound Commuter,OO,186.53,16,17
+19663,4002,4002,7,Mon,Inbound Commuter,HO,67.12,7,8
+20090,4002,4002,7,Mon,Long Term Visitor,HH,390.33,15,16
+20091,4002,4002,7,Mon,Long Term Visitor,HO,90.9,20,21
+20580,4002,4002,7,Mon,Outbound Commuter,WW,30.37,6,7
+20581,4002,4002,7,Mon,Outbound Commuter,WW,30.37,21,22
+20858,4002,4002,7,Mon,Short Term Visitor,HW,989.94,12,13
+20888,4002,4002,7,Mon,Outbound Commuter,OW,24.5,18,19
+21520,4002,4002,7,Mon,Short Term Visitor,OH,192.64,23,24
+21752,4002,4002,7,Mon,Short Term Visitor,OH,832.35,9,10
+21875,4002,4002,7,Mon,Short Term Visitor,HW,215.36,4,5
+21876,4002,4002,7,Mon,Short Term Visitor,WW,48.33,5,6
+21877,4002,4002,7,Mon,Short Term Visitor,HO,276.25,21,22
+22089,4002,4002,7,Mon,Outbound Commuter,OO,146.4,7,8
+22090,4002,4002,7,Mon,Outbound Commuter,OO,169.5,19,20
+22140,4002,4002,7,Mon,Outbound Commuter,WW,55.36,8,9
+23077,4002,4002,7,Mon,Short Term Visitor,HW,80.71,19,20
+23146,4002,4002,7,Mon,Short Term Visitor,OW,108.77,21,22
+23975,4002,4002,7,Mon,Short Term Visitor,HW,135.91,21,22
+24746,4002,4002,7,Mon,Short Term Visitor,WH,853.55,11,12
+25108,4002,4002,7,Mon,Short Term Visitor,WO,762.68,10,11
+25131,4002,4002,7,Mon,Short Term Visitor,OO,235.39,23,24
+25766,4002,4002,7,Mon,Short Term Visitor,OW,272.56,19,20
+27072,4002,4002,7,Mon,Home Worker,OO,38.08,12,13
+27079,4002,4002,7,Mon,Short Term Visitor,WO,297.71,21,22
+27334,4002,4002,7,Mon,Long Term Visitor,OO,1442.99,6,7
+27520,4002,4002,7,Mon,Resident Worker,OW,46.7,9,10
+27521,4002,4002,7,Mon,Resident Worker,WO,46.7,13,14
+28056,4002,4002,7,Mon,Long Term Visitor,HH,28.78,13,14
+28105,4002,4002,7,Mon,Long Term Visitor,WW,74.32,11,12
+28106,4002,4002,7,Mon,Long Term Visitor,WW,74.32,15,16
+28263,4002,4002,7,Mon,Short Term Visitor,OW,261.79,5,6
+29020,4002,4002,7,Mon,Long Term Visitor,HH,30.48,16,17
+29510,4002,4002,7,Mon,Outbound Commuter,OW,97.6,11,12
+29613,4002,4002,7,Mon,Short Term Visitor,OH,345.99,7,8
+29754,4002,4002,7,Mon,Outbound Commuter,HH,87.47,16,17
+30013,4002,4002,7,Mon,Outbound Commuter,OW,118.24,8,9
+30014,4002,4002,7,Mon,Outbound Commuter,WO,146.18,17,18
+30015,4002,4002,7,Mon,Outbound Commuter,OO,192.49,20,21
+31848,4002,4002,7,Mon,Outbound Commuter,WW,66.74,9,10
+31849,4002,4002,7,Mon,Outbound Commuter,WW,169.52,14,15
+31850,4002,4002,7,Mon,Outbound Commuter,WH,99.9,19,20
+32089,4002,4002,7,Mon,Short Term Visitor,WO,956.01,12,13
+32550,4002,4002,7,Mon,Resident Worker,OO,347.59,14,15
+33296,4002,4002,7,Mon,Home Worker,OO,88.14,15,16
+33642,4002,4002,7,Mon,Long Term Visitor,OO,625.41,5,6
+34434,4002,4002,7,Mon,Home Worker,OO,294.24,9,10
+34435,4002,4002,7,Mon,Home Worker,OO,223.01,10,11
+34739,4002,4002,7,Mon,Short Term Visitor,WH,377.29,8,9
+35889,4002,4002,7,Mon,Inbound Commuter,HH,89.22,14,15
+36097,4002,4002,7,Mon,Outbound Commuter,OO,156.5,8,9
+36131,4002,4002,7,Mon,Inbound Commuter,HH,418.28,16,17
+36421,4002,4002,7,Mon,Short Term Visitor,HH,796.18,4,5
+36677,4002,4002,7,Mon,Inbound Commuter,OH,66.19,15,16
+37477,4002,4002,7,Mon,Resident Worker,OO,137.78,17,18
+37478,4002,4002,7,Mon,Resident Worker,OO,66.74,18,19
+37541,4002,4002,7,Mon,Outbound Commuter,WO,192.91,14,15
+37637,4002,4002,7,Mon,Resident Worker,OO,125.87,7,8
+37638,4002,4002,7,Mon,Resident Worker,OO,96.25,20,21
+37639,4002,4002,7,Mon,Resident Worker,OO,208.97,21,22
+37866,4002,4002,7,Mon,Outbound Commuter,OW,190.82,9,10
+37867,4002,4002,7,Mon,Outbound Commuter,WO,100.47,11,12
+37868,4002,4002,7,Mon,Outbound Commuter,OO,346.78,17,18
+37869,4002,4002,7,Mon,Outbound Commuter,OW,71.22,17,18
+37870,4002,4002,7,Mon,Outbound Commuter,WO,201.24,18,19
+38570,4002,4002,7,Mon,Short Term Visitor,OH,715.12,8,9
+41466,4002,4002,7,Mon,Short Term Visitor,HW,351.49,18,19
+42243,4002,4002,7,Mon,Outbound Commuter,WO,29.25,6,7
+42846,4002,4002,7,Mon,Inbound Commuter,HO,117.29,8,9
+44039,4002,4002,7,Mon,Outbound Commuter,OW,42.57,10,11
+44040,4002,4002,7,Mon,Outbound Commuter,WW,73.21,10,11
+44041,4002,4002,7,Mon,Outbound Commuter,WW,321.05,11,12
+44042,4002,4002,7,Mon,Outbound Commuter,WW,123.94,13,14
+44043,4002,4002,7,Mon,Outbound Commuter,WW,261.88,15,16
+44698,4002,4002,7,Mon,Long Term Visitor,OH,64.62,6,7
+44819,4002,4002,7,Mon,Inbound Commuter,OO,187.9,19,20
+46043,4002,4002,7,Mon,Home Worker,HO,48.99,15,16
+46739,4002,4002,7,Mon,Short Term Visitor,WW,240.97,7,8
+46748,4002,4002,7,Mon,Outbound Commuter,WW,91.5,12,13
+47831,4002,4002,7,Mon,Short Term Visitor,HO,570.08,22,23
+47924,4002,4002,7,Mon,Short Term Visitor,WO,40.38,22,23
+48377,4002,4002,7,Mon,Outbound Commuter,WW,301.55,17,18
+48480,4002,4002,7,Mon,Short Term Visitor,WW,520.19,17,18
+49634,4002,4002,7,Mon,Inbound Commuter,HO,110.86,6,7
+49635,4002,4002,7,Mon,Inbound Commuter,OW,120.14,7,8
+49636,4002,4002,7,Mon,Inbound Commuter,WO,47.46,10,11
+49637,4002,4002,7,Mon,Inbound Commuter,OO,85.69,15,16
+49638,4002,4002,7,Mon,Inbound Commuter,OH,155.68,19,20
+49777,4002,4002,7,Mon,Long Term Visitor,HO,131.77,15,16
+51136,4002,4002,7,Mon,Short Term Visitor,HO,235.19,4,5
+51695,4002,4002,7,Mon,Inbound Commuter,WW,72.69,11,12
+51696,4002,4002,7,Mon,Inbound Commuter,WW,111.26,13,14
+51697,4002,4002,7,Mon,Inbound Commuter,WO,72.69,13,14
+52989,4002,4002,7,Mon,Inbound Commuter,OH,91.39,17,18
+53200,4002,4002,7,Mon,Short Term Visitor,OH,243.87,6,7
+54453,4002,4002,7,Mon,Outbound Commuter,HW,79.01,7,8
+55412,4002,4002,7,Mon,Long Term Visitor,HO,103.86,8,9
+55413,4002,4002,7,Mon,Long Term Visitor,OH,53.46,13,14
+55542,4002,4002,7,Mon,Outbound Commuter,HH,195.34,8,9
+55543,4002,4002,7,Mon,Outbound Commuter,HH,51.18,18,19
+55544,4002,4002,7,Mon,Outbound Commuter,HH,51.18,21,22
+55545,4002,4002,7,Mon,Outbound Commuter,HH,147.93,22,23
+55977,4002,4002,7,Mon,Outbound Commuter,OW,98.44,12,13
+55978,4002,4002,7,Mon,Outbound Commuter,WO,49.48,21,22
+56936,4002,4002,7,Mon,Outbound Commuter,OO,74.3,5,6
+57951,4002,4002,7,Mon,Short Term Visitor,WH,132.66,7,8
+58153,4002,4002,7,Mon,Inbound Commuter,OW,64.34,8,9
+58154,4002,4002,7,Mon,Inbound Commuter,WO,39.63,15,16
+58192,4002,4002,7,Mon,Short Term Visitor,OW,503.19,17,18
+58206,4002,4002,7,Mon,Long Term Visitor,HH,169.61,8,9
+58207,4002,4002,7,Mon,Long Term Visitor,HO,38.45,19,20
+58879,4002,4002,7,Mon,Inbound Commuter,HW,38.57,9,10
+58880,4002,4002,7,Mon,Inbound Commuter,WW,98.88,14,15
+58881,4002,4002,7,Mon,Inbound Commuter,WH,78.03,18,19
+59472,4002,4002,7,Mon,Outbound Commuter,HH,45.57,14,15
+60408,4002,4002,7,Mon,Outbound Commuter,HW,152.18,6,7
+60409,4002,4002,7,Mon,Outbound Commuter,WH,46.93,22,23
+60802,4002,4002,7,Mon,Outbound Commuter,OO,74.18,10,11
+61336,4002,4002,7,Mon,Inbound Commuter,HH,57.26,5,6
+62693,4002,4002,7,Mon,Short Term Visitor,OH,93.45,5,6
+65983,4002,4002,7,Mon,Inbound Commuter,OO,95.3,21,22
+67104,4002,4002,7,Mon,Outbound Commuter,HH,60.24,9,10
+67105,4002,4002,7,Mon,Outbound Commuter,HH,60.24,10,11
+67106,4002,4002,7,Mon,Outbound Commuter,HO,60.24,14,15
+67107,4002,4002,7,Mon,Outbound Commuter,OH,119.42,18,19
+67696,4002,4002,7,Mon,Short Term Visitor,WO,85.23,6,7
+68159,4002,4002,7,Mon,Inbound Commuter,HO,97.71,10,11
+68160,4002,4002,7,Mon,Inbound Commuter,OH,99.23,16,17
+68202,4002,4002,7,Mon,Outbound Commuter,HH,83.12,6,7
+68621,4002,4002,7,Mon,Home Worker,OH,26.89,17,18
+69498,4002,4002,7,Mon,Short Term Visitor,HW,67.17,20,21
+69567,4002,4002,7,Mon,Long Term Visitor,OW,112.31,7,8
+69568,4002,4002,7,Mon,Long Term Visitor,WW,83.09,16,17
+69569,4002,4002,7,Mon,Long Term Visitor,WO,83.09,17,18
+69674,4002,4002,7,Mon,Inbound Commuter,OO,176.87,9,10
+69675,4002,4002,7,Mon,Inbound Commuter,OO,132.18,13,14
+71106,4002,4002,7,Mon,Short Term Visitor,WH,329.1,10,11
+71153,4002,4002,7,Mon,Long Term Visitor,OW,74.11,19,20
+71154,4002,4002,7,Mon,Long Term Visitor,WO,74.11,23,24
+72115,4002,4002,7,Mon,Home Worker,OH,90.89,16,17
+72120,4002,4002,7,Mon,Long Term Visitor,OH,118.0,14,15
+72121,4002,4002,7,Mon,Long Term Visitor,HO,125.67,16,17
+72122,4002,4002,7,Mon,Long Term Visitor,OH,178.23,21,22
+72123,4002,4002,7,Mon,Long Term Visitor,HH,190.72,22,23
+72230,4002,4002,7,Mon,Short Term Visitor,WW,53.97,22,23
+74032,4002,4002,7,Mon,Inbound Commuter,HO,111.59,5,6
+74033,4002,4002,7,Mon,Inbound Commuter,OH,47.35,14,15
+74187,4002,4002,7,Mon,Resident Worker,OO,108.82,11,12
+74188,4002,4002,7,Mon,Resident Worker,OO,151.18,12,13
+74572,4002,4002,7,Mon,Long Term Visitor,OH,45.68,17,18
+74902,4002,4002,7,Mon,Inbound Commuter,OO,149.11,10,11
+74947,4002,4002,7,Mon,Resident Worker,OO,25.21,19,20
+75349,4002,4002,7,Mon,Long Term Visitor,OH,84.73,8,9
+75427,4002,4002,7,Mon,Inbound Commuter,HH,62.21,17,18
+76706,4002,4002,7,Mon,Short Term Visitor,OW,99.74,18,19
+77361,4002,4002,7,Mon,Inbound Commuter,OO,97.71,7,8
+77362,4002,4002,7,Mon,Inbound Commuter,OO,167.58,18,19
+77598,4002,4002,7,Mon,Inbound Commuter,WH,31.99,11,12
+78183,4002,4002,7,Mon,Inbound Commuter,WO,24.7,19,20
+78410,4002,4002,7,Mon,Inbound Commuter,HW,52.78,11,12
+78411,4002,4002,7,Mon,Inbound Commuter,OO,19.67,12,13
+78441,4002,4002,7,Mon,Home Worker,HH,93.55,11,12
+78442,4002,4002,7,Mon,Home Worker,HH,93.55,16,17
+78506,4002,4002,7,Mon,Long Term Visitor,OH,97.27,5,6
+78722,4002,4002,7,Mon,Inbound Commuter,WH,33.12,16,17
+78990,4002,4002,7,Mon,Resident Worker,OO,13.56,15,16
+79709,4002,4002,7,Mon,Inbound Commuter,HH,220.02,9,10
+80135,4002,4002,7,Mon,Inbound Commuter,OO,104.66,11,12
+81335,4002,4002,7,Mon,Short Term Visitor,HW,91.41,22,23
+82065,4002,4002,7,Mon,Long Term Visitor,HH,53.57,4,5
+83185,4002,4002,7,Mon,Inbound Commuter,HH,136.11,18,19
+83510,4002,4002,7,Mon,Outbound Commuter,WH,72.1,8,9
+83511,4002,4002,7,Mon,Outbound Commuter,HH,72.1,13,14
+83512,4002,4002,7,Mon,Outbound Commuter,HW,72.1,20,21
+83808,4002,4002,7,Mon,Long Term Visitor,WH,29.02,15,16
+83827,4002,4002,7,Mon,Inbound Commuter,HW,64.51,8,9
+83828,4002,4002,7,Mon,Inbound Commuter,WO,21.79,9,10
+84939,4002,4002,7,Mon,Long Term Visitor,HH,152.47,11,12
+84940,4002,4002,7,Mon,Long Term Visitor,HO,108.54,18,19
+85254,4002,4002,7,Mon,Short Term Visitor,WW,50.13,19,20
+86007,4002,4002,7,Mon,Outbound Commuter,WH,52.67,11,12
+86137,4002,4002,7,Mon,Outbound Commuter,WH,50.16,16,17
+86660,4002,4002,7,Mon,Short Term Visitor,WW,107.92,6,7
+89150,4002,4002,7,Mon,Outbound Commuter,OO,75.33,9,10
+90360,4002,4002,7,Mon,Long Term Visitor,HW,31.4,12,13
+90361,4002,4002,7,Mon,Long Term Visitor,WH,31.4,13,14
+90670,4002,4002,7,Mon,Outbound Commuter,WO,6.45,10,11
+90799,4002,4002,7,Mon,Inbound Commuter,HH,107.61,22,23
+92351,4002,4002,7,Mon,Long Term Visitor,HH,123.39,19,20
+92554,4002,4002,7,Mon,Short Term Visitor,HW,132.59,17,18
+93544,4002,4002,7,Mon,Long Term Visitor,HO,157.36,7,8
+95471,4002,4002,7,Mon,Outbound Commuter,WO,71.78,8,9
+95821,4002,4002,7,Mon,Resident Worker,WO,61.7,14,15
+96113,4002,4002,7,Mon,Home Worker,HH,47.79,5,6
+96114,4002,4002,7,Mon,Home Worker,HO,47.79,5,6
+96115,4002,4002,7,Mon,Home Worker,OH,47.79,6,7
+96116,4002,4002,7,Mon,Home Worker,HH,47.79,8,9
+96117,4002,4002,7,Mon,Home Worker,HH,174.05,10,11
+96455,4002,4002,7,Mon,Resident Worker,OO,81.48,10,11
+102239,4002,4002,7,Mon,Outbound Commuter,HW,81.76,8,9
+102240,4002,4002,7,Mon,Outbound Commuter,WH,48.6,17,18
+102314,4002,4002,7,Mon,Inbound Commuter,HH,127.73,21,22
+102677,4002,4002,7,Mon,Inbound Commuter,HO,118.58,16,17
+102678,4002,4002,7,Mon,Inbound Commuter,OH,118.58,20,21
+102977,4002,4002,7,Mon,Home Worker,OO,129.93,11,12
+103176,4002,4002,7,Mon,Inbound Commuter,OO,103.6,8,9
+104060,4002,4002,7,Mon,Home Worker,HO,54.87,12,13
+104584,4002,4002,7,Mon,Resident Worker,OO,78.57,9,10
+104939,4002,4002,7,Mon,Inbound Commuter,HW,146.72,6,7
+104940,4002,4002,7,Mon,Inbound Commuter,WW,39.46,10,11
+105001,4002,4002,7,Mon,Outbound Commuter,WO,31.86,9,10
+106633,4002,4002,7,Mon,Inbound Commuter,HH,31.49,11,12
+110888,4002,4002,7,Mon,Short Term Visitor,WH,33.9,23,24
+112355,4002,4002,7,Mon,Resident Worker,OO,74.98,16,17
+113233,4002,4002,7,Mon,Inbound Commuter,WH,76.63,15,16
+114099,4002,4002,7,Mon,Outbound Commuter,WO,29.32,15,16
+114146,4002,4002,7,Mon,Outbound Commuter,HH,51.99,11,12
+116087,4002,4002,7,Mon,Home Worker,HH,63.72,23,24
+117119,4002,4002,7,Mon,Inbound Commuter,HH,48.38,12,13
+117552,4002,4002,7,Mon,Long Term Visitor,HO,69.52,11,12
+117553,4002,4002,7,Mon,Long Term Visitor,OH,69.52,22,23
+120911,4002,4002,7,Mon,Resident Worker,OW,24.79,15,16
+121904,4002,4002,7,Mon,Inbound Commuter,HO,36.85,11,12
+121905,4002,4002,7,Mon,Inbound Commuter,OH,36.85,12,13
+124461,4002,4002,7,Mon,Home Worker,HO,46.27,17,18
+124462,4002,4002,7,Mon,Home Worker,OH,46.27,19,20
+124472,4002,4002,7,Mon,Inbound Commuter,HW,122.23,7,8
+124473,4002,4002,7,Mon,Inbound Commuter,WW,38.2,8,9
+124474,4002,4002,7,Mon,Inbound Commuter,WW,38.2,17,18
+124475,4002,4002,7,Mon,Inbound Commuter,WH,68.51,21,22
+124782,4002,4002,7,Mon,Inbound Commuter,HW,84.57,12,13
+124783,4002,4002,7,Mon,Inbound Commuter,HO,43.13,17,18
+124784,4002,4002,7,Mon,Inbound Commuter,OH,84.39,18,19
+125244,4002,4002,7,Mon,Resident Worker,OO,141.67,5,6
+126666,4002,4002,7,Mon,Inbound Commuter,WH,42.72,14,15
+127812,4002,4002,7,Mon,Short Term Visitor,OW,85.73,20,21
+128628,4002,4002,7,Mon,Outbound Commuter,OW,122.99,13,14
+128629,4002,4002,7,Mon,Outbound Commuter,WW,69.95,20,21
+128630,4002,4002,7,Mon,Outbound Commuter,WO,69.95,22,23
+128631,4002,4002,7,Mon,Outbound Commuter,OO,69.95,23,24
+130814,4002,4002,7,Mon,Home Worker,OO,21.62,6,7
+130865,4002,4002,7,Mon,Inbound Commuter,OH,106.5,6,7
+130868,4002,4002,7,Mon,Outbound Commuter,HO,55.26,16,17
+132204,4002,4002,7,Mon,Inbound Commuter,HH,34.23,20,21
+132810,4002,4002,7,Mon,Home Worker,HO,61.65,14,15
+134245,4002,4002,7,Mon,Resident Worker,OW,79.59,8,9
+134246,4002,4002,7,Mon,Resident Worker,WW,79.59,16,17
+134247,4002,4002,7,Mon,Resident Worker,WO,79.59,21,22
+135222,4002,4002,7,Mon,Inbound Commuter,WO,46.55,17,18
+136556,4002,4002,7,Mon,Outbound Commuter,WO,84.8,16,17
+136597,4002,4002,7,Mon,Home Worker,OO,55.85,7,8
+137032,4002,4002,7,Mon,Outbound Commuter,OH,40.31,21,22
+137322,4002,4002,7,Mon,Resident Worker,WW,46.78,11,12
+137323,4002,4002,7,Mon,Resident Worker,WW,46.78,13,14
+142753,4002,4002,7,Mon,Home Worker,HO,57.51,11,12
+143719,4002,4002,7,Mon,Long Term Visitor,HH,100.69,17,18
+143774,4002,4002,7,Mon,Outbound Commuter,HO,32.74,13,14
+144226,4002,4002,7,Mon,Long Term Visitor,HH,63.91,9,10
+144227,4002,4002,7,Mon,Long Term Visitor,HO,90.11,10,11
+144694,4002,4002,7,Mon,Resident Worker,OO,68.62,13,14
+145923,4002,4002,7,Mon,Outbound Commuter,WO,81.37,19,20
+148915,4002,4002,7,Mon,Long Term Visitor,HH,42.05,21,22
+152531,4002,4002,7,Mon,Long Term Visitor,HO,24.25,4,5
+153192,4002,4002,7,Mon,Resident Worker,WW,117.53,12,13
+154351,4002,4002,7,Mon,Home Worker,OO,67.99,16,17
+154998,4002,4002,7,Mon,Home Worker,HO,31.32,16,17
+156205,4002,4002,7,Mon,Long Term Visitor,HO,38.2,5,6
+156206,4002,4002,7,Mon,Long Term Visitor,OH,122.25,10,11
+156678,4002,4002,7,Mon,Long Term Visitor,HH,38.4,10,11
+156679,4002,4002,7,Mon,Long Term Visitor,HO,38.4,22,23
+158433,4002,4002,7,Mon,Short Term Visitor,WW,44.24,20,21
+159379,4002,4002,7,Mon,Long Term Visitor,OH,26.2,11,12
+159763,4002,4002,7,Mon,Resident Worker,WW,30.71,15,16
+161802,4002,4002,7,Mon,Inbound Commuter,WH,41.44,13,14
+162670,4002,4002,7,Mon,Long Term Visitor,HH,52.24,12,13
+163046,4002,4002,7,Mon,Outbound Commuter,HH,40.68,20,21
+165571,4002,4002,7,Mon,Outbound Commuter,WO,60.8,13,14
+165965,4002,4002,7,Mon,Long Term Visitor,WO,51.91,16,17
+166569,4002,4002,7,Mon,Inbound Commuter,HO,46.24,18,19
+166570,4002,4002,7,Mon,Inbound Commuter,OH,46.24,21,22
+168710,4002,4002,7,Mon,Home Worker,HH,51.1,13,14
+169347,4002,4002,7,Mon,Outbound Commuter,OO,77.26,6,7
