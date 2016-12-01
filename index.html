@@ -224,8 +224,8 @@
             var purposesArray = ['HW', 'WH', 'HO', 'OW', 'HH', 'OO', 'WW', 'WO'];
             var showBoundsPurpose = 'showbounds';
             var purposeScale = d3.scaleLinear()
-            .domain([0, 3000])
-            .range([0, 350]);
+            .domain([0, 2500])
+            .range([0, 200]);
             
 
             function loadCsvData(callback) {
@@ -776,28 +776,36 @@
                        else {
 
                            if (purpose == 'HW') {
-                               return purposeData[tazId].HW;
+                               //return purposeScale(purposeData[tazId].HW);
+                               return purposeData[tazId].HO;
                            }
                            else if (purpose == 'WH') {
-                               return purposeData[tazId].WH;
+                               //return purposeScale(purposeData[tazId].WH);
+                               return purposeData[tazId].HO;
                            }
                            else if (purpose == 'HO') {
+                               //return purposeScale(purposeData[tazId].HO);
                                return purposeData[tazId].HO;
                            }
                            else if (purpose == 'OH') {
+                               //return purposeScale(purposeData[tazId].OH);
                                return purposeData[tazId].OH;
                            }
                            else if (purpose == 'OW') {
+                               //return purposeScale(purposeData[tazId].OW);
                                return purposeData[tazId].OW;
                            }
                            else if (purpose == 'WO') {
+                               //return purposeScale(purposeData[tazId].WO);
                                return purposeData[tazId].WO;
                            }
                            else if (purpose == 'HH') {
+                               //return purposeScale(purposeData[tazId].HH);
                                return purposeData[tazId].HH;
                            }
                            else if (purpose == 'OO') {
-                               return purposeScale(purposeData[tazId].OO);
+                                return purposeScale(purposeData[tazId].OO);
+                               //return purposeData[tazId].OO;
                            }
                            else if (purpose == 'WW') {
                                return purposeData[tazId].WW;
