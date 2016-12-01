@@ -7,9 +7,28 @@
       <link rel="stylesheet" type="text/css" href="css/exp.css">
 </head>
 <body>
+
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <div class="pure-menu pure-menu-horizontal" style="background-color:black;">
+        <style type="text/css">
+            .pure-menu-link:hover {
+                background-color: lightgray;
+            }
+        </style>
+
+        <a href="#" class="pure-menu-heading pure-menu-link">CS-424</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"></li>          
+            <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Visualization 1</a></li>
+            <li class="pure-menu-item"><a href="exp.html" class="pure-menu-link">Visualization 2</a></li>
+            <li class="pure-menu-item"><a href="About.html" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact Us</a></li>
+        </ul>
+    </div>
+   <br/>
 	 <div id="map"></div>
 	 <div id="wrapper">
-      <button id="play">play</button>
+      <button id="play" class="pure-button pure-button-primary">play</button>
       <span>Date</span>
       <select id = "date"></select>
       <span>County list</span>
