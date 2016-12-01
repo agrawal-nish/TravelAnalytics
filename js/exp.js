@@ -29,6 +29,7 @@ function mainmapcall(){
                           d.circle.coordinates[0])
             });
             
+          /*
           // create centroid circles
           var circlefeat = g.selectAll(".regioncenter")
             .data(circledata.objects)
@@ -38,6 +39,7 @@ function mainmapcall(){
             .style("opacity", .8) 
             .style("fill", "#CD5B45")
             .attr("r", 2); 
+          */
 
           // create lines
           var toLine = d3.svg.line()
@@ -186,6 +188,8 @@ function mainmapcall(){
                       g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
 
                       paths.attr("d", path);
+
+                      /*
                       
                       circlefeat.attr("transform", 
                         function(d) { 
@@ -194,6 +198,7 @@ function mainmapcall(){
                             map.latLngToLayerPoint(d.LatLng).y +")";
                           }
                         )
+                        */
                   
                        marker.attr("transform",
                                   function(d) {
