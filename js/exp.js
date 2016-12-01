@@ -81,6 +81,8 @@ function mainmapcall(){
          // firstflag - 0(don't animate) 1(animate)
           function datacaller(data,firstflag){
 
+            console.log(data);
+
             // data filter
             var data_range = selected_data.split('-');
             data = data.filter(function(d){
