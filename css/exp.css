@@ -10,7 +10,7 @@ svg {
 
 path {
   fill: #000;
-  fill-opacity: .2;
+  fill-opacity: .5;
   stroke: #D4D4D4;
   stroke-width: 1.5px;
 }
@@ -56,3 +56,19 @@ path:hover {
 .hidden{
   display: none;
 }
+
+div.tooltip {
+        color: #222;
+        /*background-color: darkseagreen;*/
+        background-color:yellow;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        opacity: 0.9;
+        position: absolute;
+        width: 300px;
+        /*left: 390px;*/
+        /*stop: 10px;*/
+        left:1150px; 
+        top:35px;
+    }

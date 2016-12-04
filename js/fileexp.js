@@ -1,3 +1,6 @@
+var tooltip = d3.select('body').append('div')
+                    .attr('class', 'hidden tooltip');
+
 // drop down for day
 var dropDowndate = d3.select('#date');
 
@@ -131,11 +134,30 @@ var svg = d3.select(map.getPanes().overlayPane).append("svg"),
 //create data for animation
 var final_list = [];
 
+var datetext = d3.select('body').append('div')
+               .attr('class', 'datetext')
+               .style('position', 'absolute')
+               .style('opacity', 1)
+               .style('background-color', 'black').text('Date : '  + selected_date)
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "100px")
+               .style('line-height', 1)
+               .style('font-weight', 'bold')
+               .style('padding', '12px')
+               .style('color', '#fff')
+               .style('border-radius', '2px');
+
+
 dropDowndate.on('change',function(){
         selected_date = d3.event.target.value;
+        d3.select('.datetext').text('Date : ' + selected_date);
         menuChanged();
     });
 
+
+
+// change in county
 dropDown.on("change", function(){
 	selectedValue = d3.event.target.value;
 	menuChanged(selectedValue);

@@ -6,10 +6,24 @@ function mainmapcall(){
         // get features
         var feature = g.selectAll("path")
             .data(geodata.features)
-            .enter();
+            .enter()
+
 
         // create paths
-        var paths = feature.append("path");
+        var paths = feature.append("path")
+                    
+            paths.on('mouseover', function (d) {
+
+                    var mouse = d3.mouse(svg.node()).map(function (d) {
+                        return parseInt(d);
+                    });
+
+                    tooltip.classed('hidden', false)
+                     .html('County: ' + d.properties.COUNTY + '<br/>Taz ID: ' + d.properties.TAZ_ID);
+                   })
+              .on('mouseout', function (d) {
+                    tooltip.classed('hidden', true)
+                  });
 
         var data = new Array(24);
         // create dictionary (effecient lookup) 
@@ -60,7 +74,7 @@ function mainmapcall(){
               selected_zone = d.properties.TAZ_ID;
                 // show everything
                 if(zone_toggle){
-                  d3.selectAll('path').style('fill','#000');
+                  d3.selectAll('path').style('fill',null);
                   d3.selectAll('.travelMarker').classed('hidden',false);
                   zone_toggle = false;
                 }
@@ -282,7 +296,20 @@ function mainmapcall(){
                     
               });
 
-           
+          var datetext = d3.select('body').append('div')
+               .attr('class', 'datetext')
+               .style('position', 'absolute')
+               .style('opacity', 1)
+               .style('background-color', 'black').text('Date : '  + selected_date)
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "100px")
+               .style('line-height', 1)
+               .style('font-weight', 'bold')
+               .style('padding', '12px')
+               .style('color', '#fff')
+               .style('border-radius', '2px');
+
           
           var timetext = d3.select('body').append('div')
                .attr('class', 'timetext')
@@ -291,7 +318,7 @@ function mainmapcall(){
                .style('background-color', 'black').text('Time : '  + index)
                .style('width', '150px')
                .style("left", "1402px")
-               .style("top", "100px")
+               .style("top", "160px")
                .style('line-height', 1)
                .style('font-weight', 'bold')
                .style('padding', '12px')
