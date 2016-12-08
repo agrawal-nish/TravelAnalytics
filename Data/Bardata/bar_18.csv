@@ -1,0 +1,5884 @@
+Zone,Subscriber_Class,Outbound,Inbound
+1,Home Worker,16,22
+1,Inbound Commuter,4,2
+1,Long Term Visitor,27,35
+1,Outbound Commuter,3,5
+1,Resident Worker,45,49
+1,Short Term Visitor,16,14
+2,Home Worker,55,55
+2,Inbound Commuter,16,12
+2,Long Term Visitor,46,44
+2,Outbound Commuter,7,9
+2,Resident Worker,105,105
+2,Short Term Visitor,34,35
+3,Home Worker,46,50
+3,Inbound Commuter,21,22
+3,Long Term Visitor,42,44
+3,Outbound Commuter,13,8
+3,Resident Worker,102,106
+3,Short Term Visitor,43,46
+4,Home Worker,4,4
+4,Long Term Visitor,5,2
+4,Resident Worker,5,9
+4,Short Term Visitor,3,1
+5,Home Worker,14,12
+5,Inbound Commuter,3,2
+5,Long Term Visitor,3,1
+5,Outbound Commuter,1,1
+5,Resident Worker,28,25
+5,Short Term Visitor,6,4
+6,Home Worker,2,2
+6,Inbound Commuter,2,1
+6,Long Term Visitor,1,1
+6,Resident Worker,9,9
+7,Home Worker,7,7
+7,Long Term Visitor,3,4
+7,Outbound Commuter,3,4
+7,Resident Worker,6,7
+7,Short Term Visitor,2,3
+8,Home Worker,15,12
+8,Inbound Commuter,6,6
+8,Long Term Visitor,8,12
+8,Outbound Commuter,2,1
+8,Resident Worker,35,34
+8,Short Term Visitor,11,14
+9,Home Worker,6,5
+9,Inbound Commuter,2,2
+9,Resident Worker,6,4
+9,Short Term Visitor,2,1
+10,Outbound Commuter,1,1
+11,Home Worker,6,5
+11,Inbound Commuter,4,3
+11,Long Term Visitor,5,6
+11,Resident Worker,6,7
+11,Short Term Visitor,1,3
+12,Home Worker,45,42
+12,Inbound Commuter,3,2
+12,Long Term Visitor,15,13
+12,Outbound Commuter,5,7
+12,Resident Worker,59,60
+12,Short Term Visitor,15,17
+13,Home Worker,46,47
+13,Inbound Commuter,1,1
+13,Long Term Visitor,28,28
+13,Outbound Commuter,9,7
+13,Resident Worker,90,97
+13,Short Term Visitor,6,8
+14,Home Worker,3,3
+14,Long Term Visitor,1,1
+14,Outbound Commuter,1,1
+14,Resident Worker,7,9
+15,Home Worker,5,4
+15,Inbound Commuter,1,2
+15,Outbound Commuter,1,1
+15,Resident Worker,5,6
+16,Home Worker,1,1
+16,Inbound Commuter,1,1
+16,Long Term Visitor,1,4
+16,Resident Worker,3,2
+16,Short Term Visitor,1,3
+17,Home Worker,102,99
+17,Inbound Commuter,35,34
+17,Long Term Visitor,64,59
+17,Outbound Commuter,18,17
+17,Resident Worker,146,156
+17,Short Term Visitor,60,69
+18,Home Worker,27,27
+18,Inbound Commuter,5,8
+18,Long Term Visitor,7,7
+18,Outbound Commuter,2,1
+18,Resident Worker,53,47
+18,Short Term Visitor,7,7
+19,Home Worker,8,12
+19,Inbound Commuter,3,2
+19,Long Term Visitor,11,10
+19,Outbound Commuter,6,7
+19,Resident Worker,40,35
+19,Short Term Visitor,6,7
+20,Home Worker,10,9
+20,Inbound Commuter,2,3
+20,Long Term Visitor,4,4
+20,Outbound Commuter,3,3
+20,Resident Worker,20,21
+20,Short Term Visitor,13,9
+21,Home Worker,12,11
+21,Inbound Commuter,7,6
+21,Long Term Visitor,3,4
+21,Resident Worker,18,16
+21,Short Term Visitor,7,7
+22,Home Worker,10,8
+22,Inbound Commuter,3,3
+22,Long Term Visitor,3,3
+22,Resident Worker,13,13
+22,Short Term Visitor,4,3
+23,Home Worker,4,4
+23,Inbound Commuter,2,2
+23,Long Term Visitor,2,3
+23,Resident Worker,7,10
+24,Home Worker,14,15
+24,Inbound Commuter,1,1
+24,Long Term Visitor,5,4
+24,Outbound Commuter,6,6
+24,Resident Worker,28,24
+24,Short Term Visitor,1,1
+25,Home Worker,24,18
+25,Inbound Commuter,1,2
+25,Long Term Visitor,89,112
+25,Outbound Commuter,9,6
+25,Resident Worker,59,58
+25,Short Term Visitor,24,24
+26,Home Worker,18,21
+26,Inbound Commuter,3,4
+26,Long Term Visitor,44,13
+26,Outbound Commuter,2,2
+26,Resident Worker,19,18
+26,Short Term Visitor,7,3
+27,Home Worker,42,44
+27,Inbound Commuter,7,6
+27,Long Term Visitor,30,30
+27,Outbound Commuter,10,10
+27,Resident Worker,73,83
+27,Short Term Visitor,9,14
+28,Home Worker,4,2
+28,Long Term Visitor,2,11
+28,Resident Worker,6,6
+28,Short Term Visitor,5,6
+29,Home Worker,2,2
+29,Inbound Commuter,3,3
+29,Long Term Visitor,3,9
+29,Resident Worker,4,3
+29,Short Term Visitor,3,5
+30,Home Worker,57,59
+30,Inbound Commuter,4,5
+30,Long Term Visitor,19,17
+30,Outbound Commuter,2,3
+30,Resident Worker,86,86
+30,Short Term Visitor,9,9
+31,Home Worker,18,22
+31,Long Term Visitor,9,10
+31,Outbound Commuter,4,6
+31,Resident Worker,51,49
+31,Short Term Visitor,3,5
+32,Home Worker,13,11
+32,Inbound Commuter,3,1
+32,Long Term Visitor,9,4
+32,Outbound Commuter,1,1
+32,Resident Worker,18,17
+32,Short Term Visitor,3,3
+33,Home Worker,31,30
+33,Inbound Commuter,2,2
+33,Long Term Visitor,4,6
+33,Resident Worker,39,44
+33,Short Term Visitor,6,7
+34,Home Worker,20,21
+34,Inbound Commuter,2,1
+34,Long Term Visitor,4,2
+34,Outbound Commuter,7,6
+34,Resident Worker,13,17
+34,Short Term Visitor,3,2
+35,Home Worker,12,12
+35,Inbound Commuter,3,3
+35,Long Term Visitor,3,3
+35,Resident Worker,24,24
+35,Short Term Visitor,1,1
+36,Home Worker,38,40
+36,Inbound Commuter,1,1
+36,Long Term Visitor,8,13
+36,Outbound Commuter,4,7
+36,Resident Worker,42,40
+36,Short Term Visitor,6,6
+37,Home Worker,48,45
+37,Inbound Commuter,6,4
+37,Long Term Visitor,17,23
+37,Outbound Commuter,9,12
+37,Resident Worker,79,81
+37,Short Term Visitor,6,5
+38,Home Worker,53,59
+38,Inbound Commuter,20,18
+38,Long Term Visitor,51,48
+38,Outbound Commuter,11,6
+38,Resident Worker,125,122
+38,Short Term Visitor,26,20
+39,Home Worker,27,26
+39,Inbound Commuter,19,16
+39,Long Term Visitor,14,26
+39,Outbound Commuter,6,4
+39,Resident Worker,77,63
+39,Short Term Visitor,14,14
+40,Home Worker,32,33
+40,Inbound Commuter,12,14
+40,Long Term Visitor,28,23
+40,Outbound Commuter,4,4
+40,Resident Worker,57,61
+40,Short Term Visitor,14,16
+41,Home Worker,42,35
+41,Long Term Visitor,11,9
+41,Outbound Commuter,6,6
+41,Resident Worker,58,56
+41,Short Term Visitor,4,2
+42,Home Worker,11,7
+42,Inbound Commuter,2,2
+42,Long Term Visitor,1,1
+42,Resident Worker,34,34
+42,Short Term Visitor,3,2
+43,Home Worker,17,15
+43,Inbound Commuter,2,2
+43,Long Term Visitor,11,14
+43,Outbound Commuter,3,2
+43,Resident Worker,30,28
+43,Short Term Visitor,9,5
+44,Home Worker,7,7
+44,Long Term Visitor,3,4
+44,Resident Worker,9,7
+44,Short Term Visitor,3,2
+45,Home Worker,16,16
+45,Inbound Commuter,7,8
+45,Long Term Visitor,8,4
+45,Outbound Commuter,3,3
+45,Resident Worker,33,30
+45,Short Term Visitor,10,8
+46,Home Worker,6,6
+46,Inbound Commuter,2,2
+46,Long Term Visitor,5,3
+46,Resident Worker,5,4
+47,Home Worker,18,18
+47,Inbound Commuter,1,3
+47,Long Term Visitor,2,6
+47,Outbound Commuter,3,3
+47,Resident Worker,27,20
+47,Short Term Visitor,2,4
+48,Home Worker,19,25
+48,Inbound Commuter,6,6
+48,Long Term Visitor,133,145
+48,Outbound Commuter,7,5
+48,Resident Worker,48,48
+48,Short Term Visitor,50,47
+49,Home Worker,60,64
+49,Inbound Commuter,18,19
+49,Long Term Visitor,40,41
+49,Outbound Commuter,8,6
+49,Resident Worker,119,122
+49,Short Term Visitor,21,16
+50,Home Worker,22,26
+50,Inbound Commuter,5,6
+50,Long Term Visitor,5,8
+50,Outbound Commuter,1,2
+50,Resident Worker,40,46
+51,Home Worker,10,9
+51,Long Term Visitor,1,1
+51,Resident Worker,8,8
+52,Home Worker,8,8
+52,Long Term Visitor,4,1
+52,Outbound Commuter,1,2
+52,Resident Worker,14,12
+52,Short Term Visitor,2,2
+53,Home Worker,58,59
+53,Inbound Commuter,8,6
+53,Long Term Visitor,19,9
+53,Outbound Commuter,12,13
+53,Resident Worker,86,82
+53,Short Term Visitor,15,12
+54,Home Worker,45,44
+54,Inbound Commuter,4,3
+54,Long Term Visitor,18,13
+54,Resident Worker,77,80
+54,Short Term Visitor,5,7
+55,Home Worker,32,30
+55,Inbound Commuter,2,2
+55,Long Term Visitor,17,12
+55,Outbound Commuter,4,5
+55,Resident Worker,54,57
+55,Short Term Visitor,4,5
+56,Home Worker,13,11
+56,Long Term Visitor,2,1
+56,Resident Worker,4,6
+56,Short Term Visitor,4,3
+57,Home Worker,1,2
+57,Long Term Visitor,6,2
+57,Resident Worker,10,11
+58,Home Worker,7,7
+58,Long Term Visitor,9,7
+58,Resident Worker,2,2
+58,Short Term Visitor,2,5
+59,Home Worker,32,28
+59,Long Term Visitor,7,10
+59,Outbound Commuter,2,4
+59,Resident Worker,29,41
+60,Home Worker,29,29
+60,Inbound Commuter,1,1
+60,Long Term Visitor,7,9
+60,Outbound Commuter,3,4
+60,Resident Worker,36,36
+60,Short Term Visitor,7,7
+61,Home Worker,11,10
+61,Inbound Commuter,1,1
+61,Long Term Visitor,16,11
+61,Resident Worker,20,19
+61,Short Term Visitor,5,4
+62,Home Worker,9,8
+62,Long Term Visitor,11,9
+62,Resident Worker,17,17
+62,Short Term Visitor,3,1
+63,Home Worker,29,24
+63,Inbound Commuter,5,5
+63,Long Term Visitor,29,27
+63,Outbound Commuter,9,9
+63,Resident Worker,65,64
+63,Short Term Visitor,12,15
+64,Home Worker,100,94
+64,Inbound Commuter,17,12
+64,Long Term Visitor,48,42
+64,Outbound Commuter,9,10
+64,Resident Worker,155,162
+64,Short Term Visitor,27,20
+65,Home Worker,31,29
+65,Inbound Commuter,1,1
+65,Long Term Visitor,2,3
+65,Outbound Commuter,1,2
+65,Resident Worker,54,51
+65,Short Term Visitor,2,3
+66,Home Worker,11,12
+66,Long Term Visitor,4,8
+66,Outbound Commuter,2,1
+66,Resident Worker,11,8
+67,Home Worker,45,50
+67,Inbound Commuter,10,9
+67,Long Term Visitor,17,17
+67,Outbound Commuter,7,8
+67,Resident Worker,73,67
+67,Short Term Visitor,10,10
+68,Home Worker,23,24
+68,Inbound Commuter,8,7
+68,Long Term Visitor,18,15
+68,Outbound Commuter,6,7
+68,Resident Worker,39,37
+68,Short Term Visitor,7,7
+69,Home Worker,11,9
+69,Long Term Visitor,3,3
+69,Outbound Commuter,1,1
+69,Resident Worker,24,23
+69,Short Term Visitor,2,3
+70,Home Worker,30,31
+70,Inbound Commuter,3,1
+70,Long Term Visitor,19,21
+70,Outbound Commuter,4,3
+70,Resident Worker,44,41
+70,Short Term Visitor,7,7
+71,Home Worker,15,15
+71,Inbound Commuter,4,4
+71,Long Term Visitor,17,22
+71,Outbound Commuter,2,2
+71,Resident Worker,59,53
+71,Short Term Visitor,11,5
+72,Home Worker,25,27
+72,Inbound Commuter,4,4
+72,Long Term Visitor,9,8
+72,Outbound Commuter,4,5
+72,Resident Worker,39,36
+72,Short Term Visitor,3,4
+73,Home Worker,30,26
+73,Inbound Commuter,3,2
+73,Long Term Visitor,5,5
+73,Outbound Commuter,1,1
+73,Resident Worker,34,27
+73,Short Term Visitor,1,1
+74,Home Worker,17,18
+74,Long Term Visitor,1,1
+74,Resident Worker,25,22
+75,Home Worker,40,45
+75,Inbound Commuter,2,2
+75,Long Term Visitor,16,16
+75,Outbound Commuter,1,1
+75,Resident Worker,82,89
+75,Short Term Visitor,2,4
+76,Home Worker,10,10
+76,Inbound Commuter,5,2
+76,Long Term Visitor,7,3
+76,Outbound Commuter,3,3
+76,Resident Worker,28,28
+76,Short Term Visitor,5,3
+77,Home Worker,28,28
+77,Long Term Visitor,27,28
+77,Outbound Commuter,2,2
+77,Resident Worker,35,35
+77,Short Term Visitor,4,11
+78,Home Worker,27,21
+78,Inbound Commuter,2,2
+78,Long Term Visitor,7,9
+78,Outbound Commuter,2,4
+78,Resident Worker,31,39
+78,Short Term Visitor,3,3
+79,Home Worker,3,5
+79,Inbound Commuter,2,2
+79,Resident Worker,8,12
+79,Short Term Visitor,2,2
+80,Home Worker,6,7
+80,Inbound Commuter,1,1
+80,Long Term Visitor,8,4
+80,Outbound Commuter,1,1
+80,Resident Worker,22,20
+80,Short Term Visitor,4,3
+81,Home Worker,30,28
+81,Inbound Commuter,12,9
+81,Long Term Visitor,6,5
+81,Resident Worker,54,51
+81,Short Term Visitor,2,2
+82,Home Worker,35,30
+82,Inbound Commuter,1,1
+82,Long Term Visitor,21,23
+82,Outbound Commuter,2,4
+82,Resident Worker,49,45
+82,Short Term Visitor,5,5
+84,Home Worker,34,31
+84,Long Term Visitor,7,9
+84,Resident Worker,39,42
+85,Home Worker,19,24
+85,Long Term Visitor,6,5
+85,Outbound Commuter,1,1
+85,Resident Worker,17,14
+86,Home Worker,72,65
+86,Inbound Commuter,1,1
+86,Long Term Visitor,35,31
+86,Outbound Commuter,1,1
+86,Resident Worker,133,118
+86,Short Term Visitor,6,5
+87,Home Worker,49,53
+87,Inbound Commuter,1,1
+87,Long Term Visitor,12,10
+87,Outbound Commuter,5,3
+87,Resident Worker,72,77
+87,Short Term Visitor,2,2
+88,Home Worker,62,67
+88,Inbound Commuter,2,2
+88,Long Term Visitor,11,21
+88,Outbound Commuter,5,7
+88,Resident Worker,93,107
+88,Short Term Visitor,2,2
+89,Home Worker,56,57
+89,Inbound Commuter,5,6
+89,Long Term Visitor,50,47
+89,Outbound Commuter,3,6
+89,Resident Worker,101,98
+89,Short Term Visitor,12,11
+90,Home Worker,30,28
+90,Inbound Commuter,3,3
+90,Long Term Visitor,31,27
+90,Resident Worker,42,38
+90,Short Term Visitor,18,9
+91,Home Worker,21,19
+91,Inbound Commuter,3,2
+91,Long Term Visitor,7,4
+91,Outbound Commuter,1,1
+91,Resident Worker,32,35
+91,Short Term Visitor,2,2
+92,Home Worker,15,19
+92,Inbound Commuter,1,1
+92,Long Term Visitor,6,4
+92,Outbound Commuter,2,1
+92,Resident Worker,29,31
+92,Short Term Visitor,1,1
+93,Home Worker,34,27
+93,Inbound Commuter,5,4
+93,Long Term Visitor,9,10
+93,Outbound Commuter,2,1
+93,Resident Worker,53,52
+93,Short Term Visitor,2,2
+94,Home Worker,7,7
+94,Long Term Visitor,4,2
+94,Resident Worker,19,17
+94,Short Term Visitor,3,2
+95,Home Worker,33,32
+95,Inbound Commuter,3,3
+95,Long Term Visitor,7,3
+95,Outbound Commuter,1,1
+95,Resident Worker,49,50
+95,Short Term Visitor,6,4
+96,Home Worker,26,26
+96,Inbound Commuter,2,2
+96,Long Term Visitor,7,7
+96,Outbound Commuter,3,2
+96,Resident Worker,34,33
+96,Short Term Visitor,2,2
+97,Home Worker,22,20
+97,Long Term Visitor,2,7
+97,Outbound Commuter,5,6
+97,Resident Worker,31,33
+98,Home Worker,1,2
+98,Resident Worker,7,7
+99,Home Worker,15,14
+99,Long Term Visitor,2,2
+99,Outbound Commuter,1,3
+99,Resident Worker,28,25
+100,Home Worker,35,39
+100,Long Term Visitor,9,12
+100,Outbound Commuter,3,3
+100,Resident Worker,68,69
+100,Short Term Visitor,2,1
+101,Home Worker,12,14
+101,Inbound Commuter,1,1
+101,Long Term Visitor,3,2
+101,Outbound Commuter,3,1
+101,Resident Worker,30,31
+102,Home Worker,21,23
+102,Inbound Commuter,3,4
+102,Long Term Visitor,9,15
+102,Outbound Commuter,3,3
+102,Resident Worker,38,40
+102,Short Term Visitor,7,9
+103,Home Worker,24,24
+103,Inbound Commuter,6,4
+103,Long Term Visitor,15,21
+103,Outbound Commuter,2,2
+103,Resident Worker,42,44
+103,Short Term Visitor,7,6
+104,Home Worker,4,2
+104,Inbound Commuter,2,2
+104,Resident Worker,10,10
+105,Home Worker,25,26
+105,Inbound Commuter,4,3
+105,Long Term Visitor,5,7
+105,Outbound Commuter,5,5
+105,Resident Worker,77,68
+105,Short Term Visitor,6,7
+106,Home Worker,14,14
+106,Inbound Commuter,4,5
+106,Long Term Visitor,2,1
+106,Outbound Commuter,2,2
+106,Resident Worker,60,62
+106,Short Term Visitor,5,5
+107,Home Worker,9,9
+107,Resident Worker,18,17
+108,Home Worker,51,53
+108,Inbound Commuter,9,9
+108,Long Term Visitor,13,14
+108,Outbound Commuter,3,3
+108,Resident Worker,79,74
+108,Short Term Visitor,8,6
+109,Home Worker,34,38
+109,Long Term Visitor,9,9
+109,Outbound Commuter,8,7
+109,Resident Worker,44,40
+109,Short Term Visitor,5,6
+110,Home Worker,46,41
+110,Inbound Commuter,1,2
+110,Long Term Visitor,4,9
+110,Resident Worker,56,56
+110,Short Term Visitor,1,1
+111,Home Worker,49,48
+111,Long Term Visitor,12,13
+111,Outbound Commuter,5,4
+111,Resident Worker,58,51
+111,Short Term Visitor,3,3
+112,Home Worker,75,75
+112,Inbound Commuter,3,3
+112,Long Term Visitor,21,12
+112,Outbound Commuter,8,7
+112,Resident Worker,117,108
+112,Short Term Visitor,1,2
+113,Resident Worker,3,2
+114,Home Worker,17,17
+114,Long Term Visitor,22,11
+114,Outbound Commuter,3,2
+114,Resident Worker,20,16
+114,Short Term Visitor,4,1
+115,Home Worker,24,24
+115,Inbound Commuter,1,1
+115,Long Term Visitor,8,8
+115,Outbound Commuter,4,6
+115,Resident Worker,41,41
+115,Short Term Visitor,3,4
+116,Home Worker,17,12
+116,Inbound Commuter,1,1
+116,Long Term Visitor,1,2
+116,Outbound Commuter,1,1
+116,Resident Worker,22,22
+117,Home Worker,41,39
+117,Inbound Commuter,1,1
+117,Long Term Visitor,13,18
+117,Outbound Commuter,3,4
+117,Resident Worker,88,93
+118,Home Worker,39,38
+118,Inbound Commuter,1,1
+118,Long Term Visitor,9,8
+118,Outbound Commuter,2,3
+118,Resident Worker,48,48
+118,Short Term Visitor,4,4
+119,Home Worker,31,27
+119,Inbound Commuter,2,3
+119,Long Term Visitor,8,11
+119,Outbound Commuter,2,2
+119,Resident Worker,53,61
+120,Home Worker,57,56
+120,Inbound Commuter,2,3
+120,Long Term Visitor,21,25
+120,Outbound Commuter,3,5
+120,Resident Worker,82,71
+120,Short Term Visitor,4,5
+121,Home Worker,13,16
+121,Inbound Commuter,1,1
+121,Long Term Visitor,3,3
+121,Outbound Commuter,3,4
+121,Resident Worker,11,16
+121,Short Term Visitor,1,1
+122,Home Worker,11,14
+122,Inbound Commuter,1,1
+122,Long Term Visitor,3,5
+122,Outbound Commuter,6,3
+122,Resident Worker,20,31
+122,Short Term Visitor,1,1
+123,Home Worker,28,28
+123,Long Term Visitor,5,4
+123,Outbound Commuter,1,1
+123,Resident Worker,34,33
+123,Short Term Visitor,6,4
+124,Home Worker,49,48
+124,Inbound Commuter,5,3
+124,Long Term Visitor,70,81
+124,Outbound Commuter,7,7
+124,Resident Worker,120,118
+124,Short Term Visitor,10,9
+125,Home Worker,47,46
+125,Inbound Commuter,7,6
+125,Long Term Visitor,49,45
+125,Outbound Commuter,6,7
+125,Resident Worker,85,87
+125,Short Term Visitor,17,18
+126,Home Worker,105,106
+126,Inbound Commuter,9,10
+126,Long Term Visitor,45,43
+126,Outbound Commuter,8,9
+126,Resident Worker,167,193
+126,Short Term Visitor,21,22
+127,Home Worker,33,35
+127,Inbound Commuter,5,3
+127,Long Term Visitor,7,12
+127,Outbound Commuter,6,8
+127,Resident Worker,62,56
+127,Short Term Visitor,5,5
+128,Home Worker,45,45
+128,Long Term Visitor,8,8
+128,Outbound Commuter,10,8
+128,Resident Worker,59,67
+128,Short Term Visitor,10,10
+129,Home Worker,20,16
+129,Inbound Commuter,1,1
+129,Long Term Visitor,5,4
+129,Outbound Commuter,1,1
+129,Resident Worker,24,18
+129,Short Term Visitor,3,2
+130,Home Worker,23,22
+130,Inbound Commuter,4,4
+130,Long Term Visitor,7,7
+130,Outbound Commuter,4,3
+130,Resident Worker,33,31
+130,Short Term Visitor,5,4
+131,Home Worker,19,18
+131,Long Term Visitor,2,2
+131,Outbound Commuter,1,1
+131,Resident Worker,12,13
+131,Short Term Visitor,2,2
+132,Home Worker,9,6
+132,Inbound Commuter,3,2
+132,Long Term Visitor,2,4
+132,Outbound Commuter,4,5
+132,Resident Worker,19,18
+133,Home Worker,26,24
+133,Inbound Commuter,2,3
+133,Long Term Visitor,9,13
+133,Outbound Commuter,6,6
+133,Resident Worker,45,41
+133,Short Term Visitor,5,1
+134,Home Worker,1,2
+134,Resident Worker,11,9
+135,Home Worker,9,10
+135,Long Term Visitor,2,3
+135,Resident Worker,11,9
+135,Short Term Visitor,1,2
+136,Home Worker,90,87
+136,Inbound Commuter,6,5
+136,Long Term Visitor,13,7
+136,Outbound Commuter,2,1
+136,Resident Worker,102,114
+136,Short Term Visitor,4,5
+137,Home Worker,48,48
+137,Inbound Commuter,1,1
+137,Long Term Visitor,7,7
+137,Outbound Commuter,1,2
+137,Resident Worker,66,68
+137,Short Term Visitor,1,2
+138,Home Worker,3,4
+138,Long Term Visitor,3,2
+138,Resident Worker,8,8
+138,Short Term Visitor,1,2
+139,Home Worker,27,26
+139,Long Term Visitor,9,5
+139,Resident Worker,28,25
+140,Home Worker,32,31
+140,Long Term Visitor,9,6
+140,Outbound Commuter,3,4
+140,Resident Worker,48,48
+141,Home Worker,47,46
+141,Long Term Visitor,16,15
+141,Outbound Commuter,2,1
+141,Resident Worker,78,86
+141,Short Term Visitor,2,1
+142,Home Worker,25,25
+142,Long Term Visitor,9,12
+142,Outbound Commuter,1,4
+142,Resident Worker,38,42
+142,Short Term Visitor,1,1
+143,Home Worker,87,86
+143,Inbound Commuter,3,3
+143,Long Term Visitor,20,22
+143,Outbound Commuter,5,6
+143,Resident Worker,122,125
+143,Short Term Visitor,4,4
+144,Home Worker,39,36
+144,Inbound Commuter,1,1
+144,Long Term Visitor,15,22
+144,Outbound Commuter,3,2
+144,Resident Worker,60,54
+144,Short Term Visitor,4,3
+145,Home Worker,46,43
+145,Inbound Commuter,1,1
+145,Long Term Visitor,8,11
+145,Outbound Commuter,6,5
+145,Resident Worker,81,77
+145,Short Term Visitor,3,3
+146,Home Worker,11,10
+146,Inbound Commuter,4,3
+146,Long Term Visitor,6,4
+146,Outbound Commuter,7,7
+146,Resident Worker,20,15
+147,Home Worker,31,34
+147,Inbound Commuter,2,2
+147,Long Term Visitor,13,12
+147,Outbound Commuter,1,2
+147,Resident Worker,66,65
+147,Short Term Visitor,2,5
+148,Home Worker,61,61
+148,Inbound Commuter,7,7
+148,Long Term Visitor,19,25
+148,Outbound Commuter,7,6
+148,Resident Worker,126,132
+148,Short Term Visitor,7,6
+149,Home Worker,21,20
+149,Inbound Commuter,1,1
+149,Long Term Visitor,10,9
+149,Outbound Commuter,2,2
+149,Resident Worker,35,38
+149,Short Term Visitor,3,2
+150,Home Worker,27,35
+150,Inbound Commuter,8,7
+150,Long Term Visitor,30,20
+150,Outbound Commuter,4,5
+150,Resident Worker,46,48
+150,Short Term Visitor,4,4
+151,Home Worker,25,22
+151,Inbound Commuter,1,3
+151,Long Term Visitor,1,3
+151,Outbound Commuter,1,1
+151,Resident Worker,10,14
+152,Home Worker,3,4
+152,Long Term Visitor,1,4
+152,Outbound Commuter,1,1
+152,Resident Worker,9,5
+153,Home Worker,12,16
+153,Long Term Visitor,2,1
+153,Outbound Commuter,1,1
+153,Resident Worker,13,18
+154,Home Worker,70,59
+154,Inbound Commuter,1,1
+154,Long Term Visitor,15,19
+154,Outbound Commuter,4,4
+154,Resident Worker,117,119
+154,Short Term Visitor,4,5
+155,Home Worker,12,11
+155,Inbound Commuter,2,2
+155,Long Term Visitor,6,7
+155,Resident Worker,21,25
+155,Short Term Visitor,1,1
+156,Home Worker,14,14
+156,Inbound Commuter,4,4
+156,Long Term Visitor,9,12
+156,Outbound Commuter,1,2
+156,Resident Worker,18,18
+156,Short Term Visitor,4,3
+157,Home Worker,10,12
+157,Inbound Commuter,1,1
+157,Long Term Visitor,7,6
+157,Resident Worker,21,18
+157,Short Term Visitor,1,1
+158,Home Worker,12,9
+158,Long Term Visitor,14,23
+158,Outbound Commuter,3,2
+158,Resident Worker,25,30
+158,Short Term Visitor,3,6
+159,Home Worker,24,26
+159,Long Term Visitor,15,18
+159,Outbound Commuter,2,3
+159,Resident Worker,45,41
+160,Home Worker,4,3
+160,Resident Worker,4,3
+161,Home Worker,14,11
+161,Long Term Visitor,7,4
+161,Resident Worker,19,20
+161,Short Term Visitor,2,1
+162,Home Worker,23,25
+162,Inbound Commuter,1,1
+162,Long Term Visitor,10,8
+162,Outbound Commuter,3,4
+162,Resident Worker,35,35
+162,Short Term Visitor,1,2
+163,Home Worker,19,22
+163,Long Term Visitor,8,6
+163,Resident Worker,16,16
+163,Short Term Visitor,1,1
+164,Home Worker,7,9
+164,Long Term Visitor,3,4
+164,Outbound Commuter,2,2
+164,Resident Worker,26,23
+165,Home Worker,16,14
+165,Long Term Visitor,4,6
+165,Outbound Commuter,1,2
+165,Resident Worker,34,38
+166,Home Worker,5,7
+166,Long Term Visitor,3,4
+166,Outbound Commuter,1,1
+166,Resident Worker,20,22
+167,Home Worker,34,35
+167,Inbound Commuter,4,4
+167,Long Term Visitor,10,9
+167,Outbound Commuter,1,1
+167,Resident Worker,70,70
+167,Short Term Visitor,5,4
+168,Home Worker,7,6
+168,Long Term Visitor,2,1
+168,Outbound Commuter,1,1
+168,Resident Worker,12,14
+169,Home Worker,17,22
+169,Inbound Commuter,3,3
+169,Long Term Visitor,5,7
+169,Outbound Commuter,4,2
+169,Resident Worker,36,39
+169,Short Term Visitor,4,3
+170,Home Worker,11,12
+170,Inbound Commuter,1,1
+170,Long Term Visitor,6,5
+170,Outbound Commuter,2,2
+170,Resident Worker,22,23
+171,Home Worker,8,9
+171,Inbound Commuter,3,3
+171,Long Term Visitor,4,7
+171,Resident Worker,34,36
+171,Short Term Visitor,1,1
+172,Home Worker,33,34
+172,Long Term Visitor,12,17
+172,Outbound Commuter,3,4
+172,Resident Worker,40,41
+172,Short Term Visitor,2,3
+173,Home Worker,11,9
+173,Long Term Visitor,3,3
+173,Outbound Commuter,2,3
+173,Resident Worker,19,17
+173,Short Term Visitor,1,1
+174,Home Worker,3,3
+174,Inbound Commuter,1,1
+174,Long Term Visitor,3,1
+174,Resident Worker,7,7
+174,Short Term Visitor,1,1
+175,Home Worker,2,3
+175,Long Term Visitor,1,1
+175,Resident Worker,6,6
+176,Home Worker,13,16
+176,Inbound Commuter,1,1
+176,Long Term Visitor,8,7
+176,Resident Worker,18,25
+177,Home Worker,63,66
+177,Inbound Commuter,3,3
+177,Long Term Visitor,19,16
+177,Outbound Commuter,2,1
+177,Resident Worker,131,118
+177,Short Term Visitor,1,2
+178,Home Worker,38,32
+178,Long Term Visitor,5,4
+178,Resident Worker,42,42
+178,Short Term Visitor,3,3
+179,Home Worker,4,7
+179,Long Term Visitor,2,3
+179,Resident Worker,7,7
+180,Home Worker,13,18
+180,Long Term Visitor,8,5
+180,Resident Worker,31,26
+181,Home Worker,13,13
+181,Long Term Visitor,7,3
+181,Resident Worker,20,25
+182,Home Worker,11,13
+182,Long Term Visitor,3,3
+182,Resident Worker,19,21
+183,Home Worker,11,8
+183,Long Term Visitor,5,7
+183,Resident Worker,32,28
+184,Home Worker,16,15
+184,Long Term Visitor,3,5
+184,Outbound Commuter,2,2
+184,Resident Worker,29,32
+184,Short Term Visitor,1,1
+185,Home Worker,41,42
+185,Long Term Visitor,8,6
+185,Outbound Commuter,3,1
+185,Resident Worker,88,76
+186,Home Worker,34,35
+186,Long Term Visitor,4,4
+186,Resident Worker,36,36
+187,Home Worker,73,72
+187,Inbound Commuter,3,3
+187,Long Term Visitor,25,29
+187,Outbound Commuter,6,5
+187,Resident Worker,123,121
+187,Short Term Visitor,2,2
+188,Home Worker,47,41
+188,Inbound Commuter,3,3
+188,Long Term Visitor,17,19
+188,Outbound Commuter,2,2
+188,Resident Worker,83,69
+188,Short Term Visitor,1,3
+189,Home Worker,69,71
+189,Inbound Commuter,1,3
+189,Long Term Visitor,22,9
+189,Outbound Commuter,3,4
+189,Resident Worker,89,99
+189,Short Term Visitor,2,3
+190,Home Worker,26,24
+190,Long Term Visitor,6,9
+190,Outbound Commuter,3,5
+190,Resident Worker,39,42
+191,Home Worker,15,17
+191,Long Term Visitor,27,3
+191,Resident Worker,22,23
+191,Short Term Visitor,7,2
+192,Home Worker,101,105
+192,Inbound Commuter,4,3
+192,Long Term Visitor,14,21
+192,Outbound Commuter,5,8
+192,Resident Worker,143,148
+192,Short Term Visitor,7,7
+193,Home Worker,80,83
+193,Inbound Commuter,3,4
+193,Long Term Visitor,20,16
+193,Outbound Commuter,3,5
+193,Resident Worker,99,102
+193,Short Term Visitor,5,3
+194,Home Worker,6,7
+194,Long Term Visitor,6,2
+194,Resident Worker,14,10
+195,Home Worker,46,50
+195,Long Term Visitor,14,10
+195,Outbound Commuter,3,6
+195,Resident Worker,98,90
+195,Short Term Visitor,5,4
+196,Home Worker,2,2
+196,Resident Worker,2,5
+197,Home Worker,88,87
+197,Inbound Commuter,3,4
+197,Long Term Visitor,21,28
+197,Outbound Commuter,2,2
+197,Resident Worker,119,129
+197,Short Term Visitor,6,4
+198,Home Worker,64,58
+198,Inbound Commuter,3,3
+198,Long Term Visitor,25,19
+198,Outbound Commuter,2,2
+198,Resident Worker,88,88
+198,Short Term Visitor,6,5
+199,Home Worker,57,61
+199,Long Term Visitor,16,14
+199,Outbound Commuter,5,8
+199,Resident Worker,107,99
+199,Short Term Visitor,2,2
+200,Home Worker,19,15
+200,Long Term Visitor,3,4
+200,Resident Worker,24,27
+201,Home Worker,27,22
+201,Inbound Commuter,2,2
+201,Long Term Visitor,9,11
+201,Outbound Commuter,5,5
+201,Resident Worker,50,51
+201,Short Term Visitor,1,1
+202,Home Worker,16,16
+202,Long Term Visitor,5,8
+202,Resident Worker,18,16
+202,Short Term Visitor,2,2
+203,Home Worker,80,77
+203,Inbound Commuter,3,3
+203,Long Term Visitor,17,17
+203,Outbound Commuter,4,3
+203,Resident Worker,128,130
+203,Short Term Visitor,3,5
+204,Home Worker,18,16
+204,Long Term Visitor,5,4
+204,Resident Worker,24,25
+205,Home Worker,30,28
+205,Long Term Visitor,6,12
+205,Outbound Commuter,2,4
+205,Resident Worker,44,49
+205,Short Term Visitor,1,1
+206,Home Worker,64,61
+206,Inbound Commuter,4,3
+206,Long Term Visitor,8,12
+206,Outbound Commuter,4,5
+206,Resident Worker,91,93
+206,Short Term Visitor,2,5
+207,Home Worker,71,64
+207,Long Term Visitor,15,16
+207,Outbound Commuter,5,1
+207,Resident Worker,93,97
+207,Short Term Visitor,5,6
+208,Home Worker,96,95
+208,Inbound Commuter,4,1
+208,Long Term Visitor,19,14
+208,Outbound Commuter,6,7
+208,Resident Worker,169,146
+208,Short Term Visitor,3,2
+209,Home Worker,76,76
+209,Inbound Commuter,3,3
+209,Long Term Visitor,6,14
+209,Outbound Commuter,7,6
+209,Resident Worker,114,121
+209,Short Term Visitor,3,3
+210,Home Worker,63,61
+210,Inbound Commuter,3,3
+210,Long Term Visitor,5,10
+210,Outbound Commuter,2,5
+210,Resident Worker,74,79
+210,Short Term Visitor,2,2
+211,Home Worker,28,28
+211,Long Term Visitor,7,9
+211,Resident Worker,43,40
+212,Home Worker,14,14
+212,Long Term Visitor,8,4
+212,Resident Worker,24,26
+212,Short Term Visitor,2,1
+213,Home Worker,147,146
+213,Inbound Commuter,1,1
+213,Long Term Visitor,26,27
+213,Outbound Commuter,8,10
+213,Resident Worker,212,196
+213,Short Term Visitor,5,6
+214,Home Worker,75,70
+214,Inbound Commuter,2,2
+214,Long Term Visitor,10,8
+214,Outbound Commuter,3,6
+214,Resident Worker,111,115
+214,Short Term Visitor,1,3
+215,Home Worker,55,49
+215,Long Term Visitor,7,8
+215,Outbound Commuter,1,1
+215,Resident Worker,63,66
+215,Short Term Visitor,3,4
+216,Home Worker,23,19
+216,Inbound Commuter,1,1
+216,Long Term Visitor,1,2
+216,Outbound Commuter,3,4
+216,Resident Worker,28,28
+217,Home Worker,24,27
+217,Long Term Visitor,9,7
+217,Resident Worker,24,21
+218,Home Worker,87,78
+218,Inbound Commuter,2,1
+218,Long Term Visitor,9,15
+218,Outbound Commuter,5,7
+218,Resident Worker,137,129
+218,Short Term Visitor,2,2
+219,Home Worker,5,3
+219,Long Term Visitor,10,9
+219,Outbound Commuter,2,2
+219,Resident Worker,18,23
+219,Short Term Visitor,2,2
+220,Home Worker,4,3
+220,Resident Worker,12,17
+220,Short Term Visitor,3,3
+221,Home Worker,22,25
+221,Inbound Commuter,2,2
+221,Long Term Visitor,8,6
+221,Outbound Commuter,4,3
+221,Resident Worker,57,55
+221,Short Term Visitor,4,4
+222,Home Worker,10,9
+222,Inbound Commuter,1,1
+222,Long Term Visitor,3,3
+222,Resident Worker,14,16
+222,Short Term Visitor,1,1
+223,Long Term Visitor,2,2
+223,Outbound Commuter,1,1
+223,Resident Worker,2,3
+224,Home Worker,9,9
+224,Inbound Commuter,7,5
+224,Long Term Visitor,3,4
+224,Outbound Commuter,2,4
+224,Resident Worker,22,21
+224,Short Term Visitor,3,5
+225,Home Worker,25,29
+225,Inbound Commuter,2,2
+225,Long Term Visitor,10,16
+225,Outbound Commuter,3,4
+225,Resident Worker,50,48
+225,Short Term Visitor,2,3
+226,Home Worker,18,15
+226,Inbound Commuter,3,2
+226,Long Term Visitor,22,24
+226,Outbound Commuter,2,3
+226,Resident Worker,10,8
+226,Short Term Visitor,13,15
+227,Home Worker,14,12
+227,Inbound Commuter,6,6
+227,Long Term Visitor,7,7
+227,Resident Worker,11,8
+227,Short Term Visitor,5,2
+228,Home Worker,8,9
+228,Inbound Commuter,12,10
+228,Long Term Visitor,5,8
+228,Outbound Commuter,3,4
+228,Resident Worker,13,13
+228,Short Term Visitor,16,17
+229,Home Worker,46,43
+229,Inbound Commuter,6,4
+229,Long Term Visitor,21,20
+229,Outbound Commuter,6,6
+229,Resident Worker,62,56
+229,Short Term Visitor,8,8
+230,Home Worker,15,15
+230,Inbound Commuter,1,1
+230,Long Term Visitor,3,9
+230,Resident Worker,29,26
+301,Home Worker,25,26
+301,Inbound Commuter,6,4
+301,Long Term Visitor,19,13
+301,Outbound Commuter,16,17
+301,Resident Worker,27,33
+301,Short Term Visitor,3,5
+302,Home Worker,45,46
+302,Inbound Commuter,21,24
+302,Long Term Visitor,23,18
+302,Outbound Commuter,17,11
+302,Resident Worker,42,33
+302,Short Term Visitor,27,23
+303,Home Worker,1,1
+303,Long Term Visitor,6,5
+303,Outbound Commuter,1,1
+303,Resident Worker,3,3
+304,Home Worker,86,79
+304,Inbound Commuter,8,9
+304,Long Term Visitor,32,30
+304,Outbound Commuter,25,21
+304,Resident Worker,135,144
+304,Short Term Visitor,14,14
+305,Home Worker,42,38
+305,Inbound Commuter,7,8
+305,Long Term Visitor,10,16
+305,Outbound Commuter,5,5
+305,Resident Worker,70,73
+305,Short Term Visitor,5,4
+306,Home Worker,11,15
+306,Inbound Commuter,2,3
+306,Long Term Visitor,16,13
+306,Outbound Commuter,1,3
+306,Resident Worker,9,5
+306,Short Term Visitor,9,10
+307,Home Worker,18,21
+307,Inbound Commuter,1,1
+307,Long Term Visitor,6,2
+307,Outbound Commuter,2,3
+307,Resident Worker,33,34
+307,Short Term Visitor,1,1
+308,Home Worker,33,29
+308,Inbound Commuter,1,2
+308,Long Term Visitor,10,12
+308,Outbound Commuter,4,5
+308,Resident Worker,63,57
+308,Short Term Visitor,4,3
+309,Home Worker,93,101
+309,Inbound Commuter,7,8
+309,Long Term Visitor,34,37
+309,Outbound Commuter,13,10
+309,Resident Worker,136,133
+309,Short Term Visitor,12,10
+310,Home Worker,55,55
+310,Inbound Commuter,3,3
+310,Long Term Visitor,7,13
+310,Outbound Commuter,3,4
+310,Resident Worker,106,96
+310,Short Term Visitor,2,4
+311,Home Worker,34,31
+311,Inbound Commuter,7,6
+311,Long Term Visitor,6,7
+311,Outbound Commuter,2,2
+311,Resident Worker,52,50
+311,Short Term Visitor,2,4
+312,Home Worker,47,48
+312,Inbound Commuter,3,3
+312,Long Term Visitor,11,14
+312,Outbound Commuter,3,4
+312,Resident Worker,76,72
+312,Short Term Visitor,1,1
+313,Home Worker,18,12
+313,Long Term Visitor,5,6
+313,Resident Worker,25,25
+314,Long Term Visitor,5,3
+314,Outbound Commuter,2,2
+314,Resident Worker,6,9
+315,Home Worker,11,8
+315,Inbound Commuter,4,3
+315,Long Term Visitor,8,9
+315,Resident Worker,42,40
+315,Short Term Visitor,2,4
+316,Home Worker,40,38
+316,Inbound Commuter,2,4
+316,Long Term Visitor,9,9
+316,Outbound Commuter,3,3
+316,Resident Worker,72,80
+316,Short Term Visitor,6,6
+317,Home Worker,5,4
+317,Inbound Commuter,2,2
+317,Long Term Visitor,2,1
+317,Outbound Commuter,1,2
+317,Resident Worker,13,8
+318,Home Worker,31,31
+318,Inbound Commuter,9,8
+318,Long Term Visitor,9,7
+318,Outbound Commuter,3,6
+318,Resident Worker,49,48
+318,Short Term Visitor,1,4
+319,Home Worker,8,8
+319,Inbound Commuter,3,2
+319,Outbound Commuter,2,3
+319,Resident Worker,18,20
+319,Short Term Visitor,2,2
+320,Home Worker,11,9
+320,Long Term Visitor,1,3
+320,Outbound Commuter,1,1
+320,Resident Worker,15,22
+321,Home Worker,22,23
+321,Inbound Commuter,2,2
+321,Long Term Visitor,10,11
+321,Outbound Commuter,3,2
+321,Resident Worker,38,35
+321,Short Term Visitor,1,1
+322,Home Worker,13,15
+322,Long Term Visitor,4,3
+322,Outbound Commuter,1,1
+322,Resident Worker,15,17
+322,Short Term Visitor,1,2
+323,Home Worker,57,61
+323,Inbound Commuter,3,4
+323,Long Term Visitor,11,16
+323,Outbound Commuter,4,4
+323,Resident Worker,74,88
+323,Short Term Visitor,6,6
+324,Home Worker,59,59
+324,Inbound Commuter,6,6
+324,Long Term Visitor,18,24
+324,Outbound Commuter,3,5
+324,Resident Worker,108,108
+324,Short Term Visitor,4,8
+325,Home Worker,43,45
+325,Inbound Commuter,2,1
+325,Long Term Visitor,10,13
+325,Outbound Commuter,3,2
+325,Resident Worker,69,64
+325,Short Term Visitor,7,7
+326,Home Worker,6,8
+326,Long Term Visitor,6,5
+326,Resident Worker,7,8
+327,Home Worker,3,4
+327,Inbound Commuter,1,2
+327,Long Term Visitor,2,1
+327,Outbound Commuter,1,2
+327,Resident Worker,4,6
+328,Home Worker,51,51
+328,Inbound Commuter,2,1
+328,Long Term Visitor,14,14
+328,Outbound Commuter,3,4
+328,Resident Worker,92,87
+328,Short Term Visitor,5,2
+329,Home Worker,28,26
+329,Inbound Commuter,2,5
+329,Long Term Visitor,3,4
+329,Resident Worker,20,20
+330,Home Worker,21,22
+330,Inbound Commuter,1,2
+330,Long Term Visitor,7,6
+330,Outbound Commuter,2,2
+330,Resident Worker,33,33
+331,Resident Worker,4,2
+332,Home Worker,23,20
+332,Inbound Commuter,2,2
+332,Long Term Visitor,8,13
+332,Resident Worker,50,45
+332,Short Term Visitor,1,1
+334,Home Worker,32,29
+334,Long Term Visitor,2,3
+334,Resident Worker,30,33
+335,Home Worker,24,26
+335,Long Term Visitor,15,14
+335,Resident Worker,42,45
+335,Short Term Visitor,2,3
+336,Home Worker,16,17
+336,Long Term Visitor,2,1
+336,Outbound Commuter,5,5
+336,Resident Worker,15,16
+337,Home Worker,7,6
+337,Long Term Visitor,8,9
+337,Outbound Commuter,2,2
+337,Resident Worker,5,6
+338,Home Worker,14,13
+338,Long Term Visitor,1,2
+338,Resident Worker,21,24
+339,Home Worker,6,6
+339,Long Term Visitor,1,2
+339,Resident Worker,14,22
+340,Home Worker,54,52
+340,Inbound Commuter,1,2
+340,Long Term Visitor,10,14
+340,Outbound Commuter,8,7
+340,Resident Worker,105,99
+340,Short Term Visitor,8,6
+341,Home Worker,23,22
+341,Inbound Commuter,2,2
+341,Long Term Visitor,9,7
+341,Outbound Commuter,3,4
+341,Resident Worker,31,41
+341,Short Term Visitor,3,1
+342,Home Worker,54,54
+342,Inbound Commuter,9,10
+342,Long Term Visitor,12,14
+342,Outbound Commuter,1,2
+342,Resident Worker,64,69
+343,Home Worker,11,8
+343,Inbound Commuter,2,1
+343,Resident Worker,18,16
+343,Short Term Visitor,3,2
+344,Home Worker,40,33
+344,Long Term Visitor,8,6
+344,Outbound Commuter,3,3
+344,Resident Worker,74,67
+345,Home Worker,21,21
+345,Inbound Commuter,3,3
+345,Long Term Visitor,2,2
+345,Resident Worker,23,28
+345,Short Term Visitor,2,2
+346,Home Worker,28,28
+346,Inbound Commuter,3,2
+346,Long Term Visitor,10,9
+346,Outbound Commuter,3,1
+346,Resident Worker,49,40
+346,Short Term Visitor,3,3
+347,Home Worker,75,83
+347,Inbound Commuter,8,6
+347,Long Term Visitor,23,16
+347,Outbound Commuter,8,7
+347,Resident Worker,133,132
+347,Short Term Visitor,5,5
+348,Home Worker,18,14
+348,Long Term Visitor,1,3
+348,Outbound Commuter,1,1
+348,Resident Worker,23,29
+348,Short Term Visitor,1,1
+349,Home Worker,13,15
+349,Long Term Visitor,5,4
+349,Resident Worker,9,15
+350,Home Worker,11,13
+350,Long Term Visitor,11,7
+350,Resident Worker,24,23
+350,Short Term Visitor,2,4
+351,Home Worker,19,17
+351,Inbound Commuter,1,2
+351,Long Term Visitor,5,7
+351,Resident Worker,26,29
+352,Home Worker,30,28
+352,Inbound Commuter,20,18
+352,Long Term Visitor,30,37
+352,Outbound Commuter,3,2
+352,Resident Worker,123,106
+352,Short Term Visitor,10,7
+353,Home Worker,4,4
+353,Inbound Commuter,1,1
+353,Long Term Visitor,6,4
+353,Resident Worker,31,31
+353,Short Term Visitor,2,2
+354,Home Worker,31,34
+354,Inbound Commuter,13,14
+354,Long Term Visitor,60,48
+354,Outbound Commuter,11,7
+354,Resident Worker,161,161
+354,Short Term Visitor,12,7
+355,Inbound Commuter,1,1
+355,Long Term Visitor,2,2
+355,Resident Worker,6,4
+356,Home Worker,6,4
+356,Long Term Visitor,2,2
+356,Resident Worker,6,6
+356,Short Term Visitor,2,2
+357,Home Worker,4,4
+357,Short Term Visitor,3,3
+358,Long Term Visitor,7,10
+358,Resident Worker,7,6
+359,Home Worker,1,1
+359,Resident Worker,6,8
+360,Home Worker,12,11
+360,Inbound Commuter,1,1
+360,Resident Worker,10,11
+361,Inbound Commuter,1,1
+361,Long Term Visitor,1,1
+361,Resident Worker,5,6
+362,Home Worker,9,9
+362,Long Term Visitor,7,5
+362,Resident Worker,4,3
+363,Home Worker,2,2
+363,Long Term Visitor,2,8
+364,Home Worker,19,17
+364,Inbound Commuter,2,2
+364,Long Term Visitor,14,15
+364,Resident Worker,49,58
+364,Short Term Visitor,6,6
+365,Home Worker,12,11
+365,Inbound Commuter,1,1
+365,Long Term Visitor,1,4
+365,Outbound Commuter,1,2
+365,Resident Worker,15,12
+366,Home Worker,17,15
+366,Long Term Visitor,5,10
+366,Resident Worker,25,32
+366,Short Term Visitor,1,2
+367,Home Worker,30,32
+367,Inbound Commuter,4,5
+367,Long Term Visitor,17,25
+367,Outbound Commuter,5,7
+367,Resident Worker,77,78
+367,Short Term Visitor,5,8
+368,Home Worker,5,5
+368,Inbound Commuter,1,1
+368,Outbound Commuter,2,1
+368,Resident Worker,6,8
+369,Home Worker,4,4
+369,Resident Worker,5,6
+370,Home Worker,8,11
+370,Inbound Commuter,2,2
+370,Long Term Visitor,1,1
+370,Outbound Commuter,2,2
+370,Resident Worker,16,16
+371,Home Worker,27,24
+371,Inbound Commuter,4,3
+371,Long Term Visitor,12,13
+371,Outbound Commuter,2,2
+371,Resident Worker,48,45
+371,Short Term Visitor,5,4
+372,Home Worker,30,29
+372,Inbound Commuter,4,4
+372,Long Term Visitor,11,11
+372,Resident Worker,52,56
+373,Home Worker,9,9
+373,Long Term Visitor,3,4
+373,Outbound Commuter,2,2
+373,Resident Worker,15,14
+374,Home Worker,15,18
+374,Long Term Visitor,4,7
+374,Resident Worker,29,27
+375,Home Worker,2,1
+375,Outbound Commuter,1,1
+375,Resident Worker,1,1
+376,Home Worker,7,8
+376,Inbound Commuter,1,1
+376,Resident Worker,15,10
+377,Home Worker,6,6
+377,Long Term Visitor,5,8
+377,Resident Worker,13,16
+378,Home Worker,9,11
+378,Long Term Visitor,4,5
+378,Resident Worker,14,16
+379,Home Worker,10,10
+379,Long Term Visitor,4,3
+379,Resident Worker,15,16
+380,Home Worker,23,19
+380,Inbound Commuter,2,2
+380,Long Term Visitor,4,2
+380,Outbound Commuter,1,1
+380,Resident Worker,42,36
+380,Short Term Visitor,4,3
+381,Home Worker,13,19
+381,Long Term Visitor,5,7
+381,Outbound Commuter,1,1
+381,Resident Worker,25,20
+381,Short Term Visitor,2,2
+382,Home Worker,29,28
+382,Inbound Commuter,1,2
+382,Long Term Visitor,6,6
+382,Outbound Commuter,4,2
+382,Resident Worker,53,53
+382,Short Term Visitor,3,2
+384,Home Worker,7,7
+384,Inbound Commuter,1,1
+384,Resident Worker,19,17
+385,Resident Worker,5,5
+386,Home Worker,11,12
+386,Long Term Visitor,2,1
+386,Outbound Commuter,1,1
+386,Resident Worker,13,13
+387,Home Worker,4,3
+387,Outbound Commuter,1,1
+387,Resident Worker,7,8
+388,Home Worker,37,37
+388,Inbound Commuter,3,3
+388,Long Term Visitor,8,8
+388,Outbound Commuter,5,4
+388,Resident Worker,46,41
+388,Short Term Visitor,1,2
+389,Resident Worker,6,7
+390,Home Worker,2,3
+390,Long Term Visitor,3,4
+390,Outbound Commuter,1,1
+390,Resident Worker,6,5
+391,Home Worker,11,11
+391,Inbound Commuter,2,2
+391,Long Term Visitor,7,3
+391,Outbound Commuter,1,1
+391,Resident Worker,13,16
+392,Home Worker,8,8
+392,Inbound Commuter,1,1
+392,Long Term Visitor,2,2
+392,Resident Worker,3,3
+393,Home Worker,2,3
+393,Long Term Visitor,4,3
+393,Outbound Commuter,1,1
+393,Resident Worker,14,14
+393,Short Term Visitor,3,2
+394,Home Worker,19,19
+394,Inbound Commuter,6,4
+394,Long Term Visitor,2,2
+394,Resident Worker,9,12
+394,Short Term Visitor,4,5
+395,Home Worker,3,3
+395,Resident Worker,5,6
+396,Inbound Commuter,1,1
+396,Long Term Visitor,3,3
+396,Resident Worker,3,5
+397,Home Worker,5,2
+397,Inbound Commuter,1,1
+397,Resident Worker,6,4
+398,Home Worker,1,1
+398,Resident Worker,5,5
+399,Home Worker,3,4
+399,Inbound Commuter,1,1
+399,Long Term Visitor,5,6
+399,Resident Worker,1,1
+400,Home Worker,1,1
+400,Outbound Commuter,2,2
+400,Resident Worker,5,5
+401,Home Worker,8,6
+401,Long Term Visitor,3,2
+401,Resident Worker,14,17
+402,Home Worker,6,5
+402,Inbound Commuter,2,2
+402,Resident Worker,2,2
+403,Home Worker,2,2
+403,Inbound Commuter,1,1
+403,Outbound Commuter,3,3
+403,Resident Worker,5,11
+404,Home Worker,3,6
+404,Long Term Visitor,1,1
+404,Resident Worker,7,6
+405,Home Worker,2,1
+406,Home Worker,9,8
+406,Inbound Commuter,1,1
+406,Resident Worker,5,10
+406,Short Term Visitor,2,3
+407,Long Term Visitor,1,1
+408,Home Worker,1,1
+408,Outbound Commuter,2,2
+409,Home Worker,9,9
+409,Outbound Commuter,1,1
+409,Resident Worker,8,8
+410,Home Worker,20,18
+410,Inbound Commuter,2,2
+410,Long Term Visitor,14,14
+410,Outbound Commuter,1,1
+410,Resident Worker,22,18
+411,Home Worker,9,10
+411,Long Term Visitor,2,3
+411,Outbound Commuter,1,1
+411,Resident Worker,21,20
+411,Short Term Visitor,1,1
+412,Home Worker,7,8
+412,Long Term Visitor,6,4
+412,Resident Worker,13,12
+412,Short Term Visitor,1,1
+413,Home Worker,47,39
+413,Inbound Commuter,2,2
+413,Long Term Visitor,3,2
+413,Outbound Commuter,3,2
+413,Resident Worker,74,72
+413,Short Term Visitor,3,3
+414,Home Worker,12,13
+414,Long Term Visitor,2,1
+414,Resident Worker,26,28
+414,Short Term Visitor,1,2
+415,Home Worker,2,3
+415,Resident Worker,7,6
+416,Home Worker,7,5
+416,Resident Worker,14,18
+417,Home Worker,3,1
+417,Inbound Commuter,1,1
+417,Resident Worker,4,1
+418,Home Worker,3,5
+418,Resident Worker,4,6
+419,Home Worker,4,5
+419,Outbound Commuter,1,1
+419,Resident Worker,6,2
+419,Short Term Visitor,2,2
+420,Home Worker,15,13
+420,Resident Worker,20,17
+421,Home Worker,2,1
+421,Long Term Visitor,3,3
+421,Resident Worker,2,1
+422,Home Worker,1,1
+422,Resident Worker,6,6
+423,Home Worker,1,1
+423,Long Term Visitor,1,1
+423,Resident Worker,3,6
+423,Short Term Visitor,1,1
+424,Home Worker,51,50
+424,Long Term Visitor,6,5
+424,Outbound Commuter,3,2
+424,Resident Worker,79,81
+424,Short Term Visitor,1,2
+425,Home Worker,35,34
+425,Inbound Commuter,2,3
+425,Long Term Visitor,1,5
+425,Outbound Commuter,8,11
+425,Resident Worker,60,63
+425,Short Term Visitor,1,1
+426,Home Worker,18,22
+426,Long Term Visitor,2,7
+426,Outbound Commuter,1,2
+426,Resident Worker,33,31
+427,Home Worker,15,16
+427,Inbound Commuter,1,1
+427,Long Term Visitor,3,1
+427,Outbound Commuter,4,3
+427,Resident Worker,30,27
+427,Short Term Visitor,1,2
+428,Home Worker,37,34
+428,Long Term Visitor,6,9
+428,Outbound Commuter,2,2
+428,Resident Worker,53,50
+428,Short Term Visitor,1,1
+429,Home Worker,15,14
+429,Long Term Visitor,3,3
+429,Resident Worker,24,25
+429,Short Term Visitor,1,1
+430,Home Worker,45,45
+430,Inbound Commuter,3,3
+430,Long Term Visitor,6,8
+430,Outbound Commuter,2,2
+430,Resident Worker,47,47
+430,Short Term Visitor,1,1
+431,Home Worker,9,11
+431,Long Term Visitor,1,2
+431,Resident Worker,6,4
+431,Short Term Visitor,3,3
+432,Home Worker,60,69
+432,Inbound Commuter,2,2
+432,Long Term Visitor,6,7
+432,Outbound Commuter,2,1
+432,Resident Worker,100,87
+433,Home Worker,23,21
+433,Long Term Visitor,5,4
+433,Outbound Commuter,2,2
+433,Resident Worker,41,41
+434,Home Worker,6,2
+434,Inbound Commuter,2,2
+434,Outbound Commuter,3,2
+434,Resident Worker,4,9
+434,Short Term Visitor,1,1
+435,Home Worker,10,12
+435,Inbound Commuter,1,1
+435,Long Term Visitor,2,2
+435,Outbound Commuter,2,1
+435,Resident Worker,31,21
+435,Short Term Visitor,1,1
+436,Home Worker,3,2
+436,Resident Worker,3,2
+437,Home Worker,48,43
+437,Inbound Commuter,7,4
+437,Long Term Visitor,5,8
+437,Outbound Commuter,3,5
+437,Resident Worker,99,94
+437,Short Term Visitor,5,6
+438,Home Worker,9,5
+438,Resident Worker,19,12
+438,Short Term Visitor,2,1
+439,Home Worker,18,20
+439,Inbound Commuter,9,7
+439,Long Term Visitor,7,7
+439,Outbound Commuter,3,4
+439,Resident Worker,61,56
+439,Short Term Visitor,7,7
+440,Home Worker,15,13
+440,Inbound Commuter,1,1
+440,Long Term Visitor,7,5
+440,Outbound Commuter,2,2
+440,Resident Worker,37,31
+440,Short Term Visitor,1,1
+441,Home Worker,16,18
+441,Inbound Commuter,1,1
+441,Long Term Visitor,11,10
+441,Resident Worker,47,39
+441,Short Term Visitor,3,2
+442,Home Worker,13,11
+442,Inbound Commuter,1,1
+442,Long Term Visitor,2,4
+442,Outbound Commuter,3,2
+442,Resident Worker,27,25
+442,Short Term Visitor,1,1
+443,Home Worker,26,27
+443,Inbound Commuter,6,7
+443,Long Term Visitor,23,20
+443,Resident Worker,99,87
+443,Short Term Visitor,7,8
+444,Home Worker,9,7
+444,Inbound Commuter,1,1
+444,Long Term Visitor,2,2
+444,Resident Worker,7,7
+445,Home Worker,33,28
+445,Inbound Commuter,1,1
+445,Long Term Visitor,11,14
+445,Outbound Commuter,2,2
+445,Resident Worker,50,47
+445,Short Term Visitor,2,2
+446,Home Worker,7,5
+446,Inbound Commuter,1,1
+446,Long Term Visitor,9,5
+446,Resident Worker,28,33
+446,Short Term Visitor,4,3
+447,Home Worker,18,19
+447,Inbound Commuter,2,1
+447,Long Term Visitor,6,11
+447,Outbound Commuter,1,1
+447,Resident Worker,29,25
+447,Short Term Visitor,2,2
+448,Home Worker,31,31
+448,Inbound Commuter,3,4
+448,Long Term Visitor,22,21
+448,Resident Worker,86,78
+448,Short Term Visitor,12,8
+449,Home Worker,4,2
+449,Inbound Commuter,2,1
+449,Long Term Visitor,3,4
+449,Outbound Commuter,2,3
+449,Resident Worker,30,29
+450,Home Worker,20,21
+450,Inbound Commuter,2,3
+450,Long Term Visitor,11,13
+450,Resident Worker,46,40
+450,Short Term Visitor,4,4
+451,Home Worker,6,7
+451,Long Term Visitor,2,1
+451,Resident Worker,16,16
+452,Home Worker,5,5
+452,Inbound Commuter,1,1
+452,Long Term Visitor,1,2
+452,Outbound Commuter,1,1
+452,Resident Worker,11,11
+452,Short Term Visitor,2,1
+453,Home Worker,17,17
+453,Long Term Visitor,11,12
+453,Resident Worker,28,35
+454,Home Worker,26,25
+454,Inbound Commuter,3,3
+454,Long Term Visitor,9,9
+454,Resident Worker,37,35
+454,Short Term Visitor,5,5
+455,Home Worker,27,28
+455,Inbound Commuter,1,1
+455,Long Term Visitor,12,14
+455,Outbound Commuter,1,2
+455,Resident Worker,67,63
+455,Short Term Visitor,4,6
+456,Home Worker,1,2
+456,Resident Worker,7,6
+457,Home Worker,59,65
+457,Inbound Commuter,4,5
+457,Long Term Visitor,19,25
+457,Outbound Commuter,4,2
+457,Resident Worker,87,88
+457,Short Term Visitor,7,10
+458,Home Worker,34,42
+458,Inbound Commuter,4,5
+458,Long Term Visitor,26,28
+458,Outbound Commuter,2,4
+458,Resident Worker,64,79
+458,Short Term Visitor,6,6
+459,Home Worker,12,12
+459,Inbound Commuter,1,1
+459,Long Term Visitor,7,8
+459,Resident Worker,15,12
+459,Short Term Visitor,1,2
+460,Home Worker,25,21
+460,Long Term Visitor,10,9
+460,Resident Worker,18,26
+460,Short Term Visitor,3,2
+461,Home Worker,11,14
+461,Long Term Visitor,17,20
+461,Resident Worker,44,39
+461,Short Term Visitor,4,8
+462,Home Worker,16,16
+462,Inbound Commuter,1,1
+462,Long Term Visitor,10,11
+462,Resident Worker,33,35
+462,Short Term Visitor,1,3
+463,Home Worker,44,52
+463,Inbound Commuter,2,2
+463,Long Term Visitor,9,11
+463,Resident Worker,40,39
+463,Short Term Visitor,2,3
+464,Home Worker,14,13
+464,Long Term Visitor,7,6
+464,Outbound Commuter,1,1
+464,Resident Worker,15,19
+465,Home Worker,10,10
+465,Long Term Visitor,5,6
+465,Resident Worker,9,9
+466,Home Worker,4,7
+466,Long Term Visitor,3,5
+466,Resident Worker,12,15
+467,Home Worker,10,8
+467,Long Term Visitor,5,3
+467,Resident Worker,20,23
+467,Short Term Visitor,1,3
+468,Home Worker,8,8
+468,Long Term Visitor,7,6
+468,Outbound Commuter,1,1
+468,Resident Worker,17,17
+469,Home Worker,59,66
+469,Inbound Commuter,2,1
+469,Long Term Visitor,19,21
+469,Outbound Commuter,1,3
+469,Resident Worker,97,94
+469,Short Term Visitor,11,10
+470,Home Worker,20,19
+470,Long Term Visitor,3,5
+470,Resident Worker,35,27
+470,Short Term Visitor,1,1
+471,Home Worker,30,29
+471,Long Term Visitor,11,8
+471,Outbound Commuter,2,1
+471,Resident Worker,49,56
+471,Short Term Visitor,2,2
+472,Home Worker,43,41
+472,Inbound Commuter,6,2
+472,Long Term Visitor,9,15
+472,Outbound Commuter,4,2
+472,Resident Worker,84,71
+472,Short Term Visitor,3,3
+473,Home Worker,11,12
+473,Inbound Commuter,1,1
+473,Long Term Visitor,1,1
+473,Resident Worker,22,21
+474,Home Worker,28,30
+474,Inbound Commuter,1,1
+474,Long Term Visitor,6,8
+474,Outbound Commuter,4,3
+474,Resident Worker,57,58
+475,Home Worker,5,5
+475,Long Term Visitor,2,2
+475,Resident Worker,19,22
+475,Short Term Visitor,2,2
+476,Home Worker,57,51
+476,Inbound Commuter,2,1
+476,Long Term Visitor,7,7
+476,Outbound Commuter,3,2
+476,Resident Worker,57,68
+476,Short Term Visitor,4,4
+477,Home Worker,48,58
+477,Inbound Commuter,3,3
+477,Long Term Visitor,8,8
+477,Outbound Commuter,1,4
+477,Resident Worker,100,95
+478,Home Worker,1,3
+478,Inbound Commuter,1,1
+478,Resident Worker,7,2
+479,Home Worker,26,28
+479,Long Term Visitor,2,3
+479,Outbound Commuter,1,1
+479,Resident Worker,35,33
+480,Home Worker,13,11
+480,Long Term Visitor,2,6
+480,Resident Worker,22,19
+481,Home Worker,58,57
+481,Inbound Commuter,2,2
+481,Long Term Visitor,10,10
+481,Outbound Commuter,3,1
+481,Resident Worker,78,54
+481,Short Term Visitor,5,7
+482,Home Worker,147,152
+482,Inbound Commuter,5,3
+482,Long Term Visitor,22,23
+482,Outbound Commuter,13,15
+482,Resident Worker,217,200
+482,Short Term Visitor,7,3
+483,Home Worker,39,34
+483,Long Term Visitor,8,9
+483,Outbound Commuter,4,2
+483,Resident Worker,44,45
+484,Home Worker,15,16
+484,Long Term Visitor,4,3
+484,Resident Worker,18,18
+485,Home Worker,34,39
+485,Inbound Commuter,3,3
+485,Long Term Visitor,4,2
+485,Outbound Commuter,4,4
+485,Resident Worker,58,47
+485,Short Term Visitor,1,2
+486,Home Worker,44,51
+486,Long Term Visitor,18,18
+486,Outbound Commuter,1,2
+486,Resident Worker,74,74
+486,Short Term Visitor,2,2
+487,Home Worker,38,41
+487,Long Term Visitor,18,11
+487,Outbound Commuter,2,2
+487,Resident Worker,62,55
+487,Short Term Visitor,4,2
+488,Home Worker,8,10
+488,Inbound Commuter,2,2
+488,Long Term Visitor,3,2
+488,Outbound Commuter,1,1
+488,Resident Worker,21,20
+488,Short Term Visitor,2,3
+489,Home Worker,43,46
+489,Long Term Visitor,13,15
+489,Resident Worker,67,85
+489,Short Term Visitor,2,1
+490,Home Worker,22,19
+490,Long Term Visitor,13,13
+490,Resident Worker,51,45
+491,Home Worker,30,32
+491,Long Term Visitor,2,5
+491,Outbound Commuter,1,2
+491,Resident Worker,52,50
+491,Short Term Visitor,1,2
+492,Home Worker,82,81
+492,Inbound Commuter,1,1
+492,Long Term Visitor,12,11
+492,Outbound Commuter,7,6
+492,Resident Worker,104,112
+492,Short Term Visitor,3,3
+493,Home Worker,55,51
+493,Long Term Visitor,17,14
+493,Outbound Commuter,7,8
+493,Resident Worker,72,69
+494,Home Worker,46,43
+494,Inbound Commuter,3,2
+494,Long Term Visitor,10,14
+494,Outbound Commuter,3,2
+494,Resident Worker,68,68
+494,Short Term Visitor,3,6
+495,Home Worker,66,63
+495,Long Term Visitor,14,9
+495,Outbound Commuter,2,2
+495,Resident Worker,97,94
+495,Short Term Visitor,7,6
+496,Home Worker,161,156
+496,Inbound Commuter,11,10
+496,Long Term Visitor,55,51
+496,Outbound Commuter,7,9
+496,Resident Worker,222,232
+496,Short Term Visitor,21,18
+497,Home Worker,9,8
+497,Long Term Visitor,3,5
+497,Resident Worker,14,11
+497,Short Term Visitor,6,5
+498,Home Worker,21,21
+498,Inbound Commuter,2,1
+498,Long Term Visitor,2,3
+498,Outbound Commuter,2,1
+498,Resident Worker,35,35
+499,Home Worker,378,360
+499,Inbound Commuter,26,23
+499,Long Term Visitor,85,82
+499,Outbound Commuter,22,8
+499,Resident Worker,536,449
+499,Short Term Visitor,43,39
+500,Home Worker,231,223
+500,Inbound Commuter,12,10
+500,Long Term Visitor,73,61
+500,Outbound Commuter,16,12
+500,Resident Worker,354,320
+500,Short Term Visitor,16,13
+501,Home Worker,98,109
+501,Inbound Commuter,5,4
+501,Long Term Visitor,28,29
+501,Outbound Commuter,7,8
+501,Resident Worker,186,189
+501,Short Term Visitor,5,7
+502,Home Worker,25,25
+502,Long Term Visitor,4,3
+502,Resident Worker,49,39
+503,Home Worker,8,8
+503,Inbound Commuter,7,9
+503,Long Term Visitor,8,10
+503,Outbound Commuter,4,4
+503,Resident Worker,30,29
+503,Short Term Visitor,6,9
+504,Home Worker,7,6
+504,Inbound Commuter,3,2
+504,Long Term Visitor,11,8
+504,Resident Worker,14,18
+504,Short Term Visitor,4,2
+505,Home Worker,1,2
+505,Long Term Visitor,3,1
+505,Resident Worker,7,8
+505,Short Term Visitor,1,1
+506,Home Worker,42,40
+506,Inbound Commuter,13,15
+506,Long Term Visitor,16,14
+506,Outbound Commuter,10,10
+506,Resident Worker,81,82
+506,Short Term Visitor,5,8
+507,Home Worker,51,52
+507,Inbound Commuter,4,2
+507,Long Term Visitor,10,10
+507,Outbound Commuter,10,9
+507,Resident Worker,68,75
+507,Short Term Visitor,6,6
+508,Home Worker,22,23
+508,Long Term Visitor,4,2
+508,Resident Worker,11,10
+509,Home Worker,12,12
+509,Inbound Commuter,1,1
+509,Long Term Visitor,7,2
+509,Outbound Commuter,2,3
+509,Resident Worker,8,12
+509,Short Term Visitor,1,2
+510,Home Worker,35,34
+510,Inbound Commuter,7,7
+510,Long Term Visitor,12,12
+510,Outbound Commuter,4,4
+510,Resident Worker,48,52
+510,Short Term Visitor,10,12
+511,Home Worker,10,9
+511,Inbound Commuter,4,2
+511,Long Term Visitor,3,3
+511,Resident Worker,31,35
+511,Short Term Visitor,4,3
+512,Home Worker,51,50
+512,Inbound Commuter,10,8
+512,Long Term Visitor,15,14
+512,Outbound Commuter,3,4
+512,Resident Worker,76,72
+512,Short Term Visitor,13,11
+513,Home Worker,20,20
+513,Inbound Commuter,3,2
+513,Long Term Visitor,9,9
+513,Outbound Commuter,2,3
+513,Resident Worker,28,32
+513,Short Term Visitor,7,7
+514,Home Worker,64,60
+514,Inbound Commuter,16,15
+514,Long Term Visitor,13,10
+514,Outbound Commuter,6,8
+514,Resident Worker,164,138
+514,Short Term Visitor,10,7
+515,Home Worker,1,1
+515,Long Term Visitor,1,1
+515,Resident Worker,10,10
+516,Home Worker,24,25
+516,Inbound Commuter,5,5
+516,Long Term Visitor,5,6
+516,Outbound Commuter,2,3
+516,Resident Worker,27,27
+516,Short Term Visitor,3,4
+517,Home Worker,8,9
+517,Inbound Commuter,6,9
+517,Long Term Visitor,4,5
+517,Outbound Commuter,1,1
+517,Resident Worker,29,25
+518,Home Worker,2,1
+518,Inbound Commuter,3,2
+518,Long Term Visitor,8,3
+518,Outbound Commuter,1,1
+518,Resident Worker,23,22
+518,Short Term Visitor,4,3
+519,Long Term Visitor,6,2
+519,Resident Worker,1,2
+520,Home Worker,3,3
+520,Long Term Visitor,1,2
+520,Resident Worker,1,1
+521,Resident Worker,1,1
+522,Home Worker,1,1
+522,Inbound Commuter,1,2
+522,Long Term Visitor,2,2
+522,Resident Worker,7,5
+523,Home Worker,3,3
+523,Inbound Commuter,1,1
+523,Long Term Visitor,1,2
+523,Resident Worker,2,1
+523,Short Term Visitor,2,1
+524,Home Worker,4,2
+524,Inbound Commuter,1,2
+524,Long Term Visitor,7,5
+524,Resident Worker,6,8
+525,Inbound Commuter,1,1
+525,Long Term Visitor,5,2
+525,Resident Worker,2,2
+526,Home Worker,20,18
+526,Long Term Visitor,4,3
+526,Resident Worker,21,21
+526,Short Term Visitor,2,2
+527,Home Worker,1,2
+527,Long Term Visitor,1,1
+527,Resident Worker,4,4
+528,Home Worker,15,14
+528,Long Term Visitor,5,2
+528,Outbound Commuter,1,1
+528,Resident Worker,24,26
+528,Short Term Visitor,2,4
+529,Home Worker,1,2
+529,Long Term Visitor,4,4
+529,Resident Worker,2,2
+530,Home Worker,4,3
+530,Inbound Commuter,2,3
+530,Resident Worker,10,12
+530,Short Term Visitor,1,1
+531,Home Worker,9,9
+531,Resident Worker,9,4
+532,Home Worker,7,7
+532,Long Term Visitor,5,7
+532,Resident Worker,13,14
+532,Short Term Visitor,2,1
+533,Home Worker,2,2
+533,Long Term Visitor,1,2
+533,Resident Worker,10,8
+533,Short Term Visitor,1,3
+534,Home Worker,11,10
+534,Inbound Commuter,3,2
+534,Long Term Visitor,4,4
+534,Resident Worker,20,16
+535,Home Worker,11,12
+535,Long Term Visitor,4,1
+535,Outbound Commuter,1,1
+535,Resident Worker,19,18
+535,Short Term Visitor,5,4
+536,Home Worker,1,1
+536,Outbound Commuter,1,1
+536,Resident Worker,5,4
+536,Short Term Visitor,4,1
+537,Resident Worker,3,2
+537,Short Term Visitor,3,1
+538,Home Worker,3,3
+538,Inbound Commuter,1,2
+538,Long Term Visitor,2,1
+538,Resident Worker,7,10
+539,Home Worker,10,12
+539,Outbound Commuter,1,1
+539,Resident Worker,9,7
+539,Short Term Visitor,2,2
+540,Home Worker,6,6
+540,Long Term Visitor,3,2
+540,Resident Worker,12,13
+541,Home Worker,7,6
+541,Inbound Commuter,1,1
+541,Outbound Commuter,2,2
+541,Resident Worker,19,20
+542,Home Worker,4,6
+542,Resident Worker,14,13
+543,Home Worker,5,4
+543,Resident Worker,3,1
+544,Home Worker,22,19
+544,Long Term Visitor,7,8
+544,Outbound Commuter,2,2
+544,Resident Worker,28,25
+544,Short Term Visitor,2,1
+545,Home Worker,13,13
+545,Long Term Visitor,2,3
+545,Outbound Commuter,1,2
+545,Resident Worker,18,15
+546,Home Worker,25,24
+546,Long Term Visitor,5,5
+546,Resident Worker,27,24
+546,Short Term Visitor,4,4
+547,Home Worker,7,8
+547,Inbound Commuter,1,1
+547,Long Term Visitor,2,3
+547,Resident Worker,15,18
+547,Short Term Visitor,2,4
+548,Home Worker,3,5
+548,Outbound Commuter,2,1
+548,Resident Worker,5,3
+549,Home Worker,22,26
+549,Long Term Visitor,6,6
+549,Outbound Commuter,1,1
+549,Resident Worker,24,27
+550,Home Worker,15,18
+550,Long Term Visitor,1,3
+550,Outbound Commuter,3,2
+550,Resident Worker,14,18
+550,Short Term Visitor,2,2
+551,Home Worker,12,9
+551,Resident Worker,11,13
+551,Short Term Visitor,3,3
+552,Home Worker,26,23
+552,Inbound Commuter,2,2
+552,Long Term Visitor,2,4
+552,Resident Worker,24,31
+552,Short Term Visitor,2,5
+553,Home Worker,4,3
+553,Resident Worker,3,6
+554,Home Worker,12,9
+554,Long Term Visitor,3,3
+554,Resident Worker,20,19
+555,Home Worker,9,8
+555,Long Term Visitor,2,2
+555,Outbound Commuter,2,1
+555,Resident Worker,23,24
+556,Home Worker,21,19
+556,Long Term Visitor,3,2
+556,Outbound Commuter,1,1
+556,Resident Worker,28,28
+557,Home Worker,7,7
+557,Outbound Commuter,1,1
+557,Resident Worker,12,17
+558,Home Worker,13,12
+558,Inbound Commuter,1,1
+558,Resident Worker,13,11
+559,Home Worker,14,12
+559,Long Term Visitor,3,4
+559,Outbound Commuter,1,2
+559,Resident Worker,21,20
+559,Short Term Visitor,1,1
+560,Home Worker,18,18
+560,Inbound Commuter,2,2
+560,Long Term Visitor,5,2
+560,Outbound Commuter,3,1
+560,Resident Worker,24,32
+561,Home Worker,25,24
+561,Inbound Commuter,1,2
+561,Long Term Visitor,2,2
+561,Resident Worker,40,42
+561,Short Term Visitor,4,4
+562,Home Worker,3,6
+562,Long Term Visitor,2,3
+562,Resident Worker,10,7
+562,Short Term Visitor,1,1
+563,Home Worker,6,5
+563,Inbound Commuter,1,1
+563,Long Term Visitor,2,2
+563,Resident Worker,18,22
+563,Short Term Visitor,2,3
+564,Home Worker,10,9
+564,Inbound Commuter,1,1
+564,Long Term Visitor,1,1
+564,Outbound Commuter,4,4
+564,Resident Worker,18,16
+564,Short Term Visitor,1,1
+565,Home Worker,3,2
+565,Resident Worker,7,10
+566,Home Worker,8,7
+566,Resident Worker,6,5
+567,Long Term Visitor,1,2
+567,Resident Worker,6,5
+568,Home Worker,26,19
+568,Inbound Commuter,2,2
+568,Long Term Visitor,6,8
+568,Resident Worker,42,38
+568,Short Term Visitor,3,2
+569,Home Worker,10,6
+569,Long Term Visitor,1,1
+569,Outbound Commuter,1,1
+569,Resident Worker,11,11
+570,Home Worker,2,2
+570,Resident Worker,2,2
+571,Home Worker,7,6
+571,Inbound Commuter,1,1
+571,Outbound Commuter,2,1
+571,Resident Worker,11,12
+572,Home Worker,3,11
+572,Inbound Commuter,2,3
+572,Long Term Visitor,3,2
+572,Outbound Commuter,1,1
+572,Resident Worker,18,19
+573,Home Worker,3,2
+573,Resident Worker,1,1
+574,Home Worker,26,28
+574,Inbound Commuter,1,2
+574,Long Term Visitor,3,4
+574,Outbound Commuter,5,3
+574,Resident Worker,65,56
+574,Short Term Visitor,7,5
+575,Home Worker,7,6
+575,Outbound Commuter,1,1
+575,Resident Worker,12,11
+576,Home Worker,7,6
+576,Inbound Commuter,2,3
+576,Long Term Visitor,2,2
+576,Resident Worker,12,13
+577,Home Worker,2,1
+577,Resident Worker,1,1
+578,Home Worker,25,30
+578,Inbound Commuter,9,8
+578,Long Term Visitor,8,12
+578,Outbound Commuter,2,4
+578,Resident Worker,67,63
+578,Short Term Visitor,4,3
+580,Home Worker,3,3
+580,Inbound Commuter,1,1
+580,Long Term Visitor,2,2
+580,Resident Worker,9,11
+580,Short Term Visitor,1,2
+581,Home Worker,5,4
+581,Inbound Commuter,1,1
+581,Resident Worker,11,10
+582,Home Worker,1,1
+582,Inbound Commuter,1,1
+582,Long Term Visitor,2,1
+582,Resident Worker,8,7
+583,Inbound Commuter,1,1
+584,Home Worker,12,11
+584,Inbound Commuter,2,1
+584,Long Term Visitor,2,4
+584,Resident Worker,17,16
+584,Short Term Visitor,5,3
+585,Home Worker,43,49
+585,Inbound Commuter,3,3
+585,Long Term Visitor,9,10
+585,Resident Worker,86,89
+585,Short Term Visitor,5,2
+586,Home Worker,10,12
+586,Long Term Visitor,2,6
+586,Outbound Commuter,1,1
+586,Resident Worker,22,19
+586,Short Term Visitor,1,1
+587,Home Worker,17,15
+587,Inbound Commuter,1,1
+587,Long Term Visitor,7,7
+587,Outbound Commuter,1,1
+587,Resident Worker,26,26
+588,Home Worker,5,8
+588,Long Term Visitor,10,7
+588,Resident Worker,20,17
+588,Short Term Visitor,2,3
+589,Home Worker,67,70
+589,Inbound Commuter,8,9
+589,Long Term Visitor,12,16
+589,Outbound Commuter,7,5
+589,Resident Worker,150,144
+589,Short Term Visitor,13,17
+590,Home Worker,14,11
+590,Inbound Commuter,1,1
+590,Long Term Visitor,7,7
+590,Resident Worker,31,29
+591,Home Worker,5,3
+591,Long Term Visitor,4,4
+591,Outbound Commuter,1,1
+591,Resident Worker,14,12
+592,Home Worker,4,8
+592,Inbound Commuter,1,1
+592,Long Term Visitor,6,5
+592,Resident Worker,9,9
+593,Home Worker,41,38
+593,Inbound Commuter,13,10
+593,Long Term Visitor,12,16
+593,Outbound Commuter,4,4
+593,Resident Worker,87,72
+593,Short Term Visitor,6,11
+594,Home Worker,15,15
+594,Long Term Visitor,26,28
+594,Outbound Commuter,3,3
+594,Resident Worker,47,57
+594,Short Term Visitor,9,4
+595,Home Worker,11,6
+595,Inbound Commuter,2,2
+595,Long Term Visitor,10,14
+595,Resident Worker,34,29
+595,Short Term Visitor,7,5
+596,Home Worker,32,26
+596,Inbound Commuter,2,2
+596,Long Term Visitor,32,29
+596,Outbound Commuter,2,4
+596,Resident Worker,66,72
+596,Short Term Visitor,8,5
+597,Home Worker,16,19
+597,Inbound Commuter,3,2
+597,Long Term Visitor,6,8
+597,Outbound Commuter,3,3
+597,Resident Worker,46,44
+598,Home Worker,34,39
+598,Inbound Commuter,5,5
+598,Long Term Visitor,19,22
+598,Outbound Commuter,2,2
+598,Resident Worker,62,66
+598,Short Term Visitor,14,10
+599,Home Worker,26,31
+599,Inbound Commuter,2,1
+599,Long Term Visitor,5,6
+599,Outbound Commuter,1,2
+599,Resident Worker,41,54
+599,Short Term Visitor,1,2
+600,Home Worker,15,14
+600,Long Term Visitor,4,4
+600,Resident Worker,32,35
+600,Short Term Visitor,3,1
+601,Home Worker,17,15
+601,Long Term Visitor,9,10
+601,Resident Worker,35,36
+601,Short Term Visitor,3,2
+602,Home Worker,12,12
+602,Long Term Visitor,1,2
+602,Resident Worker,16,15
+602,Short Term Visitor,1,2
+603,Home Worker,9,7
+603,Long Term Visitor,2,6
+603,Outbound Commuter,2,2
+603,Resident Worker,11,15
+604,Home Worker,21,19
+604,Inbound Commuter,1,2
+604,Long Term Visitor,11,16
+604,Outbound Commuter,4,2
+604,Resident Worker,41,49
+604,Short Term Visitor,2,1
+605,Home Worker,41,42
+605,Inbound Commuter,1,1
+605,Long Term Visitor,10,11
+605,Outbound Commuter,1,2
+605,Resident Worker,57,49
+605,Short Term Visitor,2,4
+606,Home Worker,5,6
+606,Long Term Visitor,1,1
+606,Resident Worker,13,10
+607,Home Worker,12,16
+607,Long Term Visitor,4,2
+607,Outbound Commuter,1,1
+607,Resident Worker,15,19
+608,Home Worker,3,4
+608,Inbound Commuter,1,1
+608,Long Term Visitor,3,4
+608,Resident Worker,9,11
+608,Short Term Visitor,1,1
+609,Home Worker,3,4
+609,Long Term Visitor,2,1
+609,Outbound Commuter,1,1
+609,Resident Worker,13,13
+610,Home Worker,10,9
+610,Inbound Commuter,1,1
+610,Long Term Visitor,1,1
+610,Outbound Commuter,1,1
+610,Resident Worker,13,11
+611,Home Worker,45,46
+611,Inbound Commuter,3,3
+611,Long Term Visitor,14,16
+611,Resident Worker,66,57
+611,Short Term Visitor,8,8
+612,Home Worker,50,54
+612,Long Term Visitor,25,23
+612,Outbound Commuter,2,1
+612,Resident Worker,98,94
+612,Short Term Visitor,8,7
+613,Home Worker,11,11
+613,Inbound Commuter,2,2
+613,Long Term Visitor,6,4
+613,Outbound Commuter,4,2
+613,Resident Worker,28,26
+613,Short Term Visitor,2,2
+614,Home Worker,15,13
+614,Inbound Commuter,1,1
+614,Long Term Visitor,4,10
+614,Outbound Commuter,3,5
+614,Resident Worker,20,25
+615,Home Worker,25,23
+615,Inbound Commuter,2,2
+615,Long Term Visitor,2,1
+615,Outbound Commuter,2,2
+615,Resident Worker,35,27
+615,Short Term Visitor,2,1
+616,Home Worker,3,3
+616,Resident Worker,12,5
+617,Home Worker,2,2
+617,Long Term Visitor,1,1
+617,Resident Worker,7,9
+618,Home Worker,16,16
+618,Resident Worker,17,12
+619,Home Worker,7,6
+619,Resident Worker,12,12
+619,Short Term Visitor,3,1
+620,Home Worker,39,42
+620,Inbound Commuter,2,2
+620,Long Term Visitor,4,6
+620,Outbound Commuter,1,2
+620,Resident Worker,56,50
+620,Short Term Visitor,2,4
+621,Home Worker,29,31
+621,Inbound Commuter,2,2
+621,Long Term Visitor,3,5
+621,Outbound Commuter,1,1
+621,Resident Worker,40,39
+621,Short Term Visitor,4,2
+622,Home Worker,37,40
+622,Inbound Commuter,4,4
+622,Long Term Visitor,10,8
+622,Outbound Commuter,2,1
+622,Resident Worker,57,57
+622,Short Term Visitor,2,3
+623,Home Worker,32,36
+623,Inbound Commuter,2,2
+623,Long Term Visitor,5,6
+623,Outbound Commuter,2,1
+623,Resident Worker,57,45
+624,Home Worker,24,22
+624,Inbound Commuter,2,1
+624,Long Term Visitor,5,7
+624,Outbound Commuter,2,2
+624,Resident Worker,44,39
+624,Short Term Visitor,7,6
+625,Home Worker,9,9
+625,Long Term Visitor,1,3
+625,Resident Worker,8,9
+626,Home Worker,45,48
+626,Inbound Commuter,1,1
+626,Long Term Visitor,15,7
+626,Outbound Commuter,3,1
+626,Resident Worker,77,83
+626,Short Term Visitor,1,2
+627,Home Worker,59,59
+627,Inbound Commuter,2,1
+627,Long Term Visitor,11,15
+627,Outbound Commuter,5,5
+627,Resident Worker,95,93
+627,Short Term Visitor,5,5
+628,Home Worker,94,95
+628,Inbound Commuter,3,4
+628,Long Term Visitor,26,22
+628,Outbound Commuter,8,9
+628,Resident Worker,182,171
+628,Short Term Visitor,13,12
+629,Home Worker,52,48
+629,Inbound Commuter,2,2
+629,Long Term Visitor,13,12
+629,Outbound Commuter,1,1
+629,Resident Worker,64,64
+629,Short Term Visitor,2,2
+630,Home Worker,43,47
+630,Inbound Commuter,2,2
+630,Long Term Visitor,6,11
+630,Outbound Commuter,2,2
+630,Resident Worker,60,62
+631,Home Worker,57,53
+631,Inbound Commuter,2,2
+631,Long Term Visitor,20,20
+631,Outbound Commuter,7,5
+631,Resident Worker,90,86
+631,Short Term Visitor,1,2
+632,Home Worker,312,305
+632,Inbound Commuter,11,13
+632,Long Term Visitor,92,114
+632,Outbound Commuter,16,15
+632,Resident Worker,439,502
+632,Short Term Visitor,15,22
+633,Home Worker,139,159
+633,Inbound Commuter,10,8
+633,Long Term Visitor,40,51
+633,Outbound Commuter,10,12
+633,Resident Worker,165,187
+633,Short Term Visitor,7,9
+634,Home Worker,25,26
+634,Long Term Visitor,12,6
+634,Outbound Commuter,2,3
+634,Resident Worker,53,44
+634,Short Term Visitor,2,3
+635,Home Worker,205,174
+635,Inbound Commuter,7,6
+635,Long Term Visitor,53,54
+635,Outbound Commuter,10,12
+635,Resident Worker,344,321
+635,Short Term Visitor,7,8
+636,Home Worker,46,42
+636,Inbound Commuter,2,2
+636,Long Term Visitor,20,21
+636,Resident Worker,69,57
+636,Short Term Visitor,3,1
+637,Home Worker,22,20
+637,Inbound Commuter,12,13
+637,Long Term Visitor,21,24
+637,Outbound Commuter,10,9
+637,Resident Worker,46,41
+637,Short Term Visitor,23,20
+638,Home Worker,5,5
+638,Inbound Commuter,3,1
+638,Long Term Visitor,1,2
+638,Resident Worker,16,15
+638,Short Term Visitor,8,6
+639,Home Worker,3,4
+639,Inbound Commuter,2,2
+639,Long Term Visitor,1,3
+639,Outbound Commuter,2,2
+639,Resident Worker,9,8
+639,Short Term Visitor,6,7
+640,Home Worker,16,15
+640,Inbound Commuter,5,1
+640,Long Term Visitor,5,4
+640,Outbound Commuter,3,4
+640,Resident Worker,25,23
+640,Short Term Visitor,2,2
+641,Home Worker,103,103
+641,Inbound Commuter,10,11
+641,Long Term Visitor,42,40
+641,Outbound Commuter,18,16
+641,Resident Worker,222,220
+641,Short Term Visitor,21,23
+642,Home Worker,5,2
+642,Inbound Commuter,5,5
+642,Long Term Visitor,8,8
+642,Outbound Commuter,2,1
+642,Resident Worker,22,21
+642,Short Term Visitor,2,7
+643,Home Worker,45,45
+643,Inbound Commuter,6,5
+643,Long Term Visitor,20,15
+643,Outbound Commuter,2,2
+643,Resident Worker,84,77
+643,Short Term Visitor,8,9
+644,Home Worker,6,8
+644,Inbound Commuter,1,1
+644,Long Term Visitor,5,4
+644,Resident Worker,19,21
+644,Short Term Visitor,1,1
+645,Home Worker,34,32
+645,Inbound Commuter,5,6
+645,Long Term Visitor,23,18
+645,Outbound Commuter,5,2
+645,Resident Worker,76,52
+645,Short Term Visitor,8,8
+646,Home Worker,53,47
+646,Inbound Commuter,6,8
+646,Long Term Visitor,20,21
+646,Outbound Commuter,2,5
+646,Resident Worker,73,80
+646,Short Term Visitor,4,8
+647,Home Worker,8,9
+647,Long Term Visitor,2,4
+647,Resident Worker,5,5
+647,Short Term Visitor,3,1
+648,Home Worker,11,11
+648,Long Term Visitor,7,2
+648,Resident Worker,11,12
+650,Home Worker,25,26
+650,Inbound Commuter,2,1
+650,Long Term Visitor,3,4
+650,Resident Worker,28,27
+651,Home Worker,16,18
+651,Long Term Visitor,4,2
+651,Outbound Commuter,2,2
+651,Resident Worker,23,24
+651,Short Term Visitor,4,2
+652,Resident Worker,5,6
+653,Home Worker,13,13
+653,Long Term Visitor,2,4
+653,Resident Worker,5,1
+654,Home Worker,17,12
+654,Long Term Visitor,4,2
+654,Resident Worker,22,32
+654,Short Term Visitor,2,2
+655,Home Worker,68,68
+655,Inbound Commuter,2,3
+655,Long Term Visitor,25,20
+655,Outbound Commuter,7,6
+655,Resident Worker,124,117
+655,Short Term Visitor,3,6
+656,Inbound Commuter,2,3
+656,Long Term Visitor,7,5
+656,Resident Worker,14,14
+657,Home Worker,6,5
+657,Long Term Visitor,1,5
+657,Outbound Commuter,2,1
+657,Resident Worker,17,17
+658,Home Worker,2,3
+658,Resident Worker,5,3
+659,Home Worker,33,38
+659,Inbound Commuter,2,1
+659,Long Term Visitor,23,25
+659,Outbound Commuter,1,4
+659,Resident Worker,71,73
+659,Short Term Visitor,4,10
+660,Home Worker,3,4
+660,Outbound Commuter,1,1
+660,Resident Worker,1,1
+661,Home Worker,25,27
+661,Inbound Commuter,3,2
+661,Long Term Visitor,13,13
+661,Outbound Commuter,2,2
+661,Resident Worker,47,43
+661,Short Term Visitor,4,4
+662,Home Worker,60,53
+662,Long Term Visitor,9,11
+662,Outbound Commuter,3,1
+662,Resident Worker,72,67
+662,Short Term Visitor,2,4
+663,Home Worker,10,8
+663,Inbound Commuter,2,2
+663,Long Term Visitor,14,13
+663,Outbound Commuter,1,2
+663,Resident Worker,23,22
+663,Short Term Visitor,1,1
+664,Home Worker,43,56
+664,Inbound Commuter,4,5
+664,Long Term Visitor,21,24
+664,Outbound Commuter,3,2
+664,Resident Worker,99,106
+664,Short Term Visitor,7,9
+665,Home Worker,31,30
+665,Inbound Commuter,4,6
+665,Long Term Visitor,11,16
+665,Outbound Commuter,2,2
+665,Resident Worker,67,63
+665,Short Term Visitor,4,3
+666,Home Worker,44,38
+666,Long Term Visitor,4,4
+666,Outbound Commuter,2,2
+666,Resident Worker,88,78
+666,Short Term Visitor,2,2
+667,Home Worker,144,144
+667,Inbound Commuter,8,9
+667,Long Term Visitor,30,32
+667,Outbound Commuter,10,12
+667,Resident Worker,277,254
+667,Short Term Visitor,8,10
+668,Home Worker,100,85
+668,Inbound Commuter,2,2
+668,Long Term Visitor,13,18
+668,Outbound Commuter,4,2
+668,Resident Worker,162,162
+668,Short Term Visitor,2,3
+669,Home Worker,44,46
+669,Inbound Commuter,5,4
+669,Long Term Visitor,11,10
+669,Outbound Commuter,7,4
+669,Resident Worker,65,69
+669,Short Term Visitor,2,3
+670,Home Worker,25,24
+670,Inbound Commuter,2,1
+670,Long Term Visitor,11,12
+670,Outbound Commuter,1,3
+670,Resident Worker,32,33
+670,Short Term Visitor,4,4
+671,Home Worker,48,56
+671,Inbound Commuter,3,4
+671,Long Term Visitor,18,18
+671,Outbound Commuter,2,3
+671,Resident Worker,76,71
+671,Short Term Visitor,10,13
+672,Home Worker,7,7
+672,Inbound Commuter,2,2
+672,Long Term Visitor,1,2
+672,Outbound Commuter,1,1
+672,Resident Worker,31,31
+672,Short Term Visitor,2,3
+673,Home Worker,77,79
+673,Inbound Commuter,5,7
+673,Long Term Visitor,13,14
+673,Outbound Commuter,5,7
+673,Resident Worker,115,127
+673,Short Term Visitor,2,4
+674,Home Worker,32,30
+674,Long Term Visitor,5,8
+674,Outbound Commuter,2,3
+674,Resident Worker,54,51
+674,Short Term Visitor,1,3
+675,Home Worker,53,56
+675,Inbound Commuter,2,2
+675,Long Term Visitor,9,9
+675,Outbound Commuter,3,1
+675,Resident Worker,55,56
+675,Short Term Visitor,1,1
+676,Home Worker,32,25
+676,Inbound Commuter,4,2
+676,Long Term Visitor,8,7
+676,Outbound Commuter,1,1
+676,Resident Worker,61,61
+676,Short Term Visitor,4,1
+677,Home Worker,9,10
+677,Inbound Commuter,2,3
+677,Long Term Visitor,1,3
+677,Resident Worker,15,17
+677,Short Term Visitor,4,4
+678,Resident Worker,8,5
+678,Short Term Visitor,1,1
+679,Home Worker,7,6
+679,Long Term Visitor,2,2
+679,Outbound Commuter,2,2
+679,Resident Worker,15,17
+680,Home Worker,19,17
+680,Long Term Visitor,3,4
+680,Outbound Commuter,2,1
+680,Resident Worker,20,19
+681,Resident Worker,11,11
+682,Home Worker,36,34
+682,Inbound Commuter,6,6
+682,Long Term Visitor,51,47
+682,Outbound Commuter,2,2
+682,Resident Worker,67,58
+682,Short Term Visitor,12,11
+683,Home Worker,33,40
+683,Inbound Commuter,3,3
+683,Long Term Visitor,46,35
+683,Outbound Commuter,5,4
+683,Resident Worker,82,84
+683,Short Term Visitor,10,10
+684,Home Worker,22,22
+684,Inbound Commuter,7,8
+684,Long Term Visitor,10,12
+684,Outbound Commuter,4,3
+684,Resident Worker,67,64
+684,Short Term Visitor,8,9
+685,Home Worker,17,14
+685,Inbound Commuter,2,2
+685,Long Term Visitor,2,1
+685,Resident Worker,19,19
+686,Home Worker,30,29
+686,Long Term Visitor,8,9
+686,Outbound Commuter,1,2
+686,Resident Worker,44,41
+686,Short Term Visitor,5,3
+687,Home Worker,29,29
+687,Inbound Commuter,3,3
+687,Long Term Visitor,1,3
+687,Outbound Commuter,3,3
+687,Resident Worker,35,31
+687,Short Term Visitor,2,2
+688,Home Worker,12,11
+688,Inbound Commuter,2,2
+688,Long Term Visitor,9,15
+688,Resident Worker,33,22
+688,Short Term Visitor,6,5
+689,Home Worker,20,21
+689,Inbound Commuter,2,2
+689,Long Term Visitor,5,6
+689,Outbound Commuter,1,1
+689,Resident Worker,32,30
+689,Short Term Visitor,3,2
+690,Home Worker,14,13
+690,Long Term Visitor,5,6
+690,Outbound Commuter,1,1
+690,Resident Worker,16,16
+690,Short Term Visitor,2,2
+691,Home Worker,21,21
+691,Long Term Visitor,2,1
+691,Outbound Commuter,3,2
+691,Resident Worker,21,19
+691,Short Term Visitor,3,2
+692,Home Worker,5,4
+692,Long Term Visitor,3,5
+692,Resident Worker,8,10
+693,Home Worker,13,12
+693,Inbound Commuter,3,1
+693,Long Term Visitor,5,11
+693,Resident Worker,20,18
+694,Home Worker,14,14
+694,Inbound Commuter,4,3
+694,Long Term Visitor,7,6
+694,Resident Worker,39,34
+694,Short Term Visitor,1,4
+695,Home Worker,11,13
+695,Inbound Commuter,2,2
+695,Long Term Visitor,10,6
+695,Resident Worker,49,46
+695,Short Term Visitor,3,4
+696,Home Worker,9,9
+696,Long Term Visitor,1,2
+696,Outbound Commuter,1,1
+696,Resident Worker,12,10
+697,Home Worker,20,8
+697,Long Term Visitor,1,3
+697,Resident Worker,15,12
+698,Home Worker,11,8
+698,Inbound Commuter,2,1
+698,Resident Worker,14,12
+699,Home Worker,10,11
+699,Long Term Visitor,4,3
+699,Resident Worker,10,11
+699,Short Term Visitor,2,2
+700,Home Worker,4,4
+700,Long Term Visitor,7,19
+700,Outbound Commuter,1,1
+700,Resident Worker,21,22
+700,Short Term Visitor,2,4
+701,Home Worker,7,9
+701,Inbound Commuter,3,2
+701,Long Term Visitor,2,3
+701,Resident Worker,12,16
+701,Short Term Visitor,2,2
+702,Home Worker,12,12
+702,Long Term Visitor,4,2
+702,Resident Worker,17,16
+702,Short Term Visitor,3,3
+703,Home Worker,3,2
+703,Inbound Commuter,1,2
+703,Resident Worker,7,6
+703,Short Term Visitor,1,1
+704,Home Worker,18,21
+704,Inbound Commuter,1,1
+704,Long Term Visitor,6,8
+704,Outbound Commuter,3,3
+704,Resident Worker,17,19
+704,Short Term Visitor,2,4
+705,Home Worker,6,6
+705,Inbound Commuter,1,1
+705,Resident Worker,6,8
+705,Short Term Visitor,2,1
+706,Home Worker,11,13
+706,Inbound Commuter,11,8
+706,Long Term Visitor,10,8
+706,Outbound Commuter,1,2
+706,Resident Worker,40,43
+706,Short Term Visitor,1,3
+707,Home Worker,5,5
+707,Inbound Commuter,1,1
+707,Long Term Visitor,5,4
+707,Resident Worker,9,14
+708,Home Worker,3,2
+708,Long Term Visitor,7,5
+708,Outbound Commuter,2,3
+708,Resident Worker,15,15
+708,Short Term Visitor,2,2
+709,Home Worker,16,14
+709,Long Term Visitor,28,27
+709,Resident Worker,33,33
+709,Short Term Visitor,5,3
+710,Home Worker,5,4
+710,Inbound Commuter,2,1
+710,Long Term Visitor,2,2
+710,Resident Worker,15,13
+710,Short Term Visitor,1,1
+711,Home Worker,6,5
+711,Resident Worker,5,6
+712,Home Worker,22,14
+712,Inbound Commuter,1,1
+712,Long Term Visitor,8,14
+712,Outbound Commuter,4,4
+712,Resident Worker,43,37
+712,Short Term Visitor,4,2
+713,Home Worker,31,31
+713,Inbound Commuter,4,4
+713,Long Term Visitor,21,32
+713,Outbound Commuter,3,5
+713,Resident Worker,49,55
+713,Short Term Visitor,6,7
+714,Home Worker,17,21
+714,Long Term Visitor,10,12
+714,Outbound Commuter,5,5
+714,Resident Worker,40,39
+714,Short Term Visitor,5,2
+715,Home Worker,23,23
+715,Inbound Commuter,4,6
+715,Long Term Visitor,6,6
+715,Outbound Commuter,1,2
+715,Resident Worker,38,39
+715,Short Term Visitor,2,4
+716,Home Worker,38,42
+716,Inbound Commuter,5,4
+716,Long Term Visitor,6,14
+716,Outbound Commuter,3,3
+716,Resident Worker,96,126
+716,Short Term Visitor,4,7
+717,Home Worker,23,21
+717,Inbound Commuter,3,4
+717,Long Term Visitor,37,30
+717,Outbound Commuter,1,1
+717,Resident Worker,41,49
+717,Short Term Visitor,9,10
+718,Home Worker,26,26
+718,Inbound Commuter,2,3
+718,Long Term Visitor,13,27
+718,Resident Worker,76,83
+718,Short Term Visitor,3,6
+719,Home Worker,59,54
+719,Inbound Commuter,5,4
+719,Long Term Visitor,19,30
+719,Outbound Commuter,5,11
+719,Resident Worker,106,123
+719,Short Term Visitor,7,9
+720,Home Worker,12,11
+720,Inbound Commuter,1,1
+720,Long Term Visitor,5,7
+720,Resident Worker,31,27
+720,Short Term Visitor,3,2
+721,Home Worker,12,11
+721,Long Term Visitor,18,11
+721,Resident Worker,43,37
+721,Short Term Visitor,4,5
+722,Home Worker,17,14
+722,Inbound Commuter,3,1
+722,Long Term Visitor,10,8
+722,Resident Worker,27,18
+722,Short Term Visitor,3,2
+723,Home Worker,11,10
+723,Long Term Visitor,14,10
+723,Resident Worker,34,30
+723,Short Term Visitor,9,4
+724,Home Worker,9,7
+724,Long Term Visitor,7,3
+724,Resident Worker,30,29
+724,Short Term Visitor,6,6
+725,Home Worker,28,32
+725,Inbound Commuter,4,3
+725,Long Term Visitor,30,25
+725,Outbound Commuter,12,11
+725,Resident Worker,83,74
+725,Short Term Visitor,11,14
+726,Home Worker,33,31
+726,Inbound Commuter,6,5
+726,Long Term Visitor,13,14
+726,Outbound Commuter,8,10
+726,Resident Worker,75,82
+726,Short Term Visitor,16,12
+727,Home Worker,59,56
+727,Inbound Commuter,6,6
+727,Long Term Visitor,11,12
+727,Outbound Commuter,7,7
+727,Resident Worker,116,106
+727,Short Term Visitor,5,7
+728,Home Worker,18,16
+728,Inbound Commuter,1,1
+728,Long Term Visitor,3,6
+728,Outbound Commuter,2,2
+728,Resident Worker,21,21
+729,Home Worker,11,12
+729,Inbound Commuter,1,1
+729,Long Term Visitor,3,8
+729,Outbound Commuter,1,2
+729,Resident Worker,33,32
+729,Short Term Visitor,2,4
+730,Home Worker,61,60
+730,Inbound Commuter,6,5
+730,Long Term Visitor,19,34
+730,Outbound Commuter,9,11
+730,Resident Worker,124,145
+730,Short Term Visitor,6,12
+731,Home Worker,24,30
+731,Inbound Commuter,3,2
+731,Long Term Visitor,13,18
+731,Outbound Commuter,1,3
+731,Resident Worker,63,57
+731,Short Term Visitor,1,4
+732,Home Worker,9,16
+732,Inbound Commuter,1,1
+732,Long Term Visitor,9,2
+732,Outbound Commuter,1,1
+732,Resident Worker,26,23
+732,Short Term Visitor,1,2
+733,Home Worker,29,23
+733,Inbound Commuter,4,1
+733,Long Term Visitor,5,7
+733,Outbound Commuter,6,4
+733,Resident Worker,51,48
+733,Short Term Visitor,6,4
+734,Home Worker,6,6
+734,Inbound Commuter,1,1
+734,Long Term Visitor,1,2
+734,Outbound Commuter,1,1
+734,Resident Worker,20,21
+734,Short Term Visitor,1,1
+735,Home Worker,31,32
+735,Inbound Commuter,2,2
+735,Long Term Visitor,8,7
+735,Outbound Commuter,1,2
+735,Resident Worker,37,34
+736,Home Worker,5,4
+736,Long Term Visitor,1,2
+736,Resident Worker,10,14
+737,Home Worker,9,9
+737,Inbound Commuter,1,1
+737,Long Term Visitor,3,4
+737,Outbound Commuter,1,1
+737,Resident Worker,34,39
+737,Short Term Visitor,2,1
+738,Home Worker,22,22
+738,Long Term Visitor,11,14
+738,Outbound Commuter,2,1
+738,Resident Worker,44,48
+739,Home Worker,13,9
+739,Long Term Visitor,1,3
+739,Outbound Commuter,1,1
+739,Resident Worker,21,24
+740,Home Worker,11,11
+740,Inbound Commuter,1,1
+740,Long Term Visitor,3,2
+740,Resident Worker,24,23
+741,Home Worker,19,18
+741,Long Term Visitor,3,5
+741,Resident Worker,11,17
+742,Home Worker,17,16
+742,Inbound Commuter,1,1
+742,Long Term Visitor,3,3
+742,Outbound Commuter,2,2
+742,Resident Worker,41,37
+742,Short Term Visitor,1,1
+743,Home Worker,49,45
+743,Inbound Commuter,4,4
+743,Long Term Visitor,11,16
+743,Outbound Commuter,1,3
+743,Resident Worker,61,60
+743,Short Term Visitor,3,5
+744,Home Worker,16,20
+744,Long Term Visitor,8,12
+744,Outbound Commuter,4,5
+744,Resident Worker,46,44
+744,Short Term Visitor,1,1
+745,Home Worker,12,12
+745,Long Term Visitor,2,2
+745,Outbound Commuter,3,3
+745,Resident Worker,20,16
+746,Home Worker,6,8
+746,Long Term Visitor,2,2
+746,Resident Worker,13,11
+747,Home Worker,25,25
+747,Long Term Visitor,9,7
+747,Outbound Commuter,1,1
+747,Resident Worker,49,53
+747,Short Term Visitor,1,1
+748,Home Worker,59,71
+748,Inbound Commuter,4,3
+748,Long Term Visitor,15,15
+748,Outbound Commuter,5,3
+748,Resident Worker,83,88
+748,Short Term Visitor,9,7
+749,Home Worker,2,1
+749,Inbound Commuter,1,1
+749,Resident Worker,2,2
+750,Home Worker,7,8
+750,Inbound Commuter,1,1
+750,Resident Worker,13,11
+751,Home Worker,50,47
+751,Long Term Visitor,9,11
+751,Outbound Commuter,3,3
+751,Resident Worker,65,64
+752,Home Worker,16,19
+752,Long Term Visitor,5,6
+752,Outbound Commuter,1,3
+752,Resident Worker,22,28
+752,Short Term Visitor,2,2
+753,Resident Worker,9,13
+753,Short Term Visitor,1,1
+754,Home Worker,22,20
+754,Long Term Visitor,8,12
+754,Resident Worker,40,31
+754,Short Term Visitor,1,1
+755,Home Worker,24,23
+755,Inbound Commuter,1,1
+755,Long Term Visitor,3,3
+755,Outbound Commuter,2,3
+755,Resident Worker,27,29
+756,Home Worker,29,26
+756,Inbound Commuter,2,1
+756,Long Term Visitor,7,10
+756,Resident Worker,27,30
+756,Short Term Visitor,6,5
+757,Home Worker,22,23
+757,Long Term Visitor,5,8
+757,Outbound Commuter,1,1
+757,Resident Worker,35,37
+758,Home Worker,40,33
+758,Long Term Visitor,9,7
+758,Outbound Commuter,5,4
+758,Resident Worker,58,59
+759,Home Worker,24,20
+759,Long Term Visitor,3,4
+759,Resident Worker,20,22
+759,Short Term Visitor,2,2
+760,Home Worker,28,29
+760,Inbound Commuter,1,1
+760,Long Term Visitor,8,7
+760,Outbound Commuter,1,2
+760,Resident Worker,48,48
+760,Short Term Visitor,2,1
+761,Home Worker,9,8
+761,Inbound Commuter,2,2
+761,Long Term Visitor,2,3
+761,Resident Worker,19,17
+762,Home Worker,1,1
+762,Resident Worker,8,6
+763,Home Worker,26,29
+763,Long Term Visitor,10,7
+763,Outbound Commuter,1,2
+763,Resident Worker,42,46
+764,Home Worker,21,22
+764,Inbound Commuter,2,2
+764,Long Term Visitor,5,13
+764,Outbound Commuter,1,1
+764,Resident Worker,25,32
+764,Short Term Visitor,2,2
+765,Home Worker,20,20
+765,Inbound Commuter,2,1
+765,Long Term Visitor,4,2
+765,Resident Worker,28,27
+765,Short Term Visitor,2,2
+766,Home Worker,36,33
+766,Inbound Commuter,1,1
+766,Long Term Visitor,10,13
+766,Outbound Commuter,6,4
+766,Resident Worker,37,39
+766,Short Term Visitor,2,2
+767,Home Worker,32,34
+767,Long Term Visitor,3,3
+767,Resident Worker,45,37
+768,Home Worker,20,17
+768,Long Term Visitor,4,6
+768,Resident Worker,18,20
+768,Short Term Visitor,2,2
+769,Home Worker,9,9
+769,Long Term Visitor,1,2
+769,Resident Worker,12,15
+770,Home Worker,1,1
+770,Long Term Visitor,3,3
+770,Resident Worker,3,4
+770,Short Term Visitor,1,2
+771,Home Worker,32,25
+771,Long Term Visitor,7,11
+771,Outbound Commuter,3,2
+771,Resident Worker,41,35
+771,Short Term Visitor,3,5
+772,Home Worker,78,80
+772,Inbound Commuter,2,1
+772,Long Term Visitor,19,17
+772,Outbound Commuter,4,6
+772,Resident Worker,91,94
+772,Short Term Visitor,4,3
+773,Home Worker,51,41
+773,Inbound Commuter,1,1
+773,Long Term Visitor,7,9
+773,Resident Worker,61,64
+773,Short Term Visitor,1,4
+774,Home Worker,55,60
+774,Inbound Commuter,2,3
+774,Long Term Visitor,17,13
+774,Outbound Commuter,1,1
+774,Resident Worker,94,94
+774,Short Term Visitor,4,7
+775,Home Worker,158,154
+775,Inbound Commuter,4,5
+775,Long Term Visitor,36,38
+775,Outbound Commuter,4,3
+775,Resident Worker,283,270
+775,Short Term Visitor,8,7
+776,Long Term Visitor,1,2
+776,Short Term Visitor,3,5
+777,Resident Worker,3,4
+778,Outbound Commuter,1,1
+779,Home Worker,1,1
+779,Long Term Visitor,2,2
+779,Resident Worker,5,8
+780,Home Worker,73,77
+780,Inbound Commuter,11,13
+780,Long Term Visitor,48,56
+780,Outbound Commuter,10,11
+780,Resident Worker,158,168
+780,Short Term Visitor,26,29
+781,Home Worker,58,56
+781,Inbound Commuter,3,3
+781,Long Term Visitor,22,26
+781,Outbound Commuter,3,3
+781,Resident Worker,124,125
+781,Short Term Visitor,2,5
+782,Home Worker,34,30
+782,Inbound Commuter,1,1
+782,Long Term Visitor,6,9
+782,Outbound Commuter,5,4
+782,Resident Worker,67,75
+783,Home Worker,21,20
+783,Long Term Visitor,2,7
+783,Outbound Commuter,1,3
+783,Resident Worker,32,30
+784,Home Worker,42,41
+784,Inbound Commuter,1,1
+784,Long Term Visitor,9,9
+784,Outbound Commuter,5,2
+784,Resident Worker,56,64
+784,Short Term Visitor,1,2
+785,Home Worker,56,57
+785,Inbound Commuter,3,5
+785,Long Term Visitor,29,30
+785,Outbound Commuter,6,6
+785,Resident Worker,123,132
+785,Short Term Visitor,1,3
+786,Home Worker,10,11
+786,Long Term Visitor,9,6
+786,Resident Worker,17,14
+786,Short Term Visitor,1,1
+787,Home Worker,94,95
+787,Inbound Commuter,6,7
+787,Long Term Visitor,41,40
+787,Outbound Commuter,7,8
+787,Resident Worker,161,170
+788,Home Worker,107,101
+788,Inbound Commuter,10,7
+788,Long Term Visitor,27,32
+788,Outbound Commuter,4,5
+788,Resident Worker,149,166
+788,Short Term Visitor,6,8
+789,Home Worker,73,64
+789,Inbound Commuter,2,2
+789,Long Term Visitor,26,38
+789,Outbound Commuter,1,4
+789,Resident Worker,102,102
+789,Short Term Visitor,9,7
+790,Home Worker,25,26
+790,Inbound Commuter,2,2
+790,Long Term Visitor,7,13
+790,Outbound Commuter,2,1
+790,Resident Worker,59,57
+790,Short Term Visitor,3,5
+791,Home Worker,54,53
+791,Inbound Commuter,2,1
+791,Long Term Visitor,25,35
+791,Outbound Commuter,4,4
+791,Resident Worker,88,90
+791,Short Term Visitor,4,5
+792,Home Worker,69,61
+792,Inbound Commuter,3,3
+792,Long Term Visitor,56,60
+792,Outbound Commuter,10,10
+792,Resident Worker,164,151
+792,Short Term Visitor,27,26
+793,Home Worker,46,44
+793,Inbound Commuter,3,3
+793,Long Term Visitor,10,15
+793,Outbound Commuter,4,3
+793,Resident Worker,86,85
+793,Short Term Visitor,2,1
+794,Home Worker,47,48
+794,Long Term Visitor,9,9
+794,Outbound Commuter,7,6
+794,Resident Worker,65,50
+794,Short Term Visitor,2,4
+795,Home Worker,161,172
+795,Inbound Commuter,15,15
+795,Long Term Visitor,142,179
+795,Outbound Commuter,9,9
+795,Resident Worker,262,262
+795,Short Term Visitor,19,25
+796,Home Worker,75,86
+796,Inbound Commuter,11,10
+796,Long Term Visitor,103,113
+796,Outbound Commuter,8,8
+796,Resident Worker,99,130
+796,Short Term Visitor,18,21
+797,Home Worker,65,71
+797,Inbound Commuter,6,9
+797,Long Term Visitor,36,41
+797,Outbound Commuter,7,5
+797,Resident Worker,142,142
+797,Short Term Visitor,4,7
+798,Home Worker,87,88
+798,Inbound Commuter,6,8
+798,Long Term Visitor,54,58
+798,Outbound Commuter,5,8
+798,Resident Worker,155,135
+798,Short Term Visitor,7,8
+799,Home Worker,70,76
+799,Inbound Commuter,21,17
+799,Long Term Visitor,445,415
+799,Outbound Commuter,17,17
+799,Resident Worker,196,170
+799,Short Term Visitor,37,39
+800,Home Worker,22,23
+800,Inbound Commuter,1,3
+800,Long Term Visitor,283,266
+800,Outbound Commuter,9,5
+800,Resident Worker,73,70
+800,Short Term Visitor,20,22
+801,Home Worker,144,166
+801,Inbound Commuter,18,17
+801,Long Term Visitor,433,513
+801,Outbound Commuter,18,19
+801,Resident Worker,275,306
+801,Short Term Visitor,64,73
+802,Home Worker,9,10
+802,Inbound Commuter,1,1
+802,Long Term Visitor,48,50
+802,Outbound Commuter,1,1
+802,Resident Worker,10,14
+802,Short Term Visitor,3,4
+803,Home Worker,7,8
+803,Inbound Commuter,1,1
+803,Long Term Visitor,76,71
+803,Outbound Commuter,1,1
+803,Resident Worker,21,23
+803,Short Term Visitor,16,16
+804,Home Worker,20,25
+804,Inbound Commuter,2,1
+804,Long Term Visitor,148,161
+804,Outbound Commuter,2,5
+804,Resident Worker,45,57
+804,Short Term Visitor,14,17
+805,Home Worker,19,24
+805,Inbound Commuter,4,4
+805,Long Term Visitor,107,106
+805,Outbound Commuter,4,6
+805,Resident Worker,38,36
+805,Short Term Visitor,5,12
+806,Home Worker,26,27
+806,Inbound Commuter,2,2
+806,Long Term Visitor,35,37
+806,Outbound Commuter,2,3
+806,Resident Worker,36,46
+806,Short Term Visitor,3,7
+807,Home Worker,43,47
+807,Inbound Commuter,8,6
+807,Long Term Visitor,182,203
+807,Outbound Commuter,4,3
+807,Resident Worker,95,90
+807,Short Term Visitor,19,36
+808,Home Worker,24,26
+808,Long Term Visitor,126,153
+808,Outbound Commuter,3,4
+808,Resident Worker,36,43
+808,Short Term Visitor,24,26
+809,Home Worker,31,30
+809,Inbound Commuter,2,3
+809,Long Term Visitor,122,137
+809,Outbound Commuter,4,4
+809,Resident Worker,48,59
+809,Short Term Visitor,23,29
+810,Home Worker,18,22
+810,Inbound Commuter,16,14
+810,Long Term Visitor,37,32
+810,Outbound Commuter,4,3
+810,Resident Worker,87,86
+810,Short Term Visitor,4,5
+811,Home Worker,9,8
+811,Long Term Visitor,26,28
+811,Resident Worker,3,5
+811,Short Term Visitor,9,9
+812,Home Worker,12,12
+812,Inbound Commuter,2,2
+812,Long Term Visitor,14,17
+812,Outbound Commuter,7,5
+812,Resident Worker,35,36
+812,Short Term Visitor,1,4
+813,Home Worker,82,71
+813,Inbound Commuter,3,5
+813,Long Term Visitor,36,42
+813,Outbound Commuter,12,8
+813,Resident Worker,111,102
+813,Short Term Visitor,9,10
+814,Home Worker,13,9
+814,Long Term Visitor,21,41
+814,Resident Worker,33,35
+814,Short Term Visitor,5,11
+815,Home Worker,88,87
+815,Inbound Commuter,5,6
+815,Long Term Visitor,73,86
+815,Outbound Commuter,7,8
+815,Resident Worker,147,138
+815,Short Term Visitor,17,22
+816,Home Worker,4,3
+816,Inbound Commuter,2,2
+816,Long Term Visitor,3,2
+816,Resident Worker,8,4
+817,Home Worker,28,32
+817,Inbound Commuter,8,6
+817,Long Term Visitor,44,64
+817,Outbound Commuter,2,2
+817,Resident Worker,59,71
+817,Short Term Visitor,8,6
+818,Home Worker,10,12
+818,Long Term Visitor,9,3
+818,Outbound Commuter,2,2
+818,Resident Worker,28,31
+818,Short Term Visitor,4,3
+819,Home Worker,82,82
+819,Inbound Commuter,2,2
+819,Long Term Visitor,68,64
+819,Outbound Commuter,7,9
+819,Resident Worker,126,137
+819,Short Term Visitor,20,25
+820,Home Worker,156,162
+820,Inbound Commuter,19,14
+820,Long Term Visitor,219,246
+820,Outbound Commuter,19,19
+820,Resident Worker,327,338
+820,Short Term Visitor,65,72
+821,Home Worker,41,45
+821,Inbound Commuter,9,9
+821,Long Term Visitor,29,27
+821,Outbound Commuter,4,1
+821,Resident Worker,89,85
+821,Short Term Visitor,14,14
+822,Home Worker,35,33
+822,Long Term Visitor,25,34
+822,Outbound Commuter,6,6
+822,Resident Worker,53,50
+822,Short Term Visitor,6,7
+823,Home Worker,27,19
+823,Long Term Visitor,9,10
+823,Resident Worker,36,34
+824,Home Worker,17,20
+824,Long Term Visitor,8,8
+824,Resident Worker,32,31
+824,Short Term Visitor,2,1
+825,Home Worker,9,7
+825,Long Term Visitor,5,7
+825,Outbound Commuter,1,2
+825,Resident Worker,9,12
+826,Home Worker,12,9
+826,Long Term Visitor,1,3
+826,Outbound Commuter,2,2
+826,Resident Worker,24,20
+827,Inbound Commuter,2,2
+827,Long Term Visitor,2,1
+827,Outbound Commuter,3,4
+827,Resident Worker,20,14
+827,Short Term Visitor,3,2
+828,Home Worker,9,10
+828,Inbound Commuter,1,1
+828,Long Term Visitor,3,3
+828,Resident Worker,19,18
+828,Short Term Visitor,2,1
+829,Home Worker,4,6
+829,Long Term Visitor,1,2
+829,Resident Worker,14,17
+830,Home Worker,8,5
+830,Long Term Visitor,1,2
+830,Resident Worker,15,11
+831,Home Worker,11,16
+831,Resident Worker,8,9
+832,Home Worker,98,86
+832,Inbound Commuter,2,2
+832,Long Term Visitor,30,31
+832,Outbound Commuter,4,5
+832,Resident Worker,143,139
+832,Short Term Visitor,7,3
+833,Home Worker,22,21
+833,Long Term Visitor,3,3
+833,Outbound Commuter,3,5
+833,Resident Worker,26,26
+833,Short Term Visitor,3,4
+834,Home Worker,36,40
+834,Inbound Commuter,7,6
+834,Long Term Visitor,16,17
+834,Outbound Commuter,4,2
+834,Resident Worker,97,104
+834,Short Term Visitor,2,2
+835,Home Worker,53,55
+835,Inbound Commuter,16,13
+835,Long Term Visitor,26,35
+835,Outbound Commuter,4,3
+835,Resident Worker,107,102
+835,Short Term Visitor,13,11
+836,Home Worker,16,14
+836,Long Term Visitor,11,7
+836,Outbound Commuter,1,1
+836,Resident Worker,36,32
+836,Short Term Visitor,4,3
+837,Home Worker,11,11
+837,Long Term Visitor,1,1
+837,Resident Worker,10,12
+838,Home Worker,23,21
+838,Inbound Commuter,1,1
+838,Long Term Visitor,6,5
+838,Outbound Commuter,1,1
+838,Resident Worker,34,30
+838,Short Term Visitor,2,5
+839,Home Worker,39,35
+839,Inbound Commuter,4,5
+839,Long Term Visitor,15,22
+839,Outbound Commuter,3,4
+839,Resident Worker,45,45
+839,Short Term Visitor,3,5
+840,Home Worker,6,12
+840,Long Term Visitor,4,6
+840,Resident Worker,15,14
+841,Home Worker,20,21
+841,Inbound Commuter,3,3
+841,Long Term Visitor,11,11
+841,Outbound Commuter,2,2
+841,Resident Worker,34,34
+841,Short Term Visitor,3,4
+842,Home Worker,63,67
+842,Inbound Commuter,5,6
+842,Long Term Visitor,56,56
+842,Outbound Commuter,3,5
+842,Resident Worker,83,84
+842,Short Term Visitor,10,11
+843,Home Worker,14,15
+843,Inbound Commuter,3,3
+843,Long Term Visitor,9,8
+843,Resident Worker,30,31
+843,Short Term Visitor,2,1
+844,Home Worker,25,21
+844,Long Term Visitor,8,14
+844,Outbound Commuter,4,5
+844,Resident Worker,43,39
+845,Home Worker,22,25
+845,Long Term Visitor,7,6
+845,Resident Worker,33,32
+846,Home Worker,14,14
+846,Long Term Visitor,4,9
+846,Resident Worker,33,27
+847,Home Worker,7,6
+847,Inbound Commuter,1,1
+847,Long Term Visitor,4,3
+847,Resident Worker,15,9
+848,Home Worker,45,58
+848,Inbound Commuter,4,5
+848,Long Term Visitor,20,23
+848,Outbound Commuter,3,2
+848,Resident Worker,101,100
+848,Short Term Visitor,9,9
+849,Home Worker,28,28
+849,Inbound Commuter,1,1
+849,Long Term Visitor,3,7
+849,Resident Worker,26,35
+849,Short Term Visitor,1,3
+850,Home Worker,22,21
+850,Inbound Commuter,2,4
+850,Long Term Visitor,11,8
+850,Resident Worker,24,21
+850,Short Term Visitor,4,3
+851,Home Worker,13,15
+851,Long Term Visitor,1,1
+851,Outbound Commuter,2,2
+851,Resident Worker,25,23
+851,Short Term Visitor,1,3
+852,Home Worker,35,33
+852,Long Term Visitor,6,12
+852,Outbound Commuter,2,2
+852,Resident Worker,63,58
+852,Short Term Visitor,2,1
+853,Home Worker,31,28
+853,Inbound Commuter,1,1
+853,Long Term Visitor,41,25
+853,Resident Worker,40,40
+853,Short Term Visitor,7,4
+854,Home Worker,19,24
+854,Long Term Visitor,5,5
+854,Outbound Commuter,1,1
+854,Resident Worker,37,32
+854,Short Term Visitor,3,4
+855,Home Worker,15,11
+855,Long Term Visitor,10,4
+855,Resident Worker,22,21
+856,Home Worker,25,24
+856,Long Term Visitor,4,2
+856,Resident Worker,60,63
+856,Short Term Visitor,1,1
+857,Home Worker,13,9
+857,Long Term Visitor,4,11
+857,Resident Worker,17,25
+858,Home Worker,19,16
+858,Inbound Commuter,1,1
+858,Long Term Visitor,37,22
+858,Resident Worker,55,56
+858,Short Term Visitor,5,7
+859,Home Worker,8,7
+859,Long Term Visitor,55,42
+859,Resident Worker,17,22
+859,Short Term Visitor,9,9
+860,Home Worker,41,43
+860,Inbound Commuter,1,2
+860,Long Term Visitor,22,15
+860,Outbound Commuter,3,3
+860,Resident Worker,58,63
+860,Short Term Visitor,5,2
+861,Home Worker,30,31
+861,Inbound Commuter,1,1
+861,Long Term Visitor,4,5
+861,Outbound Commuter,6,6
+861,Resident Worker,66,73
+861,Short Term Visitor,2,3
+862,Home Worker,53,57
+862,Inbound Commuter,1,1
+862,Long Term Visitor,22,7
+862,Outbound Commuter,3,4
+862,Resident Worker,78,79
+862,Short Term Visitor,7,2
+863,Home Worker,29,32
+863,Long Term Visitor,11,15
+863,Outbound Commuter,1,2
+863,Resident Worker,49,45
+864,Home Worker,30,29
+864,Inbound Commuter,1,1
+864,Long Term Visitor,3,7
+864,Outbound Commuter,2,1
+864,Resident Worker,50,40
+864,Short Term Visitor,1,1
+865,Home Worker,33,45
+865,Inbound Commuter,3,2
+865,Long Term Visitor,24,28
+865,Outbound Commuter,8,8
+865,Resident Worker,75,69
+865,Short Term Visitor,4,3
+866,Inbound Commuter,1,1
+866,Long Term Visitor,7,6
+866,Resident Worker,9,4
+866,Short Term Visitor,3,1
+867,Home Worker,5,5
+867,Inbound Commuter,1,1
+867,Long Term Visitor,41,36
+867,Resident Worker,11,13
+867,Short Term Visitor,13,7
+868,Home Worker,82,76
+868,Inbound Commuter,1,2
+868,Long Term Visitor,16,18
+868,Outbound Commuter,3,5
+868,Resident Worker,113,107
+868,Short Term Visitor,4,4
+869,Home Worker,13,9
+869,Long Term Visitor,1,3
+869,Outbound Commuter,5,3
+869,Resident Worker,13,14
+870,Home Worker,21,22
+870,Long Term Visitor,10,12
+870,Outbound Commuter,1,1
+870,Resident Worker,38,43
+870,Short Term Visitor,4,5
+871,Home Worker,39,34
+871,Long Term Visitor,16,10
+871,Outbound Commuter,1,1
+871,Resident Worker,55,48
+871,Short Term Visitor,4,3
+872,Home Worker,71,66
+872,Inbound Commuter,2,4
+872,Long Term Visitor,17,20
+872,Outbound Commuter,3,3
+872,Resident Worker,107,104
+872,Short Term Visitor,3,5
+873,Home Worker,1,2
+873,Long Term Visitor,4,9
+873,Resident Worker,6,6
+874,Home Worker,32,27
+874,Inbound Commuter,2,3
+874,Long Term Visitor,11,13
+874,Outbound Commuter,3,3
+874,Resident Worker,51,54
+874,Short Term Visitor,5,2
+875,Home Worker,40,37
+875,Long Term Visitor,12,11
+875,Resident Worker,66,60
+875,Short Term Visitor,3,1
+876,Home Worker,42,38
+876,Long Term Visitor,55,33
+876,Resident Worker,89,93
+876,Short Term Visitor,10,5
+877,Home Worker,8,8
+877,Inbound Commuter,1,1
+877,Long Term Visitor,100,57
+877,Outbound Commuter,3,1
+877,Resident Worker,16,19
+877,Short Term Visitor,24,11
+878,Home Worker,16,16
+878,Inbound Commuter,2,1
+878,Long Term Visitor,27,15
+878,Resident Worker,34,26
+878,Short Term Visitor,2,5
+879,Home Worker,50,55
+879,Long Term Visitor,19,14
+879,Outbound Commuter,6,4
+879,Resident Worker,81,83
+879,Short Term Visitor,1,1
+880,Home Worker,63,58
+880,Inbound Commuter,1,3
+880,Long Term Visitor,27,24
+880,Outbound Commuter,8,8
+880,Resident Worker,96,101
+880,Short Term Visitor,5,2
+881,Home Worker,37,39
+881,Long Term Visitor,4,7
+881,Outbound Commuter,4,4
+881,Resident Worker,61,56
+881,Short Term Visitor,1,2
+882,Home Worker,68,74
+882,Inbound Commuter,3,2
+882,Long Term Visitor,12,14
+882,Outbound Commuter,7,8
+882,Resident Worker,111,107
+882,Short Term Visitor,7,7
+883,Home Worker,78,72
+883,Inbound Commuter,4,3
+883,Long Term Visitor,45,40
+883,Outbound Commuter,1,2
+883,Resident Worker,136,133
+883,Short Term Visitor,10,12
+884,Home Worker,16,16
+884,Long Term Visitor,6,5
+884,Resident Worker,10,14
+884,Short Term Visitor,1,1
+885,Home Worker,9,7
+885,Long Term Visitor,4,4
+885,Outbound Commuter,1,1
+885,Resident Worker,12,13
+886,Home Worker,61,65
+886,Inbound Commuter,2,1
+886,Long Term Visitor,13,14
+886,Outbound Commuter,4,5
+886,Resident Worker,112,119
+886,Short Term Visitor,5,6
+887,Home Worker,1,2
+887,Inbound Commuter,1,1
+887,Long Term Visitor,6,5
+887,Resident Worker,3,4
+888,Home Worker,202,204
+888,Inbound Commuter,6,7
+888,Long Term Visitor,44,63
+888,Outbound Commuter,18,19
+888,Resident Worker,305,301
+888,Short Term Visitor,6,6
+889,Home Worker,85,86
+889,Inbound Commuter,2,2
+889,Long Term Visitor,21,22
+889,Outbound Commuter,3,4
+889,Resident Worker,135,128
+889,Short Term Visitor,5,6
+890,Home Worker,9,7
+890,Long Term Visitor,9,10
+890,Resident Worker,8,12
+890,Short Term Visitor,4,2
+891,Home Worker,9,10
+891,Long Term Visitor,8,5
+891,Resident Worker,16,13
+891,Short Term Visitor,4,4
+892,Resident Worker,1,1
+892,Short Term Visitor,1,1
+893,Long Term Visitor,1,4
+893,Resident Worker,2,2
+894,Home Worker,1,1
+894,Long Term Visitor,24,20
+894,Resident Worker,5,2
+894,Short Term Visitor,2,4
+895,Home Worker,64,66
+895,Inbound Commuter,32,32
+895,Long Term Visitor,429,453
+895,Outbound Commuter,11,16
+895,Resident Worker,93,89
+895,Short Term Visitor,40,56
+896,Home Worker,28,28
+896,Inbound Commuter,1,1
+896,Long Term Visitor,13,15
+896,Outbound Commuter,2,5
+896,Resident Worker,72,64
+896,Short Term Visitor,9,4
+897,Home Worker,239,248
+897,Inbound Commuter,66,57
+897,Long Term Visitor,810,904
+897,Outbound Commuter,61,62
+897,Resident Worker,421,464
+897,Short Term Visitor,107,127
+898,Home Worker,13,16
+898,Inbound Commuter,5,5
+898,Long Term Visitor,248,246
+898,Outbound Commuter,6,4
+898,Resident Worker,32,38
+898,Short Term Visitor,17,21
+899,Home Worker,24,26
+899,Inbound Commuter,13,11
+899,Long Term Visitor,172,142
+899,Outbound Commuter,5,8
+899,Resident Worker,60,51
+899,Short Term Visitor,11,9
+900,Home Worker,44,48
+900,Inbound Commuter,31,29
+900,Long Term Visitor,239,259
+900,Outbound Commuter,12,6
+900,Resident Worker,115,99
+900,Short Term Visitor,35,27
+901,Home Worker,51,50
+901,Inbound Commuter,3,3
+901,Long Term Visitor,28,30
+901,Outbound Commuter,7,6
+901,Resident Worker,63,60
+901,Short Term Visitor,2,3
+902,Home Worker,131,143
+902,Inbound Commuter,40,35
+902,Long Term Visitor,611,622
+902,Outbound Commuter,29,31
+902,Resident Worker,231,217
+902,Short Term Visitor,72,85
+903,Home Worker,228,250
+903,Inbound Commuter,60,55
+903,Long Term Visitor,1020,1128
+903,Outbound Commuter,44,47
+903,Resident Worker,406,418
+903,Short Term Visitor,151,169
+904,Home Worker,59,66
+904,Inbound Commuter,45,29
+904,Long Term Visitor,436,382
+904,Outbound Commuter,16,15
+904,Resident Worker,163,138
+904,Short Term Visitor,40,28
+905,Home Worker,1,1
+905,Inbound Commuter,1,1
+905,Long Term Visitor,32,21
+905,Resident Worker,2,3
+905,Short Term Visitor,2,2
+906,Home Worker,45,42
+906,Inbound Commuter,12,8
+906,Long Term Visitor,456,460
+906,Outbound Commuter,11,13
+906,Resident Worker,83,88
+906,Short Term Visitor,29,43
+907,Home Worker,4,2
+907,Long Term Visitor,20,11
+907,Resident Worker,3,3
+907,Short Term Visitor,3,2
+908,Home Worker,47,53
+908,Inbound Commuter,20,11
+908,Long Term Visitor,352,339
+908,Outbound Commuter,9,8
+908,Resident Worker,90,94
+908,Short Term Visitor,40,43
+909,Home Worker,51,53
+909,Inbound Commuter,5,5
+909,Long Term Visitor,317,351
+909,Outbound Commuter,7,5
+909,Resident Worker,84,83
+909,Short Term Visitor,32,36
+910,Home Worker,35,27
+910,Inbound Commuter,1,1
+910,Long Term Visitor,86,85
+910,Outbound Commuter,4,4
+910,Resident Worker,73,83
+910,Short Term Visitor,6,8
+911,Home Worker,52,54
+911,Inbound Commuter,6,6
+911,Long Term Visitor,188,189
+911,Outbound Commuter,2,5
+911,Resident Worker,109,97
+911,Short Term Visitor,14,13
+912,Home Worker,32,29
+912,Long Term Visitor,36,30
+912,Outbound Commuter,2,3
+912,Resident Worker,38,31
+912,Short Term Visitor,3,2
+913,Home Worker,31,29
+913,Inbound Commuter,2,2
+913,Long Term Visitor,280,273
+913,Outbound Commuter,6,7
+913,Resident Worker,45,50
+913,Short Term Visitor,22,31
+914,Home Worker,60,71
+914,Inbound Commuter,6,8
+914,Long Term Visitor,285,330
+914,Outbound Commuter,6,8
+914,Resident Worker,84,101
+914,Short Term Visitor,56,52
+915,Home Worker,94,89
+915,Inbound Commuter,4,3
+915,Long Term Visitor,233,262
+915,Outbound Commuter,14,10
+915,Resident Worker,117,111
+915,Short Term Visitor,21,15
+916,Home Worker,95,98
+916,Inbound Commuter,5,4
+916,Long Term Visitor,323,323
+916,Outbound Commuter,12,15
+916,Resident Worker,118,109
+916,Short Term Visitor,27,38
+917,Home Worker,75,87
+917,Inbound Commuter,12,9
+917,Long Term Visitor,433,392
+917,Outbound Commuter,12,10
+917,Resident Worker,134,140
+917,Short Term Visitor,66,42
+918,Home Worker,9,9
+918,Long Term Visitor,37,33
+918,Outbound Commuter,2,1
+918,Resident Worker,9,14
+918,Short Term Visitor,2,6
+919,Home Worker,7,6
+919,Inbound Commuter,2,2
+919,Long Term Visitor,49,58
+919,Outbound Commuter,2,2
+919,Resident Worker,20,26
+919,Short Term Visitor,6,7
+920,Home Worker,22,26
+920,Inbound Commuter,3,5
+920,Long Term Visitor,111,133
+920,Resident Worker,47,51
+920,Short Term Visitor,13,12
+921,Home Worker,4,10
+921,Long Term Visitor,53,66
+921,Outbound Commuter,2,2
+921,Resident Worker,16,19
+921,Short Term Visitor,5,4
+922,Home Worker,21,29
+922,Inbound Commuter,1,3
+922,Long Term Visitor,131,159
+922,Outbound Commuter,1,1
+922,Resident Worker,48,60
+922,Short Term Visitor,18,20
+923,Home Worker,13,19
+923,Inbound Commuter,1,2
+923,Long Term Visitor,120,169
+923,Outbound Commuter,1,2
+923,Resident Worker,30,34
+923,Short Term Visitor,23,24
+924,Home Worker,38,43
+924,Inbound Commuter,2,2
+924,Long Term Visitor,146,213
+924,Outbound Commuter,1,1
+924,Resident Worker,52,64
+924,Short Term Visitor,26,33
+925,Home Worker,36,37
+925,Inbound Commuter,8,10
+925,Long Term Visitor,107,106
+925,Outbound Commuter,1,2
+925,Resident Worker,87,89
+925,Short Term Visitor,7,13
+926,Home Worker,1,2
+926,Inbound Commuter,1,1
+926,Long Term Visitor,19,22
+926,Resident Worker,5,5
+927,Home Worker,21,20
+927,Inbound Commuter,2,1
+927,Long Term Visitor,125,130
+927,Outbound Commuter,2,1
+927,Resident Worker,45,42
+927,Short Term Visitor,10,12
+928,Home Worker,13,11
+928,Long Term Visitor,95,81
+928,Outbound Commuter,7,8
+928,Resident Worker,33,26
+928,Short Term Visitor,9,15
+929,Home Worker,4,4
+929,Inbound Commuter,1,1
+929,Long Term Visitor,37,60
+929,Resident Worker,12,14
+929,Short Term Visitor,6,8
+930,Home Worker,16,17
+930,Inbound Commuter,3,1
+930,Long Term Visitor,162,169
+930,Outbound Commuter,1,4
+930,Resident Worker,35,31
+930,Short Term Visitor,13,24
+931,Home Worker,43,45
+931,Inbound Commuter,11,7
+931,Long Term Visitor,172,183
+931,Outbound Commuter,1,1
+931,Resident Worker,102,88
+931,Short Term Visitor,19,21
+932,Home Worker,66,64
+932,Inbound Commuter,14,12
+932,Long Term Visitor,530,487
+932,Outbound Commuter,7,7
+932,Resident Worker,143,143
+932,Short Term Visitor,80,64
+933,Home Worker,11,10
+933,Inbound Commuter,1,2
+933,Long Term Visitor,224,206
+933,Outbound Commuter,2,3
+933,Resident Worker,27,25
+933,Short Term Visitor,9,8
+934,Home Worker,24,28
+934,Inbound Commuter,2,3
+934,Long Term Visitor,299,293
+934,Outbound Commuter,6,6
+934,Resident Worker,58,61
+934,Short Term Visitor,11,10
+935,Home Worker,68,71
+935,Inbound Commuter,6,2
+935,Long Term Visitor,421,437
+935,Resident Worker,117,104
+935,Short Term Visitor,24,33
+936,Home Worker,143,142
+936,Inbound Commuter,9,11
+936,Long Term Visitor,460,441
+936,Outbound Commuter,10,12
+936,Resident Worker,171,178
+936,Short Term Visitor,51,48
+937,Home Worker,35,32
+937,Inbound Commuter,7,6
+937,Long Term Visitor,271,255
+937,Outbound Commuter,1,1
+937,Resident Worker,51,56
+937,Short Term Visitor,11,19
+938,Home Worker,21,23
+938,Long Term Visitor,44,39
+938,Resident Worker,43,48
+938,Short Term Visitor,8,8
+939,Home Worker,13,12
+939,Long Term Visitor,7,4
+939,Outbound Commuter,2,1
+939,Resident Worker,8,6
+939,Short Term Visitor,2,2
+940,Home Worker,9,5
+940,Inbound Commuter,1,1
+940,Long Term Visitor,27,21
+940,Resident Worker,17,13
+941,Home Worker,3,3
+941,Long Term Visitor,25,31
+941,Resident Worker,8,8
+941,Short Term Visitor,3,1
+942,Home Worker,1,1
+942,Long Term Visitor,26,20
+942,Outbound Commuter,1,2
+942,Resident Worker,6,5
+943,Home Worker,23,25
+943,Inbound Commuter,1,1
+943,Long Term Visitor,70,67
+943,Outbound Commuter,4,4
+943,Resident Worker,34,27
+943,Short Term Visitor,1,3
+944,Home Worker,15,17
+944,Inbound Commuter,1,1
+944,Long Term Visitor,101,95
+944,Resident Worker,32,34
+944,Short Term Visitor,3,4
+945,Home Worker,41,39
+945,Inbound Commuter,1,1
+945,Long Term Visitor,34,22
+945,Outbound Commuter,4,3
+945,Resident Worker,60,60
+946,Home Worker,8,8
+946,Inbound Commuter,3,4
+946,Long Term Visitor,5,5
+946,Resident Worker,35,37
+946,Short Term Visitor,4,2
+947,Home Worker,41,41
+947,Inbound Commuter,10,7
+947,Long Term Visitor,30,31
+947,Outbound Commuter,3,4
+947,Resident Worker,97,102
+947,Short Term Visitor,9,8
+948,Home Worker,46,52
+948,Inbound Commuter,16,12
+948,Long Term Visitor,85,82
+948,Outbound Commuter,5,6
+948,Resident Worker,139,130
+948,Short Term Visitor,16,17
+949,Home Worker,111,111
+949,Inbound Commuter,6,4
+949,Long Term Visitor,201,151
+949,Outbound Commuter,9,10
+949,Resident Worker,196,192
+949,Short Term Visitor,10,11
+950,Home Worker,100,96
+950,Inbound Commuter,1,1
+950,Long Term Visitor,88,90
+950,Outbound Commuter,8,9
+950,Resident Worker,142,139
+950,Short Term Visitor,10,11
+951,Home Worker,82,75
+951,Inbound Commuter,1,2
+951,Long Term Visitor,22,21
+951,Outbound Commuter,6,6
+951,Resident Worker,125,108
+951,Short Term Visitor,7,2
+952,Home Worker,159,155
+952,Inbound Commuter,4,5
+952,Long Term Visitor,87,90
+952,Outbound Commuter,10,8
+952,Resident Worker,291,294
+952,Short Term Visitor,16,17
+953,Home Worker,12,14
+953,Inbound Commuter,2,2
+953,Long Term Visitor,20,19
+953,Outbound Commuter,2,2
+953,Resident Worker,22,27
+953,Short Term Visitor,1,1
+954,Home Worker,34,36
+954,Inbound Commuter,2,1
+954,Long Term Visitor,18,18
+954,Outbound Commuter,2,2
+954,Resident Worker,51,55
+954,Short Term Visitor,5,6
+955,Home Worker,54,59
+955,Inbound Commuter,3,2
+955,Long Term Visitor,62,75
+955,Outbound Commuter,2,2
+955,Resident Worker,69,77
+955,Short Term Visitor,34,29
+956,Home Worker,1,1
+956,Inbound Commuter,2,1
+956,Long Term Visitor,4,3
+956,Resident Worker,5,4
+957,Home Worker,31,29
+957,Inbound Commuter,15,12
+957,Long Term Visitor,47,35
+957,Outbound Commuter,12,9
+957,Resident Worker,94,92
+957,Short Term Visitor,12,12
+958,Home Worker,91,92
+958,Inbound Commuter,11,8
+958,Long Term Visitor,42,40
+958,Outbound Commuter,8,9
+958,Resident Worker,210,207
+958,Short Term Visitor,22,20
+959,Home Worker,36,39
+959,Inbound Commuter,2,1
+959,Long Term Visitor,14,16
+959,Outbound Commuter,5,5
+959,Resident Worker,49,58
+959,Short Term Visitor,2,2
+960,Home Worker,31,27
+960,Long Term Visitor,33,39
+960,Outbound Commuter,2,3
+960,Resident Worker,58,59
+960,Short Term Visitor,10,7
+961,Home Worker,8,9
+961,Long Term Visitor,7,6
+961,Outbound Commuter,3,1
+961,Resident Worker,17,19
+961,Short Term Visitor,5,4
+962,Home Worker,36,31
+962,Inbound Commuter,1,3
+962,Long Term Visitor,9,8
+962,Outbound Commuter,10,9
+962,Resident Worker,45,38
+962,Short Term Visitor,5,7
+963,Home Worker,15,17
+963,Long Term Visitor,6,6
+963,Resident Worker,22,22
+963,Short Term Visitor,6,3
+964,Home Worker,9,10
+964,Inbound Commuter,4,4
+964,Long Term Visitor,18,11
+964,Outbound Commuter,1,1
+964,Resident Worker,22,23
+964,Short Term Visitor,6,3
+965,Home Worker,20,17
+965,Inbound Commuter,3,1
+965,Long Term Visitor,9,10
+965,Outbound Commuter,4,4
+965,Resident Worker,59,53
+965,Short Term Visitor,6,8
+966,Home Worker,17,11
+966,Inbound Commuter,3,4
+966,Long Term Visitor,34,9
+966,Outbound Commuter,1,1
+966,Resident Worker,33,29
+966,Short Term Visitor,8,6
+967,Home Worker,20,21
+967,Inbound Commuter,4,3
+967,Long Term Visitor,37,18
+967,Outbound Commuter,8,7
+967,Resident Worker,50,50
+967,Short Term Visitor,11,9
+968,Home Worker,12,12
+968,Long Term Visitor,9,5
+968,Resident Worker,33,31
+969,Home Worker,61,57
+969,Inbound Commuter,1,3
+969,Long Term Visitor,7,10
+969,Outbound Commuter,1,1
+969,Resident Worker,82,94
+969,Short Term Visitor,5,8
+970,Home Worker,7,9
+970,Long Term Visitor,67,87
+970,Outbound Commuter,1,1
+970,Resident Worker,21,22
+970,Short Term Visitor,27,14
+971,Home Worker,10,10
+971,Long Term Visitor,52,29
+971,Outbound Commuter,5,4
+971,Resident Worker,33,35
+971,Short Term Visitor,13,10
+972,Home Worker,19,19
+972,Inbound Commuter,4,3
+972,Long Term Visitor,230,96
+972,Outbound Commuter,4,3
+972,Resident Worker,76,77
+972,Short Term Visitor,55,27
+973,Home Worker,13,10
+973,Inbound Commuter,1,1
+973,Long Term Visitor,80,44
+973,Outbound Commuter,1,1
+973,Resident Worker,27,29
+973,Short Term Visitor,24,18
+974,Home Worker,18,17
+974,Inbound Commuter,1,1
+974,Long Term Visitor,23,29
+974,Outbound Commuter,2,2
+974,Resident Worker,31,34
+974,Short Term Visitor,5,7
+975,Long Term Visitor,41,34
+975,Outbound Commuter,1,1
+975,Resident Worker,12,8
+975,Short Term Visitor,8,10
+976,Home Worker,2,3
+976,Long Term Visitor,36,20
+976,Outbound Commuter,1,2
+976,Resident Worker,12,9
+976,Short Term Visitor,8,5
+977,Home Worker,127,132
+977,Inbound Commuter,12,13
+977,Long Term Visitor,981,1155
+977,Outbound Commuter,31,31
+977,Resident Worker,208,233
+977,Short Term Visitor,213,261
+978,Home Worker,11,10
+978,Inbound Commuter,1,1
+978,Long Term Visitor,241,334
+978,Outbound Commuter,4,4
+978,Resident Worker,22,30
+978,Short Term Visitor,50,56
+979,Home Worker,1,1
+979,Long Term Visitor,14,21
+979,Resident Worker,7,5
+979,Short Term Visitor,5,5
+980,Long Term Visitor,70,31
+980,Resident Worker,21,17
+980,Short Term Visitor,9,5
+981,Home Worker,6,8
+981,Long Term Visitor,34,17
+981,Resident Worker,19,18
+981,Short Term Visitor,5,1
+982,Home Worker,1,2
+982,Long Term Visitor,8,4
+982,Resident Worker,10,9
+983,Home Worker,37,35
+983,Inbound Commuter,2,2
+983,Long Term Visitor,17,17
+983,Outbound Commuter,1,1
+983,Resident Worker,66,63
+983,Short Term Visitor,3,2
+984,Home Worker,11,11
+984,Inbound Commuter,1,1
+984,Long Term Visitor,82,36
+984,Outbound Commuter,6,4
+984,Resident Worker,30,37
+984,Short Term Visitor,19,8
+985,Home Worker,73,73
+985,Inbound Commuter,6,5
+985,Long Term Visitor,214,142
+985,Outbound Commuter,3,6
+985,Resident Worker,130,128
+985,Short Term Visitor,46,36
+986,Home Worker,11,9
+986,Long Term Visitor,66,14
+986,Resident Worker,11,6
+986,Short Term Visitor,20,3
+987,Home Worker,41,42
+987,Long Term Visitor,26,24
+987,Outbound Commuter,3,3
+987,Resident Worker,32,35
+987,Short Term Visitor,4,9
+988,Home Worker,25,20
+988,Inbound Commuter,1,1
+988,Long Term Visitor,9,10
+988,Outbound Commuter,3,2
+988,Resident Worker,48,48
+988,Short Term Visitor,2,2
+989,Home Worker,10,8
+989,Inbound Commuter,2,2
+989,Resident Worker,13,13
+989,Short Term Visitor,3,3
+990,Home Worker,21,19
+990,Long Term Visitor,31,12
+990,Resident Worker,37,39
+990,Short Term Visitor,7,6
+991,Home Worker,12,11
+991,Long Term Visitor,5,7
+991,Resident Worker,11,13
+991,Short Term Visitor,2,3
+992,Home Worker,95,95
+992,Inbound Commuter,9,7
+992,Long Term Visitor,52,33
+992,Outbound Commuter,9,10
+992,Resident Worker,132,125
+992,Short Term Visitor,7,4
+993,Home Worker,21,20
+993,Long Term Visitor,11,5
+993,Resident Worker,57,45
+993,Short Term Visitor,1,2
+994,Home Worker,41,42
+994,Inbound Commuter,1,1
+994,Long Term Visitor,21,20
+994,Outbound Commuter,7,7
+994,Resident Worker,70,65
+994,Short Term Visitor,3,2
+995,Resident Worker,1,2
+995,Short Term Visitor,2,1
+996,Long Term Visitor,1,3
+997,Home Worker,12,13
+997,Long Term Visitor,2,4
+997,Resident Worker,17,21
+997,Short Term Visitor,2,1
+998,Home Worker,41,32
+998,Inbound Commuter,1,1
+998,Long Term Visitor,8,13
+998,Outbound Commuter,4,3
+998,Resident Worker,55,55
+998,Short Term Visitor,1,2
+999,Home Worker,13,17
+999,Inbound Commuter,1,1
+999,Long Term Visitor,12,17
+999,Outbound Commuter,5,5
+999,Resident Worker,38,34
+1000,Home Worker,2,3
+1000,Long Term Visitor,1,3
+1000,Resident Worker,2,2
+1001,Home Worker,3,3
+1001,Long Term Visitor,4,4
+1001,Resident Worker,29,26
+1002,Home Worker,2,3
+1002,Long Term Visitor,5,8
+1003,Resident Worker,2,1
+1006,Home Worker,117,115
+1006,Inbound Commuter,9,4
+1006,Long Term Visitor,38,39
+1006,Outbound Commuter,15,11
+1006,Resident Worker,166,178
+1006,Short Term Visitor,4,7
+1007,Home Worker,55,53
+1007,Inbound Commuter,6,7
+1007,Long Term Visitor,59,60
+1007,Outbound Commuter,5,8
+1007,Resident Worker,85,93
+1007,Short Term Visitor,13,15
+1008,Home Worker,1,1
+1008,Long Term Visitor,9,6
+1008,Outbound Commuter,4,4
+1008,Short Term Visitor,6,6
+1009,Home Worker,18,16
+1009,Long Term Visitor,8,8
+1009,Outbound Commuter,4,3
+1009,Resident Worker,21,20
+1009,Short Term Visitor,2,5
+1010,Home Worker,16,16
+1010,Inbound Commuter,1,2
+1010,Long Term Visitor,33,22
+1010,Outbound Commuter,3,3
+1010,Resident Worker,20,19
+1010,Short Term Visitor,16,5
+1011,Home Worker,1,1
+1011,Inbound Commuter,3,2
+1011,Long Term Visitor,73,54
+1011,Outbound Commuter,6,3
+1011,Resident Worker,3,7
+1011,Short Term Visitor,15,19
+1016,Home Worker,3,2
+1016,Inbound Commuter,1,1
+1016,Long Term Visitor,3,8
+1016,Resident Worker,14,13
+1016,Short Term Visitor,3,2
+1017,Home Worker,26,23
+1017,Inbound Commuter,2,1
+1017,Long Term Visitor,40,41
+1017,Outbound Commuter,5,3
+1017,Resident Worker,47,48
+1017,Short Term Visitor,9,9
+1018,Home Worker,13,15
+1018,Inbound Commuter,3,3
+1018,Long Term Visitor,81,79
+1018,Outbound Commuter,1,2
+1018,Resident Worker,41,40
+1018,Short Term Visitor,4,10
+1019,Home Worker,11,17
+1019,Inbound Commuter,1,1
+1019,Long Term Visitor,34,31
+1019,Resident Worker,14,17
+1019,Short Term Visitor,7,7
+1020,Home Worker,17,19
+1020,Inbound Commuter,1,1
+1020,Long Term Visitor,86,79
+1020,Outbound Commuter,5,4
+1020,Resident Worker,19,17
+1020,Short Term Visitor,6,8
+1021,Home Worker,5,4
+1021,Long Term Visitor,43,49
+1021,Outbound Commuter,2,2
+1021,Resident Worker,12,15
+1022,Home Worker,2,1
+1022,Resident Worker,2,2
+1023,Home Worker,3,5
+1023,Long Term Visitor,13,7
+1023,Resident Worker,8,8
+1023,Short Term Visitor,4,3
+1024,Home Worker,1,4
+1024,Long Term Visitor,11,6
+1024,Outbound Commuter,1,2
+1024,Resident Worker,15,11
+1024,Short Term Visitor,2,2
+1025,Home Worker,14,15
+1025,Long Term Visitor,152,99
+1025,Outbound Commuter,3,4
+1025,Resident Worker,25,24
+1025,Short Term Visitor,21,18
+1026,Home Worker,12,11
+1026,Long Term Visitor,31,23
+1026,Outbound Commuter,1,1
+1026,Resident Worker,17,16
+1026,Short Term Visitor,8,5
+1027,Home Worker,19,23
+1027,Long Term Visitor,17,14
+1027,Outbound Commuter,5,6
+1027,Resident Worker,36,33
+1027,Short Term Visitor,3,2
+1028,Home Worker,13,11
+1028,Long Term Visitor,11,10
+1028,Outbound Commuter,1,1
+1028,Resident Worker,28,24
+1028,Short Term Visitor,5,5
+1029,Home Worker,8,8
+1029,Inbound Commuter,1,1
+1029,Long Term Visitor,13,20
+1029,Resident Worker,24,24
+1029,Short Term Visitor,7,6
+1030,Home Worker,14,13
+1030,Inbound Commuter,1,1
+1030,Long Term Visitor,29,28
+1030,Outbound Commuter,1,1
+1030,Resident Worker,22,23
+1030,Short Term Visitor,12,12
+1031,Home Worker,6,7
+1031,Long Term Visitor,5,8
+1031,Resident Worker,9,9
+1031,Short Term Visitor,3,3
+1032,Home Worker,69,66
+1032,Inbound Commuter,4,5
+1032,Long Term Visitor,78,74
+1032,Outbound Commuter,4,3
+1032,Resident Worker,105,101
+1032,Short Term Visitor,26,27
+1033,Home Worker,2,4
+1033,Long Term Visitor,4,4
+1033,Outbound Commuter,1,1
+1033,Resident Worker,5,7
+1034,Home Worker,5,5
+1034,Inbound Commuter,1,2
+1034,Long Term Visitor,5,4
+1034,Resident Worker,6,8
+1034,Short Term Visitor,2,3
+1035,Home Worker,10,12
+1035,Inbound Commuter,6,5
+1035,Long Term Visitor,19,28
+1035,Outbound Commuter,1,2
+1035,Resident Worker,36,29
+1035,Short Term Visitor,7,2
+1036,Home Worker,6,5
+1036,Inbound Commuter,4,5
+1036,Long Term Visitor,10,12
+1036,Outbound Commuter,1,1
+1036,Resident Worker,35,35
+1036,Short Term Visitor,1,4
+1037,Home Worker,5,7
+1037,Inbound Commuter,3,3
+1037,Long Term Visitor,12,19
+1037,Resident Worker,30,29
+1037,Short Term Visitor,2,2
+1038,Home Worker,25,24
+1038,Inbound Commuter,9,7
+1038,Long Term Visitor,48,28
+1038,Outbound Commuter,1,1
+1038,Resident Worker,86,75
+1038,Short Term Visitor,4,3
+1039,Home Worker,44,36
+1039,Inbound Commuter,4,4
+1039,Long Term Visitor,37,31
+1039,Outbound Commuter,4,3
+1039,Resident Worker,94,81
+1039,Short Term Visitor,8,8
+1040,Home Worker,47,47
+1040,Long Term Visitor,73,62
+1040,Outbound Commuter,2,2
+1040,Resident Worker,62,66
+1040,Short Term Visitor,7,8
+1041,Home Worker,3,2
+1041,Resident Worker,6,9
+1041,Short Term Visitor,1,2
+1042,Home Worker,2,1
+1042,Resident Worker,5,3
+1043,Home Worker,2,1
+1043,Long Term Visitor,1,1
+1044,Home Worker,3,1
+1044,Long Term Visitor,3,3
+1044,Resident Worker,11,10
+1045,Home Worker,8,6
+1045,Long Term Visitor,5,2
+1045,Resident Worker,9,8
+1046,Home Worker,10,13
+1046,Inbound Commuter,3,3
+1046,Long Term Visitor,3,5
+1046,Outbound Commuter,2,1
+1046,Resident Worker,34,23
+1046,Short Term Visitor,1,1
+1047,Home Worker,8,7
+1047,Inbound Commuter,1,1
+1047,Long Term Visitor,1,1
+1047,Resident Worker,2,3
+1047,Short Term Visitor,1,1
+1048,Long Term Visitor,1,1
+1048,Resident Worker,8,7
+1049,Home Worker,23,17
+1049,Inbound Commuter,3,2
+1049,Long Term Visitor,6,2
+1049,Outbound Commuter,3,2
+1049,Resident Worker,15,17
+1049,Short Term Visitor,2,2
+1050,Home Worker,16,17
+1050,Inbound Commuter,1,1
+1050,Long Term Visitor,1,5
+1050,Outbound Commuter,3,5
+1050,Resident Worker,38,40
+1050,Short Term Visitor,7,4
+1051,Home Worker,24,24
+1051,Inbound Commuter,3,2
+1051,Long Term Visitor,5,5
+1051,Outbound Commuter,5,7
+1051,Resident Worker,9,11
+1052,Home Worker,6,4
+1052,Inbound Commuter,4,4
+1052,Long Term Visitor,3,3
+1052,Resident Worker,11,10
+1053,Home Worker,6,6
+1053,Inbound Commuter,1,1
+1053,Long Term Visitor,1,1
+1053,Outbound Commuter,2,4
+1053,Resident Worker,15,11
+1053,Short Term Visitor,2,3
+1054,Home Worker,12,10
+1054,Inbound Commuter,1,1
+1054,Long Term Visitor,4,5
+1054,Outbound Commuter,1,1
+1054,Resident Worker,21,16
+1054,Short Term Visitor,2,1
+1055,Home Worker,10,12
+1055,Long Term Visitor,7,6
+1055,Resident Worker,22,23
+1055,Short Term Visitor,5,3
+1056,Home Worker,4,5
+1056,Resident Worker,1,2
+1056,Short Term Visitor,3,3
+1057,Home Worker,22,20
+1057,Long Term Visitor,2,1
+1057,Outbound Commuter,3,3
+1057,Resident Worker,34,33
+1057,Short Term Visitor,1,1
+1058,Home Worker,14,16
+1058,Inbound Commuter,2,1
+1058,Long Term Visitor,2,5
+1058,Resident Worker,24,20
+1058,Short Term Visitor,1,2
+1059,Home Worker,24,26
+1059,Long Term Visitor,3,3
+1059,Resident Worker,34,27
+1059,Short Term Visitor,1,1
+1060,Home Worker,30,25
+1060,Long Term Visitor,8,6
+1060,Resident Worker,45,49
+1060,Short Term Visitor,1,1
+1061,Home Worker,2,3
+1061,Long Term Visitor,2,2
+1061,Resident Worker,6,5
+1061,Short Term Visitor,1,1
+1062,Home Worker,29,25
+1062,Long Term Visitor,8,5
+1062,Resident Worker,15,18
+1063,Home Worker,18,15
+1063,Long Term Visitor,5,6
+1063,Resident Worker,16,14
+1064,Home Worker,21,20
+1064,Inbound Commuter,5,3
+1064,Long Term Visitor,3,2
+1064,Outbound Commuter,1,1
+1064,Resident Worker,42,38
+1064,Short Term Visitor,2,3
+1065,Long Term Visitor,1,1
+1066,Home Worker,69,76
+1066,Long Term Visitor,6,13
+1066,Outbound Commuter,3,2
+1066,Resident Worker,59,62
+1066,Short Term Visitor,3,1
+1067,Home Worker,32,30
+1067,Long Term Visitor,7,10
+1067,Outbound Commuter,3,4
+1067,Resident Worker,39,41
+1067,Short Term Visitor,1,2
+1068,Home Worker,52,47
+1068,Inbound Commuter,3,3
+1068,Long Term Visitor,3,11
+1068,Outbound Commuter,5,6
+1068,Resident Worker,93,83
+1069,Home Worker,35,38
+1069,Inbound Commuter,1,1
+1069,Long Term Visitor,5,9
+1069,Resident Worker,29,31
+1069,Short Term Visitor,5,7
+1070,Home Worker,96,101
+1070,Inbound Commuter,3,3
+1070,Long Term Visitor,20,26
+1070,Outbound Commuter,5,5
+1070,Resident Worker,159,161
+1070,Short Term Visitor,4,5
+1071,Home Worker,58,57
+1071,Inbound Commuter,1,3
+1071,Long Term Visitor,16,16
+1071,Outbound Commuter,5,8
+1071,Resident Worker,103,101
+1071,Short Term Visitor,8,6
+1072,Home Worker,103,112
+1072,Inbound Commuter,3,1
+1072,Long Term Visitor,35,44
+1072,Outbound Commuter,8,5
+1072,Resident Worker,158,152
+1072,Short Term Visitor,6,11
+1073,Home Worker,22,21
+1073,Inbound Commuter,1,1
+1073,Long Term Visitor,11,12
+1073,Outbound Commuter,4,4
+1073,Resident Worker,49,57
+1073,Short Term Visitor,1,3
+1074,Home Worker,35,26
+1074,Inbound Commuter,6,4
+1074,Long Term Visitor,11,11
+1074,Outbound Commuter,1,1
+1074,Resident Worker,70,71
+1074,Short Term Visitor,3,5
+1075,Home Worker,33,37
+1075,Inbound Commuter,2,3
+1075,Long Term Visitor,19,19
+1075,Outbound Commuter,2,3
+1075,Resident Worker,70,70
+1075,Short Term Visitor,1,1
+1076,Home Worker,11,12
+1076,Inbound Commuter,2,2
+1076,Long Term Visitor,131,85
+1076,Outbound Commuter,2,2
+1076,Resident Worker,19,16
+1076,Short Term Visitor,26,17
+1077,Home Worker,14,17
+1077,Inbound Commuter,4,3
+1077,Long Term Visitor,5,8
+1077,Outbound Commuter,2,4
+1077,Resident Worker,37,29
+1077,Short Term Visitor,8,8
+1078,Home Worker,15,14
+1078,Inbound Commuter,2,1
+1078,Long Term Visitor,4,10
+1078,Outbound Commuter,2,1
+1078,Resident Worker,19,20
+1078,Short Term Visitor,3,3
+1079,Home Worker,9,8
+1079,Long Term Visitor,2,4
+1079,Outbound Commuter,4,4
+1079,Resident Worker,15,13
+1079,Short Term Visitor,3,3
+1081,Home Worker,2,3
+1081,Long Term Visitor,1,1
+1081,Resident Worker,2,2
+1082,Home Worker,1,1
+1082,Resident Worker,2,2
+1083,Home Worker,5,4
+1083,Inbound Commuter,2,2
+1083,Long Term Visitor,1,1
+1083,Resident Worker,7,10
+1084,Home Worker,12,12
+1084,Inbound Commuter,4,4
+1084,Long Term Visitor,5,5
+1084,Resident Worker,29,24
+1084,Short Term Visitor,2,2
+1085,Home Worker,2,1
+1085,Long Term Visitor,1,1
+1085,Resident Worker,4,6
+1101,Home Worker,3,4
+1101,Inbound Commuter,3,4
+1101,Long Term Visitor,41,26
+1101,Outbound Commuter,5,2
+1101,Resident Worker,7,5
+1101,Short Term Visitor,2,5
+1102,Home Worker,52,61
+1102,Inbound Commuter,5,5
+1102,Long Term Visitor,218,190
+1102,Outbound Commuter,12,10
+1102,Resident Worker,58,64
+1102,Short Term Visitor,11,18
+1103,Home Worker,27,27
+1103,Inbound Commuter,17,16
+1103,Long Term Visitor,338,351
+1103,Outbound Commuter,6,5
+1103,Resident Worker,62,61
+1103,Short Term Visitor,34,29
+1104,Home Worker,33,33
+1104,Inbound Commuter,13,15
+1104,Long Term Visitor,237,205
+1104,Outbound Commuter,4,2
+1104,Resident Worker,25,24
+1104,Short Term Visitor,11,13
+1105,Home Worker,38,44
+1105,Inbound Commuter,5,6
+1105,Long Term Visitor,265,232
+1105,Outbound Commuter,5,3
+1105,Resident Worker,66,76
+1105,Short Term Visitor,41,37
+1106,Home Worker,69,72
+1106,Inbound Commuter,19,18
+1106,Long Term Visitor,432,429
+1106,Outbound Commuter,7,5
+1106,Resident Worker,127,121
+1106,Short Term Visitor,40,45
+1107,Home Worker,12,14
+1107,Inbound Commuter,1,1
+1107,Long Term Visitor,113,106
+1107,Resident Worker,18,13
+1107,Short Term Visitor,4,8
+1108,Home Worker,17,14
+1108,Inbound Commuter,3,3
+1108,Long Term Visitor,49,55
+1108,Resident Worker,8,13
+1108,Short Term Visitor,1,2
+1109,Home Worker,87,92
+1109,Inbound Commuter,11,12
+1109,Long Term Visitor,424,427
+1109,Outbound Commuter,12,11
+1109,Resident Worker,142,144
+1109,Short Term Visitor,29,35
+1110,Home Worker,3,4
+1110,Long Term Visitor,5,4
+1110,Resident Worker,5,5
+1110,Short Term Visitor,2,1
+1111,Home Worker,1,1
+1111,Long Term Visitor,19,11
+1111,Short Term Visitor,1,1
+1112,Home Worker,2,3
+1112,Inbound Commuter,2,2
+1112,Long Term Visitor,5,3
+1112,Resident Worker,15,14
+1112,Short Term Visitor,1,2
+1113,Home Worker,8,10
+1113,Long Term Visitor,5,5
+1113,Resident Worker,14,21
+1114,Home Worker,52,58
+1114,Inbound Commuter,1,1
+1114,Long Term Visitor,44,49
+1114,Outbound Commuter,1,2
+1114,Resident Worker,79,90
+1114,Short Term Visitor,7,10
+1115,Home Worker,26,25
+1115,Long Term Visitor,8,12
+1115,Outbound Commuter,2,1
+1115,Resident Worker,27,31
+1115,Short Term Visitor,6,6
+1116,Home Worker,13,11
+1116,Inbound Commuter,2,1
+1116,Long Term Visitor,4,5
+1116,Outbound Commuter,1,1
+1116,Resident Worker,32,27
+1116,Short Term Visitor,3,1
+1117,Home Worker,13,14
+1117,Inbound Commuter,2,2
+1117,Long Term Visitor,8,7
+1117,Outbound Commuter,2,2
+1117,Resident Worker,23,24
+1117,Short Term Visitor,4,2
+1118,Home Worker,18,20
+1118,Long Term Visitor,4,6
+1118,Outbound Commuter,2,1
+1118,Resident Worker,26,31
+1118,Short Term Visitor,3,5
+1119,Home Worker,18,20
+1119,Inbound Commuter,1,1
+1119,Long Term Visitor,8,5
+1119,Resident Worker,33,36
+1119,Short Term Visitor,1,2
+1120,Inbound Commuter,1,1
+1120,Long Term Visitor,4,4
+1120,Resident Worker,7,6
+1120,Short Term Visitor,1,1
+1121,Home Worker,18,16
+1121,Inbound Commuter,2,2
+1121,Long Term Visitor,4,8
+1121,Outbound Commuter,3,3
+1121,Resident Worker,27,26
+1121,Short Term Visitor,4,3
+1122,Home Worker,5,4
+1122,Long Term Visitor,2,1
+1122,Outbound Commuter,2,2
+1122,Resident Worker,6,9
+1122,Short Term Visitor,1,1
+1123,Home Worker,17,19
+1123,Long Term Visitor,4,1
+1123,Resident Worker,17,16
+1123,Short Term Visitor,4,2
+1124,Home Worker,12,15
+1124,Inbound Commuter,1,1
+1124,Long Term Visitor,14,8
+1124,Resident Worker,22,23
+1124,Short Term Visitor,2,2
+1125,Resident Worker,4,2
+1125,Short Term Visitor,1,1
+1126,Home Worker,29,31
+1126,Inbound Commuter,6,6
+1126,Long Term Visitor,7,6
+1126,Outbound Commuter,1,1
+1126,Resident Worker,40,36
+1126,Short Term Visitor,2,2
+1127,Home Worker,29,25
+1127,Inbound Commuter,1,1
+1127,Long Term Visitor,7,4
+1127,Resident Worker,32,29
+1128,Home Worker,39,37
+1128,Inbound Commuter,1,1
+1128,Long Term Visitor,8,9
+1128,Outbound Commuter,1,1
+1128,Resident Worker,50,51
+1128,Short Term Visitor,1,3
+1129,Home Worker,62,58
+1129,Inbound Commuter,3,4
+1129,Long Term Visitor,22,15
+1129,Outbound Commuter,4,6
+1129,Resident Worker,75,74
+1129,Short Term Visitor,4,6
+1130,Home Worker,26,27
+1130,Long Term Visitor,6,5
+1130,Outbound Commuter,2,3
+1130,Resident Worker,38,46
+1131,Home Worker,56,50
+1131,Long Term Visitor,15,8
+1131,Outbound Commuter,2,1
+1131,Resident Worker,86,77
+1131,Short Term Visitor,2,2
+1132,Home Worker,52,50
+1132,Long Term Visitor,16,16
+1132,Outbound Commuter,8,7
+1132,Resident Worker,78,78
+1132,Short Term Visitor,3,4
+1133,Home Worker,27,26
+1133,Long Term Visitor,7,10
+1133,Resident Worker,53,55
+1134,Home Worker,12,10
+1134,Long Term Visitor,5,5
+1134,Resident Worker,17,22
+1135,Home Worker,30,30
+1135,Long Term Visitor,8,6
+1135,Outbound Commuter,3,3
+1135,Resident Worker,67,57
+1136,Home Worker,33,36
+1136,Inbound Commuter,1,1
+1136,Long Term Visitor,22,27
+1136,Outbound Commuter,6,4
+1136,Resident Worker,78,69
+1137,Home Worker,14,14
+1137,Long Term Visitor,3,7
+1137,Outbound Commuter,2,2
+1137,Resident Worker,27,21
+1138,Long Term Visitor,1,2
+1138,Short Term Visitor,2,2
+1139,Home Worker,23,20
+1139,Inbound Commuter,2,3
+1139,Long Term Visitor,67,52
+1139,Outbound Commuter,9,12
+1139,Resident Worker,24,15
+1139,Short Term Visitor,18,15
+1140,Home Worker,43,38
+1140,Inbound Commuter,10,7
+1140,Long Term Visitor,239,251
+1140,Outbound Commuter,19,20
+1140,Resident Worker,48,49
+1140,Short Term Visitor,7,12
+1141,Home Worker,16,17
+1141,Inbound Commuter,3,1
+1141,Long Term Visitor,307,253
+1141,Outbound Commuter,4,6
+1141,Resident Worker,38,41
+1141,Short Term Visitor,9,9
+1142,Home Worker,3,3
+1142,Inbound Commuter,1,1
+1142,Long Term Visitor,56,57
+1142,Outbound Commuter,1,1
+1142,Resident Worker,8,5
+1142,Short Term Visitor,9,21
+1143,Home Worker,17,18
+1143,Inbound Commuter,4,6
+1143,Long Term Visitor,54,63
+1143,Outbound Commuter,8,8
+1143,Resident Worker,27,20
+1143,Short Term Visitor,27,34
+1144,Home Worker,34,37
+1144,Inbound Commuter,15,11
+1144,Long Term Visitor,154,146
+1144,Outbound Commuter,8,8
+1144,Resident Worker,119,110
+1144,Short Term Visitor,29,28
+1145,Home Worker,100,96
+1145,Inbound Commuter,22,21
+1145,Long Term Visitor,119,130
+1145,Outbound Commuter,13,9
+1145,Resident Worker,141,143
+1145,Short Term Visitor,49,37
+1146,Home Worker,20,23
+1146,Inbound Commuter,3,4
+1146,Long Term Visitor,139,152
+1146,Outbound Commuter,6,5
+1146,Resident Worker,26,24
+1146,Short Term Visitor,17,16
+1147,Home Worker,33,40
+1147,Inbound Commuter,10,10
+1147,Long Term Visitor,185,188
+1147,Outbound Commuter,9,6
+1147,Resident Worker,45,42
+1147,Short Term Visitor,19,18
+1148,Home Worker,17,16
+1148,Inbound Commuter,1,1
+1148,Long Term Visitor,72,76
+1148,Outbound Commuter,3,2
+1148,Resident Worker,25,25
+1148,Short Term Visitor,4,3
+1149,Home Worker,88,96
+1149,Inbound Commuter,7,8
+1149,Long Term Visitor,192,188
+1149,Outbound Commuter,5,4
+1149,Resident Worker,101,106
+1149,Short Term Visitor,26,31
+1150,Home Worker,6,5
+1150,Long Term Visitor,8,7
+1150,Outbound Commuter,3,3
+1150,Resident Worker,6,7
+1151,Home Worker,1,1
+1151,Long Term Visitor,1,2
+1151,Resident Worker,4,6
+1152,Home Worker,18,21
+1152,Inbound Commuter,1,1
+1152,Long Term Visitor,20,17
+1152,Resident Worker,11,15
+1152,Short Term Visitor,2,3
+1153,Home Worker,14,12
+1153,Long Term Visitor,7,8
+1153,Outbound Commuter,1,1
+1153,Resident Worker,23,24
+1154,Home Worker,50,52
+1154,Inbound Commuter,4,3
+1154,Long Term Visitor,26,25
+1154,Outbound Commuter,3,4
+1154,Resident Worker,65,66
+1154,Short Term Visitor,11,11
+1155,Home Worker,17,19
+1155,Inbound Commuter,3,3
+1155,Long Term Visitor,3,2
+1155,Resident Worker,18,19
+1155,Short Term Visitor,1,1
+1156,Home Worker,11,8
+1156,Inbound Commuter,1,1
+1156,Long Term Visitor,2,5
+1156,Resident Worker,15,15
+1156,Short Term Visitor,1,1
+1157,Home Worker,31,28
+1157,Inbound Commuter,3,3
+1157,Long Term Visitor,28,23
+1157,Outbound Commuter,5,5
+1157,Resident Worker,46,49
+1157,Short Term Visitor,5,4
+1158,Home Worker,25,27
+1158,Inbound Commuter,2,1
+1158,Long Term Visitor,4,5
+1158,Resident Worker,20,17
+1158,Short Term Visitor,2,2
+1159,Home Worker,4,5
+1159,Inbound Commuter,1,2
+1159,Resident Worker,8,8
+1159,Short Term Visitor,2,1
+1160,Home Worker,8,7
+1160,Long Term Visitor,7,4
+1160,Outbound Commuter,1,1
+1160,Resident Worker,13,10
+1160,Short Term Visitor,2,1
+1161,Home Worker,7,7
+1161,Long Term Visitor,1,3
+1161,Outbound Commuter,1,1
+1161,Resident Worker,20,14
+1162,Home Worker,10,12
+1162,Inbound Commuter,1,1
+1162,Outbound Commuter,1,2
+1162,Resident Worker,14,15
+1162,Short Term Visitor,1,1
+1163,Home Worker,8,7
+1163,Long Term Visitor,2,3
+1163,Resident Worker,14,18
+1163,Short Term Visitor,2,2
+1164,Home Worker,4,5
+1164,Resident Worker,5,4
+1165,Home Worker,2,1
+1165,Resident Worker,6,7
+1166,Home Worker,7,5
+1166,Resident Worker,2,2
+1166,Short Term Visitor,1,1
+1167,Home Worker,2,1
+1167,Resident Worker,5,4
+1168,Home Worker,7,6
+1168,Resident Worker,14,15
+1169,Home Worker,1,2
+1170,Home Worker,2,3
+1170,Long Term Visitor,3,2
+1170,Resident Worker,6,10
+1170,Short Term Visitor,3,2
+1171,Home Worker,9,11
+1171,Long Term Visitor,1,1
+1171,Resident Worker,20,22
+1172,Home Worker,3,2
+1172,Long Term Visitor,1,1
+1172,Resident Worker,9,11
+1172,Short Term Visitor,2,2
+1173,Home Worker,41,46
+1173,Inbound Commuter,31,25
+1173,Long Term Visitor,94,70
+1173,Outbound Commuter,14,14
+1173,Resident Worker,39,45
+1173,Short Term Visitor,51,34
+1174,Home Worker,2,2
+1174,Inbound Commuter,2,1
+1174,Long Term Visitor,23,25
+1174,Outbound Commuter,1,1
+1174,Resident Worker,12,11
+1174,Short Term Visitor,5,3
+1175,Home Worker,41,40
+1175,Inbound Commuter,18,17
+1175,Long Term Visitor,300,287
+1175,Outbound Commuter,10,12
+1175,Resident Worker,60,66
+1175,Short Term Visitor,26,32
+1176,Home Worker,10,15
+1176,Inbound Commuter,5,4
+1176,Long Term Visitor,160,103
+1176,Outbound Commuter,4,3
+1176,Resident Worker,25,25
+1176,Short Term Visitor,11,12
+1177,Home Worker,36,36
+1177,Inbound Commuter,22,19
+1177,Long Term Visitor,187,161
+1177,Outbound Commuter,19,21
+1177,Resident Worker,77,73
+1177,Short Term Visitor,49,57
+1178,Inbound Commuter,1,1
+1178,Long Term Visitor,7,8
+1178,Resident Worker,2,1
+1178,Short Term Visitor,1,1
+1179,Home Worker,6,5
+1179,Long Term Visitor,4,2
+1179,Outbound Commuter,4,3
+1179,Resident Worker,6,8
+1179,Short Term Visitor,4,3
+1180,Home Worker,8,12
+1180,Inbound Commuter,2,3
+1180,Long Term Visitor,38,38
+1180,Outbound Commuter,1,1
+1180,Resident Worker,28,26
+1180,Short Term Visitor,16,16
+1181,Home Worker,15,12
+1181,Inbound Commuter,6,4
+1181,Long Term Visitor,4,9
+1181,Resident Worker,43,28
+1181,Short Term Visitor,3,3
+1182,Home Worker,43,44
+1182,Inbound Commuter,1,2
+1182,Long Term Visitor,22,24
+1182,Outbound Commuter,1,4
+1182,Resident Worker,56,53
+1183,Home Worker,3,2
+1183,Long Term Visitor,4,5
+1183,Resident Worker,1,2
+1183,Short Term Visitor,1,1
+1184,Home Worker,1,1
+1184,Long Term Visitor,10,13
+1184,Resident Worker,7,6
+1185,Home Worker,35,30
+1185,Long Term Visitor,86,81
+1185,Outbound Commuter,2,3
+1185,Resident Worker,68,65
+1185,Short Term Visitor,3,2
+1186,Home Worker,2,4
+1186,Long Term Visitor,13,4
+1186,Outbound Commuter,3,2
+1186,Resident Worker,8,6
+1187,Home Worker,11,11
+1187,Long Term Visitor,10,13
+1187,Outbound Commuter,4,2
+1187,Resident Worker,18,18
+1187,Short Term Visitor,1,1
+1188,Home Worker,30,31
+1188,Inbound Commuter,4,3
+1188,Long Term Visitor,8,15
+1188,Outbound Commuter,6,6
+1188,Resident Worker,49,48
+1188,Short Term Visitor,4,5
+1189,Home Worker,9,8
+1189,Long Term Visitor,20,15
+1189,Outbound Commuter,1,1
+1189,Resident Worker,16,11
+1190,Home Worker,1,2
+1190,Long Term Visitor,8,8
+1190,Resident Worker,2,3
+1191,Home Worker,2,2
+1191,Inbound Commuter,2,3
+1191,Long Term Visitor,4,3
+1191,Resident Worker,4,6
+1192,Home Worker,30,34
+1192,Inbound Commuter,3,4
+1192,Long Term Visitor,28,37
+1192,Resident Worker,73,70
+1192,Short Term Visitor,14,18
+1193,Home Worker,7,6
+1193,Long Term Visitor,3,2
+1193,Resident Worker,4,5
+1193,Short Term Visitor,1,1
+1194,Home Worker,2,1
+1194,Long Term Visitor,2,3
+1194,Resident Worker,7,5
+1195,Home Worker,5,6
+1195,Inbound Commuter,4,4
+1195,Long Term Visitor,4,6
+1195,Outbound Commuter,1,1
+1195,Resident Worker,11,13
+1195,Short Term Visitor,2,2
+1196,Home Worker,3,3
+1196,Long Term Visitor,2,1
+1196,Resident Worker,2,4
+1197,Home Worker,11,9
+1197,Long Term Visitor,3,4
+1197,Resident Worker,20,17
+1198,Home Worker,19,19
+1198,Inbound Commuter,5,3
+1198,Long Term Visitor,13,14
+1198,Outbound Commuter,2,2
+1198,Resident Worker,47,39
+1198,Short Term Visitor,10,11
+1199,Home Worker,14,14
+1199,Inbound Commuter,1,1
+1199,Outbound Commuter,3,4
+1199,Resident Worker,25,25
+1199,Short Term Visitor,1,1
+1200,Home Worker,10,10
+1200,Inbound Commuter,6,7
+1200,Long Term Visitor,2,3
+1200,Outbound Commuter,4,5
+1200,Resident Worker,27,25
+1200,Short Term Visitor,5,6
+1201,Resident Worker,6,5
+1202,Home Worker,26,26
+1202,Inbound Commuter,5,4
+1202,Long Term Visitor,4,3
+1202,Outbound Commuter,1,1
+1202,Resident Worker,35,31
+1202,Short Term Visitor,5,4
+1203,Home Worker,22,26
+1203,Inbound Commuter,5,5
+1203,Long Term Visitor,8,6
+1203,Resident Worker,49,52
+1203,Short Term Visitor,7,5
+1204,Home Worker,12,12
+1204,Inbound Commuter,5,5
+1204,Long Term Visitor,3,3
+1204,Outbound Commuter,1,2
+1204,Resident Worker,30,28
+1204,Short Term Visitor,2,1
+1205,Home Worker,15,17
+1205,Inbound Commuter,1,1
+1205,Long Term Visitor,6,6
+1205,Outbound Commuter,1,1
+1205,Resident Worker,35,40
+1205,Short Term Visitor,2,2
+1206,Home Worker,2,1
+1206,Long Term Visitor,5,7
+1206,Resident Worker,5,6
+1207,Home Worker,8,10
+1207,Long Term Visitor,5,7
+1207,Outbound Commuter,4,4
+1207,Resident Worker,18,15
+1207,Short Term Visitor,4,4
+1208,Home Worker,23,24
+1208,Inbound Commuter,2,1
+1208,Long Term Visitor,12,8
+1208,Outbound Commuter,1,3
+1208,Resident Worker,39,34
+1209,Resident Worker,2,1
+1210,Home Worker,28,26
+1210,Inbound Commuter,2,4
+1210,Long Term Visitor,4,5
+1210,Outbound Commuter,3,3
+1210,Resident Worker,52,54
+1210,Short Term Visitor,4,6
+1211,Home Worker,44,43
+1211,Inbound Commuter,2,2
+1211,Long Term Visitor,28,33
+1211,Outbound Commuter,5,6
+1211,Resident Worker,55,66
+1211,Short Term Visitor,11,10
+1212,Home Worker,48,49
+1212,Inbound Commuter,2,3
+1212,Long Term Visitor,19,15
+1212,Outbound Commuter,3,5
+1212,Resident Worker,71,65
+1212,Short Term Visitor,8,8
+1213,Home Worker,4,6
+1213,Inbound Commuter,2,1
+1213,Long Term Visitor,4,4
+1213,Resident Worker,8,10
+1213,Short Term Visitor,3,4
+1214,Home Worker,20,18
+1214,Inbound Commuter,4,6
+1214,Long Term Visitor,34,32
+1214,Resident Worker,48,53
+1214,Short Term Visitor,6,5
+1215,Home Worker,6,6
+1215,Resident Worker,15,12
+1216,Home Worker,36,37
+1216,Inbound Commuter,1,1
+1216,Long Term Visitor,21,17
+1216,Outbound Commuter,4,4
+1216,Resident Worker,47,42
+1216,Short Term Visitor,2,4
+1217,Home Worker,2,1
+1217,Resident Worker,1,2
+1218,Home Worker,19,17
+1218,Long Term Visitor,5,4
+1218,Outbound Commuter,1,1
+1218,Resident Worker,22,28
+1219,Outbound Commuter,1,1
+1219,Resident Worker,2,1
+1220,Home Worker,11,11
+1220,Long Term Visitor,3,4
+1220,Resident Worker,22,25
+1220,Short Term Visitor,2,3
+1221,Home Worker,14,14
+1221,Long Term Visitor,14,13
+1221,Outbound Commuter,6,5
+1221,Resident Worker,21,19
+1221,Short Term Visitor,3,1
+1222,Home Worker,6,4
+1222,Long Term Visitor,10,10
+1222,Outbound Commuter,2,1
+1222,Resident Worker,7,5
+1222,Short Term Visitor,8,6
+1223,Home Worker,24,24
+1223,Inbound Commuter,1,1
+1223,Long Term Visitor,16,11
+1223,Outbound Commuter,5,6
+1223,Resident Worker,28,25
+1223,Short Term Visitor,1,1
+1224,Home Worker,34,36
+1224,Inbound Commuter,4,4
+1224,Long Term Visitor,23,18
+1224,Outbound Commuter,5,5
+1224,Resident Worker,48,48
+1224,Short Term Visitor,1,1
+1225,Home Worker,123,108
+1225,Inbound Commuter,8,10
+1225,Long Term Visitor,34,38
+1225,Outbound Commuter,13,12
+1225,Resident Worker,190,205
+1225,Short Term Visitor,7,6
+1226,Home Worker,76,80
+1226,Inbound Commuter,4,2
+1226,Long Term Visitor,28,29
+1226,Outbound Commuter,12,13
+1226,Resident Worker,125,129
+1226,Short Term Visitor,11,6
+1228,Home Worker,34,32
+1228,Inbound Commuter,2,3
+1228,Long Term Visitor,30,25
+1228,Outbound Commuter,4,4
+1228,Resident Worker,66,63
+1228,Short Term Visitor,6,9
+1229,Home Worker,23,23
+1229,Long Term Visitor,5,3
+1229,Outbound Commuter,5,5
+1229,Resident Worker,26,31
+1230,Home Worker,6,7
+1230,Long Term Visitor,2,2
+1230,Resident Worker,9,11
+1231,Home Worker,12,13
+1231,Long Term Visitor,19,11
+1231,Outbound Commuter,1,1
+1231,Resident Worker,28,30
+1231,Short Term Visitor,2,3
+1232,Home Worker,156,148
+1232,Inbound Commuter,2,3
+1232,Long Term Visitor,37,43
+1232,Outbound Commuter,3,2
+1232,Resident Worker,237,255
+1232,Short Term Visitor,7,6
+1233,Home Worker,33,34
+1233,Inbound Commuter,1,1
+1233,Long Term Visitor,13,12
+1233,Resident Worker,59,55
+1233,Short Term Visitor,8,6
+1234,Home Worker,45,50
+1234,Inbound Commuter,1,2
+1234,Long Term Visitor,13,11
+1234,Outbound Commuter,1,2
+1234,Resident Worker,74,76
+1234,Short Term Visitor,2,1
+1235,Home Worker,85,80
+1235,Long Term Visitor,28,24
+1235,Outbound Commuter,5,4
+1235,Resident Worker,173,161
+1235,Short Term Visitor,6,9
+1236,Resident Worker,1,2
+1237,Home Worker,16,14
+1237,Long Term Visitor,4,4
+1237,Resident Worker,23,22
+1237,Short Term Visitor,4,4
+1238,Home Worker,25,18
+1238,Inbound Commuter,3,2
+1238,Long Term Visitor,11,12
+1238,Resident Worker,40,42
+1238,Short Term Visitor,2,3
+1239,Home Worker,17,17
+1239,Long Term Visitor,3,2
+1239,Resident Worker,25,29
+1239,Short Term Visitor,1,1
+1240,Home Worker,3,1
+1240,Resident Worker,2,3
+1241,Home Worker,74,70
+1241,Long Term Visitor,20,18
+1241,Outbound Commuter,1,1
+1241,Resident Worker,52,53
+1242,Home Worker,27,23
+1242,Inbound Commuter,1,1
+1242,Long Term Visitor,8,5
+1242,Outbound Commuter,3,5
+1242,Resident Worker,38,36
+1243,Home Worker,38,39
+1243,Inbound Commuter,2,2
+1243,Long Term Visitor,7,8
+1243,Resident Worker,86,84
+1244,Home Worker,18,19
+1244,Long Term Visitor,9,5
+1244,Outbound Commuter,2,1
+1244,Resident Worker,20,20
+1245,Home Worker,2,3
+1245,Long Term Visitor,2,3
+1245,Resident Worker,9,12
+1246,Home Worker,1,1
+1246,Resident Worker,1,1
+1247,Home Worker,9,9
+1247,Long Term Visitor,2,6
+1247,Resident Worker,23,24
+1248,Home Worker,18,18
+1248,Inbound Commuter,5,5
+1248,Outbound Commuter,1,1
+1248,Resident Worker,29,25
+1249,Home Worker,26,26
+1249,Long Term Visitor,7,8
+1249,Resident Worker,51,49
+1250,Home Worker,9,9
+1250,Long Term Visitor,1,3
+1250,Outbound Commuter,3,2
+1250,Resident Worker,22,19
+1251,Home Worker,51,49
+1251,Inbound Commuter,3,2
+1251,Long Term Visitor,10,10
+1251,Outbound Commuter,2,3
+1251,Resident Worker,56,49
+1252,Home Worker,17,18
+1252,Inbound Commuter,2,1
+1252,Long Term Visitor,15,16
+1252,Outbound Commuter,1,1
+1252,Resident Worker,41,42
+1252,Short Term Visitor,2,1
+1253,Home Worker,42,41
+1253,Long Term Visitor,7,9
+1253,Outbound Commuter,2,2
+1253,Resident Worker,75,67
+1253,Short Term Visitor,5,3
+1254,Home Worker,3,3
+1254,Long Term Visitor,2,3
+1254,Resident Worker,6,5
+1254,Short Term Visitor,3,5
+1255,Home Worker,19,21
+1255,Inbound Commuter,1,1
+1255,Long Term Visitor,2,3
+1255,Outbound Commuter,2,1
+1255,Resident Worker,19,22
+1258,Home Worker,24,25
+1258,Long Term Visitor,6,4
+1258,Outbound Commuter,3,4
+1258,Resident Worker,30,32
+1258,Short Term Visitor,3,5
+1259,Home Worker,47,48
+1259,Inbound Commuter,3,2
+1259,Long Term Visitor,9,14
+1259,Outbound Commuter,9,10
+1259,Resident Worker,61,57
+1259,Short Term Visitor,5,6
+1260,Home Worker,13,12
+1260,Long Term Visitor,3,3
+1260,Outbound Commuter,3,2
+1260,Resident Worker,19,18
+1260,Short Term Visitor,5,5
+1261,Home Worker,62,44
+1261,Inbound Commuter,8,8
+1261,Long Term Visitor,26,25
+1261,Outbound Commuter,5,6
+1261,Resident Worker,96,98
+1261,Short Term Visitor,11,13
+1262,Home Worker,53,50
+1262,Inbound Commuter,3,3
+1262,Long Term Visitor,28,26
+1262,Outbound Commuter,5,6
+1262,Resident Worker,97,94
+1262,Short Term Visitor,13,17
+1263,Home Worker,46,43
+1263,Inbound Commuter,10,12
+1263,Long Term Visitor,14,13
+1263,Outbound Commuter,3,3
+1263,Resident Worker,49,44
+1263,Short Term Visitor,14,17
+1264,Home Worker,31,30
+1264,Inbound Commuter,23,26
+1264,Long Term Visitor,16,21
+1264,Outbound Commuter,11,9
+1264,Resident Worker,45,54
+1264,Short Term Visitor,35,36
+1265,Home Worker,18,23
+1265,Inbound Commuter,6,5
+1265,Long Term Visitor,4,2
+1265,Outbound Commuter,6,6
+1265,Resident Worker,32,40
+1265,Short Term Visitor,6,5
+1266,Home Worker,2,1
+1266,Long Term Visitor,5,4
+1266,Resident Worker,9,10
+1267,Home Worker,2,2
+1267,Resident Worker,4,6
+1268,Home Worker,2,1
+1268,Long Term Visitor,2,2
+1268,Resident Worker,4,5
+1269,Home Worker,36,37
+1269,Inbound Commuter,1,2
+1269,Long Term Visitor,14,11
+1269,Outbound Commuter,2,2
+1269,Resident Worker,68,63
+1269,Short Term Visitor,10,7
+1270,Home Worker,73,73
+1270,Inbound Commuter,2,1
+1270,Long Term Visitor,19,21
+1270,Outbound Commuter,3,3
+1270,Resident Worker,151,154
+1270,Short Term Visitor,2,6
+1271,Home Worker,54,56
+1271,Inbound Commuter,1,1
+1271,Long Term Visitor,14,14
+1271,Outbound Commuter,3,1
+1271,Resident Worker,85,79
+1271,Short Term Visitor,1,1
+1272,Home Worker,19,17
+1272,Long Term Visitor,22,18
+1272,Outbound Commuter,2,1
+1272,Resident Worker,22,17
+1272,Short Term Visitor,7,13
+1273,Home Worker,28,30
+1273,Long Term Visitor,5,6
+1273,Resident Worker,23,26
+1273,Short Term Visitor,2,2
+1274,Home Worker,2,2
+1274,Long Term Visitor,5,3
+1274,Short Term Visitor,3,3
+1275,Home Worker,4,5
+1275,Long Term Visitor,43,31
+1275,Resident Worker,1,2
+1275,Short Term Visitor,41,37
+1276,Long Term Visitor,22,29
+1276,Resident Worker,7,11
+1276,Short Term Visitor,9,9
+1277,Inbound Commuter,2,3
+1277,Long Term Visitor,53,31
+1277,Outbound Commuter,1,2
+1277,Resident Worker,3,3
+1277,Short Term Visitor,21,22
+1278,Home Worker,4,4
+1278,Inbound Commuter,6,6
+1278,Long Term Visitor,51,34
+1278,Resident Worker,17,16
+1278,Short Term Visitor,32,24
+1279,Home Worker,14,14
+1279,Inbound Commuter,1,1
+1279,Long Term Visitor,15,17
+1279,Outbound Commuter,7,9
+1279,Resident Worker,16,15
+1279,Short Term Visitor,5,7
+1280,Home Worker,4,5
+1280,Long Term Visitor,19,21
+1280,Resident Worker,5,3
+1280,Short Term Visitor,11,10
+1281,Home Worker,21,20
+1281,Long Term Visitor,232,117
+1281,Outbound Commuter,2,6
+1281,Resident Worker,23,22
+1281,Short Term Visitor,138,99
+1282,Home Worker,2,2
+1282,Long Term Visitor,21,9
+1282,Resident Worker,10,9
+1282,Short Term Visitor,7,18
+1283,Home Worker,2,1
+1283,Inbound Commuter,1,1
+1283,Long Term Visitor,6,6
+1283,Short Term Visitor,8,10
+1284,Long Term Visitor,27,21
+1284,Resident Worker,1,3
+1284,Short Term Visitor,30,21
+1285,Short Term Visitor,4,5
+1286,Home Worker,4,6
+1286,Inbound Commuter,1,2
+1286,Long Term Visitor,4,4
+1286,Outbound Commuter,3,3
+1286,Resident Worker,1,6
+1286,Short Term Visitor,3,1
+1287,Home Worker,4,3
+1287,Long Term Visitor,3,5
+1287,Resident Worker,6,7
+1287,Short Term Visitor,1,1
+1288,Home Worker,10,10
+1288,Long Term Visitor,1,2
+1288,Outbound Commuter,3,3
+1288,Resident Worker,12,16
+1289,Home Worker,66,72
+1289,Inbound Commuter,15,12
+1289,Long Term Visitor,25,19
+1289,Outbound Commuter,8,5
+1289,Resident Worker,92,85
+1289,Short Term Visitor,9,7
+1292,Home Worker,16,13
+1292,Inbound Commuter,1,1
+1292,Long Term Visitor,5,4
+1292,Resident Worker,23,24
+1292,Short Term Visitor,1,1
+1293,Long Term Visitor,1,1
+1294,Home Worker,61,56
+1294,Inbound Commuter,18,22
+1294,Long Term Visitor,423,422
+1294,Outbound Commuter,13,18
+1294,Resident Worker,90,91
+1294,Short Term Visitor,31,39
+1295,Home Worker,7,7
+1295,Inbound Commuter,3,2
+1295,Long Term Visitor,4,3
+1295,Resident Worker,21,20
+1296,Home Worker,35,39
+1296,Inbound Commuter,2,2
+1296,Long Term Visitor,6,5
+1296,Resident Worker,45,52
+1296,Short Term Visitor,2,2
+1297,Home Worker,43,41
+1297,Inbound Commuter,2,2
+1297,Long Term Visitor,11,12
+1297,Outbound Commuter,3,4
+1297,Resident Worker,54,52
+1298,Home Worker,19,18
+1298,Inbound Commuter,2,2
+1298,Long Term Visitor,5,2
+1298,Resident Worker,39,37
+1299,Home Worker,9,8
+1299,Resident Worker,9,17
+1299,Short Term Visitor,1,1
+1300,Home Worker,41,47
+1300,Inbound Commuter,1,1
+1300,Long Term Visitor,8,8
+1300,Outbound Commuter,5,5
+1300,Resident Worker,50,48
+1301,Resident Worker,11,10
+1302,Home Worker,18,16
+1302,Long Term Visitor,3,3
+1302,Outbound Commuter,1,2
+1302,Resident Worker,16,17
+1303,Home Worker,4,4
+1303,Long Term Visitor,1,2
+1303,Outbound Commuter,1,1
+1303,Resident Worker,18,16
+1304,Resident Worker,1,1
+1308,Long Term Visitor,23,32
+1308,Resident Worker,1,1
+1309,Home Worker,35,25
+1309,Inbound Commuter,11,14
+1309,Long Term Visitor,43,33
+1309,Outbound Commuter,10,6
+1309,Resident Worker,39,47
+1309,Short Term Visitor,16,15
+1310,Home Worker,10,9
+1310,Inbound Commuter,9,7
+1310,Long Term Visitor,11,11
+1310,Outbound Commuter,4,3
+1310,Resident Worker,18,14
+1310,Short Term Visitor,7,5
+1311,Home Worker,6,8
+1311,Long Term Visitor,6,6
+1311,Resident Worker,23,23
+1312,Home Worker,47,43
+1312,Inbound Commuter,3,3
+1312,Long Term Visitor,15,16
+1312,Outbound Commuter,2,3
+1312,Resident Worker,75,65
+1312,Short Term Visitor,7,7
+1313,Home Worker,10,14
+1313,Long Term Visitor,5,6
+1313,Outbound Commuter,1,1
+1313,Resident Worker,37,38
+1313,Short Term Visitor,3,4
+1314,Home Worker,40,35
+1314,Inbound Commuter,1,2
+1314,Long Term Visitor,13,21
+1314,Outbound Commuter,5,4
+1314,Resident Worker,88,93
+1314,Short Term Visitor,3,4
+1315,Home Worker,12,12
+1315,Long Term Visitor,2,1
+1315,Outbound Commuter,1,1
+1315,Resident Worker,27,28
+1316,Home Worker,15,14
+1316,Long Term Visitor,12,8
+1316,Outbound Commuter,3,4
+1316,Resident Worker,32,33
+1317,Home Worker,47,46
+1317,Long Term Visitor,8,14
+1317,Resident Worker,71,71
+1317,Short Term Visitor,1,2
+1318,Home Worker,63,72
+1318,Long Term Visitor,15,14
+1318,Outbound Commuter,3,2
+1318,Resident Worker,75,86
+1318,Short Term Visitor,6,7
+1319,Home Worker,24,28
+1319,Long Term Visitor,11,8
+1319,Outbound Commuter,1,1
+1319,Resident Worker,32,32
+1320,Home Worker,1,2
+1320,Long Term Visitor,1,1
+1320,Resident Worker,8,6
+1321,Home Worker,18,15
+1321,Long Term Visitor,9,3
+1321,Resident Worker,18,19
+1321,Short Term Visitor,7,3
+1322,Home Worker,5,6
+1322,Long Term Visitor,1,3
+1322,Resident Worker,9,14
+1323,Home Worker,7,9
+1323,Long Term Visitor,2,4
+1323,Outbound Commuter,2,4
+1323,Resident Worker,16,19
+1325,Home Worker,3,2
+1325,Long Term Visitor,5,5
+1326,Home Worker,8,7
+1326,Long Term Visitor,2,1
+1326,Resident Worker,22,20
+1327,Resident Worker,5,5
+1328,Long Term Visitor,2,1
+1328,Resident Worker,1,1
+1328,Short Term Visitor,1,1
+1329,Home Worker,1,1
+1329,Long Term Visitor,3,3
+1329,Short Term Visitor,1,1
+1330,Home Worker,15,15
+1330,Inbound Commuter,1,1
+1330,Long Term Visitor,3,2
+1330,Outbound Commuter,2,2
+1330,Resident Worker,15,19
+1330,Short Term Visitor,2,1
+1331,Home Worker,11,11
+1331,Long Term Visitor,3,4
+1331,Resident Worker,12,13
+1331,Short Term Visitor,1,1
+1332,Home Worker,32,32
+1332,Inbound Commuter,3,3
+1332,Long Term Visitor,30,30
+1332,Outbound Commuter,2,1
+1332,Resident Worker,32,33
+1332,Short Term Visitor,4,4
+1333,Home Worker,17,18
+1333,Inbound Commuter,2,1
+1333,Long Term Visitor,18,17
+1333,Resident Worker,36,39
+1333,Short Term Visitor,5,5
+1334,Home Worker,60,62
+1334,Inbound Commuter,4,7
+1334,Long Term Visitor,202,234
+1334,Outbound Commuter,3,5
+1334,Resident Worker,99,98
+1334,Short Term Visitor,20,23
+1335,Home Worker,9,10
+1335,Long Term Visitor,13,12
+1335,Resident Worker,14,17
+1336,Home Worker,6,6
+1336,Long Term Visitor,6,2
+1336,Resident Worker,11,10
+1337,Home Worker,16,17
+1337,Inbound Commuter,1,1
+1337,Long Term Visitor,8,9
+1337,Resident Worker,41,41
+1337,Short Term Visitor,1,2
+1338,Home Worker,17,17
+1338,Inbound Commuter,3,2
+1338,Long Term Visitor,4,3
+1338,Outbound Commuter,3,2
+1338,Resident Worker,19,21
+1338,Short Term Visitor,1,3
+1339,Home Worker,7,6
+1339,Long Term Visitor,3,4
+1339,Resident Worker,10,9
+1340,Home Worker,4,3
+1340,Long Term Visitor,2,1
+1340,Outbound Commuter,1,1
+1340,Resident Worker,6,8
+1341,Home Worker,7,5
+1341,Long Term Visitor,1,1
+1341,Resident Worker,5,5
+1342,Home Worker,6,5
+1342,Outbound Commuter,1,2
+1342,Resident Worker,2,2
+1343,Home Worker,6,4
+1343,Outbound Commuter,1,1
+1343,Resident Worker,4,5
+1344,Home Worker,6,8
+1344,Long Term Visitor,1,2
+1344,Outbound Commuter,1,1
+1344,Resident Worker,12,14
+1344,Short Term Visitor,1,1
+1345,Long Term Visitor,2,2
+1345,Resident Worker,8,6
+1346,Home Worker,8,7
+1346,Long Term Visitor,1,1
+1346,Resident Worker,10,9
+1347,Home Worker,5,8
+1347,Long Term Visitor,18,16
+1347,Resident Worker,12,11
+1347,Short Term Visitor,2,1
+1348,Home Worker,3,3
+1348,Long Term Visitor,1,1
+1348,Resident Worker,3,3
+1349,Home Worker,10,9
+1349,Long Term Visitor,2,2
+1349,Resident Worker,33,27
+1350,Home Worker,1,1
+1350,Inbound Commuter,2,2
+1350,Resident Worker,6,6
+4000,Home Worker,268,293
+4000,Inbound Commuter,562,603
+4000,Long Term Visitor,1026,1224
+4000,Outbound Commuter,276,269
+4000,Resident Worker,236,331
+4000,Short Term Visitor,1084,1131
+4001,Home Worker,182,202
+4001,Inbound Commuter,251,274
+4001,Long Term Visitor,665,766
+4001,Outbound Commuter,228,217
+4001,Resident Worker,173,225
+4001,Short Term Visitor,843,770
+4002,Home Worker,43,41
+4002,Inbound Commuter,103,101
+4002,Long Term Visitor,316,286
+4002,Outbound Commuter,91,82
+4002,Resident Worker,39,54
+4002,Short Term Visitor,404,418
+4003,Home Worker,295,316
+4003,Inbound Commuter,753,784
+4003,Long Term Visitor,724,700
+4003,Outbound Commuter,404,392
+4003,Resident Worker,272,311
+4003,Short Term Visitor,1349,1285
+4004,Home Worker,36,39
+4004,Inbound Commuter,82,86
+4004,Long Term Visitor,454,378
+4004,Outbound Commuter,87,77
+4004,Resident Worker,39,46
+4004,Short Term Visitor,481,480
+4005,Home Worker,229,248
+4005,Inbound Commuter,603,661
+4005,Long Term Visitor,1215,1099
+4005,Outbound Commuter,330,334
+4005,Resident Worker,273,354
+4005,Short Term Visitor,1551,1463

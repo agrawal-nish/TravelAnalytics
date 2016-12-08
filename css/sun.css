@@ -1,0 +1,55 @@
+#map1{
+	width : 700px;
+	height : 380px;
+	margin-left: 10px;
+}
+
+#map2{
+	width : 700px;
+	height : 380px;
+	margin-left: 75px;
+}
+
+#wrapper1{
+	margin-left: 10px;
+}
+
+#wrapper2{
+	margin-left: 700px;
+}
+
+svg {
+  position: relative;
+}
+
+path {
+  fill: #000;
+  fill-opacity: .5;
+  stroke: #D4D4D4;
+  stroke-width: 1.5px;
+}
+
+path:hover {
+  fill: brown;
+  fill-opacity: .7;
+}
+
+.one{
+	display : inline-block;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.axis path {
+  display: none;
+}
+
+#barchart1{
+	margin-left: 10px;
+}
+
+#barchart2{
+	margin-left: 75px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/sun.css">
+</head>
+<body>
+
+ <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <div class="pure-menu pure-menu-horizontal" style="background-color:black;">
+        <style type="text/css">
+            .pure-menu-link:hover {
+                background-color: lightgray;
+            }
+        </style>
+        <a href="#" class="pure-menu-heading pure-menu-link">CS-424</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"></li>
+            <li class="pure-menu-item"><a href="Index.html" class="pure-menu-link">Visualization 1</a></li>
+            <li class="pure-menu-item"><a href="exp.html" class="pure-menu-link">Visualization 2</a></li>
+            <li class="pure-menu-item"><a href="sun.html" class="pure-menu-link">Visualization 3</a></li>
+            <li class="pure-menu-item"><a href="About.html" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact Us</a></li>
+        </ul>
+    </div>
+    <div style="height:10px;"></div>
+	<div id="map1" class='one'></div>
+	<div id="map2" class='one'></div>
+	<div></div>
+	<div id="wrapper1" class='one'>
+	      <span>Date</span>
+	      <select id="date1"></select>
+	</div>
+	<div id="wrapper2" class='one'>
+	      <span>Date</span>
+	      <select id="date2"></select>
+	</div>
+	<div></div>
+	<div>
+		<svg width='700' height='345' id='barchart1'></svg>
+		<svg width='700' height='345' id='barchart2'></svg>
+	</div>
+
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
+<script type="text/javascript" src = 'js/bar.js'></script>
+<script src="js/sun.js"  type="text/javascript"></script>
+</html>
