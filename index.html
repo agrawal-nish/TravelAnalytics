@@ -248,6 +248,8 @@
             var tooltipWeather = d3.select('body').append('div')
             .attr('class', 'tooltip1');
 
+           
+
 
 
             var orlandoData;
@@ -272,6 +274,7 @@
             var maxTravel;
             var lines;
             var travel;
+            var zoneClicked='no';
 
             var purposeScale = d3.scaleLinear()
             .domain([0, 2500])
@@ -409,6 +412,8 @@
                      return d.properties.TAZ_ID;
                  })
                  .on('click', function (d) {
+
+                     zoneClicked = 'yes';
                      removePurposeCircles();
                      removeCircles();
                      d3.selectAll('path').classed('highlightEndZone', false);
@@ -474,12 +479,14 @@
                      
                  })
                 .on('mouseover', function (d) {
-
-                    d3.select(this)
-                    .style("stroke", "#02137f")
-                    .attr("stroke-width", "1")
-                    .style("fill-opacity", 0.9)
-                    .style("fill", '#444b77')
+                    
+                    if (zoneClicked == 'no') {
+                        d3.select(this)
+                        .style("stroke", "#02137f")
+                        .attr("stroke-width", "1")
+                        .style("fill-opacity", 0.9)
+                        .style("fill", '#444b77')
+                    }
 
                     var mouse = d3.mouse(svg.node()).map(function (d) {
                         return parseInt(d);
@@ -694,11 +701,14 @@
                     }
                 })
                 .on('mouseout', function (d) {
-                    d3.select(this)
-                    .style("stroke", "gray")
-                    .attr("stroke-width", "1")
-                    .style("fill-opacity", 0.3)
-                    .style("fill", 'black');
+
+                    if (zoneClicked == 'no') {
+                        d3.select(this)
+                        .style("stroke", "gray")
+                        .attr("stroke-width", "1")
+                        .style("fill-opacity", 0.3)
+                        .style("fill", 'black');
+                    }
 
                     tooltip.classed('hidden', true);
                     if (showBoundsPurpose == 'showbounds') {
@@ -800,7 +810,7 @@
                .style('border-radius', '2px')
                
 
-            var lgnMaxDestZone = d3.select('body').append('div')
+           /* var lgnMaxDestZone = d3.select('body').append('div')
               .attr('id', 'lgnMaxDestZoneDiv')
               .style('position', 'absolute')
               .style('opacity', 1)
@@ -812,7 +822,43 @@
               .style('font-weight', 'bold')
               .style('padding', '12px')
               .style('color', '#fff')
-              .style('border-radius', '2px')
+              .style('border-radius', '2px')*/
+
+            /*var tooltipMin = d3.select('body').append('text').attr('id', 'tooltipMin').style('position', 'absolute').text('Min')
+            .attr("x", 1402)
+            .attr("y", 1)
+            .attr("font-size",25)
+            .attr("font-family","serif")
+            .attr("text-anchor","middle")
+            .attr("font-weight","bold");*/
+
+            var lgnMin = d3.select('body').append('div')
+              .attr('id', 'lgnMinDiv')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+              .style('background-color', 'white').text('Min')
+              .style('width', '10px')
+              .style("left", "1402px")
+              .style("top", "230px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+              .style('padding', '12px')
+              .style('color', 'black')
+              .style('border-radius', '2px');
+
+            var lgnMax = d3.select('body').append('div')
+           .attr('id', 'lgnMaxDiv')
+           .style('position', 'absolute')
+           .style('opacity', 1)
+           .style('background-color', 'white').text('Max')
+           .style('width', '10px')
+           .style("left", "1532px")
+           .style("top", "230px")
+           .style('line-height', 1)
+           .style('font-weight', 'bold')
+           .style('padding', '12px')
+           .style('color', 'black')
+           .style('border-radius', '2px');
 
            /* var r1 = d3.select('body').append('circle')
             .attr('r', '5px')
@@ -969,7 +1015,6 @@
               .style('color', '#fff')
               //.style('border-radius', '2px');
 
-                //var c9 = d3.select('body').append('div')
             var c9 = cg.append('div')
             .attr('id', 'c9Div')
             .style('position', 'absolute')
@@ -1617,15 +1662,19 @@
                 function showHideMaxTripDiv(bool)
                 {
                     if (bool == 'show') {
-                        d3.select('#lgnMaxDestZoneDiv').classed('hidden', false);
+                        /*d3.select('#lgnMaxDestZoneDiv').classed('hidden', false*/
                         d3.select('#lgnStartZoneDiv').classed('hidden', false);
                         d3.select('#cgDiv').classed('hidden', false);
+                        d3.select('#lgnMinDiv').classed('hidden', false)
+                        d3.select('#lgnMaxDiv').classed('hidden', false)
                         
                     }
                     else if (bool == 'hide') {
-                        d3.select('#lgnMaxDestZoneDiv').classed('hidden', true);
+                        /*d3.select('#lgnMaxDestZoneDiv').classed('hidden', true);*/
                         d3.select('#lgnStartZoneDiv').classed('hidden', true);
                         d3.select('#cgDiv').classed('hidden', true);
+                        d3.select('#lgnMinDiv').classed('hidden', true)
+                        d3.select('#lgnMaxDiv').classed('hidden', true)
                     }
                 }
 
@@ -1716,6 +1765,7 @@
                 }
                 function showBoundsData() {
                     //console.log('Show Bounds');
+                    zoneClicked = 'no';
                     d3.selectAll('path').classed('highlightEndZone', false);
                     d3.selectAll('path').classed('highlightStartZone', false);
                     d3.selectAll('path').style("stroke", "gray")
@@ -1746,7 +1796,7 @@
 
                 }
                 function showPurpose() {
-                    
+                    zoneClicked = 'no';
                     d3.selectAll('path').classed('highlightEndZone', false);
                     d3.selectAll('path').classed('highlightStartZone', false);
                     d3.selectAll('path').style("stroke", "gray")
