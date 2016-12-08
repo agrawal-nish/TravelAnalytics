@@ -134,6 +134,9 @@ var svg = d3.select(map.getPanes().overlayPane).append("svg"),
 //create data for animation
 var final_list = [];
 
+// transition timer
+var t;
+
 var datetext = d3.select('body').append('div')
                .attr('class', 'datetext')
                .style('position', 'absolute')
@@ -168,7 +171,7 @@ menuChanged("first_call");
 // stop when drop down for county is selected
 var stopflag = false;
 
-var t;
+
 
 function menuChanged(d){
 
@@ -189,6 +192,7 @@ function menuChanged(d){
 		// stop for county
 		stopflag = true;
 		if(county_list.indexOf(d) > -1){
+			console.log('this')
 			t.stop();
 		}
 		
