@@ -131,6 +131,17 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}
 var svg = d3.select(map.getPanes().overlayPane).append("svg"),
       g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
+
+d3.csv('Data/WeatherData.csv', function(data)
+                {
+                    weatherData = data;
+                    var a = weatherData[0];   
+ });
+
+var tooltipWeather = d3.select('body').append('div')
+            .attr('class', 'tooltip1');
+
+
 //create data for animation
 var final_list = [];
 
@@ -198,7 +209,6 @@ function menuChanged(d){
 		
 	}
 
-
 	d3.select('#play').html('play');
             playing = false;
 
@@ -219,8 +229,12 @@ function menuChanged(d){
 	                temp_dict['circle']['coordinates'] = centroid;
 	                circledata['objects'].push(temp_dict);
 	            });
+	            day = selected_date;
+	            tooltipWeather.html('Min Temp: ' + weatherData[day - 1]["Min TemperatureF"] + '&nbsp &nbsp &nbsp &nbsp' + ' Max Temp: ' + weatherData[day - 1]["Max TemperatureF"] + '<br/> Precipitation: ' + weatherData[day - 1].PrecipitationIn);
+
 	            zmain();
 	        });
+
 
 
 	function zmain(){

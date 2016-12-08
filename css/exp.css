@@ -1,6 +1,6 @@
 #map { 
 	width: 1400px;
-	height: 640px; 
+	height: 635px; 
 }
 
 
@@ -72,3 +72,23 @@ div.tooltip {
         left:1150px; 
         top:35px;
     }
+
+    div.tooltip1 {
+        /*color: #222;*/
+        text-align:center;
+        color:black;
+        background-color:#bae2ef;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        opacity: 0.9;
+        position: absolute;
+        width: 300px;
+        height:37px;
+        /*left: 390px;*/
+        /*stop: 10px;*/
+        left:1085px; 
+        top:725px;
+        font-weight:bold;
+    }
+

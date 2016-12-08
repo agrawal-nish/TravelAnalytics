@@ -24,6 +24,7 @@ function mainmapcall(){
               .on('mouseout', function (d) {
                     tooltip.classed('hidden', true)
                   });
+      
 
         var data = new Array(24);
         // create dictionary (effecient lookup) 
@@ -295,20 +296,6 @@ function mainmapcall(){
                     
                     
               });
-
-          var datetext = d3.select('body').append('div')
-               .attr('class', 'datetext')
-               .style('position', 'absolute')
-               .style('opacity', 1)
-               .style('background-color', 'black').text('Date : '  + selected_date)
-               .style('width', '150px')
-               .style("left", "1402px")
-               .style("top", "100px")
-               .style('line-height', 1)
-               .style('font-weight', 'bold')
-               .style('padding', '12px')
-               .style('color', '#fff')
-               .style('border-radius', '2px');
 
           
           var timetext = d3.select('body').append('div')
