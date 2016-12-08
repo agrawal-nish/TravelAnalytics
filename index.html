@@ -414,6 +414,7 @@
                  .on('click', function (d) {
 
                      zoneClicked = 'yes';
+                     d3.select("#svg1").classed('hidden', true);
                      removePurposeCircles();
                      removeCircles();
                      d3.selectAll('path').classed('highlightEndZone', false);
@@ -1294,44 +1295,88 @@
                        var tazId = d.tazId;
 
                        if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
-                           return 5;
+                           return 0;
                        }
                        else {
 
                            if (purpose == 'HW') {
-                               //return purposeScale(purposeData[tazId].HW);
-                               return purposeData[tazId].HW;
+                               
+                               if (purposeData[tazId].HW == 0) {
+                                   return purposeData[tazId].HW;
+                               }
+                               else {
+                                   return purposeData[tazId].HW/3;
+                               }
                            }
                            else if (purpose == 'WH') {
-                               //return purposeScale(purposeData[tazId].WH);
-                               return purposeData[tazId].WH;
+                              
+                               if (purposeData[tazId].WH == 0) {
+                                   return purposeData[tazId].WH
+                               }
+                               else
+                               {
+                               return purposeData[tazId].WH/3;
+                               }
+
+                           
                            }
                            else if (purpose == 'HO') {
-                               //return purposeScale(purposeData[tazId].HO);
-                               return purposeData[tazId].HO;
+                             
+                               if (purposeData[tazId].HO == 0)
+                               {
+                                   return purposeData[tazId].HO;
+                               }
+                               else {
+                                   return purposeData[tazId].HO/3;
+                               }
+                               
                            }
                            else if (purpose == 'OH') {
-                               //return purposeScale(purposeData[tazId].OH);
-                               return purposeData[tazId].OH;
+                               if (purposeData[tazId].OH == 0) {
+
+                                   return purposeData[tazId].OH;
+                               }
+
+                               else {
+                                   return purposeData[tazId].OH /3;
+                               }
                            }
                            else if (purpose == 'OW') {
-                               //return purposeScale(purposeData[tazId].OW);
-                               return purposeData[tazId].OW;
+                               if (purposeData[tazId].OW == 0) {
+                                   return purposeData[tazId].OW;
+                               }
+                               else {
+                                   return purposeData[tazId].OW/3;
+                               }
                            }
                            else if (purpose == 'WO') {
-                               //return purposeScale(purposeData[tazId].WO);
-                               return purposeData[tazId].WO;
+                               if (purposeData[tazId].WO == 0) {
+                                   return purposeData[tazId].WO;
+                               }
+                               else {
+                                   return purposeData[tazId].WO/3;
+                               }
                            }
                            else if (purpose == 'HH') {
-                               //return purposeScale(purposeData[tazId].HH);
-                               return purposeData[tazId].HH;
+                               if (purposeData[tazId].HH == 0) {
+                                   return purposeData[tazId].HH;
+                               }
+                               else {
+                                   return purposeData[tazId].HH/3;
+                               }
                            }
                            else if (purpose == 'OO') {
+
                                 return purposeScale(purposeData[tazId].OO);
-                               //return purposeData[tazId].OO;
+                             
                            }
                            else if (purpose == 'WW') {
-                               return purposeData[tazId].WW;
+                               if (purposeData[tazId].WW == 0) {
+                                   return purposeData[tazId].WW;
+                               }
+                               else {
+                                   return purposeData[tazId].WW/3;
+                               }
                            }
 
 
@@ -1783,6 +1828,7 @@
                     d3.select('#lstBounds').classed('hidden', false);
                     d3.select('#lstPurpose').classed('hidden', true);
                     d3.select('#myList').classed('hidden', false);
+                    d3.select("#svg1").classed('hidden', true);
 
                     showBoundsPurpose = 'showbounds';
                     showHidePurposeDiv('hide');
