@@ -11,7 +11,7 @@
 
     <style type="text/css">
         #map {
-            height: 640px;
+            height: 630px;
             width: 1400px;
         }
 
@@ -57,7 +57,9 @@
          }
 
     div.tooltip {
-        color: #222;
+        /*color: #222;*/
+        
+        color:black;
         /*background-color: darkseagreen;*/
         background-color:yellow;
         padding: .5em;
@@ -70,10 +72,54 @@
         /*stop: 10px;*/
         left:950px; 
         top:35px;
+        font-weight:bold;
     }
-    .highlightZone{
-     fill: #f7c9c8;
+
+      div.tooltip1 {
+        /*color: #222;*/
+        text-align:center;
+        color:black;
+        background-color:#bae2ef;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        opacity: 0.9;
+        position: absolute;
+        width: 300px;
+        height:37px;
+        /*left: 390px;*/
+        /*stop: 10px;*/
+        left:1266px; 
+        top:35px;
+        font-weight:bold;
     }
+    .highlightEndZone{
+     fill: orange !important;
+     fill-opacity: 0.9 !important;
+    }
+    .highlightStartZone{
+     fill: #19b2e5 !important;
+     fill-opacity: 0.9 !important;
+    }
+
+    /* .highlightEndZone{
+     fill: orange ;
+     fill-opacity: 0.9;
+    }
+   .highlightStartZone{
+     fill: yellow;
+     fill-opacity: 0.9 ;
+    }*/
+    
+    path {
+                border: solid;
+                stroke: gray;
+                stroke-width: 2;
+                fill-opacity: 0.3;
+                fill: black;
+                
+                
+            }
     
 
     </style>
@@ -100,7 +146,7 @@
    <br/>
    
 
-        <select id="myList"  class="pure-input-1-2">
+        <select id="myList">
             <option value="Day1">Day 1</option>
             <option value="Day2">Day 2</option>
             <option value="Day3">Day 3</option>
@@ -156,22 +202,13 @@
         <button id="btnStopButton" type="button" class="pure-button pure-button-primary">Stop Animation</button>
         <button id="btnShowPurpose" type="button" class="pure-button pure-button-primary">Show Purpose</button>
         <button id="btnShowBounds" type="button" class="pure-button pure-button-primary">Show Bounds</button>
+    
+  
         <br/>
         <div id="map"></div>
         <svg id="svg1" width="1400" height="50"></svg>
         <style>
-            path {
-                border: solid;
-                /* border-width: 20px;*/
-                /*border-color: darkred;*/
-                /*fill: black;*/
-                /*stroke: #3C80A9;*/
-                stroke: gray;
-                /*opacity: 1;*/
-                stroke-width: 2;
-                
-                
-            }
+            
         </style>
         <script>
             var handle;
@@ -208,6 +245,11 @@
             var tooltip = d3.select('body').append('div')
                     .attr('class', 'hidden tooltip');
 
+            var tooltipWeather = d3.select('body').append('div')
+            .attr('class', 'tooltip1');
+
+
+
             var orlandoData;
             var zonesData = {};
             var zonesDataArray = [];
@@ -221,12 +263,28 @@
             var purpose = '';
             var sHourMax;
             /*HW, WH, HO, OH, OW, HH, OO, WW, WO*/
-            var purposesArray = ['HW', 'WH', 'HO', 'OW', 'HH', 'OO', 'WW', 'WO'];
+            var purposesArray = ['HW', 'WH', 'HO', 'OH', 'OW','WO','HH','OO','WW' ];
+            //var purposesArray = ['WH', 'HO', 'OH', 'OW', 'WO', 'HH', 'OO', 'WW'];
             var showBoundsPurpose = 'showbounds';
+            var weatherData = [];
+            var day = 1;
+            //var maxTravel = {};
+            var maxTravel;
+            var lines;
+            var travel;
+
             var purposeScale = d3.scaleLinear()
             .domain([0, 2500])
             .range([0, 200]);
+
+            var color = d3.scaleLinear()
+           .domain([0, 200])
+            //.range(["#FFD700", "#DC143C"]);
+            .range(["#f2f0ef", "#bc2b03"]);
             
+            var lgColor = d3.scaleLinear()
+          .domain([0, 11])
+           .range(["#f2f0ef", "#bc2b03"]);
 
             function loadCsvData(callback) {
 
@@ -238,7 +296,6 @@
                     }
                     );
                 });
-
                 callback(null, dayData)
             }
 
@@ -271,8 +328,51 @@
                     console.log(sHourMax.shour0);
 
                 });*/
+                d3.csv('Data/WeatherData.csv', function(data)
+                {
+                    weatherData = data;
+                    var a = weatherData[0];   
+                })
 
-                //loadJson();
+                
+                /*d3.csv('Data/Day1MaxTravel.csv', function(data)
+                {
+                    maxTravel = {};
+                    var startZoneId = '';
+                    var prevZoneId;
+                    data.forEach(function (d) {
+                        prevZoneId = startZoneId;
+                        startZoneId = d.origin_zone;
+                        if (startZoneId != prevZoneId) {
+                            maxTravel[startZoneId] = d;
+                        }
+
+                    })
+                    
+                })*/
+
+                d3.csv('Data/Day1Travel.csv', function (data) {
+                 
+                    travel = {};
+                    var startZoneId = '';
+                    var prevZoneId;
+                    data.forEach(function (d) {
+                        prevZoneId = startZoneId;
+                        startZoneId = d.origin_zone;
+                       
+                        if (startZoneId != prevZoneId) {
+
+                            travel[startZoneId] = [d];                            
+                        }
+                        else
+                        {
+                            var a = travel[startZoneId];
+                            a.push(d);
+                            travel[startZoneId] = a;
+                        } 
+                    })
+                });
+
             });
 
             function loadJson() {
@@ -282,9 +382,10 @@
                     var centroids = [];
 
                     orlandoData.features.forEach(function (d, i) {
+                       
                         var centroid = d3.geoCentroid(d.geometry);
                         centroids.push(centroid);
-
+                    
                         var zone = { tazId: d.properties.TAZ_ID, centroid: centroid }
                         zonesDataArray.push(zone);
                     });
@@ -293,8 +394,12 @@
             }
             function drawMap(orlandoData, centroids) {
 
+                //console.log(zonesDataArray);
+                
                 var transform = d3.geoTransform({ point: projectPoint }),
                    path = d3.geoPath().projection(transform);
+
+                tooltipWeather.html('Min Temp: ' + weatherData[day - 1]["Min TemperatureF"] + '&nbsp &nbsp &nbsp &nbsp' + ' Max Temp: ' + weatherData[day - 1]["Max TemperatureF"] + '<br/> Precipitation: ' + weatherData[day - 1].PrecipitationIn);
 
                 var feature = g.selectAll("path")
                  .data(orlandoData.features)
@@ -302,6 +407,71 @@
                  .attr('id', function (d) {
 
                      return d.properties.TAZ_ID;
+                 })
+                 .on('click', function (d) {
+                     removePurposeCircles();
+                     removeCircles();
+                     d3.selectAll('path').classed('highlightEndZone', false);
+                     d3.selectAll('path').classed('highlightStartZone', false);
+                     d3.selectAll('path').style("stroke", "gray")
+                    .attr("stroke-width", "1")
+                    .style("fill-opacity", 0.3)
+                    .style("fill", 'black');
+
+                     showHideElements('hide');
+                     showHidePurposeDiv('hide');
+                     showHideBoundDiv('hide');
+                     time.classed('hidden', true);
+                     showHideMaxTripDiv('show');
+                    // d3.select('#myList').classed('hidden', true);
+
+                     var a = d3.select(this).attr('id');
+                     var stZone = a;
+                     var destZone = travel[a];
+                     var max=1;
+                     
+                     destZone.forEach(function (d, i) {
+
+                         var dCount = d.count2;
+                         if (dCount > max) {
+                             max = dCount;
+                         }
+                         
+
+                     });
+                     
+                     color.domain([0, max]);
+
+                    // if(destZone != undefined)
+                     destZone.forEach(function (da, i) {
+
+                         var dzone = da.destination_zone;
+                         /*if(stZone!=dzone)
+                         {
+                             //d3.select('[id="' + dzone + '"]').style("fill", 'orange !important');
+                         }*/
+                         d3.select('[id="' + dzone + '"]').transition().duration(1200).style("fill", function (d, i)
+                         {
+                             return color(da.count2);   
+                         })
+                         .style("fill-opacity", 0.9)
+                         //d3.select('[id="' + dzone + '"]').classed('highlightEndZone', true);
+
+                     });
+                     d3.select('[id="' + stZone + '"]').classed('highlightStartZone', true);
+
+                     //d3.select('[id="' + stZone + '"]').style("fill", 'yellow !important');
+                     /*if (stZone == destZone)
+                     {
+                         
+                         d3.select('[id="' + stZone + '"]').classed('highlightStartZone', true);
+                         
+                     }
+                     else {
+                         d3.select('[id="' + stZone + '"]').classed('highlightStartZone', true);
+                         d3.select('[id="' + destZone + '"]').classed('highlightEndZone', true);
+                     }*/
+                     
                  })
                 .on('mouseover', function (d) {
 
@@ -316,161 +486,209 @@
                     });
 
                     tooltip.classed('hidden', false)
-                     //.attr('style', 'left:' + (mouse[0] + 15) +
-                      //              'px; top:' + (mouse[1] - 35) + 'px')
-                       //.attr('style', 'left:350px; top:10px')
                      .html('County: ' + d.properties.COUNTY + '<br/>Taz ID: ' + d.properties.TAZ_ID)
 
                     var tazId = d.properties.TAZ_ID;
 
                     if (showBoundsPurpose == 'showbounds') {
-                        if (hour == 0) {
+                        if (dayData[tazId] != undefined && dayData[tazId] != null)
+                        {
+                            if (hour == 0) {
 
-                            inbound.text('Inbound: ' + dayData[tazId].dhour0)
-                            outbound.text('Outbound: ' + dayData[tazId].shour0)
+                                inbound.text('Inbound: ' + dayData[tazId].dhour0)
+                                outbound.text('Outbound: ' + dayData[tazId].shour0)
 
-                        }
-                        else if (hour == 1) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour1)
-                            outbound.text('Outbound: ' + dayData[tazId].shour1)
+                            }
+                            else if (hour == 1) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour1)
+                                outbound.text('Outbound: ' + dayData[tazId].shour1)
 
-                        }
-                        else if (hour == 2) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour2)
-                            outbound.text('Outbound: ' + dayData[tazId].shour2)
+                            }
+                            else if (hour == 2) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour2)
+                                outbound.text('Outbound: ' + dayData[tazId].shour2)
 
-                        }
-                        else if (hour == 3) {
+                            }
+                            else if (hour == 3) {
 
-                            inbound.text('Inbound: ' + dayData[tazId].dhour3)
-                            outbound.text('Outbound: ' + dayData[tazId].shour3)
+                                inbound.text('Inbound: ' + dayData[tazId].dhour3)
+                                outbound.text('Outbound: ' + dayData[tazId].shour3)
 
-                        }
-                        else if (hour == 4) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour4)
-                            outbound.text('Outbound: ' + dayData[tazId].shour4)
-                        }
-                        else if (hour == 5) {
+                            }
+                            else if (hour == 4) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour4)
+                                outbound.text('Outbound: ' + dayData[tazId].shour4)
+                            }
+                            else if (hour == 5) {
 
-                            inbound.text('Inbound: ' + dayData[tazId].dhour5)
-                            outbound.text('Outbound: ' + dayData[tazId].shour5)
-                        }
-                        else if (hour == 6) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour6)
-                            outbound.text('Outbound: ' + dayData[tazId].shour6)
+                                inbound.text('Inbound: ' + dayData[tazId].dhour5)
+                                outbound.text('Outbound: ' + dayData[tazId].shour5)
+                            }
+                            else if (hour == 6) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour6)
+                                outbound.text('Outbound: ' + dayData[tazId].shour6)
 
-                        }
-                        else if (hour == 7) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour7)
-                            outbound.text('Outbound: ' + dayData[tazId].shour7)
-                        }
-                        else if (hour == 8) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour8)
-                            outbound.text('Outbound: ' + dayData[tazId].shour8)
-                        }
-                        else if (hour == 9) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour9)
-                            outbound.text('Outbound: ' + dayData[tazId].shour9)
-                        }
-                        else if (hour == 10) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour10)
-                            outbound.text('Outbound: ' + dayData[tazId].shour10)
-                        }
-                        else if (hour == 11) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour11)
-                            outbound.text('Outbound: ' + dayData[tazId].shour11)
-                        }
-                        else if (hour == 12) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour12)
-                            outbound.text('Outbound: ' + dayData[tazId].shour12)
-                        }
-                        else if (hour == 13) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour13)
-                            outbound.text('Outbound: ' + dayData[tazId].shour13)
-                        }
-                        else if (hour == 14) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour14)
-                            outbound.text('Outbound: ' + dayData[tazId].shour14)
-                        }
-                        else if (hour == 15) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour15)
-                            outbound.text('Outbound: ' + dayData[tazId].shour15)
+                            }
+                            else if (hour == 7) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour7)
+                                outbound.text('Outbound: ' + dayData[tazId].shour7)
+                            }
+                            else if (hour == 8) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour8)
+                                outbound.text('Outbound: ' + dayData[tazId].shour8)
+                            }
+                            else if (hour == 9) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour9)
+                                outbound.text('Outbound: ' + dayData[tazId].shour9)
+                            }
+                            else if (hour == 10) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour10)
+                                outbound.text('Outbound: ' + dayData[tazId].shour10)
+                            }
+                            else if (hour == 11) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour11)
+                                outbound.text('Outbound: ' + dayData[tazId].shour11)
+                            }
+                            else if (hour == 12) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour12)
+                                outbound.text('Outbound: ' + dayData[tazId].shour12)
+                            }
+                            else if (hour == 13) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour13)
+                                outbound.text('Outbound: ' + dayData[tazId].shour13)
+                            }
+                            else if (hour == 14) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour14)
+                                outbound.text('Outbound: ' + dayData[tazId].shour14)
+                            }
+                            else if (hour == 15) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour15)
+                                outbound.text('Outbound: ' + dayData[tazId].shour15)
 
-                        }
-                        else if (hour == 16) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour16)
-                            outbound.text('Outbound: ' + dayData[tazId].shour16)
-                        }
-                        else if (hour == 17) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour17)
-                            outbound.text('Outbound: ' + dayData[tazId].shour17)
-                        }
-                        else if (hour == 18) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour18)
-                            outbound.text('Outbound: ' + dayData[tazId].shour18)
-                        }
-                        else if (hour == 19) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour19)
-                            outbound.text('Outbound: ' + dayData[tazId].shour19)
-                        }
-                        else if (hour == 20) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour20)
-                            outbound.text('Outbound: ' + dayData[tazId].shour20)
-                        }
-                        else if (hour == 21) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour21)
-                            outbound.text('Outbound: ' + dayData[tazId].shour21)
-                        }
-                        else if (hour == 22) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour22)
-                            outbound.text('Outbound: ' + dayData[tazId].shour22)
-                        }
-                        else if (hour == 23) {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour23)
-                            outbound.text('Outbound: ' + dayData[tazId].shour23)
+                            }
+                            else if (hour == 16) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour16)
+                                outbound.text('Outbound: ' + dayData[tazId].shour16)
+                            }
+                            else if (hour == 17) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour17)
+                                outbound.text('Outbound: ' + dayData[tazId].shour17)
+                            }
+                            else if (hour == 18) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour18)
+                                outbound.text('Outbound: ' + dayData[tazId].shour18)
+                            }
+                            else if (hour == 19) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour19)
+                                outbound.text('Outbound: ' + dayData[tazId].shour19)
+                            }
+                            else if (hour == 20) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour20)
+                                outbound.text('Outbound: ' + dayData[tazId].shour20)
+                            }
+                            else if (hour == 21) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour21)
+                                outbound.text('Outbound: ' + dayData[tazId].shour21)
+                            }
+                            else if (hour == 22) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour22)
+                                outbound.text('Outbound: ' + dayData[tazId].shour22)
+                            }
+                            else if (hour == 23) {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour23)
+                                outbound.text('Outbound: ' + dayData[tazId].shour23)
+                            }
+                            else {
+                                inbound.text('Inbound: ' + dayData[tazId].dhour0)
+                                outbound.text(dayData[tazId].shour0)
+                            }
                         }
                         else {
-                            inbound.text('Inbound: ' + dayData[tazId].dhour0)
-                            outbound.text(dayData[tazId].shour0)
+
                         }
                     }
                  
                     if (showBoundsPurpose == 'showpurpose') {
                         if (purpose == 'HW') {
-                            console.log(purposeData[tazId].HW);
-                            homeToWork.text('Home To Work: ' + purposeData[tazId].HW);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                homeToWork.text('Home To Work');
+                            }
+                            else {
+                                homeToWork.text('Home To Work: ' + purposeData[tazId].HW);
+                            }
+                           
                         }
                         else if (purpose == 'WH') {
-                            console.log(purposeData[tazId].WH);
-                            workToHome.text('Work To Home: ' + purposeData[tazId].WH);
+
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                workToHome.text('Work To Home');
+                            }
+                            else {
+                               workToHome.text('Work To Home: ' + purposeData[tazId].HW);
+                            }
                         }
                         else if (purpose == 'HO') {
-                            console.log(purposeData[tazId].HO);
-                            homeToOther.text('Other To Home: ' +purposeData[tazId].HO);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                homeToOther.text('Home To Other');
+                            }
+                            else {
+
+                                homeToOther.text('Home To Other: ' + purposeData[tazId].HO);
+                            }
                         }
                         else if (purpose == 'OH') {
-                            console.log(purposeData[tazId].OH);
-                            otherToHome.text('Other To Home: ' + purposeData[tazId].OH);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                otherToHome.text('Other To Home');
+                            }
+                            else {
+                                otherToHome.text('Other To Home: ' + purposeData[tazId].OH);
+                            }
                         }
                         else if (purpose == 'OW') {
-                            console.log(purposeData[tazId].OW);
-                            otherToWork.text('Other To Work: '+ purposeData[tazId].OW);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                otherToWork.text('Other To Work');
+                            }
+                            else {
+                                otherToWork.text('Other To Work: ' + purposeData[tazId].OW);
+                            }
                         }
                         else if (purpose == 'WO') {
-                            console.log(purposeData[tazId].WO);
-                            workToOther.text('Work To Other: ' + purposeData[tazId].WO);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                workToOther.text('Work To Other');
+                            }
+                            else {
+                                workToOther.text('Work To Other: ' + purposeData[tazId].WO);
+                            }
                         }
                         else if (purpose == 'HH') {
-                            console.log(purposeData[tazId].HH);
-                            homeToHome.text('Home To Home: ' + purposeData[tazId].HH);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null) {
+                                homeToHome.text('Home To Home');
+                            }
+                            else
+                            {
+                                homeToHome.text('Home To Home: ' + purposeData[tazId].HH);
+                            }
                         }
                         else if (purpose == 'OO') {
-                            console.log(purposeData[tazId].OO);
-                            otherToOther.text('Other To Other: ' + purposeData[tazId].OO);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null)
+                            {
+                                otherToOther.text('Other To Other');
+                            }
+                            else
+                            {
+                                otherToOther.text('Other To Other: ' + purposeData[tazId].OO);
+                            }
+                            
                         }
                         else if (purpose == 'WW') {
-                            console.log(purposeData[tazId].WW);
-                            workToWork.text('Work To Work: ' + purposeData[tazId].WW);
+                            if (purposeData[tazId] == undefined || purposeData[tazId] == null)
+                            {
+                                workToWork.text('Work To Work');
+                            }
+                            else
+                            {
+                                workToWork.text('Work To Work: ' + purposeData[tazId].WW);
+                            }
                         }
 
                     }
@@ -527,10 +745,13 @@
                     var cord = new L.LatLng(d[1], d[0]);
                     cords.push(cord);
                 })
+                
                 zonesDataArray.forEach(function (d) {
                     d.centroid = new L.LatLng(d.centroid[1], d.centroid[0]);
 
                 })
+
+               //console.log(zonesDataArray);
 
 
                 circle1 = g.selectAll("#circle1")
@@ -563,6 +784,244 @@
                     .style("fill", "blue")
                     .attr('id', 'circle3');
                 //}
+
+            var lgnStartZone = d3.select('body').append('div')
+               .attr('id', 'lgnStartZoneDiv')
+               .style('position', 'absolute')
+               .style('opacity', 1)
+               .style('background-color', '#19b2e5').text('Start Zone')
+               .style('width', '150px')
+               .style("left", "1402px")
+               .style("top", "140px")
+               .style('line-height', 1)
+               .style('font-weight', 'bold')
+               .style('padding', '12px')
+               .style('color', '#fff')
+               .style('border-radius', '2px')
+               
+
+            var lgnMaxDestZone = d3.select('body').append('div')
+              .attr('id', 'lgnMaxDestZoneDiv')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+              .style('background-color', 'orange').text('Max Trip Zone')
+              .style('width', '150px')
+              .style("left", "1402px")
+              .style("top", "240px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+              .style('padding', '12px')
+              .style('color', '#fff')
+              .style('border-radius', '2px')
+
+           /* var r1 = d3.select('body').append('circle')
+            .attr('r', '5px')
+            .attr('cx', '1402px')
+            .attr('cy', '190px')
+            .attr('id', 'r1Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('fill', 'orange')*/
+
+            var cg= d3.select('body').append('g').attr('id','cgDiv')
+
+            //var c1 = d3.select('body').append('div')
+            var c1 = cg.append('div')
+            .attr('id', 'c1Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('background-color', function () {
+                return lgColor(1);
+            })
+            .style('width', '17px')
+            .style('height', '35px')
+            .style("left", "1402px")
+            .style("top", "190px")
+            .style('line-height', 1)
+            .style('font-weight', 'bold')
+            //.style('padding', '12px')
+            .style('color', '#fff')
+            //.style('border-radius', '1px');
+
+                //var c2 = d3.select('body').append('div')
+            var c2 = cg.append('div')
+              .attr('id', 'c2Div')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+              .style('background-color', function () {
+                  return lgColor(2);
+              })
+              .style('width', '17px')
+              .style('height', '35px')
+              .style("left", "1420px")
+              .style("top", "190px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+              //.style('padding', '12px')
+              .style('color', '#fff')
+              //.style('border-radius', '2px');
+
+                //var c3 = d3.select('body').append('div')
+            var c3 = cg.append('div')
+            .attr('id', 'c3Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('background-color', function () {
+                return lgColor(3);
+            })
+            .style('width', '17px')
+            .style('height', '35px')
+            .style("left", "1438px")
+            .style("top", "190px")
+            .style('line-height', 1)
+            .style('font-weight', 'bold')
+            //.style('padding', '12px')
+            .style('color', '#fff')
+            //.style('border-radius', '2px');
+
+                //var c4 = d3.select('body').append('div')
+            var c4 = cg.append('div')
+              .attr('id', 'c4Div')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+              .style('background-color', function () {
+                  return lgColor(4);
+              })
+              .style('width', '17px')
+              .style('height', '35px')
+              .style("left", "1456px")
+              .style("top", "190px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+             // .style('padding', '12px')
+              .style('color', '#fff')
+             // .style('border-radius', '2px');
+
+                // var c5 = d3.select('body').append('div')
+            var c5 = cg.append('div')
+            .attr('id', 'c5Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('background-color', function () {
+                return lgColor(5);
+            })
+            .style('width', '17px')
+            .style('height', '35px')
+            .style("left", "1474px")
+            .style("top", "190px")
+            .style('line-height', 1)
+            .style('font-weight', 'bold')
+            //.style('padding', '12px')
+            .style('color', '#fff')
+            //.style('border-radius', '2px');
+
+                //var c6 = d3.select('body').append('div')
+            var c6 = cg.append('div')
+              .attr('id', 'c6Div')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+              .style('background-color', function () {
+                  return lgColor(6);
+              })
+              .style('width', '17px')
+              .style('height', '35px')
+              .style("left", "1492px")
+              .style("top", "190px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+              //.style('padding', '12px')
+              .style('color', '#fff')
+             // .style('border-radius', '2px');
+
+                //var c7 = d3.select('body').append('div')
+            var c7 = cg.append('div')
+            .attr('id', 'c7Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('background-color', function () {
+                return lgColor(7);
+            })
+            .style('width', '17px')
+            .style('height', '35px')
+            .style("left", "1510px")
+            .style("top", "190px")
+            .style('line-height', 1)
+            .style('font-weight', 'bold')
+            //.style('padding', '12px')
+            .style('color', '#fff')
+            //.style('border-radius', '2px');
+
+                //var c8 = d3.select('body').append('div')
+            var c8 = cg.append('div')
+              .attr('id', 'c8Div')
+              .style('position', 'absolute')
+              .style('opacity', 1)
+             .style('background-color', function () {
+                 return lgColor(8);
+             })
+              .style('width', '17px')
+              .style("left", "1528px")
+              .style('height', '35px')
+              .style("top", "190px")
+              .style('line-height', 1)
+              .style('font-weight', 'bold')
+              //.style('padding', '12px')
+              .style('color', '#fff')
+              //.style('border-radius', '2px');
+
+                //var c9 = d3.select('body').append('div')
+            var c9 = cg.append('div')
+            .attr('id', 'c9Div')
+            .style('position', 'absolute')
+            .style('opacity', 1)
+            .style('background-color', function () {
+                return lgColor(9);
+            })
+            .style('width', '17px')
+            .style('height', '35px')
+            .style("left", "1546px")
+            .style("top", "190px")
+            .style('line-height', 1)
+            .style('font-weight', 'bold')
+            //.style('padding', '12px')
+            .style('color', '#fff')
+            //.style('border-radius', '2px');
+
+                //var c10 = d3.select('body').append('div')
+            var c10 = cg.append('div')
+          .attr('id', 'c10Div')
+          .style('position', 'absolute')
+          .style('opacity', 1)
+          .style('background-color', function () {
+              return lgColor(10);
+          })
+          .style('width', '17px')
+          .style('height', '35px')
+          .style("left", "1564px")
+          .style("top", "190px")
+          .style('line-height', 1)
+          .style('font-weight', 'bold')
+          //.style('padding', '12px')
+          .style('color', '#fff')
+          //.style('border-radius', '1px');
+
+            var c11 = cg.append('div')
+         .attr('id', 'c11Div')
+         .style('position', 'absolute')
+         .style('opacity', 1)
+         .style('background-color', function () {
+             return lgColor(11);
+         })
+         .style('width', '17px')
+         .style('height', '35px')
+         .style("left", "1582px")
+         .style("top", "190px")
+         .style('line-height', 1)
+         .style('font-weight', 'bold')
+         //.style('padding', '12px')
+         .style('color', '#fff')
+         //.style('border-radius', '1px');
+
              var inbound = d3.select('body').append('div')
             .attr('id', 'inboundDiv')
             .style('position', 'absolute')
@@ -576,8 +1035,7 @@
             .style('padding', '12px')
             .style('color', '#fff')
             .style('border-radius', '2px')
-            //.style('opacity', '0.4');
-
+            
                 var outbound = d3.select('body').append('div')
                .attr('id', 'outBoundDiv')
                .style('position', 'absolute')
@@ -610,7 +1068,7 @@
                .attr('id', 'workToHomeDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', '#c13819').text('Work To Home')
+               .style('background-color', '#7a3939').text('Work To Home')
                .style('width', '150px')
                .style("left", "1402px")
                .style("top", "240px")
@@ -652,7 +1110,7 @@
                .attr('id', 'otherToWorkDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', '#f29d98').text('Other To Work')
+               .style('background-color', '#897a0b').text('Other To Work')
                .style('width', '150px')
                .style("left", "1402px")
                .style("top", "390px")
@@ -694,7 +1152,7 @@
                .attr('id', 'otherToOtherDiv')
                .style('position', 'absolute')
                .style('opacity', 1)
-               .style('background-color', '#E9967A').text('Other To Work')
+               .style('background-color', '#E9967A').text('Other To Other')
                .style('width', '150px')
                .style("left", "1402px")
                .style("top", "540px")
@@ -708,7 +1166,7 @@
                 .attr('id', 'workToWorkDiv')
                 .style('position', 'absolute')
                 .style('opacity', 1)
-                .style('background-color', '#8FBC8F').text('Work To Work')
+                .style('background-color', '#ed0707').text('Work To Work')
                 .style('width', '150px')
                 .style("left", "1402px")
                 .style("top", "590px")
@@ -733,30 +1191,35 @@
                 .style('color', '#fff')
                 .style('border-radius', '2px')
                 map.on("viewreset", reset);
+
+                showHideMaxTripDiv('hide');
+                d3.select('#lstPurpose').classed('hidden', true);
+                d3.select('#btnStopButton').classed('hidden', true);
+                
                 reset();
 
-               
                 function reset() {
 
+                    console.log('resetCalled');
                     var bounds = path.bounds(orlandoData),
                                  topLeft = bounds[0],
                                  bottomRight = bounds[1];
 
 
-                    //if (showBoundsPurpose == 'showpurpose') {
                     circle3.attr("transform", function (d, i) {
+                      
                         return "translate(" +
                         map.latLngToLayerPoint(d.centroid).x + "," +
                         map.latLngToLayerPoint(d.centroid).y + ")";
                     })
-                    .transition().duration(3000)
+                    .transition().duration(1000)
                    .style("fill", function (d, i) {
                                          
                        if (purpose == 'HW') {
                            return 'orange';
                        }
                        else if (purpose == 'WH') {
-                           return '#c13819';
+                           return '#7a3939';
                        }
                        else if (purpose == 'HO') {
                            return '#4cd323'
@@ -765,7 +1228,7 @@
                            return '#80f7ef';
                        }
                        else if (purpose == 'OW') {
-                           return '#f29d98';
+                           return '#897a0b';
                        }
                        else if (purpose == 'WO') {
                            return 'blue';
@@ -777,11 +1240,11 @@
                            return '#E9967A';
                        }
                        else if (purpose == 'WW') {
-                           return '#8FBC8F';
+                           return '#ed0707';
                        }
 
                    })
-                   .transition().duration(3000)
+                   .transition().duration(1000)
                    .attr("r", function (d) {
                        var tazId = d.tazId;
 
@@ -831,7 +1294,7 @@
 
                    })
                    .style('opacity', 0.4);
-                    //}// end of IF;
+                 
 
                     circle1.attr("transform", function (d, i) {
                         return "translate(" +
@@ -923,7 +1386,6 @@
                            else {
                                return dayData[tazId].shour1;
                            }
-
                        }
                    }
 
@@ -1031,6 +1493,7 @@
                         removePurposeCircles();
                         showHidePurposeDiv('hide');
                     }
+                    
 
                     svg.attr("width", bottomRight[0] - topLeft[0])
                     .attr("height", bottomRight[1] - topLeft[1])
@@ -1039,7 +1502,7 @@
                     g.attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
 
                     feature.attr("d", path)
-                    .style("fill-opacity", 0.3)
+                   
 
                 }
 
@@ -1047,11 +1510,10 @@
                     var point = map.latLngToLayerPoint(new L.LatLng(y, x));
                     this.stream.point(point.x, point.y);
                 }
+
                 var svg1 = d3.select("#svg1"),
                 margin = { right: 20, left: 20 },
-                //margin = { right: 10, left: 10 };
                 width = +svg1.attr("width")
-                //-margin.left - margin.right,
                 - margin.left - margin.right,
                 height = +svg1.attr("height");
 
@@ -1152,6 +1614,41 @@
                     reset();
                 }
 
+                function showHideMaxTripDiv(bool)
+                {
+                    if (bool == 'show') {
+                        d3.select('#lgnMaxDestZoneDiv').classed('hidden', false);
+                        d3.select('#lgnStartZoneDiv').classed('hidden', false);
+                        d3.select('#cgDiv').classed('hidden', false);
+                        
+                    }
+                    else if (bool == 'hide') {
+                        d3.select('#lgnMaxDestZoneDiv').classed('hidden', true);
+                        d3.select('#lgnStartZoneDiv').classed('hidden', true);
+                        d3.select('#cgDiv').classed('hidden', true);
+                    }
+                }
+
+                function showHideElements(bool)
+                {
+                    if (bool == 'show') {
+
+                        d3.select('#btnStartButton').classed('hidden', false);
+                        d3.select('#btnStopButton').classed('hidden', false);
+                        d3.select('#lstBounds').classed('hidden', false);
+                        d3.select('#lstPurpose').classed('hidden', false);
+                        d3.select('#myList').classed('hidden', false);
+                    }
+                    else if (bool == 'hide') {
+
+                       d3.select('#btnStartButton').classed('hidden', true);
+                        d3.select('#btnStopButton').classed('hidden', true);
+                        d3.select('#lstBounds').classed('hidden', true);
+                        d3.select('#lstPurpose').classed('hidden', true);
+                        d3.select('#myList').classed('hidden', true);
+                    }
+                }
+
                 function showHidePurposeDiv(bool) {
 
                     if (bool == 'show') {
@@ -1219,8 +1716,24 @@
                 }
                 function showBoundsData() {
                     //console.log('Show Bounds');
+                    d3.selectAll('path').classed('highlightEndZone', false);
+                    d3.selectAll('path').classed('highlightStartZone', false);
+                    d3.selectAll('path').style("stroke", "gray")
+                   .attr("stroke-width", "1")
+                   .style("fill-opacity", 0.3)
+                   .style("fill", 'black');
+
+
+                    //showHideElements('show');
+                    showHideMaxTripDiv('hide');
+                    d3.select('#btnStartButton').classed('hidden', false);
+                    d3.select('#btnStopButton').classed('hidden', true);
+
+
                     d3.select('#lstBounds').classed('hidden', false);
                     d3.select('#lstPurpose').classed('hidden', true);
+                    d3.select('#myList').classed('hidden', false);
+
                     showBoundsPurpose = 'showbounds';
                     showHidePurposeDiv('hide');
                     showHideBoundDiv('show');
@@ -1233,15 +1746,29 @@
 
                 }
                 function showPurpose() {
+                    
+                    d3.selectAll('path').classed('highlightEndZone', false);
+                    d3.selectAll('path').classed('highlightStartZone', false);
+                    d3.selectAll('path').style("stroke", "gray")
+                   .attr("stroke-width", "1")
+                   .style("fill-opacity", 0.3)
+                   .style("fill", 'black');
+
+                    //showHideElements('show');
+                    showHideMaxTripDiv('hide');
+                    d3.select('#btnStartButton').classed('hidden', false);
+                    d3.select('#btnStopButton').classed('hidden', true);
+                   
                     d3.select('#lstBounds').classed('hidden', true);
                     d3.select('#lstPurpose').classed('hidden', false);
+                    d3.select('#myList').classed('hidden', false);
+
                     showBoundsPurpose = 'showpurpose';
                     purpose = 'HW';
                     showHidePurposeDiv('show');
                     showHideBoundDiv('hide');
                     d3.select("#svg1").classed('hidden', true);
                     time.classed('hidden', true);
-                    //d3.select('.timeDiv').classed('hidden', true);
 
                     removeCircles();
                     removePurposeCircles();
@@ -1250,49 +1777,85 @@
 
                 }
                 function startAnimation() {
-                    //console.log(showBoundsPurpose);
+                    /* myList   lstBounds  lstPurpose   btnStartButton   btnStopButton btnShowPurpose btnShowBounds*/
+                    d3.select('#btnStartButton').classed('hidden', true);
+                    d3.select('#btnStopButton').classed('hidden', false);
+                   
+                    d3.select('#btnShowPurpose').classed('hidden', true);
+                    d3.select('#btnShowBounds').classed('hidden', true);
+                    d3.select('#lstBounds').classed('hidden', true);
+                    d3.select('#lstPurpose').classed('hidden', true);
+                    d3.select('#myList').classed('hidden', true);
+
                     if (showBoundsPurpose == 'showbounds') {
-                        //console.log('start show bounds ani is called');
                         refreshIntervalId = setInterval(setHour, 5000);
-                        
                         hour = 0;
                         time.text('Hour: ' + hour);
                     }
                     if (showBoundsPurpose == 'showpurpose') {
-                        console.log('start show purpose ani is called');
+                        purpose = 'HW';//
+                        removeCircles();//
+                        removePurposeCircles();//
+                        drawPurposeCircles();//
+                        reset();
+
+                        p = 0;
                         refreshIntervalId2 = setInterval(setPurpose, 5000);
-                        p = -1;
+                        
                     }
 
 
                 }
                 function setPurpose() {
                     p = p + 1;
-                    if (p > 7) {
+                    if (p > 8) {
                         stopAnimation();
+                        p = 0;//
+                        //removeCircles();//
+                        //removePurposeCircles();//
+                        //drawPurposeCircles();//
+                      
                     }
+
                     purpose = purposesArray[p];
+                    console.log(purpose);
                     reset();
                 }
 
                 function setHour() {
                     hour = hour + 1;
                     time.text('Hour: ' + hour);
-                    //console.log(hour);
+                    
                     if (hour > 23) {
                         stopAnimation();
+                        hour = 0;//
+                        showBounds();//
+                        time.text('Hour: ' + hour);
                     }
                     reset();
                 }
                 function stopAnimation() {
-                    //console.log('Stop Animation Called');
+                    d3.select('#btnStartButton').classed('hidden', false);
+                    d3.select('#btnStopButton').classed('hidden', true);
+
+                    d3.select('#btnShowPurpose').classed('hidden', false);
+                    d3.select('#btnShowBounds').classed('hidden', false);
+                   
+                    d3.select('#myList').classed('hidden', false);
+                    
                     if (showBoundsPurpose == 'showbounds') {
                         console.log('stop show bounds ani is called');
+                        d3.select('#lstBounds').classed('hidden', false);
                         clearInterval(refreshIntervalId);
+
+                        
                     }
                     if (showBoundsPurpose == 'showpurpose') {
                         console.log('stop show purpose ani is called');
+                        d3.select('#lstPurpose').classed('hidden',false);
                         clearInterval(refreshIntervalId2);
+
+                        
                     }
                 }
                 function showBounds() {
@@ -1359,6 +1922,16 @@
                 function ddldayChanged() {
 
                     var day = $("#myList option:selected").val();
+                    var d;
+                    if (day.length == 4) {
+                         d = day.substring(3, 4);
+                        console.log(d);
+                    }
+                    else {
+                        d = day.substring(3, 5);
+                        console.log(d);
+                    }
+                    tooltipWeather.html('Min Temp: ' + weatherData[d - 1]["Min TemperatureF"] + '&nbsp &nbsp &nbsp &nbsp' + ' Max Temp: ' + weatherData[d - 1]["Max TemperatureF"] + '<br/> Precipitation: ' + weatherData[d - 1].PrecipitationIn);
                     loadCsvDay(day);
                 }
                 function loadCsvDay(day) {
@@ -1371,9 +1944,6 @@
                             dayData[tazId] = d;
                         }
                          );
-
-                        //removeCircles();
-                        //drawCircles();
                         reset();
 
                     });
@@ -1384,14 +1954,8 @@
                         data.forEach(function (d) {
                             var tazId = d.origin_zone;
                             purposeData[tazId] = d;
-                        }
-                         );
-
-                        //removeCircles();
-                        console.log('load CSv DAy is called');
-                        //drawCircles();
+                        });
                         reset();
-
                     });
 
                     /*sHourMax = [];
@@ -1404,6 +1968,42 @@
                         console.log(sHourMax.shour0);
 
                     });*/
+                   /* d3.csv('Data/' + day + 'MaxTravel.csv', function (data) {
+
+                        maxTravel = {};
+                        var startZoneId = '';
+                        var prevZoneId;
+                        data.forEach(function (d) {
+                            prevZoneId = startZoneId;
+                            startZoneId = d.origin_zone;
+                            if (startZoneId != prevZoneId) {
+                                maxTravel[startZoneId] = d;
+                            }
+
+                        })
+
+                    });*/
+                    d3.csv('Data/' + day + 'Travel.csv', function (data) {
+
+                        travel = {};
+                        var startZoneId = '';
+                        var prevZoneId;
+                        data.forEach(function (d) {
+                            prevZoneId = startZoneId;
+                            startZoneId = d.origin_zone;
+
+                            if (startZoneId != prevZoneId) {
+                                travel[startZoneId] = [d];
+                            }
+                            else
+                            {
+                                var a = travel[startZoneId];
+                                a.push(d);
+                                travel[startZoneId] = a;
+                            }
+
+                        })
+                    });
 
 
                 }
@@ -1416,7 +2016,7 @@
                 }
                 function drawCircles() {
 
-                    console.log('Drawing Circles');
+                    
                     circle1 = g.selectAll("#circle1")
                     .data(zonesDataArray)
                     .enter().append("circle")
@@ -1452,7 +2052,7 @@
                   //.style("fill", "blue")
                   .attr('id', 'circle3')
                 }
-
+                
             }
 
         </script>
