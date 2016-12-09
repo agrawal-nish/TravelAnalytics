@@ -57,6 +57,8 @@ d3.json("Data/OrlandoGeoJ.json", function (error, data){
         }  
 
         feature.on('click',function(d){
+          d3.selectAll('.mappath1').style('fill',null)
+          d3.select(this).style('fill','darkblue');
           bar_caller1(d.properties.TAZ_ID);
         });
 
@@ -124,6 +126,8 @@ function mapper2(){
             }  
 
             feature.on('click',function(d){
+              d3.selectAll('.mappath2').style('fill',null)
+              d3.select(this).style('fill','darkblue');
                 bar_caller2(d.properties.TAZ_ID);
               })
 
