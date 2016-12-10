@@ -1246,7 +1246,7 @@
 
                 function reset() {
 
-                    console.log('resetCalled');
+                    //console.log('resetCalled');
                     var bounds = path.bounds(orlandoData),
                                  topLeft = bounds[0],
                                  bottomRight = bounds[1];
@@ -1914,7 +1914,7 @@
                     }
 
                     purpose = purposesArray[p];
-                    console.log(purpose);
+                    //console.log(purpose);
                     reset();
                 }
 
@@ -1940,14 +1940,14 @@
                     d3.select('#myList').classed('hidden', false);
                     
                     if (showBoundsPurpose == 'showbounds') {
-                        console.log('stop show bounds ani is called');
+                        //console.log('stop show bounds ani is called');
                         d3.select('#lstBounds').classed('hidden', false);
                         clearInterval(refreshIntervalId);
 
                         
                     }
                     if (showBoundsPurpose == 'showpurpose') {
-                        console.log('stop show purpose ani is called');
+                        //console.log('stop show purpose ani is called');
                         d3.select('#lstPurpose').classed('hidden',false);
                         clearInterval(refreshIntervalId2);
 
@@ -2021,11 +2021,11 @@
                     var d;
                     if (day.length == 4) {
                          d = day.substring(3, 4);
-                        console.log(d);
+                        //console.log(d);
                     }
                     else {
                         d = day.substring(3, 5);
-                        console.log(d);
+                        //console.log(d);
                     }
                     tooltipWeather.html('Min Temp: ' + weatherData[d - 1]["Min TemperatureF"] + '&nbsp &nbsp &nbsp &nbsp' + ' Max Temp: ' + weatherData[d - 1]["Max TemperatureF"] + '<br/> Precipitation: ' + weatherData[d - 1].PrecipitationIn);
                     loadCsvDay(day);
