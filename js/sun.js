@@ -59,6 +59,7 @@ d3.json("Data/OrlandoGeoJ.json", function (error, data){
         feature.on('click',function(d){
           d3.selectAll('.mappath1').style('fill',null)
           d3.select(this).style('fill','darkblue');
+          d3.select('#taz1').text('TAZ_ID :' + d.properties.TAZ_ID);
           bar_caller1(d.properties.TAZ_ID);
         });
 
@@ -128,6 +129,7 @@ function mapper2(){
             feature.on('click',function(d){
               d3.selectAll('.mappath2').style('fill',null)
               d3.select(this).style('fill','darkblue');
+              d3.select('#taz2').text('TAZ_ID :' + d.properties.TAZ_ID);
                 bar_caller2(d.properties.TAZ_ID);
               })
 
@@ -177,7 +179,3 @@ dropDowndate1.on('change',function(){
 dropDowndate2.on('change',function(){
   selected_date2 = d3.event.target.value;
 });
-
-
-
-
