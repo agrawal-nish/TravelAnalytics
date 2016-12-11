@@ -28,7 +28,8 @@ In the first visualization we show an interactive map of Orlando and 1267 zones 
 ![Alt text](images/fig1.png?raw=true "Title")
 
 
-Interactions for View 1
+# Interactions for View 1
+
 User can select to view data of one of the 30 days in April 2014 from the day dropdown. 
 The user can also filter by trips to see the individual inbound or outbound trips or both.
 On mouseover of a zone the zone properties are displayed in the right top corner, and the label for inbound and outbound trips is displayed with the corresponding count values.
@@ -43,15 +44,16 @@ Example: below image shows the visualization when interaction 2 has occurred and
 ![Alt text](images/fig2.png?raw=true "Title")
 
 
+# View 2
 
-View 2
 When the user click on the Show Purpose button the user sees a visualizing how many people travelled from home to work for each zone for the selected day by default. The color of the circle indicates the purpose type. The size of the circle indicates the total count of the purpose type for a particular zone. On the right the user can see a legend indicating all the purpose types. Each type is represented by a different color. Weather data for the corresponding day is also shown in the top right corner.
 
 
 ![Alt text](images/fig3.png?raw=true "Title")
 
 
-Interactions for View 2
+# Interactions for View 2
+
 User can select to view data of the 30 days of April 2014 from the day dropdown
 The user can view data for another purpose type by selecting a particular purpose type from the dropdown list above the map.
 On mouseover of a zone, the zone properties are displayed in the right top corner, and the label for selected purpose type is displayed with the corresponding count value.
@@ -61,7 +63,8 @@ While the animation is playing the user can stop the animation or the animation 
 The user can click on the show bounds button which will take the user to view 1 (Show Bounds view).
 
 
-View 3.
+# View 3.
+
 When the user is viewing view 1 or view 2 the user can click on any on any of the zones. This view displays the start zone as the zone which was clicked in light blue color and shows all the destination zones in the day for the selected start zone in a range of colors from white to maroon.  The count of trips to the destination zones from the selected start zone is encoded in the range of colors from white to maroon. Destination zones colored closer to white have low number of trips from start zone and destination zones colored closer to maroon have high number of trips from the start zone.
 
 
@@ -71,9 +74,8 @@ The user can click on show bound or show purpose buttons to go back to view one 
 ![Alt text](images/fig4.png?raw=true "Title")
 
 
+# Visualization 2
 
-
-Visualization 2
 This visualization emphasises on the direction of travel from origin to destination zone. It focuses on showing the travel pattern by animating through time for a single day. At the start of the hour, we see a circle in the origin zones with the radius representing the scaled weighted count. By the end of the hour, the circle would have travelled to its respective destination zone and the process repeats for every hour. 
 
 ![Alt text](images/fig5.png?raw=true "Title")
@@ -82,21 +84,16 @@ It is also possible to filter by subscriber class and purpose. A unique filterin
 
 ![Alt text](images/fig6.png?raw=true "Title")
 
-
-
 We used subset of  5000 data samples at any given time in the animation to make sure that the user is not overburdened by the numerous travel points. This filtering also helped us in achieving smoother transition. We can select the subset of the data that we are interested in using the drop down button. 
-Visualization 3
+
+# Visualization 3
+
 The third visualization takes a more analytical approach to the data. Using this feature, which utilizes two maps, we can compare the count of the trips, grouped by individual subscriber classes, of any two selected zones at any given day. This  gives us the ability to compare same zone at different days which is an enhancement to the previous two visualizations.  
-
-
 
 ![Alt text](images/fig7.png?raw=true "Title")
 
+# Interesting Finds
 
-
-
-
-Interesting Finds
 1. Visually analyzing the travel trends in zones revealed that lots of commute happened in zones in lower left region and upper middle region than in exterior counties. This trend is distinctly observable during weekends. On investigating the map, we found that the orange county contains disney themed water parks, resorts, hollywood studios in its lower left region and has lots of inflow for all days in the month of April.
 
 
