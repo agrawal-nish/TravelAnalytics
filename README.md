@@ -26,7 +26,7 @@ Python 3 : python -m http.server <port number> <br/>
 
 # Visualization 1
 
-# View1
+# View 1
 
 In the first visualization we show an interactive map of Orlando and 1267 zones which visualizes total inbound and outbound commute for each of the 1267 zones, for each hour of a particular day. Inbound trips for the zone are associated with green circles and outbound trips  with red color circles. The radius of the circle encodes the count of inbound or outbound trip.  
 
