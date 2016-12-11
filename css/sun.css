@@ -15,7 +15,8 @@
 }
 
 #wrapper2{
-	margin-left: 595px;
+	position: absolute;
+	left: 790px;
 }
 
 svg {
