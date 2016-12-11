@@ -1,10 +1,11 @@
 # TravelAnalytics
 
-Option 6: Visualizing Orlando Metropolitan Area Travel Data 
-Shreyas Kulkarni
-Sreeraj Rimmalapudi
-Nishant Agrawal
-Introduction
+## Option 6: Visualizing Orlando Metropolitan Area Travel Data 
+## Shreyas Kulkarni
+## Sreeraj Rimmalapudi
+## Nishant Agrawal
+
+# Introduction
 Analyzing travel patterns of people in an urban setting is useful in discovering popular places, rush hours of the area etc. Certainly analysis can be done by looking at tables of data and numbers but analyzing it with the help of visualizations makes it easy and interesting.
 
 
