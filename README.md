@@ -25,7 +25,7 @@ Visualization 1
 View1
 In the first visualization we show an interactive map of Orlando and 1267 zones which visualizes total inbound and outbound commute for each of the 1267 zones, for each hour of a particular day. Inbound trips for the zone are associated with green circles and outbound trips  with red color circles. The radius of the circle encodes the count of inbound or outbound trip.  
 
-
+![Alt text](images/fig1.png?raw=true "Title")
 
 
 Interactions for View 1
@@ -40,7 +40,7 @@ The user can click on show purpose button which will redirect the user to the vi
 
 Example: below image shows the visualization when interaction 2 has occurred and the user has selected to view outbound trips..
 
-
+![Alt text](images/fig2.png?raw=true "Title")
 
 
 
@@ -48,7 +48,7 @@ View 2
 When the user click on the Show Purpose button the user sees a visualizing how many people travelled from home to work for each zone for the selected day by default. The color of the circle indicates the purpose type. The size of the circle indicates the total count of the purpose type for a particular zone. On the right the user can see a legend indicating all the purpose types. Each type is represented by a different color. Weather data for the corresponding day is also shown in the top right corner.
 
 
-
+![Alt text](images/fig3.png?raw=true "Title")
 
 
 Interactions for View 2
@@ -68,7 +68,7 @@ When the user is viewing view 1 or view 2 the user can click on any on any of th
 The user can click on show bound or show purpose buttons to go back to view one or view two.
 
 
-
+![Alt text](images/fig4.png?raw=true "Title")
 
 
 
@@ -76,11 +76,11 @@ The user can click on show bound or show purpose buttons to go back to view one 
 Visualization 2
 This visualization emphasises on the direction of travel from origin to destination zone. It focuses on showing the travel pattern by animating through time for a single day. At the start of the hour, we see a circle in the origin zones with the radius representing the scaled weighted count. By the end of the hour, the circle would have travelled to its respective destination zone and the process repeats for every hour. 
 
-
+![Alt text](images/fig5.png?raw=true "Title")
 
 It is also possible to filter by subscriber class and purpose. A unique filtering system in this visualization is filtering by counties which would allow us to see inter county travels. The most important filtering, however, is filtering by zones. A zone when selected, shows travel data to and from that zone. 
 
-
+![Alt text](images/fig6.png?raw=true "Title")
 
 
 
@@ -90,7 +90,7 @@ The third visualization takes a more analytical approach to the data. Using this
 
 
 
-
+![Alt text](images/fig7.png?raw=true "Title")
 
 
 
