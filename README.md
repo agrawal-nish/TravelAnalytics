@@ -1,9 +1,9 @@
 # TravelAnalytics
 
 **Option 6: Visualizing Orlando Metropolitan Area Travel Data** 
- Shreyas Kulkarni
- Sreeraj Rimmalapudi
- Nishant Agrawal **
+**Shreyas Kulkarni**
+**Sreeraj Rimmalapudi**
+**Nishant Agrawal**
 
 # Introduction
 Analyzing travel patterns of people in an urban setting is useful in discovering popular places, rush hours of the area etc. Certainly analysis can be done by looking at tables of data and numbers but analyzing it with the help of visualizations makes it easy and interesting.
@@ -28,8 +28,7 @@ In the first visualization we show an interactive map of Orlando and 1267 zones 
 
 ![Alt text](images/fig1.png?raw=true "Title")
 
-
-# Interactions for View 1
+**Interactions for View 1**
 
 User can select to view data of one of the 30 days in April 2014 from the day dropdown. 
 The user can also filter by trips to see the individual inbound or outbound trips or both.
@@ -53,7 +52,7 @@ When the user click on the Show Purpose button the user sees a visualizing how m
 ![Alt text](images/fig3.png?raw=true "Title")
 
 
-# Interactions for View 2
+**Interactions for View 2**
 
 User can select to view data of the 30 days of April 2014 from the day dropdown
 The user can view data for another purpose type by selecting a particular purpose type from the dropdown list above the map.
