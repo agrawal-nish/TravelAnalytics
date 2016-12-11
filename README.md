@@ -1,6 +1,7 @@
 # TravelAnalytics
 
-**Option 6: Visualizing Orlando Metropolitan Area Travel Data** <br/>
+**Option 6: Visualizing Orlando Metropolitan Area Travel Data** 
+
 **Shreyas Kulkarni** <br/>
 **Sreeraj Rimmalapudi** <br/>
 **Nishant Agrawal** <br/>
