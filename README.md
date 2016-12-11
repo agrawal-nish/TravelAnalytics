@@ -20,8 +20,8 @@ After downloading the project, run a local server at the downloaded path and run
 
 Code for running python server <br/>
 
-Python 2 : python -m SimpleHTTPServer <port number> <br/>
-Python 3 : python -m http.server <port number> <br/>
+Python 2 : python -m SimpleHTTPServer \<port number> <br/>
+Python 3 : python -m http.server \<port number> <br/>
 
 
 # Visualization 1
