@@ -1,29 +1,33 @@
 # TravelAnalytics
 
-**Option 6: Visualizing Orlando Metropolitan Area Travel Data** 
-**Shreyas Kulkarni**
-**Sreeraj Rimmalapudi**
-**Nishant Agrawal**
+**Option 6: Visualizing Orlando Metropolitan Area Travel Data** <br/>
+**Shreyas Kulkarni** <br/>
+**Sreeraj Rimmalapudi** <br/>
+**Nishant Agrawal** <br/>
 
 # Introduction
-Analyzing travel patterns of people in an urban setting is useful in discovering popular places, rush hours of the area etc. Certainly analysis can be done by looking at tables of data and numbers but analyzing it with the help of visualizations makes it easy and interesting.
 
+Analyzing travel patterns of people in an urban setting is useful in discovering popular places, rush hours of the area etc. Certainly analysis can be done by looking at tables of data and numbers but analyzing it with the help of visualizations makes it easy and interesting.<br/>
 
-The goal of this project is to investigate travel patterns in an urban environment by animating origin destination matrices. Specifically, the data is for Orlando city, Florida, USA.  The original data provided shape files of Orlando city areas and data about trips made by a certain category of people from one zone to another zone between specific hours for thirty days. The data divides Orlando into 1267 zones each with a unique TAZ or Traffic Area Zones ID. We also incorporated weather data to find interesting travel patterns in different weather conditions. The data was cleaned, aggregated and segregated into multiple parts to suit the visualizations with the intention to load the data into the browser fast.
+The goal of this project is to investigate travel patterns in an urban environment by animating origin destination matrices. Specifically, the data is for Orlando city, Florida, USA.  The original data provided shape files of Orlando city areas and data about trips made by a certain category of people from one zone to another zone between specific hours for thirty days. The data divides Orlando into 1267 zones each with a unique TAZ or Traffic Area Zones ID. We also incorporated weather data to find interesting travel patterns in different weather conditions. The data was cleaned, aggregated and segregated into multiple parts to suit the visualizations with the intention to load the data into the browser fast. <br/>
   
-We have created three animated & interactive visualizations. Vis 1 and Vis 2 shows interesting aspects of travel in Orlando and Vis 3 can be used to view and compare how different types of people travel in and out of zones and in what quantity. The section “The Visualizations” explains each visualization in detail.
-Installation and Execution
+We have created three animated & interactive visualizations. Vis 1 and Vis 2 shows interesting aspects of travel in Orlando and Vis 3 can be used to view and compare how different types of people travel in and out of zones and in what quantity. The section “The Visualizations” explains each visualization in detail.<br/>
+
+**Installation and Execution**
+
 After downloading the project, run a local server at the downloaded path and run the index.html file.
-For best visual experience keep browser at 80% zoom level.
+**For best visual experience keep browser at 80% zoom level.**
+
+Code for running python server <br/>
+
+Python 2 : python -m SimpleHTTPServer <port number> <br/>
+Python 3 : python -m http.server <port number> <br/>
 
 
-Code for running python server
+# Visualization 1
 
+**View1**
 
-Python 2 : python -m SimpleHTTPServer <port number>
-Python 3 : python -m http.server <port number>
-Visualization 1
-View1
 In the first visualization we show an interactive map of Orlando and 1267 zones which visualizes total inbound and outbound commute for each of the 1267 zones, for each hour of a particular day. Inbound trips for the zone are associated with green circles and outbound trips  with red color circles. The radius of the circle encodes the count of inbound or outbound trip.  
 
 ![Alt text](images/fig1.png?raw=true "Title")
