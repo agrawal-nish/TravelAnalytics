@@ -99,25 +99,26 @@ The third visualization takes a more analytical approach to the data. Using this
 
 # Interesting Finds
 
-1. Visually analyzing the travel trends in zones revealed that lots of commute happened in zones in lower left region and upper middle region than in exterior counties. This trend is distinctly observable during weekends. On investigating the map, we found that the orange county contains disney themed water parks, resorts, hollywood studios in its lower left region and has lots of inflow for all days in the month of April.
+\1. Visually analyzing the travel trends in zones revealed that lots of commute happened in zones in lower left region and upper middle region than in exterior counties. This trend is distinctly observable during weekends. On investigating the map, we found that the orange county contains disney themed water parks, resorts, hollywood studios in its lower left region and has lots of inflow for all days in the month of April.
 
 
-2. On Friday and Saturday, there is an increase in outbound commuters at late night from certain zones travelling to exterior zones which suggests that the start zones could be having popular clubs, pubs etc and exterior zones are mostly residential areas or suburbs. Also from 5pm - 10pm outbound commuters can be seen going to interior zones which may have restaurants and pubs from exterior residential zones. 
+\2. On Friday and Saturday, there is an increase in outbound commuters at late night from certain zones travelling to exterior zones which suggests that the start zones could be having popular clubs, pubs etc and exterior zones are mostly residential areas or suburbs. Also from 5pm - 10pm outbound commuters can be seen going to interior zones which may have restaurants and pubs from exterior residential zones. 
 
 
-3. For most external zones most of the trips are within the zone, which indicates that people mostly travel closer to home restaurants, friends places or other places on friday evenings and saturday evenings. 
+\3. For most external zones most of the trips are within the zone, which indicates that people mostly travel closer to home restaurants, friends places or other places on friday evenings and saturday evenings. 
 
 
-4. On Sundays, evening  and night travel trips are much lower than on any other day of the week.
+\4. On Sundays, evening  and night travel trips are much lower than on any other day of the week.
 
 
-5. On weekdays, particularly in the morning, the exterior zones have a larger number of outbound travellers but only a handful of interior zones have a large number of inbound travellers. These zones we presume have higher number of offices. Similarly in the evening a large number of these interior zones for which there was a high number of inbound trips show a large number of outbound trips while the exterior zones for which there was a large number of outbound trips in the morning show higher inbound trip trends.
+\5. On weekdays, particularly in the morning, the exterior zones have a larger number of outbound travellers but only a handful of interior zones have a large number of inbound travellers. These zones we presume have higher number of offices. Similarly in the evening a large number of these interior zones for which there was a high number of inbound trips show a large number of outbound trips while the exterior zones for which there was a large number of outbound trips in the morning show higher inbound trip trends.
 
 
-6. Since the temperature range was similar for all the 30 days of April there is very little evidence that weather played an important factor in trips. 
+\6. Since the temperature range was similar for all the 30 days of April there is very little evidence that weather played an important factor in trips. 
 
 
+# Video 
 
-
+https://www.youtube.com/watch?v=2G1IGk8wnVw
 
 
