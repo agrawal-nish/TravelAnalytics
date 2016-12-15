@@ -1,10 +1,15 @@
-# TravelAnalytics
+# Travel Analytics
 
-**Option 6: Visualizing Orlando Metropolitan Area Travel Data** 
+# Visualizing Orlando Metropolitan Area Travel Data
 
+**Developers:**<br/>
 **Shreyas Kulkarni** <br/>
 **Sreeraj Rimmalapudi** <br/>
 **Nishant Agrawal** <br/>
+
+**Faculty Project Advisors:**<br/>
+**Angus Forbes**<br/>
+**Sybil Derrible**<br/>
 
 # Introduction
 
